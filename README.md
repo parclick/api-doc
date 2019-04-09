@@ -16,7 +16,7 @@
 3. [Refresh token](#refresh)
 4. [List parkings](#list_parkings)
 5. [Get parking](#get_parking)
-6. List products
+6. [List products](#list_products)
 7. Vehicle type
 8. Create reservation
 9. Cancel reservation
@@ -3322,7 +3322,7 @@ This method returns parking information, products available and required fields 
 
 <br>
 
-## <span style="color:#FF6600;">Get products</span>
+## <a name="list_products"></a><span style="color:#FF6600;">Get products</span>
 
 ### <span style="color:#0f6ab4;">`GET`</span> `/v1/pass`
 
