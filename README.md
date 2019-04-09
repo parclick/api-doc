@@ -3,13 +3,13 @@
 <p style="color:#999999;text-align:right;">Document version 1.0.0</div>
 </p>
 
-# <span style="color:#FF6600;">Parclick - API Reference v3.2</span>
-#### <span style="color:#999;">TECNICAL DOCUMENTATION</a>
+<span style="color:#FF6600;">##Parclick - API Reference v3.2</span>
+<span style="color:#999;">####TECNICAL DOCUMENTATION</a>
 
 
 
 
-### <span style="color:#FF6600;">Content table</span>
+###<span style="color:#FF6600;">Content table</span>
 
 1. API description
 2. Login
