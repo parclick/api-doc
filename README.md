@@ -33,7 +33,7 @@
 ### <a name="description"></a><span style="color:#FF6600;">API Description</a>
 
 #### Authentication
-Parclick gives a REST API [^1] with some endpoints that require authentication. Security is based on JSON Web Token (JWT) [^2] and is obtained through a successful authentication (view **/v1/login** endpoint). In the protected endpoints this token must be included in the header request as follow:
+Parclick gives a REST API [^1](#1) with some endpoints that require authentication. Security is based on JSON Web Token (JWT) [^2](#2) and is obtained through a successful authentication (view **/v1/login** endpoint). In the protected endpoints this token must be included in the header request as follow:
 
 | Key               | Value                                      |
 | ----------------- | ------------------------------------------ |
@@ -4155,5 +4155,5 @@ This code is used in Copark car parks and uses the following syntax to generate 
 
 <br>
 
-[^1]: The REST architectural style describes six constraints: uniform interface, stateless, cacheable, client-server, layered system, code on demand (optional). [REST API Tutorial](https://www.restapitutorial.com/) - [REST API: What is it, and what are its advantages in project development?](https://bbvaopen4u.com/en/actualidad/rest-api-what-it-and-what-are-its-advantages-project-development)
-[^2]: JSON Web Token (JWT) is a compact, URL-safe means of representing claims to be transferred between two parties - [Documentation](https://jwt.io/).
+<a name="1"></a>[^1]: The REST architectural style describes six constraints: uniform interface, stateless, cacheable, client-server, layered system, code on demand (optional). [REST API Tutorial](https://www.restapitutorial.com/) - [REST API: What is it, and what are its advantages in project development?](https://bbvaopen4u.com/en/actualidad/rest-api-what-it-and-what-are-its-advantages-project-development)
+<a name="2"></a>[^2]: JSON Web Token (JWT) is a compact, URL-safe means of representing claims to be transferred between two parties - [Documentation](https://jwt.io/).
