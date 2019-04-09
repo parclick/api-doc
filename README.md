@@ -130,7 +130,8 @@ This method allows third party systems to refresh a valid token.
 ```
 
 <br>
-## <span style="color:#FF6600;">List parkings</span>
+
+# <span style="color:#FF6600;">List parkings</span>
 
 ### <span style="color:#0f6ab4;">`GET`</span> `/v1/parking`
 
@@ -189,7 +190,8 @@ This method returns a list of car parks close to a location and based on the par
 ```
 
 <br>
-## <span style="color:#FF6600;">Get products</span>
+
+# <span style="color:#FF6600;">Get products</span>
 
 ### <span style="color:#0f6ab4;">`GET`</span> `/v1/pass`
 
