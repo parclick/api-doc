@@ -3323,7 +3323,7 @@ This method returns parking information, products available and required fields 
 
 <br>
 
-## <a name="list_products"></a><span style="color:#FF6600;">Get products</span>
+## <a name="list_products"></a><span style="color:#FF6600;">List products</span>
 
 ### <span style="color:#0f6ab4;">`GET`</span> `/v1/pass`
 
@@ -3741,7 +3741,7 @@ Authorization: Bearer {JWT_TOKEN}
 
 <br>
 
-## <a name="list_reservations"></a><span style="color:#FF6600;">List reservations</span>
+## <a name="list_reservation"></a><span style="color:#FF6600;">List reservations</span>
 
 ### <span style="color:#0f6ab4;">`GET`</span> `/v1/booking/list`
 
