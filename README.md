@@ -22,7 +22,7 @@
 9. [Cancel reservation](#cancel_reservation)
 10. [List reservations](#list_reservation)
 11. [Get voucher details](#voucher_details)
-11. [Worflows](#worflows)
+11. [Worflows](#workflows)
  	- [Workflow to create a booking reservation](#workflow_reservation)
 	- [Workflow to cancel a booking](#workflow_cancel)
 	- [Workflow to list booking](#workflow_list)
@@ -4101,7 +4101,7 @@ As a first step and part of the development by the integrator it is necessary to
 
 <br>
 
-## <a name="emtry_code"></a><span style="color:#FF6600;">Generate entry codes</span>
+## <a name="entry_code"></a><span style="color:#FF6600;">Generate entry codes</span>
 
 Some car parks require the generation of access codes (QR Code, Barcode...) to gain access. If the selected car park requires a QRCode, barcode or some kind of specific code, the _get voucher data_ endpoint response specifies, if necessary, the type of code in the **external\_code\_tech** field.  Parclick handles the following types of access codes:
 
