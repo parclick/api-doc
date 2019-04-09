@@ -4148,10 +4148,6 @@ This code is used in Firenze Parcheggi car parks and uses the following syntax t
 
 This code is used in Copark car parks and uses the following syntax to generate it. This provider require the external code to identify and gain access.
 ![alt text](https://static.parclick.com/docs/voucher_niza.png)
-<br>
-
-
-<p style="color:#999999;text-align:center;">2019 Copyright Parclick S.L. All rights reserved.</p>
 
 <br>
 
@@ -4160,3 +4156,7 @@ This code is used in Copark car parks and uses the following syntax to generate 
 <br>
 
 <span style="font-size:10px;"><a name="2"></a>[^2]: JSON Web Token (JWT) is a compact, URL-safe means of representing claims to be transferred between two parties - [Documentation](https://jwt.io/).</span>
+
+<br>
+
+<p style="color:#999999;text-align:center;font-size:10px;">2019 Copyright Parclick S.L. All rights reserved.</p>
