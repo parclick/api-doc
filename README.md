@@ -4084,7 +4084,7 @@ As a first step and part of the development by the integrator it is necessary to
 
 <br>
 
-### <a name="workflow_list"></a><span style="color:#FF6600;">3. Workflow to list bookings</a>
+### <a name="workflow_list"></a><span style="color:#FF6600;">3. Workflow to list bookings</span>
 
 1. To list bookings you can filter with this available fields:
 
@@ -4107,44 +4107,44 @@ Some car parks require the generation of access codes (QR Code, Barcode...) to g
 
 
 
-#### <span style="color:#FF6600;">`qrcode_1`</a>
+#### <span style="color:#FF6600;">`qrcode_1`</span>
 
 This QR code is used in SAEMES and others car parks and uses the following syntax to generate it.
 ![alt text](https://static.parclick.com/docs/voucher_saemes.png)
 
 <br>
 
-#### <span style="color:#FF6600;">`barcode_1`</a>
+#### <span style="color:#FF6600;">`barcode_1`</span>
 
 This barcode (type code39) is used in Parkia car parks and uses the following syntax to generate it.
 ![alt text](https://static.parclick.com/docs/voucher_parkia.png)
 <br>
 
-#### <span style="color:#FF6600;">`qrcode_2`</a>
+#### <span style="color:#FF6600;">`qrcode_2`</span>
 
 This QR code is used in San Marcos car parks and uses the following syntax to generate it.
 ![alt text](https://static.parclick.com/docs/voucher_sanmarcos.png)
 <br>
 
-#### <span style="color:#FF6600;">`barcode_2`</a>
+#### <span style="color:#FF6600;">`barcode_2`</span>
 
 This barcode (type code128) is used in Marco Polo car parks and uses the following syntax to generate it.
 ![alt text](https://static.parclick.com/docs/voucher_marcopolo.png)
 <br>
 
-#### <span style="color:#FF6600;">`code_1`</a>
+#### <span style="color:#FF6600;">`code_1`</span>
 
 This code is used in AENA car parks and uses the following syntax to generate it. This provider require the licence plate to identify and gain access.
 ![alt text](https://static.parclick.com/docs/voucher_aena.png)
 <br>
 
-#### <span style="color:#FF6600;">`code_2`</a>
+#### <span style="color:#FF6600;">`code_2`</span>
 
 This code is used in Firenze Parcheggi car parks and uses the following syntax to generate it. This provider require the booking ID to identify and gain access.
 ![alt text](https://static.parclick.com/docs/voucher_firenze.png)
 <br>
 
-#### <span style="color:#FF6600;">`code_3`</a>
+#### <span style="color:#FF6600;">`code_3`</span>
 
 This code is used in Copark car parks and uses the following syntax to generate it. This provider require the external code to identify and gain access.
 ![alt text](https://static.parclick.com/docs/voucher_niza.png)
