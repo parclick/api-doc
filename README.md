@@ -3,13 +3,13 @@
 <p style="color:#999999;text-align:right;">Document version 1.2.0</div>
 </p>
 
-#<span style="color:#FF6600;">Parclick - API Reference v3.2</span>
-####<span style="color:#999;">TECHNICAL DOCUMENTATION</a>
+# <span style="color:#FF6600;">Parclick - API Reference v3.2</span>
+#### <span style="color:#999;">TECHNICAL DOCUMENTATION</a>
 
 
 
 
-###<span style="color:#FF6600;">Content table</span>
+### <span style="color:#FF6600;">Content table</span>
 
 1. API description
 2. Login
@@ -28,7 +28,6 @@
 12. Generate entry code
 
 <br>
-
 
 ### <span style="color:#FF6600;">API Description</a>
 
@@ -64,6 +63,7 @@ The **group** parameter in the endpoints that have it available allows to show m
 Some of the list endpoint return by defauls a maximum of 200 records. The **limit** parameter can be defined to customize the number of results. This parameter is defined in the documentation of each specific endpoint.
 
 <br>
+
 ## <span style="color:#FF6600;">Login</span>
 
 ### <span style="color:#10a54a;">`POST`</span> `/v1/login`
@@ -158,8 +158,8 @@ This method allows third party systems to refresh a valid token.
 	"message": "Bad credentials"
 }
 ```
-
 <br>
+
 ## <span style="color:#FF6600;">List parkings</span>
 
 ### <span style="color:#0f6ab4;">`GET`</span> `/v1/parking`
