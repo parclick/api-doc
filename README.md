@@ -90,6 +90,10 @@ This method allows third party systems to be authenticated and receive a key (to
 | refresh_token   | string         | token to refresh current valid token |                       
 | refresh_token   | string         | user id authenticated                |
 
+
+<details><summary>Show response 200 Ok</summary>
+<p>
+
 ```javascript
 {
     "token": "eyJhbGciOiJSUzI1NiJ9.eyJyb2xlcyI6WyJST0xFX1NVUEVSX0FETUlOIiwiUk9MRV9VU0VSIl0sInVzZXJuYW1lIjoibWlraS5wZXRyb3ZpY0BwYXJjbGljay5jb20iLCJleHAiOjE1NTIzMjAyODgsImlhdCI6MTU1MjMxNjY4OH0.jXllvfZWoXvw-1QGkB4kQGccKVJOUBtFP5VF37Oq8GosLhO2xwqeUVEs3vIj4C030SaZBsmvDNgGY3os4_qMWFgw5EPtPF_n5bLRtQ-BcKAuvqnQmNA9dk5ExxTQEUI08opCDFTxp4nmd6tU97TtCUpKQaOcqR-KP1XEgKaZf2hQNykUPP1k_9Z4NEHdVTy5tSnroqP1hyoF_S7AaxM-XNlKmwnIhmbWgeYmOD41ogBXeRRgiUuP8SelgJchWd2rLcAl7MTDMnW_8EvrpfjaY8nVtENsMZu5_CZhdhUzSBKcWSJHMBGhWf7NWINBib23YNc0ut6sYdNCQ-BagXYq2Riy6gn1SbocUAe9Yt6nmL_9bTzqKhku85S6tZcr9IyRiGOlyU0vZfAOBt98FZ9SUemaDufyHOfY-fvyP7iq-efSyE1IY-FZnabwHQtDl3Z5j_VvMqrJs2tPJX27HI6gNIgE7rKXL-YFHK__nOofR2H9cUp6BSEcmAGjD7zVDilWgSUPZGOp6yLr4w-Fu1NgpPIJt6KZxqcpxCU-nhvbn3wIpGm6b-9mNDZy9yhJftJMuLGeqLMcO2IRnDTQK8fYEodTsfGmqU-b7bj_HEAdxgTFw0CeFT6cmMnVo-wUZHcrKWKgiJjBRUlHTM6wD6JBClHb0iTkjtQg7oqb9iHxzWA",
@@ -97,6 +101,8 @@ This method allows third party systems to be authenticated and receive a key (to
     "id": 600116
 }
 ```
+</p>
+</details>
 
 **401 Unauthorized**
 
@@ -105,6 +111,10 @@ This method allows third party systems to be authenticated and receive a key (to
 | code            | string          | http response code value     |
 | message         | string          | error description            |
 
+## collapsible markdown?
+
+<details><summary>Show response 401 Unauthorized</summary>
+<p>
 
 ```javascript
 {
@@ -112,6 +122,9 @@ This method allows third party systems to be authenticated and receive a key (to
 	"message": "Bad credentials"
 }
 ```
+
+</p>
+</details>
 
 <br>
  
@@ -137,12 +150,20 @@ This method allows third party systems to refresh a valid token.
 | token           | string              | token passed with each request (Expires in 1 hour)|
 | refresh_token   | string              | token to refresh current valid token              |
 
+
+<details><summary>Show response 200 Ok</summary>
+<p>
+
 ```javascript
 {
     "token": "eyJhbGciOiJSUzI1NiJ9.eyJyb2xlcyI6WyJST0xFX1VTRVIiXSwidXNlcm5hbWUiOiJtaWtpLnBldHJvdmljQHBhcmNsaWNrLmNvbSIsImV4cCI6MTU1MjQ5MDgxNiwiaWF0IjoxNTUyNDg3MjE2fQ.dwp3pbUF4vktlX_vIhuiYJQ3XwXmJHJe_gl8LrZUyJ3VZ1pEsFsvtbl8Q3C82tJlxslO9SJWI1rDcHGsGni0FIUxHbKEuuTNwzM2n4EfS25HSTa-0FQJckBhQBa8CRDBTCbfNrNUxPM2tie0ILrTnZaGIMHjtL9px08M2fEqYkC0SF3haYnhvjg40DfxCIcba-_SkXJyQGDsJEQeMiCeNWQNe4gap-Vg_lLFmhKzuWvp5PHRMDqPZ1IbFXfqbZEn79dobwr93lBNce_tBmeOwBhOI-OtIeVcwhhy5998wV0V_KxlF-LgxBKsr6cyWwS1JGStNU2BbqQcjGh3wGqhU42g-29zhI0Pn2fLuUAqdwL73c4wVJ-iZx4UMIY1XI0poBBX6cjImuN8JzPFZbwjW4VHGZ6G7VNvBZsngrQ7QQngM3OFkQ19vTCo0O9kXJqjBkR53WjFxuHCiT7AaQd18DoR51L7HejthunO0sqQGNZoPhWtrLZMcnc9vq3DFJI5YxeFWuB5sAIwMUi-xLk3l8ijReSQ63sbUrVEOX3mrDE8N1zOfHt_OoniniVdYY7pUDczDmsybye_JQjxcu9o96Em0Pd37ABcf_-y8LjDgIgjkceFVJiBArAhcZZGtoxexPaRcRyzE698TARXsC6EmLih0TEaA8gZNsAOJL5U2e4",
     "refresh_token": "7635bc6f8970fa9042297a692dfba629a346dff4873fd34ddcea82c4be74e738414164e69d455ecafc29b5d5082bb2bff08082ec15f62dfc2a2bd47701eb7976"
 }
 ```
+
+</p>
+</details>
+
 
 **401 Unauthorized**
 
@@ -151,13 +172,18 @@ This method allows third party systems to refresh a valid token.
 | code            | string          | http response code value     |
 | message         | string          | error description            |
 
-
+<details><summary>Show response 401 Unauthorized</summary>
+<p>
 ```javascript
 {
 	"code": 401,
 	"message": "Bad credentials"
 }
 ```
+</p>
+</details>
+
+
 <br>
 
 ## <a name="list_parkings"></a><span style="color:#FF6600;">List parkings</span>
@@ -194,6 +220,9 @@ This method returns a list of car parks close to a location and based on the par
 | refresh_token   | string         | Token to refresh current valid token |                       
 | refresh_token   | string         | user id authenticated                |
 
+
+<details><summary>Show response 200 Ok</summary>
+<p>
 ```javascript
 {
     "page": 1,
@@ -1814,6 +1843,9 @@ This method returns a list of car parks close to a location and based on the par
 }
 ```
 
+</p>
+</details>
+
 **400 Bad request -  when parameters are missing or incorrect**
 
 | Parameters      | Type            | Required                       |
@@ -1822,6 +1854,8 @@ This method returns a list of car parks close to a location and based on the par
 | message         | string          | error description              |
 | errors          | array           | fields and the specific error  |
 
+<details><summary>Show response 400 Bad request</summary>
+<p>
 ```javascript
 {
     "code": 400,
@@ -1860,6 +1894,9 @@ This method returns a list of car parks close to a location and based on the par
 }
 ```
 
+</p>
+</details>
+
 <br>
 
 ## <a name="get_parking"></a><span style="color:#FF6600;">Get parking</span>
@@ -1881,6 +1918,8 @@ This method returns parking information, products available and required fields 
 
 **200 Ok**
 
+<details><summary>Show response 200 Ok</summary>
+<p>
 ```javascript
 {
     "id": 1047,
@@ -3299,10 +3338,17 @@ This method returns parking information, products available and required fields 
         ]
     }
 }```
+</p>
+</details>
+
 
 **401 Bad request -  when parameters are missing or incorrect**
 
+<details><summary>Show response 401 Dad request</summary>
+<p>
 
+</p>
+</details>
 ```javascript
 {
     "code": 400,
@@ -3344,6 +3390,8 @@ This method returns the best product available on selected car park based on the
 
 **200 Ok**
 
+<details><summary>Show response 200 Ok</summary>
+<p>
 ```javascript
 {
     "page": 1,
@@ -3432,8 +3480,14 @@ This method returns the best product available on selected car park based on the
 }
 ```
 
+</p>
+</details>
+
+
 **200 Ok - No results**
 
+<details><summary>Show response 200 No results</summary>
+<p>
 ```javascript
 
 {  
@@ -3465,10 +3519,14 @@ This method returns the best product available on selected car park based on the
    }
 }
 ```
+</p>
+</details>
+
 
 **401 Bad request -  when parameters are missing or incorrect**
 
-
+<details><summary>Show response 401 Bad request</summary>
+<p>
 ```javascript
 {
 	{  
@@ -3516,6 +3574,8 @@ This method returns the best product available on selected car park based on the
 	}
 }
 ```
+</p>
+</details>
 
 <br>
 
@@ -3537,6 +3597,8 @@ This method returns the vehicle type available. The vihicle id is required to ma
 
 **200 Ok**
 
+<details><summary>Show response 200 Ok</summary>
+<p>
 ```javascript
 {
     "page": 1,
@@ -3602,10 +3664,14 @@ This method returns the vehicle type available. The vihicle id is required to ma
     }
 }
 ```
+</p>
+</details>
+
 
 **401 Bad request -  when parameters are missing or incorrect**
 
-
+<details><summary>Show response 401 Bad request</summary>
+<p>
 ```javascript
 {
     "code": 400,
@@ -3632,6 +3698,10 @@ This method returns the vehicle type available. The vihicle id is required to ma
     }
 }
 ```
+</p>
+</details>
+
+
 
 <br>
 
@@ -3677,6 +3747,8 @@ Authorization: Bearer {JWT_TOKEN}
 | voucher_id      | integer             | new booking identifier (required to cancel) |
 | voucher_code    | string              | new booking voucher                         |
 
+<details><summary>Show response 200 Ok</summary>
+<p>
 ```javascript
 {
     "booking_id": 805097,
@@ -3684,6 +3756,10 @@ Authorization: Bearer {JWT_TOKEN}
     "voucher_code": "L5N9675",
 }
 ```
+</p>
+</details>
+
+
 
 **401 Unauthorized**
 
@@ -3692,13 +3768,17 @@ Authorization: Bearer {JWT_TOKEN}
 | code            | string          | http response code value     |
 | message         | string          | error description            |
 
-
+<details><summary>Show response 401 Unauthorized</summary>
+<p>
 ```javascript
 {
 	"code": 401,
 	"message": "Bad credentials"
 }
 ```
+</p>
+</details>
+
 
 <br>
 
@@ -3730,13 +3810,16 @@ Authorization: Bearer {JWT_TOKEN}
 | code            | string          | http response code value     |
 | message         | string          | error description            |
 
-
+<details><summary>Show response 401 Unauthorized</summary>
+<p>
 ```javascript
 {
 	"code": 401,
 	"message": "Bad credentials"
 }
 ```
+</p>
+</details>
 
 <br>
 
@@ -3764,6 +3847,8 @@ Authorization: Bearer {JWT_TOKEN}
 
 **200 Ok**
 
+<details><summary>Show response 200 Ok</summary>
+<p>
 ```javascript
 {
 	"results": [
@@ -3783,6 +3868,9 @@ Authorization: Bearer {JWT_TOKEN}
     ]
 }
 ```
+</p>
+</details>
+
 
 **401 Unauthorized**
 
@@ -3791,13 +3879,17 @@ Authorization: Bearer {JWT_TOKEN}
 | code            | string          | http response code value     |
 | message         | string          | error description            |
 
-
+<details><summary>Show response 401 Bad credentials</summary>
+<p>
 ```javascript
 {
 	"code": 401,
 	"message": "Bad credentials"
 }
 ```
+</p>
+</details>
+
 <br>
 
 ## <a name="voucher_details"></a><span style="color:#FF6600;">Get voucher details</span>
@@ -3854,7 +3946,8 @@ Authorization: Bearer {JWT_TOKEN}
 | external\_code\_tech     | string           | external code tech                           |
 | extra_fields             | array            | all extra fields in booking                  |
 
-
+<details><summary>Show response 200 Ok</summary>
+<p>
 ```javascript
 {
     "user_first_name": "test13",
@@ -3903,6 +3996,8 @@ Authorization: Bearer {JWT_TOKEN}
     }
 }
 ```
+</p>
+</details>
 
 
 **401 Unauthorized**
@@ -3912,6 +4007,8 @@ Authorization: Bearer {JWT_TOKEN}
 | code            | string          | http response code value     |
 | message         | string          | error description            |
 
+<details><summary>Show response 401 Unauthorized</summary>
+<p>
 
 ```javascript
 {
@@ -3919,6 +4016,8 @@ Authorization: Bearer {JWT_TOKEN}
 	"message": "Bad credentials"
 }
 ```
+</p>
+</details>
 
 <br>
 
@@ -3939,6 +4038,8 @@ As a first step and part of the development by the integrator it is necessary to
 
 *Parking response, required fields example*
 
+<details><summary>Show response 200 Ok</summary>
+<p>
 ```javascript
 {    
     "_embedded":{  
@@ -3974,9 +4075,14 @@ As a first step and part of the development by the integrator it is necessary to
    }
 }
 ```
+</p>
+</details>
+
 
 *Get token via API pass*
 
+<details><summary>Show response 200 Ok</summary>
+<p>
 ```javascript
 {  
    "page":1,
@@ -4076,6 +4182,9 @@ As a first step and part of the development by the integrator it is necessary to
    }
 }
 ```
+</p>
+</details>
+
 
 ### <a name="workflow_cancel"></a><span style="color:#FF6600;">2. Workflow to cancel a booking</span>
 
