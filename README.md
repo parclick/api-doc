@@ -3,13 +3,13 @@
 <p style="color:#999999;text-align:right;">Document version 1.0.0</div>
 </p>
 
-<span style="color:#FF6600;">##Parclick - API Reference v3.2</span>
-<span style="color:#999;">####TECNICAL DOCUMENTATION</a>
+## <span style="color:#FF6600;">Parclick - API Reference v3.2</span>
+#### <span style="color:#999;">TECNICAL DOCUMENTATION</a>
 
 
 
 
-###<span style="color:#FF6600;">Content table</span>
+### <span style="color:#FF6600;">Content table</span>
 
 1. API description
 2. Login
@@ -36,7 +36,6 @@ Parclick has a rest API with two environments: development (https://pre.api.parc
 
 <br>
 ## <span style="color:#FF6600;">Login</span>
-
 ### <span style="color:#10a54a;">`POST`</span> `/v1/login`
 
 
@@ -85,8 +84,8 @@ This method allows third party systems to be authenticated and receive a key (to
 ```
 
 <br>
-## <span style="color:#FF6600;">Refresh token</span>
 
+## <span style="color:#FF6600;">Refresh token</span>
 ### <span style="color:#10a54a;">`POST`</span> `/v1/token/refresh`
 
 This method allows third party systems to refresh a valid token.
