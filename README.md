@@ -9,7 +9,7 @@
 
 
 
-###<span style="color:#FF6600;">Content table</span>
+### <span style="color:#FF6600;">Content table</span>
 
 1. API description
 2. Login
@@ -29,15 +29,15 @@
 
 
 
-###<span style="color:#FF6600;">API Description</a>
+### <span style="color:#FF6600;">API Description</a>
 
 Parclick has a rest API with two environments: development (https://pre.api.parclick.com) and production (https://api.parclick.com). Endpoints requiring authentication must have a JWT token in the header. This tutorial help to unsderstand the available endpoints and the flow to create, delete and list bookings. 
 
 
 <br>
-##<span style="color:#FF6600;">Login</span>
+## <span style="color:#FF6600;">Login</span>
 
-###<span style="color:#10a54a;">`POST`</span> `/v1/login`
+### <span style="color:#10a54a;">`POST`</span> `/v1/login`
 
 
 This method allows third party systems to be authenticated and receive a key (token) to pass when calling the e-commerce web service methods.
@@ -85,9 +85,9 @@ This method allows third party systems to be authenticated and receive a key (to
 ```
 
 <br>
-##<span style="color:#FF6600;">Refresh token</span>
+## <span style="color:#FF6600;">Refresh token</span>
 
-###<span style="color:#10a54a;">`POST`</span> `/v1/token/refresh`
+### <span style="color:#10a54a;">`POST`</span> `/v1/token/refresh`
 
 This method allows third party systems to refresh a valid token.
 
@@ -130,9 +130,9 @@ This method allows third party systems to refresh a valid token.
 ```
 
 <br>
-##<span style="color:#FF6600;">List parkings</span>
+## <span style="color:#FF6600;">List parkings</span>
 
-###<span style="color:#0f6ab4;">`GET`</span> `/v1/parking`
+### <span style="color:#0f6ab4;">`GET`</span> `/v1/parking`
 
 
 This method returns a list of car parks close to a location and based on the parameters used.
@@ -189,9 +189,9 @@ This method returns a list of car parks close to a location and based on the par
 ```
 
 <br>
-##<span style="color:#FF6600;">Get products</span>
+## <span style="color:#FF6600;">Get products</span>
 
-###<span style="color:#0f6ab4;">`GET`</span> `/v1/pass`
+### <span style="color:#0f6ab4;">`GET`</span> `/v1/pass`
 
 This method returns the best product available on selected car park based on the stay provided.
 
@@ -385,9 +385,9 @@ This method returns the best product available on selected car park based on the
 ```
 
 <br>
-##<span style="color:#FF6600;">Create reservation</span>
+## <span style="color:#FF6600;">Create reservation</span>
 
-###<span style="color:#10a54a;">`POST`</span> `/v1/booking/new`
+### <span style="color:#10a54a;">`POST`</span> `/v1/booking/new`
 
 This method creates a new reservation.
 
@@ -448,9 +448,9 @@ Authorization: Bearer {JWT_TOKEN}
 ```
 
 <br>
-##<span style="color:#FF6600;">Cancel reservation</span>
+## <span style="color:#FF6600;">Cancel reservation</span>
 
-###<span style="color:#10a54a;">`POST`</span> `/v1/booking/{id}/cancelex`
+### <span style="color:#10a54a;">`POST`</span> `/v1/booking/{id}/cancelex`
 
 This method allows cancel a reservation. The id required to cancel reservation is done in the new reservation response.
 
@@ -546,9 +546,9 @@ Authorization: Bearer {JWT_TOKEN}
 }
 ```
 <br>
-##<span style="color:#FF6600;">Get voucher data</span>
+## <span style="color:#FF6600;">Get voucher data</span>
 
-###<span style="color:#0f6ab4;">`GET`</span> `/v1/voucher/{voucher_id}/details`
+### <span style="color:#0f6ab4;">`GET`</span> `/v1/voucher/{voucher_id}/details`
 
 This method allows to get the voucher data for an specific reservation. The voucher_id required to get reservation is done in the new reservation response.
 
@@ -672,7 +672,7 @@ Authorization: Bearer {JWT_TOKEN}
 
 ![alt text](https://static.parclick.com/docs/external_integration_grap.png)
 
-###<span style="color:#FF6600;"> 1- Workflow to create a booking reservation</span>
+### <span style="color:#FF6600;"> 1- Workflow to create a booking reservation</span>
 
 1. Get the parking id and timespan (from, to)
 2. Get the required fields for the selected parking using the parking endpoint  `/v1/parking/{parking_id}?locale=en_GB&group=detail` In the response, the _embedded node display the required fields for the seleted parking. 
@@ -819,12 +819,12 @@ Authorization: Bearer {JWT_TOKEN}
 }
 ```
 
-###<span style="color:#FF6600;">2. Workflow to cancel a booking</span>
+### <span style="color:#FF6600;">2. Workflow to cancel a booking</span>
 
 1. To cancel a booking is mandatory to know the booking id (E.g. 685435) and then proceed.
 
 <br>
-###<span style="color:#FF6600;">3. Workflow to list bookings</a>
+### <span style="color:#FF6600;">3. Workflow to list bookings</a>
 
 1. To list bookings you can filter with this available fields:
 
@@ -844,37 +844,37 @@ Authorization: Bearer {JWT_TOKEN}
 
 Some car parks require the generation of access codes (QR Code, Barcode...) to gain access. Parclick handles the following types of access codes:
 
-####<span style="color:#FF6600;">`qrcode_1`</a>
+#### <span style="color:#FF6600;">`qrcode_1`</a>
 
 This QR code is used in SAEMES car parks and uses the following syntax to generate it.
 
 <br>
-####<span style="color:#FF6600;">`barcode_1`</a>
+#### <span style="color:#FF6600;">`barcode_1`</a>
 
 This barcode (type code39) is used in Parkia car parks and uses the following syntax to generate it.
 
 <br>
-####<span style="color:#FF6600;">`qrcode_2`</a>
+#### <span style="color:#FF6600;">`qrcode_2`</a>
 
 This QR code is used in San Marcos car parks and uses the following syntax to generate it.
 
 <br>
-####<span style="color:#FF6600;">`barcode_2`</a>
+#### <span style="color:#FF6600;">`barcode_2`</a>
 
 This barcode (type code128) is used in Marco Polo car parks and uses the following syntax to generate it.
 
 <br>
-####<span style="color:#FF6600;">`code_1`</a>
+#### <span style="color:#FF6600;">`code_1`</a>
 
 This code is used in AENA car parks and uses the following syntax to generate it. This provider require the licence plate to identify and gain access.
 
 <br>
-####<span style="color:#FF6600;">`code_2`</a>
+#### <span style="color:#FF6600;">`code_2`</a>
 
 This code is used in Firenze Parcheggi car parks and uses the following syntax to generate it. This provider require the booking ID to identify and gain access.
 
 <br>
-####<span style="color:#FF6600;">`code_3`</a>
+#### <span style="color:#FF6600;">`code_3`</a>
 
 This code is used in Copark car parks and uses the following syntax to generate it. This provider require the external code to identify and gain access.
 
