@@ -17,15 +17,16 @@
 4. [List parkings](#list_parkings)
 5. [Get parking](#get_parking)
 6. [List products](#list_products)
-7. Vehicle type
-8. Create reservation
-9. Cancel reservation
-10. List reservations
-11. Worflows
- 	- Workflow to create a booking reservation
-	- 	Workflow to cancel a booking
-	- Workflow to list booking
-12. Generate entry code
+7. [Vehicle type](#vehicle_type)
+8. [Create reservation](#create_reservation)
+9. [Cancel reservation](#cancel_reservation)
+10. [List reservations](#list_reservation)
+11. [Get voucher details](#voucher_details)
+11. [Worflows](#worflows)
+ 	- [Workflow to create a booking reservation](#workflow_reservation)
+	- [Workflow to cancel a booking](#workflow_cancel)
+	- [Workflow to list booking](#workflow_list)
+12. [Generate entry code](#entry_code)
 
 <br>
 
@@ -3519,7 +3520,7 @@ This method returns the best product available on selected car park based on the
 
 <br>
 
-## <span style="color:#FF6600;">Vehicle type</span>
+## <a name="vehicle_type"></a><span style="color:#FF6600;">Vehicle type</span>
 
 ### <span style="color:#0f6ab4;">`GET`</span> `/v1/vehicle-type`
 
@@ -3635,7 +3636,7 @@ This method returns the vehicle type available. The vihicle id is required to ma
 
 <br>
 
-## <span style="color:#FF6600;">Create reservation</span>
+## <a name="create_reservation"></a><span style="color:#FF6600;">Create reservation</span>
 
 ### <span style="color:#10a54a;">`POST`</span> `/v1/booking/new`
 
@@ -3702,7 +3703,7 @@ Authorization: Bearer {JWT_TOKEN}
 
 <br>
 
-## <span style="color:#FF6600;">Cancel reservation</span>
+## <a name="cancel_reservation"></a><span style="color:#FF6600;">Cancel reservation</span>
 
 ### <span style="color:#10a54a;">`POST`</span> `/v1/booking/{booking_id}/cancelex`
 
@@ -3740,7 +3741,7 @@ Authorization: Bearer {JWT_TOKEN}
 
 <br>
 
-## <span style="color:#FF6600;">List reservations</span>
+## <a name="list_reservations"></a><span style="color:#FF6600;">List reservations</span>
 
 ### <span style="color:#0f6ab4;">`GET`</span> `/v1/booking/list`
 
@@ -3800,7 +3801,7 @@ Authorization: Bearer {JWT_TOKEN}
 ```
 <br>
 
-## <span style="color:#FF6600;">Get voucher data</span>
+## <a name="voucher_details"></a><span style="color:#FF6600;">Get voucher details</span>
 
 ### <span style="color:#0f6ab4;">`GET`</span> `/v1/voucher/{voucher_id}/details`
 
@@ -3922,14 +3923,14 @@ Authorization: Bearer {JWT_TOKEN}
 
 <br>
 
-## <span style="color:#FF6600;">Workflows for booking reservation, cancel and list</span>
+## <a name="workflows"></a><span style="color:#FF6600;">Workflows for booking reservation, cancel and list</span>
 
 
 ![alt text](https://static.parclick.com/docs/external_integration_grap.png)
 
 As a first step and part of the development by the integrator it is necessary to select the vehicles available **Vehicle type /v1/vehicle-type**, prior to select the list of car parks for certain coordinates and a specific type of vehicle and dates. For this task it is necessary to call the endpoint **Get parkings /v1/parking/** to get the parking id. With this data it is possible to show a map with the available car parks. Once a specific car park has been selected, it is necessary to obtain the best pass (product token `2338bb72051ae11083a20cd94f3b3183ede3333708b1bc7b50e6af509100ef14`) **list products /v1/pass** for the selected period and the additional fields for that car park **get parking /v1/parking/{parking_id}** located in response fieldsRequested array.
 
-### <span style="color:#FF6600;"> 1- Workflow to create a booking reservation</span>
+### <a name="workflow_reservation"></a><span style="color:#FF6600;"> 1- Workflow to create a booking reservation</span>
 
 
 1. Get the parking id and timespan (from, to)
@@ -4077,13 +4078,13 @@ As a first step and part of the development by the integrator it is necessary to
 }
 ```
 
-### <span style="color:#FF6600;">2. Workflow to cancel a booking</span>
+### <a name="workflow_cancel"></a><span style="color:#FF6600;">2. Workflow to cancel a booking</span>
 
 1. To cancel a booking is mandatory to know the booking id (E.g. 685435) and then proceed.
 
 <br>
 
-### <span style="color:#FF6600;">3. Workflow to list bookings</a>
+### <a name="workflow_list"></a><span style="color:#FF6600;">3. Workflow to list bookings</a>
 
 1. To list bookings you can filter with this available fields:
 
@@ -4100,7 +4101,7 @@ As a first step and part of the development by the integrator it is necessary to
 
 <br>
 
-## <span style="color:#FF6600;">Generate entry codes</span>
+## <a name="emtry_code"></a><span style="color:#FF6600;">Generate entry codes</span>
 
 Some car parks require the generation of access codes (QR Code, Barcode...) to gain access. If the selected car park requires a QRCode, barcode or some kind of specific code, the _get voucher data_ endpoint response specifies, if necessary, the type of code in the **external\_code\_tech** field.  Parclick handles the following types of access codes:
 
