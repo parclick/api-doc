@@ -116,8 +116,8 @@ This method allows third party systems to be authenticated and receive a key (to
 
 ```json
 {
-	"code": 401,
-	"message": "Bad credentials"
+    "code": 401,
+    "message": "Bad credentials"
 }
 ```
 
@@ -174,8 +174,8 @@ This method allows third party systems to refresh a valid token.
 	
 ```javascript
 {
-	"code": 401,
-	"message": "Bad credentials"
+    "code": 401,
+    "message": "Bad credentials"
 }
 ```
 </p>
@@ -3831,8 +3831,8 @@ Authorization: Bearer {JWT_TOKEN}
 
 ```javascript
 {
-	"code": 401,
-	"message": "Bad credentials"
+    "code": 401,
+    "message": "Bad credentials"
 }
 ```
 
@@ -3904,8 +3904,8 @@ Authorization: Bearer {JWT_TOKEN}
 
 ```javascript
 {
-	"code": 401,
-	"message": "Bad credentials"
+    "code": 401,
+    "message": "Bad credentials"
 }
 ```
 
@@ -4036,8 +4036,8 @@ Authorization: Bearer {JWT_TOKEN}
 
 ```javascript
 {
-	"code": 401,
-	"message": "Bad credentials"
+    "code": 401,
+    "message": "Bad credentials"
 }
 ```
 
