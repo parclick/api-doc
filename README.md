@@ -12,9 +12,9 @@
 ### <span style="color:#FF6600;">Content table</span>
 
 1. [API description](#description)
-2. Login
-3. Refresh token
-4. List parkings
+2. [Login](#login)
+3. [Refresh token](#refresh)
+4. [List parkings](#list_parking)
 5. Get parking
 6. List products
 7. Vehicle type
@@ -64,7 +64,7 @@ Some of the list endpoint return by defauls a maximum of 200 records. The **limi
 
 <br>
 
-## <span style="color:#FF6600;">Login</span>
+## <a name="login"></a><span style="color:#FF6600;">Login</span>
 
 ### <span style="color:#10a54a;">`POST`</span> `/v1/login`
 
@@ -115,7 +115,7 @@ This method allows third party systems to be authenticated and receive a key (to
 
 <br>
  
-## <span style="color:#FF6600;">Refresh token</span>
+## <a name="refresh"></a><span style="color:#FF6600;">Refresh token</span>
 
 ### <span style="color:#10a54a;">`POST`</span> `/v1/token/refresh`
 
@@ -160,7 +160,7 @@ This method allows third party systems to refresh a valid token.
 ```
 <br>
 
-## <span style="color:#FF6600;">List parkings</span>
+## <a name="list_parking"></a><span style="color:#FF6600;">List parkings</span>
 
 ### <span style="color:#0f6ab4;">`GET`</span> `/v1/parking`
 
