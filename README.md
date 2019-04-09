@@ -36,6 +36,7 @@ Parclick has a rest API with two environments: development (https://pre.api.parc
 
 <br>
 ## <span style="color:#FF6600;">Login</span>
+
 ### <span style="color:#10a54a;">`POST`</span> `/v1/login`
 
 
