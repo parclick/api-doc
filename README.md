@@ -14,8 +14,8 @@
 1. [API description](#description)
 2. [Login](#login)
 3. [Refresh token](#refresh)
-4. [List parkings](#list_parking)
-5. Get parking
+4. [List parkings](#list_parkings)
+5. [Get parking](#get_parking)
 6. List products
 7. Vehicle type
 8. Create reservation
@@ -160,7 +160,7 @@ This method allows third party systems to refresh a valid token.
 ```
 <br>
 
-## <a name="list_parking"></a><span style="color:#FF6600;">List parkings</span>
+## <a name="list_parkings"></a><span style="color:#FF6600;">List parkings</span>
 
 ### <span style="color:#0f6ab4;">`GET`</span> `/v1/parking`
 
@@ -1862,7 +1862,7 @@ This method returns a list of car parks close to a location and based on the par
 
 <br>
 
-## <span style="color:#FF6600;">Get parking</span>
+## <a name="get_parking"></a><span style="color:#FF6600;">Get parking</span>
 
 ### <span style="color:#0f6ab4;">`GET`</span> `/v1/parking/{parking_id}`
 
