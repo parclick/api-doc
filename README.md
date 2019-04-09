@@ -33,10 +33,9 @@
 
 Parclick has a rest API with two environments: development (https://pre.api.parclick.com) and production (https://api.parclick.com). Endpoints requiring authentication must have a JWT token in the header. This tutorial help to unsderstand the available endpoints and the flow to create, delete and list bookings. 
 
-
 <br>
-## <span style="color:#FF6600;">Login</span>
 
+## <span style="color:#FF6600;">Login</span>
 ### <span style="color:#10a54a;">`POST`</span> `/v1/login`
 
 
@@ -131,7 +130,7 @@ This method allows third party systems to refresh a valid token.
 
 <br>
 
-# <span style="color:#FF6600;">List parkings</span>
+## <span style="color:#FF6600;">List parkings</span>
 
 ### <span style="color:#0f6ab4;">`GET`</span> `/v1/parking`
 
@@ -387,6 +386,7 @@ This method returns the best product available on selected car park based on the
 ```
 
 <br>
+
 ## <span style="color:#FF6600;">Create reservation</span>
 
 ### <span style="color:#10a54a;">`POST`</span> `/v1/booking/new`
@@ -450,6 +450,7 @@ Authorization: Bearer {JWT_TOKEN}
 ```
 
 <br>
+
 ## <span style="color:#FF6600;">Cancel reservation</span>
 
 ### <span style="color:#10a54a;">`POST`</span> `/v1/booking/{id}/cancelex`
@@ -487,6 +488,7 @@ Authorization: Bearer {JWT_TOKEN}
 ```
 
 <br>
+
 ##<span style="color:#FF6600;">List reservations</span>
 
 ###<span style="color:#0f6ab4;">`GET`</span> `/v1/booking/list`
@@ -548,6 +550,7 @@ Authorization: Bearer {JWT_TOKEN}
 }
 ```
 <br>
+
 ## <span style="color:#FF6600;">Get voucher data</span>
 
 ### <span style="color:#0f6ab4;">`GET`</span> `/v1/voucher/{voucher_id}/details`
@@ -826,6 +829,7 @@ Authorization: Bearer {JWT_TOKEN}
 1. To cancel a booking is mandatory to know the booking id (E.g. 685435) and then proceed.
 
 <br>
+
 ### <span style="color:#FF6600;">3. Workflow to list bookings</a>
 
 1. To list bookings you can filter with this available fields:
@@ -842,6 +846,7 @@ Authorization: Bearer {JWT_TOKEN}
 | to              | date YY-mm-dd       | to                                                          |
 
 <br>
+
 ## <span style="color:#FF6600;">Generate entry codes</span>
 
 Some car parks require the generation of access codes (QR Code, Barcode...) to gain access. Parclick handles the following types of access codes:
@@ -851,34 +856,41 @@ Some car parks require the generation of access codes (QR Code, Barcode...) to g
 This QR code is used in SAEMES car parks and uses the following syntax to generate it.
 
 <br>
+
 #### <span style="color:#FF6600;">`barcode_1`</a>
 
 This barcode (type code39) is used in Parkia car parks and uses the following syntax to generate it.
 
 <br>
+
 #### <span style="color:#FF6600;">`qrcode_2`</a>
 
 This QR code is used in San Marcos car parks and uses the following syntax to generate it.
 
 <br>
+
 #### <span style="color:#FF6600;">`barcode_2`</a>
 
 This barcode (type code128) is used in Marco Polo car parks and uses the following syntax to generate it.
 
 <br>
+
 #### <span style="color:#FF6600;">`code_1`</a>
 
 This code is used in AENA car parks and uses the following syntax to generate it. This provider require the licence plate to identify and gain access.
 
 <br>
+
 #### <span style="color:#FF6600;">`code_2`</a>
 
 This code is used in Firenze Parcheggi car parks and uses the following syntax to generate it. This provider require the booking ID to identify and gain access.
 
 <br>
+
 #### <span style="color:#FF6600;">`code_3`</a>
 
 This code is used in Copark car parks and uses the following syntax to generate it. This provider require the external code to identify and gain access.
 
 <br>
+
 <p style="color:#999999;text-align:center;">2019 Copyright Parclick S.L. All rights reserved.</p>
