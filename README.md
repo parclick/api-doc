@@ -91,7 +91,7 @@ This method allows third party systems to be authenticated and receive a key (to
 | refresh_token   | string         | user id authenticated                |
 
 
-<details><summary>Show response 200 Ok</summary>
+<details><summary style="font-size:10px;color:#FF6600;"> Show response 200 Ok </summary>
 <p>
 
 ```javascript
