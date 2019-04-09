@@ -1,10 +1,9 @@
 ![alt text](https://static.parclick.com/assets/img/logotipo-parclick.svg)
 
-<p style="color:#999999;text-align:right;">Document version 1.2.0</div>
-</p>
+<p style="color:#999999;text-align:right;">Document version 1.2.0</p>
 
 # <span style="color:#FF6600;">Parclick - API Reference v3.2</span>
-#### <span style="color:#999;">TECHNICAL DOCUMENTATION</a>
+#### <span style="color:#999;">TECHNICAL DOCUMENTATION</span>
 
 
 
@@ -30,7 +29,7 @@
 
 <br>
 
-### <a name="description"></a><span style="color:#FF6600;">API Description</a>
+### <a name="description"></a><span style="color:#FF6600;">API Description</span>
 
 #### Authentication
 Parclick gives a REST API [^1](#1) with some endpoints that require authentication. Security is based on JSON Web Token (JWT) [^2](#2) and is obtained through a successful authentication (view **/v1/login** endpoint). In the protected endpoints this token must be included in the header request as follow:
