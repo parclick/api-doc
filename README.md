@@ -212,13 +212,6 @@ This method returns a list of car parks close to a location and based on the par
 
 **200 Ok**
 
-| Parameters      | Type           | Required                             |
-| --------------- |:-------------- | :----------------------------------- |
-| token           | string         | Token (expires in 1 hour)            |
-| refresh_token   | string         | Token to refresh current valid token |                       
-| refresh_token   | string         | user id authenticated                |
-
-
 <details><summary>Show response 200 Ok</summary>
 <p>
 	
