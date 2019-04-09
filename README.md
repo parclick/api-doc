@@ -3339,7 +3339,7 @@ This method returns parking information, products available and required fields 
 
 **401 Bad request -  when parameters are missing or incorrect**
 
-<details><summary>Show response 401 Dad request</summary>
+<details><summary>Show response 401 Bad request</summary>
 <p>
 
 ```javascript
@@ -3811,6 +3811,17 @@ Authorization: Bearer {JWT_TOKEN}
 
 **200 Ok**
 
+<details><summary>Show response 200 Ok</summary>
+<p>
+
+```json
+{
+
+}
+```
+
+</p>
+</details>
 
 **401 Unauthorized**
 
