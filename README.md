@@ -11,7 +11,7 @@
 
 ### <span style="color:#FF6600;">Content table</span>
 
-1. API description
+1. [API description](#description)
 2. Login
 3. Refresh token
 4. List parkings
@@ -29,7 +29,7 @@
 
 <br>
 
-### <span style="color:#FF6600;">API Description</a>
+### <a name="description"></a><span style="color:#FF6600;">API Description</a>
 
 #### Authentication
 Parclick gives a REST API[^1] with some endpoints that require authentication. Security is based on JSON Web Token (JWT)[^2] and is obtained through a successful authentication (view **/v1/login** endpoint). In the protected endpoints this token must be included in the header request as follow:
