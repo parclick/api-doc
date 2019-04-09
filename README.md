@@ -111,8 +111,6 @@ This method allows third party systems to be authenticated and receive a key (to
 | code            | string          | http response code value     |
 | message         | string          | error description            |
 
-## collapsible markdown?
-
 <details><summary>Show response 401 Unauthorized</summary>
 <p>
 
@@ -160,7 +158,6 @@ This method allows third party systems to refresh a valid token.
     "refresh_token": "7635bc6f8970fa9042297a692dfba629a346dff4873fd34ddcea82c4be74e738414164e69d455ecafc29b5d5082bb2bff08082ec15f62dfc2a2bd47701eb7976"
 }
 ```
-
 </p>
 </details>
 
@@ -174,6 +171,7 @@ This method allows third party systems to refresh a valid token.
 
 <details><summary>Show response 401 Unauthorized</summary>
 <p>
+	
 ```javascript
 {
 	"code": 401,
@@ -223,6 +221,7 @@ This method returns a list of car parks close to a location and based on the par
 
 <details><summary>Show response 200 Ok</summary>
 <p>
+	
 ```javascript
 {
     "page": 1,
@@ -1856,6 +1855,7 @@ This method returns a list of car parks close to a location and based on the par
 
 <details><summary>Show response 400 Bad request</summary>
 <p>
+
 ```javascript
 {
     "code": 400,
@@ -1920,6 +1920,7 @@ This method returns parking information, products available and required fields 
 
 <details><summary>Show response 200 Ok</summary>
 <p>
+
 ```javascript
 {
     "id": 1047,
@@ -3338,6 +3339,7 @@ This method returns parking information, products available and required fields 
         ]
     }
 }```
+
 </p>
 </details>
 
@@ -3347,8 +3349,6 @@ This method returns parking information, products available and required fields 
 <details><summary>Show response 401 Dad request</summary>
 <p>
 
-</p>
-</details>
 ```javascript
 {
     "code": 400,
@@ -3365,6 +3365,9 @@ This method returns parking information, products available and required fields 
     }
 }
 ```
+
+</p>
+</details>
 
 <br>
 
@@ -3392,6 +3395,7 @@ This method returns the best product available on selected car park based on the
 
 <details><summary>Show response 200 Ok</summary>
 <p>
+	
 ```javascript
 {
     "page": 1,
@@ -3488,6 +3492,7 @@ This method returns the best product available on selected car park based on the
 
 <details><summary>Show response 200 No results</summary>
 <p>
+	
 ```javascript
 
 {  
@@ -3519,6 +3524,7 @@ This method returns the best product available on selected car park based on the
    }
 }
 ```
+
 </p>
 </details>
 
@@ -3527,6 +3533,7 @@ This method returns the best product available on selected car park based on the
 
 <details><summary>Show response 401 Bad request</summary>
 <p>
+	
 ```javascript
 {
 	{  
@@ -3574,6 +3581,7 @@ This method returns the best product available on selected car park based on the
 	}
 }
 ```
+
 </p>
 </details>
 
@@ -3599,6 +3607,7 @@ This method returns the vehicle type available. The vihicle id is required to ma
 
 <details><summary>Show response 200 Ok</summary>
 <p>
+	
 ```javascript
 {
     "page": 1,
@@ -3664,6 +3673,7 @@ This method returns the vehicle type available. The vihicle id is required to ma
     }
 }
 ```
+
 </p>
 </details>
 
@@ -3672,6 +3682,7 @@ This method returns the vehicle type available. The vihicle id is required to ma
 
 <details><summary>Show response 401 Bad request</summary>
 <p>
+	
 ```javascript
 {
     "code": 400,
@@ -3698,6 +3709,7 @@ This method returns the vehicle type available. The vihicle id is required to ma
     }
 }
 ```
+
 </p>
 </details>
 
@@ -3749,6 +3761,7 @@ Authorization: Bearer {JWT_TOKEN}
 
 <details><summary>Show response 200 Ok</summary>
 <p>
+
 ```javascript
 {
     "booking_id": 805097,
@@ -3756,6 +3769,7 @@ Authorization: Bearer {JWT_TOKEN}
     "voucher_code": "L5N9675",
 }
 ```
+
 </p>
 </details>
 
@@ -3770,12 +3784,14 @@ Authorization: Bearer {JWT_TOKEN}
 
 <details><summary>Show response 401 Unauthorized</summary>
 <p>
+
 ```javascript
 {
 	"code": 401,
 	"message": "Bad credentials"
 }
 ```
+
 </p>
 </details>
 
@@ -3812,12 +3828,14 @@ Authorization: Bearer {JWT_TOKEN}
 
 <details><summary>Show response 401 Unauthorized</summary>
 <p>
+
 ```javascript
 {
 	"code": 401,
 	"message": "Bad credentials"
 }
 ```
+
 </p>
 </details>
 
@@ -3849,6 +3867,7 @@ Authorization: Bearer {JWT_TOKEN}
 
 <details><summary>Show response 200 Ok</summary>
 <p>
+
 ```javascript
 {
 	"results": [
@@ -3868,6 +3887,7 @@ Authorization: Bearer {JWT_TOKEN}
     ]
 }
 ```
+
 </p>
 </details>
 
@@ -3881,12 +3901,14 @@ Authorization: Bearer {JWT_TOKEN}
 
 <details><summary>Show response 401 Bad credentials</summary>
 <p>
+
 ```javascript
 {
 	"code": 401,
 	"message": "Bad credentials"
 }
 ```
+
 </p>
 </details>
 
@@ -3948,6 +3970,7 @@ Authorization: Bearer {JWT_TOKEN}
 
 <details><summary>Show response 200 Ok</summary>
 <p>
+
 ```javascript
 {
     "user_first_name": "test13",
@@ -3996,6 +4019,7 @@ Authorization: Bearer {JWT_TOKEN}
     }
 }
 ```
+
 </p>
 </details>
 
@@ -4016,6 +4040,7 @@ Authorization: Bearer {JWT_TOKEN}
 	"message": "Bad credentials"
 }
 ```
+
 </p>
 </details>
 
@@ -4040,6 +4065,7 @@ As a first step and part of the development by the integrator it is necessary to
 
 <details><summary>Show response 200 Ok</summary>
 <p>
+
 ```javascript
 {    
     "_embedded":{  
@@ -4075,6 +4101,7 @@ As a first step and part of the development by the integrator it is necessary to
    }
 }
 ```
+
 </p>
 </details>
 
@@ -4083,6 +4110,7 @@ As a first step and part of the development by the integrator it is necessary to
 
 <details><summary>Show response 200 Ok</summary>
 <p>
+
 ```javascript
 {  
    "page":1,
@@ -4182,6 +4210,7 @@ As a first step and part of the development by the integrator it is necessary to
    }
 }
 ```
+
 </p>
 </details>
 
