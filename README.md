@@ -87,7 +87,7 @@ This method allows third party systems to be authenticated and receive a key (to
 | --------------- |:-------------- | :----------------------------------- |
 | token           | string         | token (expires in 1 hour)            |
 | refresh_token   | string         | token to refresh current valid token |                       
-| refresh_token   | string         | user id authenticated                |
+| id .            | string         | user id authenticated                |
 
 
 <details><summary style="font-size:10px;color:#FF6600;"> Show response 200 Ok </summary>
