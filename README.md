@@ -3815,7 +3815,7 @@ Authorization: Bearer {JWT_TOKEN}
 
 ```json
 {
-
+    "success": true
 }
 ```
 
@@ -3832,10 +3832,27 @@ Authorization: Bearer {JWT_TOKEN}
 <details><summary>Show response 401 Unauthorized</summary>
 <p>
 
-```javascript
+```json
 {
     "code": 401,
     "message": "Bad credentials"
+}
+```
+
+**404 Not Found**
+
+| Parameters      | Type            | Required                     |
+| --------------- |:---------------:| -----------------------------|
+| code            | string          | http response code value     |
+| message         | string          | error description            |
+
+<details><summary>Show response 404 Not Found</summary>
+<p>
+
+```json
+{
+    "code": 404,
+    "message": "Not Found"
 }
 ```
 
@@ -3871,7 +3888,7 @@ Authorization: Bearer {JWT_TOKEN}
 <details><summary>Show response 200 Ok</summary>
 <p>
 
-```javascript
+```json
 {
 	"results": [
         {
@@ -3905,7 +3922,7 @@ Authorization: Bearer {JWT_TOKEN}
 <details><summary>Show response 401 Bad credentials</summary>
 <p>
 
-```javascript
+```json
 {
     "code": 401,
     "message": "Bad credentials"
@@ -3974,7 +3991,7 @@ Authorization: Bearer {JWT_TOKEN}
 <details><summary>Show response 200 Ok</summary>
 <p>
 
-```javascript
+```json
 {
     "user_first_name": "test13",
     "user_last_name": "Uno13",
@@ -4037,7 +4054,7 @@ Authorization: Bearer {JWT_TOKEN}
 <details><summary>Show response 401 Unauthorized</summary>
 <p>
 
-```javascript
+```json
 {
     "code": 401,
     "message": "Bad credentials"
@@ -4069,7 +4086,7 @@ As a first step and part of the development by the integrator it is necessary to
 <details><summary>Show response 200 Ok</summary>
 <p>
 
-```javascript
+```json
 {    
     "_embedded":{  
       "fieldsRequested":[  
@@ -4114,7 +4131,7 @@ As a first step and part of the development by the integrator it is necessary to
 <details><summary>Show response 200 Ok</summary>
 <p>
 
-```javascript
+```json
 {  
    "page":1,
    "limit":10,
