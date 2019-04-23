@@ -3836,6 +3836,8 @@ Authorization: Bearer {JWT_TOKEN}
     "message": "Bad credentials"
 }
 ```
+</p>
+</details>
 
 **404 Not Found**
 
