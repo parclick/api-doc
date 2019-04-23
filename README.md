@@ -3376,7 +3376,7 @@ This method returns the best product available on selected car park based on the
 | group           | string                | true     | Property groups to be returned **bestpass**        |null            |
 | locale          | string                | true     | Language in which the information will be returned |en_GB           | 
 | parking         | integer               | true     | Parking identificator                              |null            |
-| vehicleType     | integer               | true     | Type of vehicle that the customer wants to park    |1               |
+| vehicleType     | integer               | true     | vehicle type [1 car, 2 van, 3 caravan, 4 bus, 5 truck, 6 motorbike, 7 small truck]    |1               |
 | from            | date yyyy-MM-dd HH:mm | true     | Booking start date                                 |null            |
 | to              | date yyyy-MM-dd HH:mm | true     | Booking end date                                   |null            |
 
