@@ -194,7 +194,7 @@ This method returns a list of car parks close to a location and based on the par
 
 | Parameters      | Type                   | Required | Description                                                                       | Default             |
 | --------------- |:---------------------- | -------- | --------------------------------------------------------------------------------- |-------------------- |
-| locale          | string                 | true     | language                                                                          | en_GB               |
+| locale          | string                 | true     | Language in which the information will be returned                                | en_GB               |
 | group           | string                 | true     | **search**                                                                        | null                |
 | limit           | integer                | true     | total number of records [1-200]                                                   | 200                 |
 | from            | date yyyy-MM-dd HH:mm  | true     | booking start date                                                                | null                |
@@ -202,8 +202,8 @@ This method returns a list of car parks close to a location and based on the par
 | latitude        | float                  | true     | valid latitude in which to look for                                               | null                |
 | longitude       | float                  | true     | valid longitude in which to look for                                              | null                |
 | radius          | integer                | false    | search radius                                                                     | null                |
-| vehicleType     | integer                | true     | vehicle type [1 car, 2 van, 3 caravan, 4 bus, 5 truck, 6 motorbike, 7 small truck]| null                |
-| freemium        | bool                   | false    | is freemium                                                                       | false                |
+| vehicleType     | integer                | true     | type of vehicle you wish to park [1 car, 2 van, 3 caravan, 4 bus, 5 truck, 6 motorbike, 7 small truck]| null                |
+| freemium        | bool                   | false    | car parks where reservations cannot be booked                                     | false                |
 
 
 
@@ -3376,7 +3376,7 @@ This method returns the best product available on selected car park based on the
 | group           | string                | true     | Property groups to be returned **bestpass**        |null            |
 | locale          | string                | true     | Language in which the information will be returned |en_GB           | 
 | parking         | integer               | true     | Parking identificator                              |null            |
-| vehicleType     | integer               | true     | vehicle type [1 car, 2 van, 3 caravan, 4 bus, 5 truck, 6 motorbike, 7 small truck]    |1               |
+| vehicleType     | integer               | true     | type of vehicle you wish to park [1 car, 2 van, 3 caravan, 4 bus, 5 truck, 6 motorbike, 7 small truck]    |1               |
 | from            | date yyyy-MM-dd HH:mm | true     | Booking start date                                 |null            |
 | to              | date yyyy-MM-dd HH:mm | true     | Booking end date                                   |null            |
 
@@ -3728,7 +3728,7 @@ Authorization: Bearer {JWT_TOKEN}
 | product         | integer               | true     | product id               | null                   |
 | firstName       | string                | true     | user fisrt name          | null                   |
 | lastName        | string                | true     | user last name           | null                   |
-| from            | date yyyy-MM-dd HH:mm | true     | booking art date         | null                   |
+| from            | date yyyy-MM-dd HH:mm | true     | booking start date       | null                   |
 | to              | date yyyy-MM-dd HH:mm | true     | booking end date         | null                   |
 | brand           | string                | false    | vehicle brand            | null                   |
 | model           | string                | false    | vehicle model            | null                   |
@@ -3872,13 +3872,13 @@ Authorization: Bearer {JWT_TOKEN}
 
 ### _Request:_
 
-| Parameters      | Type                  | Required | Default           | Description  |
-| --------------- |:--------------------- | -------- | ----------------- | ------------ | 
-| group           | string                | true     | null [booking]    | **booking**  |
-| email           | string                | false    | null              | valid email  |
-| voucher_code    | string                | false    | null              | voucher code |
-| from            | date yyyy-MM-dd HH:mm | false    | null              | date         |
-| to              | date yyyy-MM-dd HH:mm | false    | null              | date         |
+| Parameters      | Type                  | Required | Default          | Description       |
+| --------------- |:--------------------- | -------- | ---------------- | ----------------- |
+| group           | string                | true     | null [booking]   | **booking**       |
+| email           | string                | false    | null             | user email        |
+| voucher_code    | string                | false    | null             | voucher code      |
+| from            | date yyyy-MM-dd HH:mm | false    | null             | booking start date|
+| to              | date yyyy-MM-dd HH:mm | false    | null             | booking end date  |
 
 
 ### _Response:_
@@ -3946,10 +3946,10 @@ Authorization: Bearer {JWT_TOKEN}
 
 ### _Request:_
 
-| Parameters      | Type                | Required | Default  | Description              |
-| --------------- |:--------------------| ---------| ---------| ------------------------ |
-| voucher_id      | integer             | true     | null     | voucher id               |
-| locale          | string              | false    | es_ES    | language to receive data |
+| Parameters      | Type                | Required | Default  | Description                                        |
+| --------------- |:--------------------| ---------| ---------| -------------------------------------------------- |
+| voucher_id      | integer             | true     | null     | voucher id                                         |
+| locale          | string              | false    | es_ES    | Language in which the information will be returned |
 
 
 ### _Response:_
@@ -3965,8 +3965,8 @@ Authorization: Bearer {JWT_TOKEN}
 | product                  | string           | product description i.e. "MULTIPASS 2 horas" |
 | product_warning          | string           | warning description                          | 
 | booking_state            | string           | status (CONFIRMED,CANCELLED,PENDING)         |
-| from                     | string d/m/Y H:i | start date                                   |
-| to                       | string d/m/Y H:i | end date                                     |
+| from                     | string d/m/Y H:i | booking start date                           |
+| to                       | string d/m/Y H:i | booking end date                             |
 | parking_name             | string           | parking name                                 |
 | parking_address          | string           | parking address                              |
 | parking_zip              | string           | parking zip                                  |
@@ -3982,7 +3982,7 @@ Authorization: Bearer {JWT_TOKEN}
 | amount                   | float            | total amount                                 |
 | gross_price              | float            | gross price                                  |
 | vat_price                | float            | vat price                                    |
-| vehicle_type             | string           | vehicle type                                 |
+| vehicle_type             | string           | type of vehicle you wish to park [1 car, 2 van, 3 caravan, 4 bus, 5 truck, 6 motorbike, 7 small truck]             |
 | external_code            | string - integer | booking external code                        |
 | external\_code\_type     | string           | external code type                           |
 | external\_code\_tech     | string           | external code tech                           |
@@ -4249,12 +4249,12 @@ As a first step and part of the development by the integrator it is necessary to
 | Parameters      | Type                | Description                                                 |
 | --------------- |:------------------- | ----------------------------------------------------------- |
 | group           | string              | **list** to show details                                    |
-| email           | string              | search by email in whole or in part                         |
+| email           | string              | search by useremail in whole or in part                     |
 | status          | string              | booking status available: not_modified, confirmed, canceled |
 | firstName       | string              | string to find                                              |
 | lastName        | string              | string to find                                              |
-| from            | date YY-mm-dd       | from                                                        |
-| to              | date YY-mm-dd       | to                                                          |
+| from            | date YY-mm-dd       | booking start date                                          |
+| to              | date YY-mm-dd       | booking end date                                            |
 
 <br>
 
