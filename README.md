@@ -3705,8 +3705,6 @@ This method returns the vehicle type available. The vihicle id is required to ma
 </p>
 </details>
 
-
-
 <br>
 
 ## <a name="create_reservation"></a><span style="color:#FF6600;">Create reservation</span>
