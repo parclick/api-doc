@@ -4086,8 +4086,8 @@ As a first step and part of the development by the integrator it is necessary to
 
 
 1. Get the parking id and timespan (from, to)
-2. Get the required fields for the selected parking using the parking endpoint  `/v1/parking/{parking_id}?locale=en_GB&group=detail` In the response, the _embedded node display the required fields for the seleted parking. 
-3. Generate the token by calling the bestpass endpoint `/v1/parking/bestpass`. In the response get the provided token `2338bb72051ae11083a20cd94f3b3183ede3333708b1bc7b50e6af509100ef14` for each product available
+2. Get the required fields for the selected parking using the parking endpoint  `/v1/parking/{parking_id}/details?locale=en_GB&group=detail` In the response, the _embedded node display the required fields for the seleted parking. 
+3. Generate the token by calling the bestpass endpoint `/v1/pass/details`. In the response get the provided token `2338bb72051ae11083a20cd94f3b3183ede3333708b1bc7b50e6af509100ef14` for each product available
 4. Collect all required fields (email, token, product, firstName, lastName, from, to) to fill the New endpoint `v1/booking/new`
 
 *Parking response, required fields example*
