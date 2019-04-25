@@ -185,10 +185,13 @@ This method allows third party systems to refresh a valid token.
 
 ## <a name="list_parkings"></a><span style="color:#FF6600;">List parkings</span>
 
-### <span style="color:#0f6ab4;">`GET`</span> `/v1/parking`
+### <span style="color:#0f6ab4;">`GET`</span> `/v1/parking/list`
 
 
-This method returns a list of car parks close to a location and based on the parameters used. In case you select one the **id** let get the parking details using the **get parking** endpoint.
+This method returns a list of car parks close to a location and based on the parameters used. In case you select one the **id** let get the parking details using the **get parking** endpoint. This method is secured via JWT token.
+
+### _Header:_
+Authorization: Bearer {JWT_TOKEN}
 
 ### _Request:_
 
@@ -1893,9 +1896,12 @@ This method returns a list of car parks close to a location and based on the par
 
 ## <a name="get_parking"></a><span style="color:#FF6600;">Get parking</span>
 
-### <span style="color:#0f6ab4;">`GET`</span> `/v1/parking/{parking_id}`
+### <span style="color:#0f6ab4;">`GET`</span> `/v1/parking/{parking_id}/details`
 
 This method returns parking information, products available and required fields in the **fieldsRequested** array key to make a reservation.
+
+### _Header:_
+Authorization: Bearer {JWT_TOKEN}
 
 ### _Request:_
 
@@ -3365,9 +3371,12 @@ This method returns parking information, products available and required fields 
 
 ## <a name="list_products"></a><span style="color:#FF6600;">List products</span>
 
-### <span style="color:#0f6ab4;">`GET`</span> `/v1/pass`
+### <span style="color:#0f6ab4;">`GET`</span> `/v1/pass/details`
 
-This method returns the best product available on selected car park based on the stay provided.
+This method returns the best product available on selected car park based on the stay provided. The token provided is mandatory to make a reservation.
+
+### _Header:_
+Authorization: Bearer {JWT_TOKEN}
 
 ### _Request:_
 
@@ -3890,7 +3899,7 @@ Authorization: Bearer {JWT_TOKEN}
 
 ```json
 {
-	"results": [
+	"items": [
         {
             "id": 805081,
             "createdAt": "2019-03-11T10:06:01+0000",
