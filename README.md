@@ -3592,7 +3592,7 @@ Authorization: Bearer {JWT_TOKEN}
 
 ### <span style="color:#0f6ab4;">`GET`</span> `/v1/vehicle-type`
 
-This method returns the vehicle type available. The vihicle id is required to make a reservation.
+This method returns the vehicle type available. The vehicle id is required to make a reservation.
 
 ### _Request:_
 
