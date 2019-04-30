@@ -3389,6 +3389,7 @@ Authorization: Bearer {JWT_TOKEN}
 
 <details><summary style="color:#FF6600;">Show response 200 Ok</summary>
 <p>
+<pre>
 {
     "page": 1,
     "limit": 10,
@@ -3663,6 +3664,7 @@ This method returns the vehicle type available. The vehicle id is required to ma
 </p>
 </details>
 
+<br>
 
 **401 Bad request -  when parameters are missing or incorrect**
 
