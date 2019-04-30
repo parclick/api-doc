@@ -178,7 +178,6 @@ This method allows third party systems to refresh a valid token.
 </p>
 </details>
 
-
 <br>
 
 ## <a name="list_parkings"></a><span style="color:#FF6600;">List parkings</span>
