@@ -99,7 +99,7 @@ This method allows third party systems to be authenticated and receive a key (to
     "refresh_token": "81a2467f1093aeb96d83b1c46dfe3ad0e0f341f4190f73c17a37351e41693c546d70a01b01671f80962112a7a4090c37caa397161da87f69cd334bc460cae424",
     "id": 600116
 }
-
+```
 </pre>
 </details>
 
