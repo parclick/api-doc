@@ -158,6 +158,7 @@ This method allows third party systems to refresh a valid token.
 </p>
 </details>
 
+<br>
 
 **401 Unauthorized**
 
@@ -1831,10 +1832,11 @@ Authorization: Bearer {JWT_TOKEN}
         }
     }
 }
-```
-
+</pre>
 </p>
 </details>
+
+<br>
 
 **400 Bad request -  when parameters are missing or incorrect**
 
