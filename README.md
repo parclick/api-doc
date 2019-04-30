@@ -36,6 +36,7 @@ Parclick gives a REST API [^1](#1) with some endpoints that require authenticati
 | Key               | Value                                      |
 | ----------------- | ------------------------------------------ |
 | Authorization     | Bearer eyJhbGciOiJSUzI1NiJ9.eyJyb2xlcyI... |
+| X-thirdparty-auth | kjhawdjh3gJiiHkqjhw787hawdk09HjhaKkdhawdad |
 
 #### Environments
 Parclick has two environments: [**development**](https://pre.api.parclick.com) (https://pre.api.parclick.com) and [**production**](https://api.parclick.com) (https://api.parclick.com).
@@ -112,16 +113,12 @@ This method allows third party systems to be authenticated and receive a key (to
 
 <details><summary>Show response 401 Unauthorized</summary>
 <p>
-
-```json
 <pre>
 {
     "code": 401,
     "message": "Bad credentials"
 }
 </pre>
-```
-
 </p>
 </details>
 
