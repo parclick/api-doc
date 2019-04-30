@@ -91,7 +91,7 @@ This method allows third party systems to be authenticated and receive a key (to
 
 
 <details><summary style="font-size:10px;color:#FF6600;"> Show response 200 Ok </summary>
-<p>
+<pre>
 
 ```json
 {
@@ -100,7 +100,7 @@ This method allows third party systems to be authenticated and receive a key (to
     "id": 600116
 }
 
-</p>
+</pre>
 </details>
 
 **401 Unauthorized**
