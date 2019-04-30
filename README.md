@@ -211,10 +211,9 @@ Authorization: Bearer {JWT_TOKEN}
 
 **200 Ok**
 
-<details><summary>Show response 200 Ok</summary>
+<details><summary style="color:#FF6600;">Show response 200 Ok</summary>
 <p>
-	
-```json
+<pre>
 {
     "page": 1,
     "limit": 10,
@@ -1847,8 +1846,7 @@ Authorization: Bearer {JWT_TOKEN}
 
 <details><summary>Show response 400 Bad request</summary>
 <p>
-
-```json
+<pre>
 {
     "code": 400,
     "message": "Validation Failed",
@@ -1884,8 +1882,7 @@ Authorization: Bearer {JWT_TOKEN}
         }
     }
 }
-```
-
+</pre>
 </p>
 </details>
 
@@ -1913,10 +1910,9 @@ Authorization: Bearer {JWT_TOKEN}
 
 **200 Ok**
 
-<details><summary>Show response 200 Ok</summary>
+<details><summary style="color:#FF6600;">Show response 200 Ok</summary>
 <p>
-
-```json
+	<pre>
 {
     "id": 1047,
     "covered": false,
@@ -3333,18 +3329,17 @@ Authorization: Bearer {JWT_TOKEN}
             }
         ]
     }
-}```
-
+}
+</pre>
 </p>
 </details>
 
 
 **401 Bad request -  when parameters are missing or incorrect**
 
-<details><summary>Show response 401 Bad request</summary>
+<details><summary style="color:#FF6600;">Show response 401 Bad request</summary>
 <p>
-
-```json
+<pre>
 {
     "code": 400,
     "message": "Validation Failed",
@@ -3359,8 +3354,7 @@ Authorization: Bearer {JWT_TOKEN}
         }
     }
 }
-```
-
+</pre>
 </p>
 </details>
 
@@ -3391,10 +3385,8 @@ Authorization: Bearer {JWT_TOKEN}
 
 **200 Ok**
 
-<details><summary>Show response 200 Ok</summary>
+<details><summary style="color:#FF6600;">Show response 200 Ok</summary>
 <p>
-	
-```json
 {
     "page": 1,
     "limit": 10,
@@ -3480,8 +3472,7 @@ Authorization: Bearer {JWT_TOKEN}
         "vehicleType": "1"
     }
 }
-```
-
+</pre>
 </p>
 </details>
 
@@ -3490,9 +3481,7 @@ Authorization: Bearer {JWT_TOKEN}
 
 <details><summary>Show response 200 No results</summary>
 <p>
-	
-```javascript
-
+<pre>
 {  
    "page":1,
    "limit":10,
@@ -3521,18 +3510,16 @@ Authorization: Bearer {JWT_TOKEN}
       }
    }
 }
-```
-
+</pre>
 </p>
 </details>
 
 
 **401 Bad request -  when parameters are missing or incorrect**
 
-<details><summary>Show response 401 Bad request</summary>
+<details><summary style="color:#FF6600;">Show response 401 Bad request</summary>
 <p>
-	
-```json
+<pre>
 {
 	{  
 	   "code":400,
@@ -3578,8 +3565,7 @@ Authorization: Bearer {JWT_TOKEN}
 	   }
 	}
 }
-```
-
+</pre>
 </p>
 </details>
 
@@ -3603,10 +3589,9 @@ This method returns the vehicle type available. The vehicle id is required to ma
 
 **200 Ok**
 
-<details><summary>Show response 200 Ok</summary>
+<details><summary style="color:#FF6600;">Show response 200 Ok</summary>
 <p>
-	
-```json
+<pre>
 {
     "page": 1,
     "limit": 10,
@@ -3670,8 +3655,7 @@ This method returns the vehicle type available. The vehicle id is required to ma
         }
     }
 }
-```
-
+</pre>
 </p>
 </details>
 
@@ -3680,8 +3664,7 @@ This method returns the vehicle type available. The vehicle id is required to ma
 
 <details><summary>Show response 401 Bad request</summary>
 <p>
-	
-```json
+<pre>
 {
     "code": 400,
     "message": "Validation Failed",
@@ -3706,8 +3689,7 @@ This method returns the vehicle type available. The vehicle id is required to ma
         }
     }
 }
-```
-
+</pre>
 </p>
 </details>
 
@@ -3755,17 +3737,15 @@ Authorization: Bearer {JWT_TOKEN}
 | voucher_id      | integer             | new booking identifier (required to cancel) |
 | voucher_code    | string              | new booking voucher                         |
 
-<details><summary>Show response 200 Ok</summary>
+<details><summary style="color:#FF6600;">Show response 200 Ok</summary>
 <p>
-
-```json
+<pre>
 {
     "booking_id": 805097,
     "voucher_id": 685447,
     "voucher_code": "L5N9675",
 }
-```
-
+</pre>
 </p>
 </details>
 
@@ -3778,16 +3758,14 @@ Authorization: Bearer {JWT_TOKEN}
 | code            | string          | http response code value     |
 | message         | string          | error description            |
 
-<details><summary>Show response 401 Unauthorized</summary>
+<details><summary style="color:#FF6600;">Show response 401 Unauthorized</summary>
 <p>
-
-```json
+<pre>
 {
 	"code": 401,
 	"message": "Bad credentials"
 }
-```
-
+</pre>
 </p>
 </details>
 
@@ -3814,15 +3792,13 @@ Authorization: Bearer {JWT_TOKEN}
 
 **200 Ok**
 
-<details><summary>Show response 200 Ok</summary>
+<details><summary style="color:#FF6600;">Show response 200 Ok</summary>
 <p>
-
-```json
+<pre>
 {
     "success": true
 }
-```
-
+</pre>
 </p>
 </details>
 
@@ -3833,15 +3809,14 @@ Authorization: Bearer {JWT_TOKEN}
 | code            | string          | http response code value     |
 | message         | string          | error description            |
 
-<details><summary>Show response 401 Unauthorized</summary>
+<details><summary style="color:#FF6600;">Show response 401 Unauthorized</summary>
 <p>
-
-```json
+<pre>
 {
     "code": 401,
     "message": "Bad credentials"
 }
-```
+</pre>
 </p>
 </details>
 
@@ -3852,16 +3827,14 @@ Authorization: Bearer {JWT_TOKEN}
 | code            | string          | http response code value     |
 | message         | string          | error description            |
 
-<details><summary>Show response 404 Not Found</summary>
+<details><summary style="color:#FF6600;">Show response 404 Not Found</summary>
 <p>
-
-```json
+<pre>
 {
     "code": 404,
     "message": "Not Found"
 }
-```
-
+</pre>
 </p>
 </details>
 
@@ -3891,10 +3864,9 @@ Authorization: Bearer {JWT_TOKEN}
 
 **200 Ok**
 
-<details><summary>Show response 200 Ok</summary>
+<details><summary style="color:#FF6600;">Show response 200 Ok</summary>
 <p>
-
-```json
+<pre>
 {
 	"items": [
         {
@@ -3912,8 +3884,7 @@ Authorization: Bearer {JWT_TOKEN}
         },
     ]
 }
-```
-
+</pre>
 </p>
 </details>
 
@@ -3925,16 +3896,14 @@ Authorization: Bearer {JWT_TOKEN}
 | code            | string          | http response code value     |
 | message         | string          | error description            |
 
-<details><summary>Show response 401 Bad credentials</summary>
+<details><summary style="color:#FF6600;">Show response 401 Bad credentials</summary>
 <p>
-
-```json
+<pre>
 {
     "code": 401,
     "message": "Bad credentials"
 }
-```
-
+</pre>
 </p>
 </details>
 
@@ -3994,10 +3963,9 @@ Authorization: Bearer {JWT_TOKEN}
 | external\_code\_tech     | string           | external code tech                           |
 | extra_fields             | array            | all extra fields in booking                  |
 
-<details><summary>Show response 200 Ok</summary>
+<details><summary style="color:#FF6600;">Show response 200 Ok</summary>
 <p>
-
-```json
+<pre>
 {
     "user_first_name": "test13",
     "user_last_name": "Uno13",
@@ -4044,8 +4012,7 @@ Authorization: Bearer {JWT_TOKEN}
         }
     }
 }
-```
-
+</pre>
 </p>
 </details>
 
@@ -4057,16 +4024,14 @@ Authorization: Bearer {JWT_TOKEN}
 | code            | string          | http response code value     |
 | message         | string          | error description            |
 
-<details><summary>Show response 401 Unauthorized</summary>
+<details><summary style="color:#FF6600;">Show response 401 Unauthorized</summary>
 <p>
-
-```json
+<pre>
 {
     "code": 401,
     "message": "Bad credentials"
 }
-```
-
+</pre>
 </p>
 </details>
 
@@ -4089,10 +4054,9 @@ As a first step and part of the development by the integrator it is necessary to
 
 *Parking response, required fields example*
 
-<details><summary>Show response 200 Ok</summary>
+<details><summary style="color:#FF6600;">Show response 200 Ok</summary>
 <p>
-
-```json
+<pre>
 {    
     "_embedded":{  
       "fieldsRequested":[  
@@ -4126,18 +4090,16 @@ As a first step and part of the development by the integrator it is necessary to
       ]
    }
 }
-```
-
+</pre>
 </p>
 </details>
 
 
 *Get token via API pass*
 
-<details><summary>Show response 200 Ok</summary>
+<details><summary style="color:#FF6600;">Show response 200 Ok</summary>
 <p>
-
-```json
+<pre>
 {  
    "page":1,
    "limit":10,
@@ -4235,8 +4197,7 @@ As a first step and part of the development by the integrator it is necessary to
       }
    }
 }
-```
-
+</pre>
 </p>
 </details>
 
