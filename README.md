@@ -90,7 +90,7 @@ This method allows third party systems to be authenticated and receive a key (to
 | id              | string         | user id authenticated                |
 
 
-<details><summary style="font-size:10px;color:#FF6600;"> Show response 200 Ok </summary>
+<details><summary style="color:#FF6600;"> Show response 200 Ok </summary>
 <pre>
 
 ```json
@@ -114,10 +114,12 @@ This method allows third party systems to be authenticated and receive a key (to
 <p>
 
 ```json
+<pre>
 {
     "code": 401,
     "message": "Bad credentials"
 }
+</pre>
 ```
 
 </p>
