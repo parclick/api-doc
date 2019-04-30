@@ -1913,7 +1913,7 @@ Authorization: Bearer {JWT_TOKEN}
 
 <details><summary style="color:#FF6600;">Show response 200 Ok</summary>
 <p>
-	<pre>
+<pre>
 {
     "id": 1047,
     "covered": false,
@@ -3335,6 +3335,7 @@ Authorization: Bearer {JWT_TOKEN}
 </p>
 </details>
 
+<br>
 
 **401 Bad request -  when parameters are missing or incorrect**
 
