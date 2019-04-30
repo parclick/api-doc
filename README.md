@@ -1845,7 +1845,7 @@ Authorization: Bearer {JWT_TOKEN}
 | message         | string          | error description              |
 | errors          | array           | fields and the specific error  |
 
-<details><summary>Show response 400 Bad request</summary>
+<details><summary style="color:#FF6600;">Show response 400 Bad request</summary>
 <p>
 <pre>
 {
