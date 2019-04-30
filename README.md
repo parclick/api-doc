@@ -31,7 +31,7 @@
 ### <a name="description"></a><span style="color:#FF6600;">API Description</span>
 
 #### Authentication
-Parclick gives a REST API [^1](#1) with some endpoints that require authentication. Security is based on JSON Web Token (JWT) [^2](#2) and is obtained through a successful authentication (view **/v1/login** endpoint). In the protected endpoints this token must be included in the header request as follow:
+Parclick gives a <a href="#1">REST API</a> [^1](#1) with some endpoints that require authentication. Security is based on <a href="#2">JSON Web Token (JWT)</a> [^2](#2) and is obtained through a successful authentication (view **/v1/login** endpoint). In the protected endpoints this token must be included in the header request as follow:
 
 | Key               | Value                                      |
 | ----------------- | ------------------------------------------ |
@@ -3664,7 +3664,7 @@ This method returns the vehicle type available. The vehicle id is required to ma
 </p>
 </details>
 
-<br><br>
+<br>
 
 **401 Bad request -  when parameters are missing or incorrect**
 
@@ -3755,7 +3755,7 @@ Authorization: Bearer {JWT_TOKEN}
 </p>
 </details>
 
-
+<br>
 
 **401 Unauthorized**
 
@@ -3774,7 +3774,6 @@ Authorization: Bearer {JWT_TOKEN}
 </pre>
 </p>
 </details>
-
 
 <br>
 
@@ -3825,6 +3824,8 @@ Authorization: Bearer {JWT_TOKEN}
 </pre>
 </p>
 </details>
+
+<br>
 
 **404 Not Found**
 
@@ -3894,6 +3895,7 @@ Authorization: Bearer {JWT_TOKEN}
 </p>
 </details>
 
+<br>
 
 **401 Unauthorized**
 
@@ -4022,6 +4024,7 @@ Authorization: Bearer {JWT_TOKEN}
 </p>
 </details>
 
+<br>
 
 **401 Unauthorized**
 
