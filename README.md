@@ -3336,7 +3336,6 @@ Authorization: Bearer {JWT_TOKEN}
 </details>
 
 <br>
-<br>
 
 **401 Bad request -  when parameters are missing or incorrect**
 
@@ -3479,10 +3478,11 @@ Authorization: Bearer {JWT_TOKEN}
 </p>
 </details>
 
+<br>
 
 **200 Ok - No results**
 
-<details><summary>Show response 200 No results</summary>
+<details><summary style="color:#FF6600;">Show response 200 No results</summary>
 <p>
 <pre>
 {  
@@ -3517,6 +3517,7 @@ Authorization: Bearer {JWT_TOKEN}
 </p>
 </details>
 
+<br>
 
 **401 Bad request -  when parameters are missing or incorrect**
 
