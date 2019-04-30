@@ -3336,6 +3336,7 @@ Authorization: Bearer {JWT_TOKEN}
 </details>
 
 <br>
+<br>
 
 **401 Bad request -  when parameters are missing or incorrect**
 
