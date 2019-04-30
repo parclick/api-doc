@@ -111,7 +111,7 @@ This method allows third party systems to be authenticated and receive a key (to
 | code            | string          | http response code value     |
 | message         | string          | error description            |
 
-<details><summary>Show response 401 Unauthorized</summary>
+<details><summary style="color:#FF6600;">Show response 401 Unauthorized</summary>
 <p>
 <pre>
 {
@@ -147,15 +147,14 @@ This method allows third party systems to refresh a valid token.
 | refresh_token   | string              | token to refresh current valid token              |
 
 
-<details><summary>Show response 200 Ok</summary>
+<details><summary style="color:#FF6600;">Show response 200 Ok</summary>
 <p>
-
-```json
+<pre>
 {
     "token": "eyJhbGciOiJSUzI1NiJ9.eyJyb2xlcyI6WyJST0xFX1VTRVIiXSwidXNlcm5hbWUiOiJtaWtpLnBldHJvdmljQHBhcmNsaWNrLmNvbSIsImV4cCI6MTU1MjQ5MDgxNiwiaWF0IjoxNTUyNDg3MjE2fQ.dwp3pbUF4vktlX_vIhuiYJQ3XwXmJHJe_gl8LrZUyJ3VZ1pEsFsvtbl8Q3C82tJlxslO9SJWI1rDcHGsGni0FIUxHbKEuuTNwzM2n4EfS25HSTa-0FQJckBhQBa8CRDBTCbfNrNUxPM2tie0ILrTnZaGIMHjtL9px08M2fEqYkC0SF3haYnhvjg40DfxCIcba-_SkXJyQGDsJEQeMiCeNWQNe4gap-Vg_lLFmhKzuWvp5PHRMDqPZ1IbFXfqbZEn79dobwr93lBNce_tBmeOwBhOI-OtIeVcwhhy5998wV0V_KxlF-LgxBKsr6cyWwS1JGStNU2BbqQcjGh3wGqhU42g-29zhI0Pn2fLuUAqdwL73c4wVJ-iZx4UMIY1XI0poBBX6cjImuN8JzPFZbwjW4VHGZ6G7VNvBZsngrQ7QQngM3OFkQ19vTCo0O9kXJqjBkR53WjFxuHCiT7AaQd18DoR51L7HejthunO0sqQGNZoPhWtrLZMcnc9vq3DFJI5YxeFWuB5sAIwMUi-xLk3l8ijReSQ63sbUrVEOX3mrDE8N1zOfHt_OoniniVdYY7pUDczDmsybye_JQjxcu9o96Em0Pd37ABcf_-y8LjDgIgjkceFVJiBArAhcZZGtoxexPaRcRyzE698TARXsC6EmLih0TEaA8gZNsAOJL5U2e4",
     "refresh_token": "7635bc6f8970fa9042297a692dfba629a346dff4873fd34ddcea82c4be74e738414164e69d455ecafc29b5d5082bb2bff08082ec15f62dfc2a2bd47701eb7976"
 }
-```
+</pre>
 </p>
 </details>
 
@@ -167,15 +166,14 @@ This method allows third party systems to refresh a valid token.
 | code            | string          | http response code value     |
 | message         | string          | error description            |
 
-<details><summary>Show response 401 Unauthorized</summary>
+<details><summary style="color:#FF6600;">Show response 401 Unauthorized</summary>
 <p>
-	
-```json
+<pre>
 {
     "code": 401,
     "message": "Bad credentials"
 }
-```
+</pre>
 </p>
 </details>
 
