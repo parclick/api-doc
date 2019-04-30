@@ -3664,11 +3664,11 @@ This method returns the vehicle type available. The vehicle id is required to ma
 </p>
 </details>
 
-<br>
+<br><br>
 
 **401 Bad request -  when parameters are missing or incorrect**
 
-<details><summary>Show response 401 Bad request</summary>
+<details><summary style="color:#FF6600;">Show response 401 Bad request</summary>
 <p>
 <pre>
 {
