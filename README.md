@@ -101,6 +101,7 @@ This method allows third party systems to be authenticated and receive a key (to
 </pre>
 </p>
 </details>
+<br>
 
 **401 Unauthorized**
 
