@@ -103,6 +103,7 @@ This method allows third party systems to be authenticated and receive a key (to
 </pre>
 </details>
 
+
 **401 Unauthorized**
 
 | Parameters      | Type            | Required                     |
