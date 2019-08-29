@@ -1,6 +1,6 @@
 ![alt text](https://static.parclick.com/assets/img/logotipo-parclick.svg)
 
-<p style="color:#999999;text-align:right;">Document version 1.2.1</p>
+<p style="color:#999999;text-align:right;">Document version 1.2.2</p>
 
 # <span style="color:#FF6600;">Parclick - API Reference</span>
 #### <span style="color:#999;">TECHNICAL DOCUMENTATION</span>
@@ -84,7 +84,7 @@ This method allows third party systems to be authenticated and receive a key (to
 
 **200 Ok**
 
-| Parameters      | Type           | Required                             |
+| Parameters      | Type           | Description                          |
 | --------------- |:-------------- | :----------------------------------- |
 | token           | string         | token (expires in 1 hour)            |
 | refresh_token   | string         | token to refresh current valid token |                       
@@ -106,9 +106,9 @@ This method allows third party systems to be authenticated and receive a key (to
 
 **401 Unauthorized**
 
-| Parameters      | Type            | Required                     |
+| Parameters      | Type            | Description                  |
 | --------------- |:--------------- | ---------------------------- |
-| code            | string          | http response code value     |
+| code            | integer         | http response code value     |
 | message         | string          | error description            |
 
 <details><summary style="color:#FF6600;">Show response 401 Unauthorized</summary>
@@ -162,9 +162,9 @@ This method allows third party systems to refresh a valid token.
 
 **401 Unauthorized**
 
-| Parameters      | Type            | Required                     |
+| Parameters      | Type            | Description                  |
 | --------------- |:--------------- | ---------------------------- |
-| code            | string          | http response code value     |
+| code            | integer         | http response code value     |
 | message         | string          | error description            |
 
 <details><summary style="color:#FF6600;">Show response 401 Unauthorized</summary>
@@ -1839,7 +1839,7 @@ Authorization: Bearer {JWT_TOKEN}
 
 **400 Bad request -  when parameters are missing or incorrect**
 
-| Parameters      | Type            | Required                       |
+| Parameters      | Type            | Description                    |
 | --------------- |:--------------- | ------------------------------ |
 | code            | string          | http response code value       |
 | message         | string          | error description              |
@@ -3759,9 +3759,9 @@ Authorization: Bearer {JWT_TOKEN}
 
 **401 Unauthorized**
 
-| Parameters      | Type            | Required                     |
+| Parameters      | Type            | Description                  |
 | --------------- |:--------------- | ---------------------------- |
-| code            | string          | http response code value     |
+| code            | integer         | http response code value     |
 | message         | string          | error description            |
 
 <details><summary style="color:#FF6600;">Show response 401 Unauthorized</summary>
@@ -3801,17 +3801,38 @@ Authorization: Bearer {JWT_TOKEN}
 <p>
 <pre>
 {
-    "success": true
+    "code": 200,
+    "message": "success"
 }
 </pre>
 </p>
 </details>
 
+**400 Bad request**
+
+| Parameters      | Type            | Description                  |
+| --------------- |:---------------:| -----------------------------|
+| code            | integer         | http response code value     |
+| message         | string          | error description            |
+
+<details><summary style="color:#FF6600;">Show response 401 Unauthorized</summary>
+<p>
+<pre>
+{
+    "code": 400,
+    "message": "Booking has already been canceled"
+}
+</pre>
+</p>
+</details>
+
+<br>
+
 **401 Unauthorized**
 
-| Parameters      | Type            | Required                     |
+| Parameters      | Type            | Description                  |
 | --------------- |:---------------:| -----------------------------|
-| code            | string          | http response code value     |
+| code            | integer         | http response code value     |
 | message         | string          | error description            |
 
 <details><summary style="color:#FF6600;">Show response 401 Unauthorized</summary>
@@ -3829,9 +3850,9 @@ Authorization: Bearer {JWT_TOKEN}
 
 **404 Not Found**
 
-| Parameters      | Type            | Required                     |
+| Parameters      | Type            | Description                  |
 | --------------- |:---------------:| -----------------------------|
-| code            | string          | http response code value     |
+| code            | integer         | http response code value     |
 | message         | string          | error description            |
 
 <details><summary style="color:#FF6600;">Show response 404 Not Found</summary>
@@ -3899,9 +3920,9 @@ Authorization: Bearer {JWT_TOKEN}
 
 **401 Unauthorized**
 
-| Parameters      | Type            | Required                     |
+| Parameters      | Type            | Description                  |
 | --------------- |:---------------:| -----------------------------|
-| code            | string          | http response code value     |
+| code            | integer         | http response code value     |
 | message         | string          | error description            |
 
 <details><summary style="color:#FF6600;">Show response 401 Bad credentials</summary>
@@ -4028,9 +4049,9 @@ Authorization: Bearer {JWT_TOKEN}
 
 **401 Unauthorized**
 
-| Parameters      | Type            | Required                     |
+| Parameters      | Type            | Description                  |
 | --------------- |:---------------:| -----------------------------|
-| code            | string          | http response code value     |
+| code            | integer         | http response code value     |
 | message         | string          | error description            |
 
 <details><summary style="color:#FF6600;">Show response 401 Unauthorized</summary>
