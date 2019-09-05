@@ -3879,13 +3879,13 @@ Authorization: Bearer {JWT_TOKEN}
 
 ### _Request:_
 
-| Parameters      | Type                  | Required | Default          | Description       |
-| --------------- |:--------------------- | -------- | ---------------- | ----------------- |
-| group           | string                | false    | null [booking]   | **booking**       |
-| email           | string                | false    | null             | user email        |
-| voucher_code    | string                | false    | null             | voucher code      |
-| from            | date yyyy-MM-dd HH:mm | false    | null             | booking start date|
-| to              | date yyyy-MM-dd HH:mm | false    | null             | booking end date  |
+| Parameters      | Type                  | Required | Default          | Description                    |
+| --------------- |:--------------------- | -------- | ---------------- | ------------------------------ |
+| group           | string                | false    | null             | **booking** add parking object |
+| email           | string                | false    | null             | user email                     |
+| voucher_code    | string                | false    | null             | voucher code                   |
+| from            | date yyyy-MM-dd HH:mm | false    | null             | booking start date             |
+| to              | date yyyy-MM-dd HH:mm | false    | null             | booking end date               |
 
 
 ### _Response:_
