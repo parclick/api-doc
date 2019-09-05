@@ -3881,7 +3881,7 @@ Authorization: Bearer {JWT_TOKEN}
 
 | Parameters      | Type                  | Required | Default          | Description                    |
 | --------------- |:--------------------- | -------- | ---------------- | ------------------------------ |
-| group           | string                | false    | null             | **booking** add parking object |
+| group           | string                | false    | null             | **list** only booking **booking** add parking |
 | email           | string                | false    | null             | user email                     |
 | voucher_code    | string                | false    | null             | voucher code                   |
 | from            | date yyyy-MM-dd HH:mm | false    | null             | booking start date             |
