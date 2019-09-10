@@ -3791,7 +3791,7 @@ Authorization: Bearer {JWT_TOKEN}
 This method allows cancel a reservation. The **booking_id** is obtained in the _new reservation_ endpoint response. The posible cancellation responses are:
 
 | Key                     | Value                                                                |
-|------------------------------------------------------------------------------------------------|
+| ---------------------------------------------------------------------------------------------- |
 | ERROR_NOT_FOUND         | Booking not found                                                    |
 | ERROR_EXPIRED           | Booking expired                                                      |
 | ERROR_CANCELED_ALLOW    | Booking can not be canceled                                          |
