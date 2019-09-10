@@ -1,6 +1,6 @@
 ![alt text](https://static.parclick.com/assets/img/logotipo-parclick.svg)
 
-<p style="color:#999999;text-align:right;">Document version 1.2.2</p>
+<p style="color:#999999;text-align:right;">Document version 1.2.3</p>
 
 # <span style="color:#FF6600;">Parclick - API Reference</span>
 #### <span style="color:#999;">TECHNICAL DOCUMENTATION</span>
@@ -1893,7 +1893,14 @@ Authorization: Bearer {JWT_TOKEN}
 
 ### <span style="color:#0f6ab4;">`GET`</span> `/v1/parking/{parking_id}/details`
 
-This method returns parking information, products available and required fields in the **fieldsRequested** array key to make a reservation.
+This method returns parking information, products available and required fields in the **fieldsRequested** array key to make a reservation. Also gives information about the cancelation policy in the field **cancellation_type** with thios options:
+
+| key | value                |
+|-----|----------------------|
+| 1   | Cancel before 23:59  |
+| 2   | Cancel one hour left |
+| 3   | Cancel disallowed    |
+
 
 ### _Header:_
 Authorization: Bearer {JWT_TOKEN}
