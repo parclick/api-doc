@@ -3788,10 +3788,11 @@ Authorization: Bearer {JWT_TOKEN}
 
 ### <span style="color:#10a54a;">`POST`</span> `/v1/booking/{booking_id}/cancelex`
 
-This method allows cancel a reservation. The **booking_id** is obtained in the _new reservation_ endpoint response. The posible cancellation responses are:
+This method allows cancel a reservation. The **booking_id** is obtained in the _new reservation_ endpoint response. The posible cancellation responses are
+
 
 | Key                     | Value                                                                |
-| ---------------------------------------------------------------------------------------------- |
+| ----------------------- | -------------------------------------------------------------------- |
 | ERROR_NOT_FOUND         | Booking not found                                                    |
 | ERROR_EXPIRED           | Booking expired                                                      |
 | ERROR_CANCELED_ALLOW    | Booking can not be canceled                                          |
@@ -3799,6 +3800,7 @@ This method allows cancel a reservation. The **booking_id** is obtained in the _
 | ERROR_REFUND            | Booking has been canceled but there is an error refund money to user |
 | ERROR_ALREADY_CANCELED  | Booking has already been canceled                                    |
 | UNDEFINED               | Refund has failed for unknown reasons                                |
+
 
 ### _Header:_
 Authorization: Bearer {JWT_TOKEN}
