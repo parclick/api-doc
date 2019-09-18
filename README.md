@@ -3891,7 +3891,7 @@ Authorization: Bearer {JWT_TOKEN}
 
 ### <span style="color:#0f6ab4;">`GET`</span> `/v1/booking/list`
 
-List all bookings that match filter criteria. The group **list** gives minimal info. The **booking** group gives more info about parking product and fees.
+List all bookings that match filter criteria. The group **list** gives minimal booking info unlike the **booking** group which offers parking product and fees information.
 
 ### _Header:_
 Authorization: Bearer {JWT_TOKEN}
