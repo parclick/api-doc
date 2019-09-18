@@ -3891,27 +3891,27 @@ Authorization: Bearer {JWT_TOKEN}
 
 ### <span style="color:#0f6ab4;">`GET`</span> `/v1/booking/list`
 
-List all bookings that match filter criteria.
+List all bookings that match filter criteria. The group **list** gives minimal info. The **booking** group gives more info about parking product and fees.
 
 ### _Header:_
 Authorization: Bearer {JWT_TOKEN}
 
 ### _Request:_
 
-| Parameters      | Type                  | Required | Default          | Description           |
-| --------------- |:--------------------- | -------- | ---------------- | --------------------- |
-| group           | string                | true     | null             | **list** only booking |
-| email           | string                | false    | null             | user email            |
-| voucher_code    | string                | false    | null             | voucher code          |
-| from            | date yyyy-MM-dd HH:mm | false    | null             | booking start date    |
-| to              | date yyyy-MM-dd HH:mm | false    | null             | booking end date      |
+| Parameters      | Type                  | Required | Default          | Description             |
+| --------------- |:--------------------- | -------- | ---------------- | ----------------------- |
+| group           | string                | true     | null             | **list** or **booking** |
+| email           | string                | false    | null             | user email              |
+| voucher_code    | string                | false    | null             | voucher code            |
+| from            | date yyyy-MM-dd HH:mm | false    | null             | booking start date      |
+| to              | date yyyy-MM-dd HH:mm | false    | null             | booking end date        |
 
 
 ### _Response:_
 
 **200 Ok**
 
-<details><summary style="color:#FF6600;">Show response 200 Ok</summary>
+<details><summary style="color:#FF6600;">Show response 200 Ok group list</summary>
 <p>
 <pre>
 {
@@ -3934,6 +3934,79 @@ Authorization: Bearer {JWT_TOKEN}
 </pre>
 </p>
 </details>
+
+<details><summary style="color:#FF6600;">Show response 200 Ok group booking</summary>
+<p>
+<pre>
+{
+	"items": [
+	{
+            "id": 962978,
+            "createdAt": "2019-05-21T13:32:55+0000",
+            "end_booking_date": "2019-05-30T12:00:00+0000",
+            "start_booking_date": "2019-05-30T10:00:00+0000",
+            "total": 6,
+            "booking_code": "LKKX873",
+            "first_name": "miki1",
+            "last_name": "moto1",
+            "username": "TEST_ITmikimoto1@parclick.comTEST_IT",
+            "items": [
+                {
+                    "id": 964157,
+                    "parking": {
+                        "id": 792,
+                        "latitude": 48.8569651,
+                        "image_list": "//static.parclick.com/parking/2017/08/627/80d/d0/62780dd0-27cd-579b-86a5-714a4f44b72c.jpeg",
+                        "longitude": 2.3496573,
+                        "is_cancellable": true,
+                        "address": "6, quai de Gesvres",
+                        "city": "París",
+                        "country": "Francia",
+                        "zip": "75004",
+                        "name": "Hôtel de Ville - Paris",
+                        "freemium": false,
+                        "cancellation_type": 2,
+                        "_links": {
+                            "self": {
+                                "href": "https://loc.api.parclick.com/v1/parking/792"
+                            }
+                        }
+                    },
+                    "product": {
+                        "id": 60934,
+                        "instructions": "ARRIVAL: scan your QR code. Park in any free space. Go to the office with your reservation and the ticket. If there is no-one there, ring the intercom.\r\n\r\nDEPARTURE: Use the card/device the staff gave you.\r\n\r\nIF YOUR BOOKING ALLOWS UNLIMITED ENTRANCE AND EXIT: Use the multipass card/device the staff gave you.",
+                        "name": "MULTIPASS 2 hours",
+                        "vehicle_type": {
+                            "id": 1
+                        },
+                        "warning_message": "In case of problems while accessing to the parkings, ring the intercom.\r\nThe reception is located at level: -1",
+                        "list_price": 8.4,
+                        "price": 6,
+                        "type": "pass",
+                        "_links": {
+                            "self": [
+                                {
+                                    "href": "https://loc.api.parclick.com/v1/product/60934"
+                                },
+                                {
+                                    "href": "https://loc.api.parclick.com/v1/pass/60934"
+                                }
+                            ]
+                        }
+                    }
+                }
+            ],
+            "fees": [],
+            "state": "PENDING",
+            "total_net_price": 5,
+            "total_vat": 1
+        }
+    ]
+}
+</pre>
+</p>
+</details>
+
 
 <br>
 
