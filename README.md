@@ -1893,7 +1893,7 @@ Authorization: Bearer {JWT_TOKEN}
 
 ### <span style="color:#0f6ab4;">`GET`</span> `/v1/parking/{parking_id}/details`
 
-This method returns parking information, products available and required fields in the **fieldsRequested** array key to make a reservation. Also gives information about the cancelation policy in the field **cancellation_type** with thios options:
+This method returns parking information, products available and required fields in the **fieldsRequested** array key to make a reservation. Also gives information about the cancelation policy in the field **cancellation_type** with this options:
 
 | key | value                |
 |-----|----------------------|
