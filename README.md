@@ -4064,7 +4064,6 @@ Authorization: Bearer {JWT_TOKEN}
 | from                     | string d/m/Y H:i | booking start date                           |
 | to                       | string d/m/Y H:i | booking end date                             |
 | parking_id               | int              | parking id                                   |
-| parking_provider         | int              | parking provider id                          |
 | parking_name             | string           | parking name                                 |
 | parking_address          | string           | parking address                              |
 | parking_zip              | string           | parking zip                                  |
@@ -4076,6 +4075,8 @@ Authorization: Bearer {JWT_TOKEN}
 | parking_instructions     | string           | parking instructions                         |
 | parking_latitude         | float            | parking latitude                             |
 | parking_longitude        | float            | parking longitude                            |
+| parking_provider_id      | int              | parking provider id                          |
+| parking_provider_name    | string           | parking provider name                        |
 | voucher_description      | array - string   | voucher_description                          |
 | product_net_price        | float            | product net price                            |
 | product_vat_price        | float            | product vat price                            |
@@ -4089,7 +4090,7 @@ Authorization: Bearer {JWT_TOKEN}
 | external_code            | string - integer | booking external code                        |
 | external_code_type       | string           | external code type                           |
 | external_code_tech       | string           | external code tech                           |
-| extra_fields             | array            | all extra fields in booking                  |
+| extra_fields             | array            | all the extra fields filled in booking       |
 
 <details><summary style="color:#FF6600;">Show response 200 Ok</summary>
 <p>
@@ -4097,15 +4098,14 @@ Authorization: Bearer {JWT_TOKEN}
 {
     "user_first_name": "John",
     "user_last_name": "Doe",
-    "voucher_code": "V0YWDY8",
-    "voucher_id": 843597,
+    "voucher_code": "V57R672",
+    "voucher_id": 843601,
     "product": "MULTIPASS 1 day",
     "product_warning": "In case of problems while accessing to the parkings, ring the intercom.\r\nThe reception is located at level: -1",
     "booking_state": "CONFIRMED",
     "from": "31/12/2019 10:00",
     "to": "31/12/2019 22:00",
     "parking_id": 792,
-    "parking_provider": 175,
     "parking_name": "Hôtel de Ville - Paris",
     "parking_address": "6, quai de Gesvres",
     "parking_zip": "75004",
@@ -4117,31 +4117,45 @@ Authorization: Bearer {JWT_TOKEN}
     "parking_instructions": "ARRIVAL: scan your QR code. Park in any free space. Go to the office with your reservation and the ticket. If there is no-one there, ring the intercom.\r\n\r\nDEPARTURE: Use the card/device the staff gave you.\r\n\r\nIF YOUR BOOKING ALLOWS UNLIMITED ENTRANCE AND EXIT: Use the multipass card/device the staff gave you.",
     "parking_latitude": 48.8569651,
     "parking_longitude": 2.3496573,
+    "parking_provider_id": 175,
+    "parking_provider_name": "SAEMES",
     "voucher_description": {
         "0": "ARRIVAL: scan your QR code. Park in any free space. Go to the office with your reservation and the ticket. If there is no-one there, ring the intercom.\r",
         "2": "DEPARTURE: Use the card/device the staff gave you.\r",
         "4": "IF YOUR BOOKING ALLOWS UNLIMITED ENTRANCE AND EXIT: Use the multipass card/device the staff gave you."
     },
-    "product_net_price": "21.67",
-    "product_vat_price": "4.33",
-    "product_vat_percent": "20%",
+    "product_net_price": 21.67,
+    "product_vat_price": 4.33,
+    "product_vat_percent": "20 %",
     "product_gross_price": 26,
     "fee": [
         {
-            "id": 677612,
+            "id": 677616,
             "net_price": 2.91,
             "vat": 0.58,
             "total": 3.49,
             "discriminator": "administration_fee"
         }
     ],
-    "total_net_price": "24.58",
-    "total_vat": "4.91",
+    "total_net_price": 24.58,
+    "total_vat": 4.91,
     "total": 29.49,
     "vehicle_type": "CAR",
-    "external_code": "47000000000000143562",
+    "external_code": "47000000000000143623",
     "external_code_type": "QR",
-    "external_code_tech": "qrcode_1"
+    "external_code_tech": "qrcode_1",
+    "extra_fields": [
+        {
+            "1": {
+                "label": "Vehicle make",
+                "value": "Renault"
+            },
+            "2": {
+                "label": "Vehicle model",
+                "value": "captur"
+            }
+        }
+    ]
 }
 </pre>
 </p>
