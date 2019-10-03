@@ -1,6 +1,6 @@
 ![alt text](https://static.parclick.com/assets/img/logotipo-parclick.svg)
 
-<p style="color:#999999;text-align:right;">Document version 1.2.3</p>
+<p style="color:#999999;text-align:right;">Document version 1.2.4</p>
 
 # <span style="color:#FF6600;">Parclick - API Reference</span>
 #### <span style="color:#999;">TECHNICAL DOCUMENTATION</span>
@@ -4063,75 +4063,85 @@ Authorization: Bearer {JWT_TOKEN}
 | booking_state            | string           | status (CONFIRMED,CANCELLED,PENDING)         |
 | from                     | string d/m/Y H:i | booking start date                           |
 | to                       | string d/m/Y H:i | booking end date                             |
+| parking_id               | int              | parking id                                   |
+| parking_provider         | int              | parking provider id                          |
 | parking_name             | string           | parking name                                 |
 | parking_address          | string           | parking address                              |
 | parking_zip              | string           | parking zip                                  |
 | parking_city             | string           | parking city                                 |
 | parking_province         | string           | parking province                             |
 | parking_country          | string           | parking country                              |
-| parking\_maximum\_height | string           | parking maximum height                       |
+| parking_maximum_height   | string           | parking maximum height                       |
 | parking_description      | string           | parking description                          |
 | parking_instructions     | string           | parking instructions                         |
 | parking_latitude         | float            | parking latitude                             |
 | parking_longitude        | float            | parking longitude                            |
 | voucher_description      | array - string   | voucher_description                          |
-| amount                   | float            | total amount                                 |
-| gross_price              | float            | gross price                                  |
-| vat_price                | float            | vat price                                    |
-| vehicle_type             | string           | type of vehicle you wish to park [1 car, 2 van, 3 caravan, 4 bus, 5 truck, 6 motorbike, 7 small truck]             |
+| product_net_price        | float            | product net price                            |
+| product_vat_price        | float            | product vat price                            |
+| product_vat_percent      | string           | product vat percent                          |
+| product_gross_price      | float            | vat price                                    |
+| fee                      | array            | array of fees                                |
+| total_net_price          | float            | total net price                              |
+| total_vat                | float            | total vat                                    |
+| total                    | float            | total amount                                 |
+| vehicle_type             | string           | type of vehicle you wish to park [1 car, 2 van, 3 caravan, 4 bus, 5 truck, 6 motorbike, 7 small truck]  |
 | external_code            | string - integer | booking external code                        |
-| external\_code\_type     | string           | external code type                           |
-| external\_code\_tech     | string           | external code tech                           |
+| external_code_type       | string           | external code type                           |
+| external_code_tech       | string           | external code tech                           |
 | extra_fields             | array            | all extra fields in booking                  |
 
 <details><summary style="color:#FF6600;">Show response 200 Ok</summary>
 <p>
 <pre>
 {
-    "user_first_name": "test13",
-    "user_last_name": "Uno13",
-    "voucher_code": "L015DYZ",
-    "voucher_id": 685443,
-    "product": "MULTIPASS 2 horas",
-    "product_warning": "Si la puerta no se abre, puedes utilizar el interfono para ponerte en contacto con los operarios del parking, te explicarán los pasos a seguir.",
+    "user_first_name": "John",
+    "user_last_name": "Doe",
+    "voucher_code": "V0YWDY8",
+    "voucher_id": 843597,
+    "product": "MULTIPASS 1 day",
+    "product_warning": "In case of problems while accessing to the parkings, ring the intercom.\r\nThe reception is located at level: -1",
     "booking_state": "CONFIRMED",
-    "from": "01/04/2019 10:00",
-    "to": "01/04/2019 12:00",
+    "from": "31/12/2019 10:00",
+    "to": "31/12/2019 22:00",
+    "parking_id": 792,
+    "parking_provider": 175,
     "parking_name": "Hôtel de Ville - Paris",
     "parking_address": "6, quai de Gesvres",
     "parking_zip": "75004",
-    "parking_city": "París",
+    "parking_city": "Paris",
     "parking_province": "Île-de-France",
     "parking_country": "FRANCE",
     "parking_maximum_height": "1.8 m.",
-    "parking_description": "El parking Hôtel de Ville se encuentra en Paris, frente al puente de Notre-Dame, además está muy bien ubicado para visitar la Catedral y la Conciergerie de la famosa Isla de la Cité. También puedes ir al Centro Pompidou o a la Plaza Saint-Michel por el otro lado de la Isla. El parking Hôtel de Ville te permite aparcar cerca del Ayuntamiento de Paris y cerca del teatro del Châtelet. Este parking Hôtel de Ville representa un buen punto de partida para pasear a orillas del Sena hacia el Louvre y la Torre Eiffel. Regresar por metro resulta muy fácil, ya que solo tendrás que bajar a Châtelet (líneas 1, 4, 7, 11 y 14) o al Hôtel de Ville (líneas 1 y 11).",
-    "parking_instructions": "A TU LLEGADA: coge el ticket. Aparca en cualquier plaza libre. Ve a la cabina de control con tu reserva Parclick y el ticket.\r\n\r\nPARA SALIR: utiliza el ticket que recogiste al entrar.",
+    "parking_description": "The Hôtel de Ville car park is in Paris, in front of the Notre-Dame Bridge, which is very well located for visiting the Cathedral and the Conciergerie of the famous Isle of Cité. You can also go to the Pompidou Centre or the Place Saint-Michel on the other side of the Island. The Hôtel de Ville car park allows you to park close to the Paris City Hall and the Châtelet theatre. The Hôtel de Ville car park is a good starting point for strolling along the riverbank of the Seine towards the Louvre and the Eiffel Tower. Getting back by metro is very easy, since you just have to get off at the Châtelet station (lines 1, 4, 7, 11 and 14) or the Hôtel de Ville station (lines 1 and 11).",
+    "parking_instructions": "ARRIVAL: scan your QR code. Park in any free space. Go to the office with your reservation and the ticket. If there is no-one there, ring the intercom.\r\n\r\nDEPARTURE: Use the card/device the staff gave you.\r\n\r\nIF YOUR BOOKING ALLOWS UNLIMITED ENTRANCE AND EXIT: Use the multipass card/device the staff gave you.",
     "parking_latitude": 48.8569651,
     "parking_longitude": 2.3496573,
     "voucher_description": {
-        "0": "A TU LLEGADA: coge el ticket. Aparca en cualquier plaza libre. Ve a la cabina de control con tu reserva Parclick y el ticket.\r",
-        "2": "PARA SALIR: utiliza el ticket que recogiste al entrar."
+        "0": "ARRIVAL: scan your QR code. Park in any free space. Go to the office with your reservation and the ticket. If there is no-one there, ring the intercom.\r",
+        "2": "DEPARTURE: Use the card/device the staff gave you.\r",
+        "4": "IF YOUR BOOKING ALLOWS UNLIMITED ENTRANCE AND EXIT: Use the multipass card/device the staff gave you."
     },
-    "amount": 6,
-    "gross_price": "5.00",
-    "vat_price": "1.00",
-    "vehicle_type": "CAR",
-    "external_code": "47000000000000081147",
-    "external_code_type": "QR",
-    "parking_access_point": {
-        "id": 806
-    },
-    "external_code_tech": "qrcode_1",
-    "extra_fields": {
-        "1": {
-            "label": "Marca del vehículo",
-            "value": "saab"
-        },
-        "2": {
-            "label": "Modelo del vehículo",
-            "value": "93"
+    "product_net_price": "21.67",
+    "product_vat_price": "4.33",
+    "product_vat_percent": "20%",
+    "product_gross_price": 26,
+    "fee": [
+        {
+            "id": 677612,
+            "net_price": 2.91,
+            "vat": 0.58,
+            "total": 3.49,
+            "discriminator": "administration_fee"
         }
-    }
+    ],
+    "total_net_price": "24.58",
+    "total_vat": "4.91",
+    "total": 29.49,
+    "vehicle_type": "CAR",
+    "external_code": "47000000000000143562",
+    "external_code_type": "QR",
+    "external_code_tech": "qrcode_1"
 }
 </pre>
 </p>
