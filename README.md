@@ -4054,8 +4054,9 @@ Authorization: Bearer {JWT_TOKEN}
 
 | Parameters               | Type             | Description                                  |
 | ------------------------ | ---------------- | -------------------------------------------- |
-| user_first_name          | string           | User first name                              |
-| user_last_name           | string           | User last name                               |
+| booking_id .             | int              | booking id                              |
+| user_first_name          | string           | user first name                              |
+| user_last_name           | string           | user last name                               |
 | voucher_code             | string           | voucher code                                 |
 | voucher_id               | integer          | voucher id (id used to cancel a reservation) |
 | product                  | string           | product description i.e. "MULTIPASS 2 horas" |
@@ -4099,15 +4100,17 @@ Authorization: Bearer {JWT_TOKEN}
 <p>
 <pre>
 {
+    "booking_id": 963283,
     "user_first_name": "John",
     "user_last_name": "Doe",
-    "voucher_code": "V98K981",
-    "voucher_id": 843606,
+    "voucher_code": "LXPEK9J",
+    "voucher_id": 843607,
     "product": "MULTIPASS 1 day",
     "product_warning": "In case of problems while accessing to the parkings, ring the intercom.\r\nThe reception is located at level: -1",
     "booking_state": "CONFIRMED",
     "from": "31/12/2019 10:00",
     "to": "31/12/2019 22:00",
+    "spot": 521,
     "parking_id": 792,
     "parking_name": "Hôtel de Ville - Paris",
     "parking_address": "6, quai de Gesvres",
@@ -4133,7 +4136,7 @@ Authorization: Bearer {JWT_TOKEN}
     "product_gross_price": 26,
     "fee": [
         {
-            "id": 677621,
+            "id": 677622,
             "net_price": 2.91,
             "vat": 0.58,
             "total": 3.49,
@@ -4146,8 +4149,8 @@ Authorization: Bearer {JWT_TOKEN}
     "vehicle_type": "CAR",
     "is_airport_parking": false,
     "is_third_party": true,
-    "is_box": true,
-    "external_code": "47000000000000144606",
+    "is_box": false,
+    "external_code": "47000000000000144644",
     "external_code_type": "QR",
     "external_code_tech": "qrcode_1"
 }
