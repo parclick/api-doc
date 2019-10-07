@@ -1,6 +1,6 @@
 ![alt text](https://static.parclick.com/assets/img/logotipo-parclick.svg)
 
-<p style="color:#999999;text-align:right;">Document version 1.2.4</p>
+<p style="color:#999999;text-align:right;">Document version 1.2.5</p>
 
 # <span style="color:#FF6600;">Parclick - API Reference</span>
 #### <span style="color:#999;">TECHNICAL DOCUMENTATION</span>
@@ -4087,6 +4087,9 @@ Authorization: Bearer {JWT_TOKEN}
 | total_vat                | float            | total vat                                    |
 | total                    | float            | total amount                                 |
 | vehicle_type             | string           | type of vehicle you wish to park [1 car, 2 van, 3 caravan, 4 bus, 5 truck, 6 motorbike, 7 small truck]  |
+| is_airport_parking       | bool             | is airport parking                           |
+| is_third_party           | bool             | is a third party                             |
+| is_box                   | bool             | parking use a box                            |
 | external_code            | string - integer | booking external code                        |
 | external_code_type       | string           | external code type                           |
 | external_code_tech       | string           | external code tech                           |
@@ -4098,8 +4101,8 @@ Authorization: Bearer {JWT_TOKEN}
 {
     "user_first_name": "John",
     "user_last_name": "Doe",
-    "voucher_code": "V57R672",
-    "voucher_id": 843601,
+    "voucher_code": "V98K981",
+    "voucher_id": 843606,
     "product": "MULTIPASS 1 day",
     "product_warning": "In case of problems while accessing to the parkings, ring the intercom.\r\nThe reception is located at level: -1",
     "booking_state": "CONFIRMED",
@@ -4130,7 +4133,7 @@ Authorization: Bearer {JWT_TOKEN}
     "product_gross_price": 26,
     "fee": [
         {
-            "id": 677616,
+            "id": 677621,
             "net_price": 2.91,
             "vat": 0.58,
             "total": 3.49,
@@ -4141,21 +4144,12 @@ Authorization: Bearer {JWT_TOKEN}
     "total_vat": 4.91,
     "total": 29.49,
     "vehicle_type": "CAR",
-    "external_code": "47000000000000143623",
+    "is_airport_parking": false,
+    "is_third_party": true,
+    "is_box": true,
+    "external_code": "47000000000000144606",
     "external_code_type": "QR",
-    "external_code_tech": "qrcode_1",
-    "extra_fields": [
-        {
-            "1": {
-                "label": "Vehicle make",
-                "value": "Renault"
-            },
-            "2": {
-                "label": "Vehicle model",
-                "value": "captur"
-            }
-        }
-    ]
+    "external_code_tech": "qrcode_1"
 }
 </pre>
 </p>
