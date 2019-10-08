@@ -4054,7 +4054,7 @@ Authorization: Bearer {JWT_TOKEN}
 
 | Parameters               | Type             | Description                                  |
 | ------------------------ | ---------------- | -------------------------------------------- |
-| booking_id .             | int              | booking id                              |
+| booking_id               | int              | booking id                                   |
 | user_first_name          | string           | user first name                              |
 | user_last_name           | string           | user last name                               |
 | voucher_code             | string           | voucher code                                 |
@@ -4091,7 +4091,7 @@ Authorization: Bearer {JWT_TOKEN}
 | is_airport_parking       | bool             | is airport parking                           |
 | is_third_party           | bool             | is a third party                             |
 | is_box                   | bool             | parking use a box                            |
-| external_code            | string - integer | booking external code                        |
+| external_code            | string           | booking external code                        |
 | external_code_type       | string           | external code type                           |
 | external_code_tech       | string           | external code tech                           |
 | extra_fields             | array            | all the extra fields filled in booking       |
