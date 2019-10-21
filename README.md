@@ -4066,9 +4066,9 @@ Authorization: Bearer {JWT_TOKEN}
 | voucher_code              | string           | voucher code                                 |
 | voucher_id                | integer          | voucher id (id used to cancel a reservation) |
 | voucher_description       | array - string   | voucher_description                          |
-| booking_state             | string           | status (CONFIRMED,CANCELLED,PENDING)         |
+| booking_state             | string           | booking status (CONFIRMED, CANCELLED, PENDING)|
 | booking_is_cancellable    | bool             | is this booking cancellable                  |
-| booking_cancellation_type | int              | [1 cancel before 23:59, 2 cancel one hour left, 3 - cancel disallowed] |
+| booking_cancellation_type | int              | [1 cancel before 23:59, 2 cancel one hour left, 3 cancel disallowed] |
 | booking_from              | string d/m/Y H:i | booking start date                           |
 | booking_to                | string d/m/Y H:i | booking end date                             |
 | total_net_price           | float            | total net price                              |
