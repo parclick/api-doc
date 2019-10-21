@@ -194,7 +194,7 @@ Authorization: Bearer {JWT_TOKEN}
 
 | Parameters      | Type                   | Required | Description                                                                       | Default             |
 | --------------- |:---------------------- | -------- | --------------------------------------------------------------------------------- |-------------------- |
-| locale          | string                 | true     | Language in which the information will be returned                                | en_GB               |
+| locale          | string                 | true     | language in which the information will be returned                                | en_GB               |
 | group           | string                 | true     | **search**                                                                        | null                |
 | limit           | integer                | true     | total number of records [1-200]                                                   | 200                 |
 | from            | date yyyy-MM-dd HH:mm  | true     | booking start date                                                                | null                |
@@ -1909,8 +1909,8 @@ Authorization: Bearer {JWT_TOKEN}
 
 | Parameters      | Type                  | Required  | Description                                        | Default        |
 | --------------- |:--------------------- | --------- |--------------------------------------------------- |--------------- |
-| group           | string                | false     | Property groups to be returned **detail**          | null           |
-| locale          | string                | false     | Language in which the information will be returned | en_GB          | 
+| group           | string                | false     | property groups to be returned **detail**          | null           |
+| locale          | string                | false     | language in which the information will be returned | en_GB          | 
 
 
 
@@ -3382,12 +3382,12 @@ Authorization: Bearer {JWT_TOKEN}
 
 | Parameters      | Type                  | Required | Description                                        | Default        |
 | --------------- |:--------------------- | :------- |--------------------------------------------------- |--------------- |
-| group           | string                | true     | Property groups to be returned **bestpass**        |null            |
-| locale          | string                | true     | Language in which the information will be returned |en_GB           | 
-| parking         | integer               | true     | Parking identificator                              |null            |
+| group           | string                | true     | property groups to be returned **bestpass**        |null            |
+| locale          | string                | true     | language in which the information will be returned |en_GB           | 
+| parking         | integer               | true     | parking identificator                              |null            |
 | vehicleType     | integer               | true     | type of vehicle you wish to park [1 car, 2 van, 3 caravan, 4 bus, 5 truck, 6 motorbike, 7 small truck]    |1               |
-| from            | date yyyy-MM-dd HH:mm | true     | Booking start date                                 |null            |
-| to              | date yyyy-MM-dd HH:mm | true     | Booking end date                                   |null            |
+| from            | date yyyy-MM-dd HH:mm | true     | booking start date                                 |null            |
+| to              | date yyyy-MM-dd HH:mm | true     | booking end date                                   |null            |
 
 
 ### _Response:_
@@ -3593,8 +3593,8 @@ This method returns the vehicle type available. The vehicle id is required to ma
 
 | Parameters      | Type                  | Required | Description                                        | Default        |
 | --------------- |:--------------------- | :------- |--------------------------------------------------- |--------------- |
-| group           | string                | true     | Property groups to be returned **list**            | list           |
-| locale          | string                | true     | Language in which the information will be returned | en_GB          |
+| group           | string                | true     | property groups to be returned **list**            | list           |
+| locale          | string                | true     | language in which the information will be returned | en_GB          |
 
 
 ### _Response:_
@@ -4045,114 +4045,162 @@ Authorization: Bearer {JWT_TOKEN}
 | Parameters      | Type                | Required | Default  | Description                                        |
 | --------------- |:--------------------| ---------| ---------| -------------------------------------------------- |
 | voucher_id      | integer             | true     | null     | voucher id                                         |
-| locale          | string              | false    | es_ES    | Language in which the information will be returned |
+| locale          | string              | false    | es_ES    | language in which the information will be returned |
 
 
 ### _Response:_
 
 **200 Ok**
 
-| Parameters               | Type             | Description                                  |
-| ------------------------ | ---------------- | -------------------------------------------- |
-| booking_id               | int              | booking id                                   |
-| user_first_name          | string           | user first name                              |
-| user_last_name           | string           | user last name                               |
-| voucher_code             | string           | voucher code                                 |
-| voucher_id               | integer          | voucher id (id used to cancel a reservation) |
-| product                  | string           | product description i.e. "MULTIPASS 2 horas" |
-| product_warning          | string           | warning description                          | 
-| booking_state            | string           | status (CONFIRMED,CANCELLED,PENDING)         |
-| from                     | string d/m/Y H:i | booking start date                           |
-| to                       | string d/m/Y H:i | booking end date                             |
-| parking_id               | int              | parking id                                   |
-| parking_name             | string           | parking name                                 |
-| parking_address          | string           | parking address                              |
-| parking_zip              | string           | parking zip                                  |
-| parking_city             | string           | parking city                                 |
-| parking_province         | string           | parking province                             |
-| parking_country          | string           | parking country                              |
-| parking_maximum_height   | string           | parking maximum height                       |
-| parking_description      | string           | parking description                          |
-| parking_instructions     | string           | parking instructions                         |
-| parking_latitude         | float            | parking latitude                             |
-| parking_longitude        | float            | parking longitude                            |
-| parking_provider_id      | int              | parking provider id                          |
-| parking_provider_name    | string           | parking provider name                        |
-| voucher_description      | array - string   | voucher_description                          |
-| product_net_price        | float            | product net price                            |
-| product_vat_price        | float            | product vat price                            |
-| product_vat_percent      | string           | product vat percent                          |
-| product_gross_price      | float            | vat price                                    |
-| fee                      | array            | array of fees                                |
-| total_net_price          | float            | total net price                              |
-| total_vat                | float            | total vat                                    |
-| total                    | float            | total amount                                 |
-| vehicle_type             | string           | type of vehicle you wish to park [1 car, 2 van, 3 caravan, 4 bus, 5 truck, 6 motorbike, 7 small truck]  |
-| is_airport_parking       | bool             | is airport parking                           |
-| is_third_party           | bool             | is a third party                             |
-| is_box                   | bool             | parking use a box                            |
-| external_code            | string           | booking external code                        |
-| external_code_type       | string           | external code type                           |
-| external_code_tech       | string           | external code tech                           |
-| extra_fields             | array            | all the extra fields filled in booking       |
+| Parameters                | Type             | Description                                  |
+| ------------------------- | ---------------- | -------------------------------------------- |
+| user_first_name           | string           | user first name                              |
+| user_last_name            | string           | user last name                               |
+| product                   | string           | product description i.e. "MULTIPASS 2 horas" |
+| product_category          | string           | product category                             |
+| product_warning           | string           | warning description                          | 
+| product_net_price         | float            | product net price                            |
+| product_vat_price         | float            | product vat price                            |
+| product_vat_percent       | string           | product vat percent                          |
+| product_gross_price       | float            | vat price                                    |
+| voucher_code              | string           | voucher code                                 |
+| voucher_id                | integer          | voucher id (id used to cancel a reservation) |
+| voucher_description       | array - string   | voucher_description                          |
+| booking_state             | string           | status (CONFIRMED,CANCELLED,PENDING)         |
+| booking_is_cancellable    | bool             | is this booking cancellable                  |
+| booking_cancellation_type | int              | [1 cancel before 23:59, 2 cancel one hour left, 3 - cancel disallowed] |
+| booking_from              | string d/m/Y H:i | booking start date                           |
+| booking_to                | string d/m/Y H:i | booking end date                             |
+| total_net_price           | float            | total net price                              |
+| total_vat                 | float            | total vat                                    |
+| total                     | float            | total amount                                 |
+| vehicle_type              | string           | type of vehicle you wish to park [1 car, 2 van, 3 caravan, 4 bus, 5 truck, 6 motorbike, 7 small truck]  |
+| external_code             | string           | booking external code                        |
+| external_code_type        | string           | external code type                           |
+| external_code_tech        | string           | external code tech                           |
+| qr_hash                   | string           | qr hash                                      |
+| extra_fields              | array            | all the extra fields filled in booking       |
+| parking_id                | int              | parking id                                   |
+| parking_name              | string           | parking name                                 |
+| parking_address           | string           | parking address                              |
+| parking_zip               | string           | parking zip                                  |
+| parking_city              | string           | parking city                                 |
+| parking_province          | string           | parking province                             |
+| parking_country           | string           | parking country                              |
+| parking_maximum_height    | string           | parking maximum height                       |
+| parking_description       | string           | parking description                          |
+| parking_instructions      | string           | parking instructions                         |
+| parking_latitude          | float            | parking latitude                             |
+| parking_longitude         | float            | parking longitude                            |
+| parking_provider_id       | int              | parking provider id                          |
+| parking_provider_name     | string           | parking provider name                        |
+| parking_type              | string           | parking category                             |
+| spot_name                 | string           | spot name                                    |
+| is_box                    | bool             | parking use a box                            |
+| fee                       | array            | array of fees                                |
+| third_party_discriminator | string           | third party discriminator                    |
+| currency                  | string           | currency code                                |
+| has_voucher_notification  | bool             | include voucher in notification              |
+| has_receipt_notification  | bool             | include receipt in notification              |
+| from                      | string           | email from                                   |
+| from_name                 | string           | email from name                              |
+| to                        | string           | email to                                     |
+| to_name                   | string           | email to name                                |
+| cco                       | string           | email carbon copy                            |
+| subject                   | string           | email subject                                | 
+
 
 <details><summary style="color:#FF6600;">Show response 200 Ok</summary>
 <p>
 <pre>
 {
-    "booking_id": 963283,
-    "user_first_name": "John",
-    "user_last_name": "Doe",
-    "voucher_code": "LXPEK9J",
-    "voucher_id": 843607,
-    "product": "MULTIPASS 1 day",
-    "product_warning": "In case of problems while accessing to the parkings, ring the intercom.\r\nThe reception is located at level: -1",
-    "booking_state": "CONFIRMED",
-    "from": "31/12/2019 10:00",
-    "to": "31/12/2019 22:00",
-    "spot": 521,
-    "parking_id": 792,
-    "parking_name": "Hôtel de Ville - Paris",
-    "parking_address": "6, quai de Gesvres",
-    "parking_zip": "75004",
-    "parking_city": "Paris",
-    "parking_province": "Île-de-France",
-    "parking_country": "FRANCE",
-    "parking_maximum_height": "1.8 m.",
-    "parking_description": "The Hôtel de Ville car park is in Paris, in front of the Notre-Dame Bridge, which is very well located for visiting the Cathedral and the Conciergerie of the famous Isle of Cité. You can also go to the Pompidou Centre or the Place Saint-Michel on the other side of the Island. The Hôtel de Ville car park allows you to park close to the Paris City Hall and the Châtelet theatre. The Hôtel de Ville car park is a good starting point for strolling along the riverbank of the Seine towards the Louvre and the Eiffel Tower. Getting back by metro is very easy, since you just have to get off at the Châtelet station (lines 1, 4, 7, 11 and 14) or the Hôtel de Ville station (lines 1 and 11).",
-    "parking_instructions": "ARRIVAL: scan your QR code. Park in any free space. Go to the office with your reservation and the ticket. If there is no-one there, ring the intercom.\r\n\r\nDEPARTURE: Use the card/device the staff gave you.\r\n\r\nIF YOUR BOOKING ALLOWS UNLIMITED ENTRANCE AND EXIT: Use the multipass card/device the staff gave you.",
-    "parking_latitude": 48.8569651,
-    "parking_longitude": 2.3496573,
-    "parking_provider_id": 175,
-    "parking_provider_name": "SAEMES",
-    "voucher_description": {
-        "0": "ARRIVAL: scan your QR code. Park in any free space. Go to the office with your reservation and the ticket. If there is no-one there, ring the intercom.\r",
-        "2": "DEPARTURE: Use the card/device the staff gave you.\r",
-        "4": "IF YOUR BOOKING ALLOWS UNLIMITED ENTRANCE AND EXIT: Use the multipass card/device the staff gave you."
+    "data": {
+        "user": {
+            "user_first_name": "John",
+            "user_last_name": "DoE"
+        },
+        "product": {
+            "product": "ONEPASS 2 hours",
+            "product_category": "ONEPASS",
+            "product_warning": "For the QR reader to work properly, you must have the latest version of the app installed.",
+            "product_net_price": 2.48,
+            "product_vat_price": 0.52,
+            "product_vat_percent": "21%",
+            "product_gross_price": 3
+        },
+        "voucher": {
+            "voucher_code": "VZ87NG9",
+            "voucher_id": 920643,
+            "voucher_description": [
+                "ARRIVAL:\r",
+                "\u003Cbr\/\u003EPresent the QR code on your reservation (on your phone or a printed version) to the orange Parclick reader, that you will find next to the entrance barrier. The light will turn green and the barrier will open (in 3-4 seconds). Park in any of the identified spaces for Parclick customers:\r",
+                "\u003Cbr\/\u003E- Outdoor spaces: no 3, 7, 8, 9, 11.\r",
+                "\u003Cbr\/\u003E- Underground spaces (floor -2): no 24, 25, 26, 40, 41.\r",
+                "\u003Cbr\/\u003E\r",
+                "\u003Cbr\/\u003EDEPARTURE:\r",
+                "\u003Cbr\/\u003EShow your QR code to the reader. If the light turns red, contact the operator through the barrier interphone.\r",
+                "\u003Cbr\/\u003E\r",
+                "\u003Cbr\/\u003EIF YOUR BOOKING ALLOWS UNLIMITED ENTRANCE AND EXIT:\r",
+                "\u003Cbr\/\u003EFollow the same process, indicated before, to enter and exit.\r",
+                "\u003Cbr\/\u003E\r",
+                "\u003Cbr\/\u003ECOURTESY TIME AND EXCEEDED TIME:\r",
+                "\u003Cbr\/\u003EYou have 30 minutes\u2019 courtesy time to enter the car park before the time indicated on your booking and 30 minutes of courtesy time to leave after. If your stay exceeds the courtesy time, it will automatically charge you the difference on your card which you used to make your booking  (+0.38\u20ac \/ 15 mins)."
+            ]
+        },
+        "booking": {
+            "booking_state": "CONFIRMED",
+            "booking_is_cancellable": true,
+            "booking_cancellation_type": 2,
+            "booking_from": "31\/12\/2019 10:00",
+            "booking_to": "31\/12\/2019 12:00",
+            "total_net_price": 2.48,
+            "total_vat": 0.52,
+            "total": 3,
+            "vehicle_type": "CAR",
+            "external_code_tech": "qrcode_1",
+            "qr_hash": "@VZ87NG9#",
+            "extra_fields": [
+                {
+                    "3": {
+                        "label": "Vehicle registration number",
+                        "value": "CB797XH"
+                    }
+                }
+            ]
+        },
+        "parking": {
+            "parking_id": 1988,
+            "parking_name": "Fray Luis de Le\u00f3n - Atocha",
+            "parking_address": "Calle de Fray Luis de Le\u00f3n, 11",
+            "parking_zip": "28012",
+            "parking_city": "Madrid",
+            "parking_province": "Madrid",
+            "parking_country": "SPAIN",
+            "parking_maximum_height": "2.2 m.",
+            "parking_description": "Parking in the centre of Madrid can seem an absolute madness, but it won\u2019t be if you know how. In Parclick we\u2019ve already thought of a solution for you, whether you\u2019re just going to the centre for a few hours or want to park your car for a few days. You can leave your car in the Fray Luis de Le\u00f3n 11 Car Park and forget all your worries!\r\n\r\nLocated less than 5 minutes walking from the Embajadores Roundabout, a very centric point of the city of Madrid, the Fray Luis de Le\u00f3n 11 Car Park is as great option if what you want is to leave your car in a zone that\u2019s totally connected with most of the interesting points in the city without having to go through busy streets like Gran V\u00eda or the historic centre of Madrid. Ultimately, it\u2019s the perfect place to leave your car during your stay in the city. \r\n\r\nIn the end, the Fray Luis de Le\u00f3n 11 Car Park would be the perfect place to park your car. Covered, guarded and economic. What are you waiting for? Book your parking space with Parclick forget about your car for now!",
+            "parking_instructions": "ARRIVAL:\r\n\u003Cbr\/\u003EPresent the QR code on your reservation (on your phone or a printed version) to the orange Parclick reader, that you will find next to the entrance barrier. The light will turn green and the barrier will open (in 3-4 seconds). Park in any of the identified spaces for Parclick customers:\r\n\u003Cbr\/\u003E- Outdoor spaces: no 3, 7, 8, 9, 11.\r\n\u003Cbr\/\u003E- Underground spaces (floor -2): no 24, 25, 26, 40, 41.\r\n\u003Cbr\/\u003E\r\n\u003Cbr\/\u003EDEPARTURE:\r\n\u003Cbr\/\u003EShow your QR code to the reader. If the light turns red, contact the operator through the barrier interphone.\r\n\u003Cbr\/\u003E\r\n\u003Cbr\/\u003EIF YOUR BOOKING ALLOWS UNLIMITED ENTRANCE AND EXIT:\r\n\u003Cbr\/\u003EFollow the same process, indicated before, to enter and exit.\r\n\u003Cbr\/\u003E\r\n\u003Cbr\/\u003ECOURTESY TIME AND EXCEEDED TIME:\r\n\u003Cbr\/\u003EYou have 30 minutes\u2019 courtesy time to enter the car park before the time indicated on your booking and 30 minutes of courtesy time to leave after. If your stay exceeds the courtesy time, it will automatically charge you the difference on your card which you used to make your booking  (+0.38\u20ac \/ 15 mins).",
+            "parking_latitude": 40.404219150793,
+            "parking_longitude": -3.6981113117529,
+            "parking_provider_id": 439,
+            "parking_provider_name": "Altamira",
+            "parking_type": false,
+            "spot_name": 160,
+            "is_box": false
+        },
+        "fee": [],
+        "third_party_discriminator": "TEST_IT",
+        "currency": "EUR",
+        "has_voucher_notification": true,
+        "has_receipt_notification": false
     },
-    "product_net_price": 21.67,
-    "product_vat_price": 4.33,
-    "product_vat_percent": "20 %",
-    "product_gross_price": 26,
-    "fee": [
-        {
-            "id": 677622,
-            "net_price": 2.91,
-            "vat": 0.58,
-            "total": 3.49,
-            "discriminator": "administration_fee"
-        }
-    ],
-    "total_net_price": 24.58,
-    "total_vat": 4.91,
-    "total": 29.49,
-    "vehicle_type": "CAR",
-    "is_airport_parking": false,
-    "is_third_party": true,
-    "is_box": false,
-    "external_code": "47000000000000144644",
-    "external_code_type": "QR",
-    "external_code_tech": "qrcode_1"
+    "email": {
+        "from": "miki.petrovic@parclick.com",
+        "from_name": "Parclick | IT",
+        "to": "natalia.gonzalez@parclick.com",
+        "to_name": "miki.petrovic@parclick.com",
+        "cco": "archive@parclick.com",
+        "subject": "Parclick | IT | IT"
+    }
 }
 </pre>
 </p>
