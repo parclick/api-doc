@@ -4092,8 +4092,6 @@ Authorization: Bearer {JWT_TOKEN}
 | parking_instructions      | string           | parking instructions                         |
 | parking_latitude          | float            | parking latitude                             |
 | parking_longitude         | float            | parking longitude                            |
-| parking_provider_id       | int              | parking provider id                          |
-| parking_provider_name     | string           | parking provider name                        |
 | parking_type              | string           | parking category                             |
 | spot_name                 | string           | spot name                                    |
 | is_box                    | bool             | parking use a box                            |
