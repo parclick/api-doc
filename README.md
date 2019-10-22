@@ -4057,6 +4057,7 @@ Authorization: Bearer {JWT_TOKEN}
 | user_first_name           | string           | user first name                              |
 | user_last_name            | string           | user last name                               |
 | product                   | string           | product description i.e. "MULTIPASS 2 horas" |
+| product_instructions      | string           | product instructions                         |
 | product_category          | string           | product category                             |
 | product_warning           | string           | warning description                          | 
 | product_net_price         | float            | product net price                            |
@@ -4064,8 +4065,9 @@ Authorization: Bearer {JWT_TOKEN}
 | product_vat_percent       | string           | product vat percent                          |
 | product_gross_price       | float            | vat price                                    |
 | voucher_code              | string           | voucher code                                 |
-| voucher_id                | integer          | voucher id (id used to cancel a reservation) |
+| voucher_id                | int .            | voucher id (id used to cancel a reservation) |
 | voucher_description       | array - string   | voucher_description                          |
+| booking_id                | int              | booking id                                   |
 | booking_state             | string           | booking status (CONFIRMED, CANCELLED, PENDING)|
 | booking_is_cancellable    | bool             | is this booking cancellable                  |
 | booking_cancellation_type | int              | [1 cancel before 23:59, 2 cancel one hour left, 3 cancel disallowed] |
@@ -4089,10 +4091,14 @@ Authorization: Bearer {JWT_TOKEN}
 | parking_country           | string           | parking country                              |
 | parking_maximum_height    | string           | parking maximum height                       |
 | parking_description       | string           | parking description                          |
-| parking_instructions      | string           | parking instructions                         |
+| parking_instructions      | array            | parking instructions ()                         |
 | parking_latitude          | float            | parking latitude                             |
 | parking_longitude         | float            | parking longitude                            |
-| parking_type              | string           | parking category                             |
+| parking_category          | array            | parking category                             |
+| parking_has_shuttle       | bool             | has shuttle service                          |
+| parking_shuttle_schedule  | array            | schuttle schedule                            |
+| parking_shuttle_frequency | string           | frequency between shuttles                   |
+| parking_airport_terminals | array            | airport terminals                            |
 | spot_name                 | string           | spot name                                    |
 | is_box                    | bool             | parking use a box                            |
 | fee                       | array            | array of fees                                |
@@ -4106,7 +4112,7 @@ Authorization: Bearer {JWT_TOKEN}
 | to_name                   | string           | email to name                                |
 | cco                       | string           | email carbon copy                            |
 | subject                   | string           | email subject                                | 
-
+|---------------------------------------------------------------------------------------------|
 
 <details><summary style="color:#FF6600;">Show response 200 Ok</summary>
 <p>
@@ -4119,6 +4125,7 @@ Authorization: Bearer {JWT_TOKEN}
         },
         "product": {
             "product": "ONEPASS 2 hours",
+	    "product_instructions": "Here are the product instrucctions",
             "product_category": "ONEPASS",
             "product_warning": "For the QR reader to work properly, you must have the latest version of the app installed.",
             "product_net_price": 2.48,
