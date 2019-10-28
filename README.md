@@ -4081,6 +4081,7 @@ Authorization: Bearer {JWT_TOKEN}
 | external_code_type        | string           | external code type                           |
 | external_code_tech        | string           | external code tech                           |
 | qr_hash                   | string           | qr hash                                      |
+| booking_created_at        | string           | booking creation date d/m/Y H:i              |
 | extra_fields              | array            | all the extra fields filled in booking       |
 | parking_id                | int              | parking id                                   |
 | parking_name              | string           | parking name                                 |
@@ -4091,7 +4092,7 @@ Authorization: Bearer {JWT_TOKEN}
 | parking_country           | string           | parking country                              |
 | parking_maximum_height    | string           | parking maximum height                       |
 | parking_description       | string           | parking description                          |
-| parking_instructions      | array            | parking instructions ()                         |
+| parking_instructions      | array            | parking instructions ()                      |
 | parking_latitude          | float            | parking latitude                             |
 | parking_longitude         | float            | parking longitude                            |
 | parking_category          | array            | parking category                             |
