@@ -4113,7 +4113,6 @@ Authorization: Bearer {JWT_TOKEN}
 | to_name                   | string           | email to name                                |
 | cco                       | string           | email carbon copy                            |
 | subject                   | string           | email subject                                | 
-|---------------------------------------------------------------------------------------------|
 
 <details><summary style="color:#FF6600;">Show response 200 Ok</summary>
 <p>
