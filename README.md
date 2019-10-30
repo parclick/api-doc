@@ -4165,6 +4165,7 @@ Authorization: Bearer {JWT_TOKEN}
             "vehicle_type": "CAR",
             "external_code_tech": "qrcode_1",
             "qr_hash": "@VZ87NG9#",
+	    "booking_created_at": "30\/10\/2019 09:57",
             "extra_fields": [
                 {
                     "3": {
