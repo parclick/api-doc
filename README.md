@@ -197,6 +197,7 @@ Authorization: Bearer {JWT_TOKEN}
 | locale          | string                 | true     | language in which the information will be returned                                | en_GB               |
 | group           | string                 | true     | **search**                                                                        | null                |
 | limit           | integer                | true     | total number of records [1-200]                                                   | 200                 |
+| page            | integer                | true     | page selected                                                   | 1                 |
 | from            | date yyyy-MM-dd HH:mm  | true     | booking start date                                                                | null                |
 | to              | date yyyy-MM-dd HH:mm  | true     | booking end date                                                                  | null                |
 | latitude        | float                  | true     | valid latitude in which to look for                                               | null                |
@@ -217,1618 +218,487 @@ Authorization: Bearer {JWT_TOKEN}
 {
     "page": 1,
     "limit": 10,
-    "pages": 4,
+    "pages": 208,
     "items": [
         {
-            "id": 263,
-            "covered": true,
-            "flexible_entry": false,
-            "guarded": true,
-            "latitude": 40.413240823385,
-            "image_list": "//static.parclick.com/parking/2017/07/f72/be4/6b/f72be46b-bca8-53d0-b054-4ca8bd4f0f2b.jpeg",
-            "longitude": -3.7330859504143,
-            "image": {
-                "id": 542,
-                "extension": "jpg"
-            },
-            "is_cancellable": true,
-            "address": "Avda. de Portugal, 51, Madrid",
-            "city": "Madrid",
-            "country": "España",
-            "province": "Madrid",
-            "zip": "28011",
-            "provider": {
-                "id": 19,
-                "name": "EMT"
-            },
+            "id": 4,
+            "extra_info": [],
+            "address": "Carrer de Santal\u00f3, 12",
+            "city": "Barcelona",
+            "country": "Espa\u00f1a",
+            "province": "Barcelona",
+            "zip": "8021",
             "handicapped_access": true,
             "security": true,
             "open_24h": true,
             "giving_keys": false,
-            "exclude_checking": false,
-            "name": "EMT Avenida de Portugal",
-            "max_height": 210,
-            "passes": [
-                {
-                    "id": 45412,
-                    "name": "ONEPASS 12 hours",
-                    "vehicle_type": {
-                        "id": 1,
-                        "type": "CAR",
-                        "max_height": 190,
-                        "max_length": 500
-                    },
-                    "warning_message": "You must enter through an entrance, which says \"Parking Público\" and not \"Residentes\". Before exiting please get to the control cabin with your reservation locator to get an exit ticket from the clerk on duty",
-                    "price": 5,
-                    "type": "pass",
-                    "internal_name": "ONEPASS 12h (5.00€)",
-                    "duration": 12,
-                    "multiparking": false,
-                    "multipass": false,
-                    "frequency": "HOURLY",
-                    "_links": {
-                        "self": [
-                            {
-                                "href": "https://loc.api.parclick.com/v1/product/45412"
-                            },
-                            {
-                                "href": "https://loc.api.parclick.com/v1/pass/45412"
-                            }
-                        ]
-                    }
-                }
-            ],
-            "subscriptions": [
-                {
-                    "id": 1527,
-                    "name": "Weekend Parking Pass",
-                    "vehicle_type": {
-                        "id": 1,
-                        "type": "CAR",
-                        "max_height": 190,
-                        "max_length": 500
-                    },
-                    "warning_message": "This product is valid only for the Parking A Rosa.",
-                    "price": 25,
-                    "type": "subscription",
-                    "subscription_type": "MONTHLY",
-                    "duration": 12,
-                    "_links": {
-                        "self": {
-                            "href": "https://loc.api.parclick.com/v1/product/1527"
-                        }
-                    }
-                },
-                {
-                    "id": 1970,
-                    "name": "Weekend Parking Pass",
-                    "vehicle_type": {
-                        "id": 1,
-                        "type": "CAR",
-                        "max_height": 190,
-                        "max_length": 500
-                    },
-                    "warning_message": "Before exiting please get to the control cabin with your reservation locator to get an exit ticket from the clerk on duty",
-                    "price": 25,
-                    "type": "subscription",
-                    "subscription_type": "MONTHLY",
-                    "duration": 12,
-                    "_links": {
-                        "self": {
-                            "href": "https://loc.api.parclick.com/v1/product/1970"
-                        }
-                    }
-                },
-                {
-                    "id": 69967,
-                    "name": "PASS 31 DÍAS",
-                    "vehicle_type": {
-                        "id": 1,
-                        "type": "CAR",
-                        "max_height": 190,
-                        "max_length": 500
-                    },
-                    "warning_message": "You must enter through an entrance, which says \"Parking Público\" and not \"Residentes\". Before exiting please get to the control cabin with your reservation locator to get an exit ticket from the clerk on duty",
-                    "price": 139,
-                    "type": "subscription",
-                    "subscription_type": "MONTHLY",
-                    "duration": 12,
-                    "_links": {
-                        "self": {
-                            "href": "https://loc.api.parclick.com/v1/product/69967"
-                        }
-                    }
-                }
-            ],
-            "access": [
-                {
-                    "id": 1769,
-                    "type": "vehicle",
-                    "latitude": 40.413240823385,
-                    "longitude": -3.7330859504143
-                }
-            ],
-            "slug": "mm_avenida_de_portugal",
-            "multiparking": true,
-            "reviews_summary": {
-                "reviews": {
-                    "96": {
-                        "review": [],
-                        "average": 3.3333333333333335
-                    },
-                    "105": {
-                        "review": [],
-                        "opinion": "Cada vez que quería salir del pk tenía que pasar por ventanilla para que me validaran el ticket... y eso era un poco engorroso. Por lo demás todo perfecto.",
-                        "average": 4.333333333333333
-                    },
-                    "145": {
-                        "review": [],
-                        "opinion": "Espacio, amabilidad y eficacia del personal. Accesibilidad entradas y salidas, multiples",
-                        "average": 4.666666666666667
-                    },
-                    "249": {
-                        "review": [],
-                        "opinion": "Parking amplio. Personal amable. Recomendado.",
-                        "average": 5
-                    },
-                    "1231": {
-                        "review": [],
-                        "average": 3
-                    },
-                    "1532": {
-                        "review": [],
-                        "opinion": "el sistema de acudir a la garita, y tienen las fichas en papel, mientras buscan reserva y llaman para comprobar es muy lento.",
-                        "average": 4.333333333333333
-                    },
-                    "1668": {
-                        "review": [],
-                        "opinion": "La entrada al parkin que yo cogi estaba super alejada de la cabina,para la proxima no me pasa!",
-                        "average": 5
-                    },
-                    "1975": {
-                        "review": [],
-                        "average": 5
-                    },
-                    "2206": {
-                        "review": [],
-                        "average": 4.333333333333333
-                    },
-                    "2214": {
-                        "review": [],
-                        "opinion": "Puede mejorar el precio. Más barato, mucho más lleno",
-                        "average": 5
-                    },
-                    "2869": {
-                        "review": [],
-                        "average": 5
-                    },
-                    "2918": {
-                        "review": [],
-                        "average": 4.666666666666667
-                    },
-                    "3176": {
-                        "review": [],
-                        "average": 5
-                    },
-                    "3240": {
-                        "review": [],
-                        "opinion": "en los tiempos actuales el sistema de entrada y salida esta obsoleto. no tiene sentido tener que validar el tiquet cuando entras o sales del parking. al menos realizada la entrada el ticket debería de habilitar para entrar o salir hasta la finalización",
-                        "average": 3.6666666666666665
-                    },
-                    "3670": {
-                        "review": [],
-                        "average": 4
-                    },
-                    "3789": {
-                        "review": [],
-                        "opinion": "Parking enorme, muchísimas plazas disponibles. Buenas instalaciones, limpio, y sobre todo, barato y bien comunicado con línea de bus.",
-                        "average": 5
-                    },
-                    "4394": {
-                        "review": [],
-                        "opinion": "el parking es muy largo con bastantes salidas a la calle, pero sólo tiene cabina de pago en la última salida a la calle con lo cual si entras desde la calle por una salida que está en medio del parking tienes que andar muchísimo, añadiría más cabinas",
-                        "average": 2.6666666666666665
-                    },
-                    "4571": {
-                        "review": [],
-                        "opinion": "Rápido, los empleados muy agradables, muy limplio, plazas grandes... muy bueno. Eso sí, aconsejo aparcar lo más arriba posible, que es donde está la cabina, y además la parada Alto de Extremadura está mucho más cerca desde ahí que Puerta del Ángel.",
-                        "average": 5
-                    },
-                    "4933": {
-                        "review": [],
-                        "average": 5
-                    },
-                    "5071": {
-                        "review": [],
-                        "average": 4.333333333333333
-                    },
-                    "5184": {
-                        "review": [],
-                        "average": 3.6666666666666665
-                    },
-                    "5316": {
-                        "review": [],
-                        "average": 4.666666666666667
-                    },
-                    "5338": {
-                        "review": [],
-                        "average": 3
-                    },
-                    "5367": {
-                        "review": [],
-                        "average": 5
-                    }
-                },
-                "questions": {
-                    "4": {
-                        "score": 101,
-                        "number": 24,
-                        "average": 4.208333333333333
-                    },
-                    "5": {
-                        "score": 106,
-                        "number": 24,
-                        "average": 4.416666666666667
-                    },
-                    "6": {
-                        "score": 107,
-                        "number": 24,
-                        "average": 4.458333333333333
-                    }
-                },
-                "totalScore": 4.361111111111112
-            },
+            "exclude_checking": true,
+            "license_info": false,
+            "vehicle_info": false,
+            "flight": false,
+            "return_flight_location": false,
+            "train": false,
+            "name": "NN Santal\u00f3",
+            "access_phone": "00 34 647 07 97 31",
+            "max_height": 180,
+            "slug": "nn_santalo",
+            "voucher_needed": false,
+            "freemium": false,
+            "multiparking": false,
+            "instructions": "",
+            "cancellation_type": 2,
             "_links": {
                 "self": {
-                    "href": "https://loc.api.parclick.com/v1/parking/263"
+                    "href": "https:\/\/loc.api.parclick.com\/v1\/parking\/4"
                 }
             },
             "_embedded": {
                 "city": {
-                    "id": 37,
-                    "name": "Madrid",
-                    "slug": "madrid",
+                    "id": 6,
+                    "name": "Barcelona",
+                    "slug": "barcelona",
+                    "latitude": 41.3851,
+                    "longitude": 2.1734,
+                    "time_zone": "Europe\/Madrid",
                     "_links": {
                         "self": {
-                            "href": "https://loc.api.parclick.com/v1/city/37"
+                            "href": "https:\/\/loc.api.parclick.com\/v1\/city\/6"
                         }
                     }
                 }
             }
         },
         {
-            "id": 955,
-            "covered": true,
-            "flexible_entry": true,
-            "guarded": true,
-            "latitude": 40.390566050823,
-            "image_list": "//static.parclick.com/parking/2016/06/parking-2041-large.jpg",
-            "longitude": -3.7439535991564,
-            "image": {
-                "id": 2041,
-                "extension": "jpg"
-            },
-            "is_cancellable": true,
-            "address": "Calle Carlos Domingo, 5",
-            "city": "Madrid",
-            "country": "España",
-            "province": "Madrid",
-            "zip": "28047",
-            "provider": {
-                "id": 81,
-                "name": "DM - Grupo Bolton"
-            },
+            "id": 5,
+            "extra_info": [],
+            "address": "Comte d\u0027Urgell, 154",
+            "city": "Barcelona",
+            "country": "Espa\u00f1a",
+            "province": "Barcelona",
+            "zip": "8036",
             "handicapped_access": true,
             "security": true,
             "open_24h": true,
-            "giving_keys": true,
+            "giving_keys": false,
             "exclude_checking": false,
-            "name": "DM Gómez Ulla",
+            "license_info": false,
+            "vehicle_info": false,
+            "flight": false,
+            "return_flight_location": false,
+            "train": false,
+            "name": "NN Urgell 2",
+            "max_height": 195,
+            "slug": "nn_urgell_2",
+            "voucher_needed": false,
+            "freemium": false,
+            "multiparking": false,
+            "instructions": "",
+            "cancellation_type": 2,
+            "_links": {
+                "self": {
+                    "href": "https:\/\/loc.api.parclick.com\/v1\/parking\/5"
+                }
+            },
+            "_embedded": {
+                "city": {
+                    "id": 6,
+                    "name": "Barcelona",
+                    "slug": "barcelona",
+                    "latitude": 41.3851,
+                    "longitude": 2.1734,
+                    "time_zone": "Europe\/Madrid",
+                    "_links": {
+                        "self": {
+                            "href": "https:\/\/loc.api.parclick.com\/v1\/city\/6"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id": 6,
+            "extra_info": [],
+            "address": "Comte Borrell, 26-28",
+            "city": "Barcelona",
+            "country": "Espa\u00f1a",
+            "province": "Barcelona",
+            "zip": "8015",
+            "handicapped_access": true,
+            "security": true,
+            "open_24h": true,
+            "giving_keys": false,
+            "exclude_checking": false,
+            "license_info": false,
+            "vehicle_info": false,
+            "flight": false,
+            "return_flight_location": false,
+            "train": false,
+            "name": "NN Borrell",
+            "access_phone": "00 34 634 30 42 14",
+            "max_height": 210,
+            "slug": "nn_borrell",
+            "voucher_needed": false,
+            "freemium": false,
+            "multiparking": false,
+            "instructions": "",
+            "cancellation_type": 2,
+            "_links": {
+                "self": {
+                    "href": "https:\/\/loc.api.parclick.com\/v1\/parking\/6"
+                }
+            },
+            "_embedded": {
+                "city": {
+                    "id": 6,
+                    "name": "Barcelona",
+                    "slug": "barcelona",
+                    "latitude": 41.3851,
+                    "longitude": 2.1734,
+                    "time_zone": "Europe\/Madrid",
+                    "_links": {
+                        "self": {
+                            "href": "https:\/\/loc.api.parclick.com\/v1\/city\/6"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id": 7,
+            "extra_info": [],
+            "address": "Valencia, 243",
+            "city": "Barcelona",
+            "country": "Espa\u00f1a",
+            "province": "Barcelona",
+            "zip": "8007",
+            "handicapped_access": true,
+            "security": true,
+            "open_24h": true,
+            "giving_keys": false,
+            "exclude_checking": false,
+            "license_info": false,
+            "vehicle_info": false,
+            "flight": false,
+            "return_flight_location": false,
+            "train": false,
+            "name": "NN Valencia II",
             "max_height": 200,
-            "passes": [
-                {
-                    "id": 39836,
-                    "name": "MULTIPASS 3 hours",
-                    "vehicle_type": {
-                        "id": 1,
-                        "type": "CAR",
-                        "max_height": 190,
-                        "max_length": 500
-                    },
-                    "warning_message": "At this car park, you must leave your car keys with us.",
-                    "price": 3,
-                    "type": "pass",
-                    "internal_name": "MULTIPASS 3h (3.00€)",
-                    "duration": 3,
-                    "multiparking": false,
-                    "multipass": true,
-                    "frequency": "HOURLY",
-                    "_links": {
-                        "self": [
-                            {
-                                "href": "https://loc.api.parclick.com/v1/product/39836"
-                            },
-                            {
-                                "href": "https://loc.api.parclick.com/v1/pass/39836"
-                            }
-                        ]
-                    }
-                }
-            ],
-            "subscriptions": [],
-            "access": [
-                {
-                    "id": 743,
-                    "type": "vehicle",
-                    "latitude": 40.390566050823,
-                    "longitude": -3.7439535991564
-                }
-            ],
-            "slug": "dm_gomez_ulla",
+            "slug": "nn_valencia_ii",
+            "voucher_needed": false,
+            "freemium": false,
             "multiparking": false,
-            "reviews_summary": {
-                "reviews": {
-                    "2299": {
-                        "review": [],
-                        "average": 4
-                    },
-                    "2382": {
-                        "review": [],
-                        "opinion": "lo que más me importa es que estuviera cerca de mi destino y así era. es un parking de barrio. normal.",
-                        "average": 4
-                    },
-                    "2535": {
-                        "review": [],
-                        "opinion": "fácil llegar y el personal amable y profesional.",
-                        "average": 4.666666666666667
-                    },
-                    "5155": {
-                        "review": [],
-                        "average": 5
-                    }
-                },
-                "questions": {
-                    "4": {
-                        "score": 18,
-                        "number": 4,
-                        "average": 4.5
-                    },
-                    "5": {
-                        "score": 16,
-                        "number": 4,
-                        "average": 4
-                    },
-                    "6": {
-                        "score": 19,
-                        "number": 4,
-                        "average": 4.75
-                    }
-                },
-                "totalScore": 4.416666666666667
-            },
+            "instructions": "",
+            "cancellation_type": 2,
             "_links": {
                 "self": {
-                    "href": "https://loc.api.parclick.com/v1/parking/955"
+                    "href": "https:\/\/loc.api.parclick.com\/v1\/parking\/7"
                 }
             },
             "_embedded": {
                 "city": {
-                    "id": 37,
-                    "name": "Madrid",
-                    "slug": "madrid",
+                    "id": 6,
+                    "name": "Barcelona",
+                    "slug": "barcelona",
+                    "latitude": 41.3851,
+                    "longitude": 2.1734,
+                    "time_zone": "Europe\/Madrid",
                     "_links": {
                         "self": {
-                            "href": "https://loc.api.parclick.com/v1/city/37"
+                            "href": "https:\/\/loc.api.parclick.com\/v1\/city\/6"
                         }
                     }
                 }
             }
         },
         {
-            "id": 441,
-            "covered": true,
-            "flexible_entry": true,
-            "guarded": true,
-            "latitude": 40.386205849278,
-            "image_list": "//static.parclick.com/parking/2016/06/parking-851-large.jpg",
-            "longitude": -3.7415589299796,
-            "image": {
-                "id": 851,
-                "extension": "jpg"
-            },
-            "is_cancellable": true,
-            "address": "Calle Batalla de Torrijos 4",
-            "city": "Madrid",
-            "country": "España",
-            "province": "Madrid",
-            "zip": "28025",
-            "provider": {
-                "id": 83,
-                "name": "La Madrileña"
-            },
-            "handicapped_access": true,
-            "security": true,
-            "open_24h": true,
-            "giving_keys": true,
-            "exclude_checking": false,
-            "name": "La Madrileña",
-            "max_height": 425,
-            "passes": [
-                {
-                    "id": 5420,
-                    "name": "MULTIPASS 1 day (24 hours) - CARS",
-                    "vehicle_type": {
-                        "id": 1,
-                        "type": "CAR",
-                        "max_height": 190,
-                        "max_length": 500
-                    },
-                    "warning_message": "At this car park, you must leave your car keys with us.",
-                    "price": 15,
-                    "type": "pass",
-                    "internal_name": "MULTIPASS 1d (15.00€)",
-                    "duration": 24,
-                    "multiparking": false,
-                    "multipass": true,
-                    "frequency": "HOURLY",
-                    "_links": {
-                        "self": [
-                            {
-                                "href": "https://loc.api.parclick.com/v1/product/5420"
-                            },
-                            {
-                                "href": "https://loc.api.parclick.com/v1/pass/5420"
-                            }
-                        ]
-                    }
-                }
-            ],
-            "subscriptions": [],
-            "access": [
-                {
-                    "id": 572,
-                    "type": "vehicle",
-                    "latitude": 40.386205849278,
-                    "longitude": -3.7415589299796
-                }
-            ],
-            "slug": "la_madrilena",
-            "multiparking": false,
-            "reviews_summary": {
-                "reviews": {
-                    "203": {
-                        "review": [],
-                        "opinion": "Parking low cost. Hay que dejar las llaves por si el empleado tiene que moverlo. Aparcamiento tipo tetris. Al recoger el coche estaba bien (sin  roces), y los mismos kilómetros. Recomendable hacer unas fotos del coche y cuentakilómetros al dejarlo.",
-                        "average": 3.3333333333333335
-                    },
-                    "4006": {
-                        "review": [],
-                        "average": 2
-                    }
-                },
-                "questions": {
-                    "4": {
-                        "score": 6,
-                        "number": 2,
-                        "average": 3
-                    },
-                    "5": {
-                        "score": 5,
-                        "number": 2,
-                        "average": 2.5
-                    },
-                    "6": {
-                        "score": 5,
-                        "number": 2,
-                        "average": 2.5
-                    }
-                },
-                "totalScore": 2.666666666666667
-            },
-            "_links": {
-                "self": {
-                    "href": "https://loc.api.parclick.com/v1/parking/441"
-                }
-            },
-            "_embedded": {
-                "city": {
-                    "id": 37,
-                    "name": "Madrid",
-                    "slug": "madrid",
-                    "_links": {
-                        "self": {
-                            "href": "https://loc.api.parclick.com/v1/city/37"
-                        }
-                    }
-                }
-            }
-        },
-        {
-            "id": 925,
-            "covered": true,
-            "flexible_entry": true,
-            "guarded": true,
-            "latitude": 40.408647065765,
-            "image_list": "//static.parclick.com/parking/2017/07/3ad/887/f8/3ad887f8-ab01-5df1-9d18-177a7d646282.jpeg",
-            "longitude": -3.7147103357474,
-            "image": {
-                "id": 2010,
-                "extension": "jpg"
-            },
-            "is_cancellable": true,
-            "address": "Calle de la Ventosa",
-            "city": "Madrid",
-            "country": "España",
-            "province": "Madrid",
-            "zip": "28005",
-            "provider": {
-                "id": 230,
-                "name": "PROMOPARC"
-            },
-            "handicapped_access": true,
-            "security": true,
-            "open_24h": false,
-            "giving_keys": false,
-            "exclude_checking": false,
-            "name": "PROMOPARC Hospital VOT",
-            "max_height": 210,
-            "passes": [
-                {
-                    "id": 24822,
-                    "name": "ONEPASS 3 horas",
-                    "vehicle_type": {
-                        "id": 1,
-                        "type": "CAR",
-                        "max_height": 190,
-                        "max_length": 500
-                    },
-                    "warning_message": "",
-                    "price": 5.5,
-                    "type": "pass",
-                    "internal_name": "ONEPASS 3h (5.50€)",
-                    "duration": 3,
-                    "multiparking": false,
-                    "multipass": false,
-                    "frequency": "HOURLY",
-                    "_links": {
-                        "self": [
-                            {
-                                "href": "https://loc.api.parclick.com/v1/product/24822"
-                            },
-                            {
-                                "href": "https://loc.api.parclick.com/v1/pass/24822"
-                            }
-                        ]
-                    }
-                }
-            ],
-            "subscriptions": [
-                {
-                    "id": 21791,
-                    "name": "YOUR PARKING SPACE Ticket - 24h",
-                    "vehicle_type": {
-                        "id": 1,
-                        "type": "CAR",
-                        "max_height": 190,
-                        "max_length": 500
-                    },
-                    "warning_message": "",
-                    "price": 125,
-                    "type": "subscription",
-                    "subscription_type": "MONTHLY",
-                    "duration": 12,
-                    "_links": {
-                        "self": {
-                            "href": "https://loc.api.parclick.com/v1/product/21791"
-                        }
-                    }
-                },
-                {
-                    "id": 21797,
-                    "name": "YOUR PARKING SPACE Ticket - 24h",
-                    "vehicle_type": {
-                        "id": 6,
-                        "type": "MOTORBIKE",
-                        "max_length": 220
-                    },
-                    "warning_message": "",
-                    "price": 50,
-                    "type": "subscription",
-                    "subscription_type": "MONTHLY",
-                    "duration": 12,
-                    "_links": {
-                        "self": {
-                            "href": "https://loc.api.parclick.com/v1/product/21797"
-                        }
-                    }
-                }
-            ],
-            "access": [
-                {
-                    "id": 724,
-                    "type": "vehicle",
-                    "latitude": 40.408647065765,
-                    "longitude": -3.7147103357474
-                }
-            ],
-            "slug": "promoparc_hospital_vot",
-            "multiparking": false,
-            "reviews_summary": {
-                "reviews": {
-                    "326": {
-                        "review": [],
-                        "opinion": "Parking muy limpio, no es necesario dejar las llaves y el personal es muy amable.",
-                        "average": 5
-                    },
-                    "1454": {
-                        "review": [],
-                        "average": 4
-                    },
-                    "1866": {
-                        "review": [],
-                        "opinion": "cerca, limpio pero no había nadie en la garita ni para entrar ni para salir, seguí las instrucciones y llamé pero no válido la tarjeta así q para sacar el coche tuve q llamar otra vez. aparte de eso todo bien",
-                        "average": 4.666666666666667
-                    },
-                    "2544": {
-                        "review": [],
-                        "average": 4
-                    },
-                    "2615": {
-                        "review": [],
-                        "opinion": "The car park in itself is well maintained. Big space for a van to park. On the contrary, the man who checked us in at the time we arrived for our reservation failed to tell us that there will be nobody on hand the day we leave the car park on a saturday a",
-                        "average": 2.6666666666666665
-                    },
-                    "3140": {
-                        "review": [],
-                        "average": 4.333333333333333
-                    },
-                    "4076": {
-                        "review": [],
-                        "opinion": "Todo perfecto y a buen precio",
-                        "average": 5
-                    },
-                    "4253": {
-                        "review": [],
-                        "average": 5
-                    },
-                    "4500": {
-                        "review": [],
-                        "average": 4
-                    },
-                    "4659": {
-                        "review": [],
-                        "opinion": "Una buena opción para aparcar en Madrid a un precio asequible. El parking es seguro y el personal es atento,",
-                        "average": 4.666666666666667
-                    },
-                    "5270": {
-                        "review": [],
-                        "average": 4.666666666666667
-                    },
-                    "5277": {
-                        "review": [],
-                        "average": 4.666666666666667
-                    }
-                },
-                "questions": {
-                    "4": {
-                        "score": 53,
-                        "number": 12,
-                        "average": 4.416666666666667
-                    },
-                    "5": {
-                        "score": 54,
-                        "number": 12,
-                        "average": 4.5
-                    },
-                    "6": {
-                        "score": 51,
-                        "number": 12,
-                        "average": 4.25
-                    }
-                },
-                "totalScore": 4.388888888888888
-            },
-            "_links": {
-                "self": {
-                    "href": "https://loc.api.parclick.com/v1/parking/925"
-                }
-            },
-            "_embedded": {
-                "city": {
-                    "id": 37,
-                    "name": "Madrid",
-                    "slug": "madrid",
-                    "_links": {
-                        "self": {
-                            "href": "https://loc.api.parclick.com/v1/city/37"
-                        }
-                    }
-                }
-            }
-        },
-        {
-            "id": 444,
-            "covered": false,
-            "flexible_entry": false,
-            "guarded": false,
-            "latitude": 40.4087362,
-            "image_list": "//static.parclick.com/parking/2018/12/036/4e4/bd/0364e4bd-497c-5a49-b122-62575ab5bc22.jpeg",
-            "longitude": -3.7106774,
-            "image": {
-                "id": 875,
-                "extension": "png"
-            },
-            "is_cancellable": true,
-            "address": "Calle de Toledo, 88",
-            "city": "Madrid",
-            "country": "España",
-            "province": "Madrid",
-            "zip": "28005",
-            "provider": {
-                "id": 81,
-                "name": "DM - Grupo Bolton"
-            },
-            "handicapped_access": false,
-            "security": false,
-            "open_24h": false,
-            "giving_keys": false,
-            "exclude_checking": false,
-            "name": "DM Latina",
-            "max_height": 220,
-            "passes": [
-                {
-                    "id": 39840,
-                    "name": "MULTIPASS 3 hours",
-                    "vehicle_type": {
-                        "id": 1,
-                        "type": "CAR",
-                        "max_height": 190,
-                        "max_length": 500
-                    },
-                    "warning_message": "At this car park, you must leave your car keys with us.",
-                    "price": 8.1,
-                    "type": "pass",
-                    "internal_name": "MULTIPASS 3h (8.10€)",
-                    "duration": 3,
-                    "multiparking": false,
-                    "multipass": true,
-                    "frequency": "HOURLY",
-                    "_links": {
-                        "self": [
-                            {
-                                "href": "https://loc.api.parclick.com/v1/product/39840"
-                            },
-                            {
-                                "href": "https://loc.api.parclick.com/v1/pass/39840"
-                            }
-                        ]
-                    }
-                }
-            ],
-            "subscriptions": [],
-            "access": [
-                {
-                    "id": 294,
-                    "type": "vehicle",
-                    "latitude": 40.4087362,
-                    "longitude": -3.7106774
-                }
-            ],
-            "slug": "dm_latina",
-            "multiparking": false,
-            "reviews_summary": {
-                "reviews": {
-                    "270": {
-                        "review": [],
-                        "average": 5
-                    },
-                    "769": {
-                        "review": [],
-                        "average": 3.6666666666666665
-                    },
-                    "1113": {
-                        "review": [],
-                        "average": 4
-                    },
-                    "1298": {
-                        "review": [],
-                        "opinion": "Mejorar la comunicación entre el personal ya que cuando llegamos para sacar el coche al finalizar la reserva no se ponían de acuerdo entre ellos para saber quién tenía que sacar el coche. Además no estaban seguros de donde estaba, ni tampoco las llaves.",
-                        "average": 2
-                    },
-                    "1319": {
-                        "review": [],
-                        "average": 3.6666666666666665
-                    },
-                    "1553": {
-                        "review": [],
-                        "opinion": "muy buen trato y parking muy cerca para alojarte en la latina muy contentos",
-                        "average": 4.333333333333333
-                    },
-                    "1610": {
-                        "review": [],
-                        "opinion": "barato y en el mismo centro",
-                        "average": 3.3333333333333335
-                    },
-                    "1660": {
-                        "review": [],
-                        "average": 5
-                    },
-                    "2621": {
-                        "review": [],
-                        "average": 3.6666666666666665
-                    },
-                    "3548": {
-                        "review": [],
-                        "opinion": "RAS",
-                        "average": 4.666666666666667
-                    },
-                    "4187": {
-                        "review": [],
-                        "average": 5
-                    },
-                    "4442": {
-                        "review": [],
-                        "opinion": "Conocían perfectamente el modo de actuar con la App y todo funcionó bien",
-                        "average": 5
-                    },
-                    "4940": {
-                        "review": [],
-                        "opinion": "llegas y ellos se encargan de aparcarte el coche, ya que las llaves se las quedan para si tienen que mover el coche. si quieres sacarlo enseñas el ticket y te sacan el coche.",
-                        "average": 4
-                    },
-                    "4945": {
-                        "review": [],
-                        "average": 4.333333333333333
-                    }
-                },
-                "questions": {
-                    "4": {
-                        "score": 56,
-                        "number": 14,
-                        "average": 4
-                    },
-                    "5": {
-                        "score": 55,
-                        "number": 14,
-                        "average": 3.9285714285714284
-                    },
-                    "6": {
-                        "score": 62,
-                        "number": 14,
-                        "average": 4.428571428571429
-                    }
-                },
-                "totalScore": 4.119047619047619
-            },
-            "_links": {
-                "self": {
-                    "href": "https://loc.api.parclick.com/v1/parking/444"
-                }
-            },
-            "_embedded": {
-                "city": {
-                    "id": 37,
-                    "name": "Madrid",
-                    "slug": "madrid",
-                    "_links": {
-                        "self": {
-                            "href": "https://loc.api.parclick.com/v1/city/37"
-                        }
-                    }
-                }
-            }
-        },
-        {
-            "id": 407,
-            "covered": true,
-            "flexible_entry": true,
-            "guarded": true,
-            "latitude": 40.429977094199,
-            "image_list": "//static.parclick.com/parking/2017/07/c75/9f4/97/c759f497-e3f0-51e5-b0e7-41aa0e4782c5.jpeg",
-            "longitude": -3.7187371270549,
-            "is_cancellable": true,
-            "address": "Marqués de Urquijo, s/n",
-            "city": "Madrid",
-            "country": "España",
-            "province": "Madrid",
-            "zip": "28008",
-            "provider": {
-                "id": 27,
-                "name": "Mutuapark"
-            },
+            "id": 8,
+            "extra_info": [],
+            "address": "Valencia, 511",
+            "city": "Barcelona",
+            "country": "Espa\u00f1a",
+            "province": "Barcelona",
+            "zip": "8013",
             "handicapped_access": true,
             "security": true,
             "open_24h": true,
             "giving_keys": false,
             "exclude_checking": false,
-            "name": "PARKIA Marqués De Urquijo",
+            "license_info": false,
+            "vehicle_info": false,
+            "flight": false,
+            "return_flight_location": false,
+            "train": false,
+            "name": "NN Valencia III",
             "max_height": 190,
-            "passes": [
-                {
-                    "id": 4581,
-                    "name": "MULTIPASS 1 day",
-                    "vehicle_type": {
-                        "id": 1,
-                        "type": "CAR",
-                        "max_height": 190,
-                        "max_length": 500
-                    },
-                    "warning_message": "Although the car park is open 24 hours, you must redeem the receipt within Customer Service Hours:\r\na) Monday to Saturday from 7.00h to 23.00h.\r\nb) Sunday and holiday from 11.00h to 19.00h",
-                    "price": 31.85,
-                    "type": "pass",
-                    "internal_name": "MULTIPASS 1d (31.85€)",
-                    "duration": 24,
-                    "multiparking": false,
-                    "multipass": true,
-                    "frequency": "HOURLY",
-                    "_links": {
-                        "self": [
-                            {
-                                "href": "https://loc.api.parclick.com/v1/product/4581"
-                            },
-                            {
-                                "href": "https://loc.api.parclick.com/v1/pass/4581"
-                            }
-                        ]
-                    }
-                }
-            ],
-            "subscriptions": [
-                {
-                    "id": 70497,
-                    "name": "PASS",
-                    "vehicle_type": {
-                        "id": 1,
-                        "type": "CAR",
-                        "max_height": 190,
-                        "max_length": 500
-                    },
-                    "warning_message": "",
-                    "price": 270.1,
-                    "type": "subscription",
-                    "subscription_type": "MONTHLY",
-                    "duration": 1,
-                    "_links": {
-                        "self": {
-                            "href": "https://loc.api.parclick.com/v1/product/70497"
-                        }
-                    }
-                }
-            ],
-            "access": [
-                {
-                    "id": 846,
-                    "type": "vehicle",
-                    "latitude": 40.429977094199,
-                    "longitude": -3.7187371270549
-                }
-            ],
-            "slug": "parkia_marques_de_urquijo",
+            "slug": "nn_valencia_iii",
+            "voucher_needed": false,
+            "freemium": false,
             "multiparking": false,
-            "reviews_summary": {
-                "reviews": {
-                    "731": {
-                        "review": [],
-                        "average": 3.6666666666666665
-                    }
-                },
-                "questions": {
-                    "4": {
-                        "score": 3,
-                        "number": 1,
-                        "average": 3
-                    },
-                    "5": {
-                        "score": 4,
-                        "number": 1,
-                        "average": 4
-                    },
-                    "6": {
-                        "score": 4,
-                        "number": 1,
-                        "average": 4
-                    }
-                },
-                "totalScore": 3.6666666666666665
-            },
+            "instructions": "",
+            "cancellation_type": 2,
             "_links": {
                 "self": {
-                    "href": "https://loc.api.parclick.com/v1/parking/407"
+                    "href": "https:\/\/loc.api.parclick.com\/v1\/parking\/8"
                 }
             },
             "_embedded": {
                 "city": {
-                    "id": 37,
-                    "name": "Madrid",
-                    "slug": "madrid",
+                    "id": 6,
+                    "name": "Barcelona",
+                    "slug": "barcelona",
+                    "latitude": 41.3851,
+                    "longitude": 2.1734,
+                    "time_zone": "Europe\/Madrid",
                     "_links": {
                         "self": {
-                            "href": "https://loc.api.parclick.com/v1/city/37"
+                            "href": "https:\/\/loc.api.parclick.com\/v1\/city\/6"
                         }
                     }
                 }
             }
         },
         {
-            "id": 1666,
-            "covered": true,
-            "flexible_entry": false,
-            "guarded": true,
-            "latitude": 40.43232507531,
-            "image_list": "//static.parclick.com/parking/2017/07/136/6cf/31/1366cf31-9f20-593c-a3d5-09fd377bc9fe.jpeg",
-            "longitude": -3.7194070438047,
-            "is_cancellable": true,
-            "address": "Calle Romero Robledo, 9",
-            "city": "Madrid",
-            "country": "Spain",
-            "province": "Madrid",
-            "zip": "28008",
-            "provider": {
-                "id": 81,
-                "name": "DM - Grupo Bolton"
-            },
+            "id": 9,
+            "extra_info": [],
+            "address": "Rocafort, 64",
+            "city": "Barcelona",
+            "country": "Espa\u00f1a",
+            "province": "Barcelona",
+            "zip": "8015",
             "handicapped_access": true,
+            "security": true,
+            "open_24h": true,
+            "giving_keys": false,
+            "exclude_checking": true,
+            "license_info": false,
+            "vehicle_info": false,
+            "flight": false,
+            "return_flight_location": false,
+            "train": false,
+            "name": "NN Rocafort",
+            "access_phone": "00 34 687 61 05 23",
+            "max_height": 190,
+            "slug": "nn_rocafort",
+            "voucher_needed": false,
+            "freemium": false,
+            "multiparking": false,
+            "instructions": "",
+            "cancellation_type": 2,
+            "_links": {
+                "self": {
+                    "href": "https:\/\/loc.api.parclick.com\/v1\/parking\/9"
+                }
+            },
+            "_embedded": {
+                "city": {
+                    "id": 6,
+                    "name": "Barcelona",
+                    "slug": "barcelona",
+                    "latitude": 41.3851,
+                    "longitude": 2.1734,
+                    "time_zone": "Europe\/Madrid",
+                    "_links": {
+                        "self": {
+                            "href": "https:\/\/loc.api.parclick.com\/v1\/city\/6"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id": 10,
+            "extra_info": [],
+            "address": "Tarragona, 141",
+            "city": "Barcelona",
+            "country": "Espa\u00f1a",
+            "province": "Barcelona",
+            "zip": "8014",
+            "handicapped_access": true,
+            "security": true,
+            "open_24h": false,
+            "giving_keys": false,
+            "exclude_checking": false,
+            "license_info": false,
+            "vehicle_info": false,
+            "flight": false,
+            "return_flight_location": false,
+            "train": false,
+            "name": "NN Tarragona",
+            "max_height": 210,
+            "slug": "nn_tarragona",
+            "voucher_needed": false,
+            "freemium": false,
+            "multiparking": false,
+            "instructions": "",
+            "cancellation_type": 2,
+            "_links": {
+                "self": {
+                    "href": "https:\/\/loc.api.parclick.com\/v1\/parking\/10"
+                }
+            },
+            "_embedded": {
+                "city": {
+                    "id": 6,
+                    "name": "Barcelona",
+                    "slug": "barcelona",
+                    "latitude": 41.3851,
+                    "longitude": 2.1734,
+                    "time_zone": "Europe\/Madrid",
+                    "_links": {
+                        "self": {
+                            "href": "https:\/\/loc.api.parclick.com\/v1\/city\/6"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id": 14,
+            "extra_info": [],
+            "address": "Passeig de Colom,",
+            "city": "Barcelona",
+            "country": "Espa\u00f1a",
+            "province": "Barcelona",
+            "zip": "08002",
+            "handicapped_access": true,
+            "security": true,
+            "open_24h": true,
+            "giving_keys": false,
+            "exclude_checking": false,
+            "license_info": false,
+            "vehicle_info": false,
+            "flight": false,
+            "return_flight_location": false,
+            "train": false,
+            "name": "BSM Moll de la Fusta",
+            "max_height": 195,
+            "slug": "bsm_moll_de_la_fusta",
+            "voucher_needed": false,
+            "freemium": false,
+            "multiparking": true,
+            "instructions": "",
+            "cancellation_type": 1,
+            "_links": {
+                "self": {
+                    "href": "https:\/\/loc.api.parclick.com\/v1\/parking\/14"
+                }
+            },
+            "_embedded": {
+                "city": {
+                    "id": 6,
+                    "name": "Barcelona",
+                    "slug": "barcelona",
+                    "latitude": 41.3851,
+                    "longitude": 2.1734,
+                    "time_zone": "Europe\/Madrid",
+                    "_links": {
+                        "self": {
+                            "href": "https:\/\/loc.api.parclick.com\/v1\/city\/6"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id": 18,
+            "extra_info": [],
+            "address": "C. Carreras i Candi, 65",
+            "city": "Barcelona",
+            "country": "Espa\u00f1a",
+            "province": "Barcelona",
+            "zip": "8028",
+            "handicapped_access": true,
+            "security": true,
+            "open_24h": true,
+            "giving_keys": false,
+            "exclude_checking": false,
+            "license_info": false,
+            "vehicle_info": false,
+            "flight": false,
+            "return_flight_location": false,
+            "train": false,
+            "name": "Parking Viajeros",
+            "max_height": 210,
+            "slug": "parking_viajeros_1",
+            "voucher_needed": false,
+            "freemium": false,
+            "multiparking": false,
+            "instructions": "",
+            "cancellation_type": 2,
+            "_links": {
+                "self": {
+                    "href": "https:\/\/loc.api.parclick.com\/v1\/parking\/18"
+                }
+            },
+            "_embedded": {
+                "city": {
+                    "id": 6,
+                    "name": "Barcelona",
+                    "slug": "barcelona",
+                    "latitude": 41.3851,
+                    "longitude": 2.1734,
+                    "time_zone": "Europe\/Madrid",
+                    "_links": {
+                        "self": {
+                            "href": "https:\/\/loc.api.parclick.com\/v1\/city\/6"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id": 19,
+            "extra_info": [],
+            "address": "Aeropuerto de Alicante",
+            "city": "Alicante",
+            "country": "Espa\u00f1a",
+            "province": "Alicante",
+            "zip": "3195",
+            "handicapped_access": false,
             "security": true,
             "open_24h": false,
             "giving_keys": true,
             "exclude_checking": false,
-            "name": "DM Argüelles",
-            "max_height": 210,
-            "passes": [
-                {
-                    "id": 563,
-                    "name": "MULTIPASS 3 hours",
-                    "vehicle_type": {
-                        "id": 1,
-                        "type": "CAR",
-                        "max_height": 190,
-                        "max_length": 500
-                    },
-                    "warning_message": "At this car park, you must leave your car keys with us.",
-                    "list_price": 9,
-                    "price": 5,
-                    "type": "pass",
-                    "internal_name": "MULTIPASS 3h (5.00€)",
-                    "duration": 3,
-                    "multiparking": false,
-                    "multipass": true,
-                    "frequency": "HOURLY",
-                    "_links": {
-                        "self": [
-                            {
-                                "href": "https://loc.api.parclick.com/v1/product/563"
-                            },
-                            {
-                                "href": "https://loc.api.parclick.com/v1/pass/563"
-                            }
-                        ]
-                    }
-                }
-            ],
-            "subscriptions": [],
-            "access": [
-                {
-                    "id": 1613,
-                    "type": "vehicle",
-                    "latitude": 40.43232507531,
-                    "longitude": -3.7194070438047
-                }
-            ],
-            "slug": "dm-arguelles",
+            "license_info": true,
+            "vehicle_info": true,
+            "flight": false,
+            "return_flight_location": false,
+            "train": false,
+            "name": "ALC Valet Parking - Aeropuerto Alicante",
+            "slug": "alc_valet_parking_aeropuerto_alicante",
+            "voucher_needed": false,
+            "freemium": true,
             "multiparking": false,
-            "reviews_summary": {
-                "reviews": {
-                    "12": {
-                        "review": [],
-                        "average": 3.6666666666666665
-                    },
-                    "988": {
-                        "review": [],
-                        "opinion": "El personal es muy amable",
-                        "average": 3.6666666666666665
-                    },
-                    "2194": {
-                        "review": [],
-                        "average": 4
-                    },
-                    "2747": {
-                        "review": [],
-                        "average": 4
-                    },
-                    "3219": {
-                        "review": [],
-                        "average": 3.6666666666666665
-                    },
-                    "3220": {
-                        "review": [],
-                        "average": 3.6666666666666665
-                    },
-                    "3909": {
-                        "review": [],
-                        "average": 4
-                    },
-                    "3910": {
-                        "review": [],
-                        "average": 4
-                    },
-                    "4296": {
-                        "review": [],
-                        "average": 5
-                    },
-                    "4331": {
-                        "review": [],
-                        "average": 4
-                    },
-                    "4456": {
-                        "review": [],
-                        "opinion": "Excelent price/performance ratio. Offers what you need by half the price of other parkings.",
-                        "average": 3.3333333333333335
-                    },
-                    "4907": {
-                        "review": [],
-                        "average": 3
-                    }
-                },
-                "questions": {
-                    "4": {
-                        "score": 45,
-                        "number": 12,
-                        "average": 3.75
-                    },
-                    "5": {
-                        "score": 44,
-                        "number": 12,
-                        "average": 3.6666666666666665
-                    },
-                    "6": {
-                        "score": 49,
-                        "number": 12,
-                        "average": 4.083333333333333
-                    }
-                },
-                "totalScore": 3.833333333333334
-            },
+            "instructions": "",
+            "cancellation_type": 2,
             "_links": {
                 "self": {
-                    "href": "https://loc.api.parclick.com/v1/parking/1666"
+                    "href": "https:\/\/loc.api.parclick.com\/v1\/parking\/19"
                 }
             },
             "_embedded": {
                 "city": {
-                    "id": 37,
-                    "name": "Madrid",
-                    "slug": "madrid",
+                    "id": 3,
+                    "name": "Alicante",
+                    "slug": "alicante",
+                    "latitude": 38.3453,
+                    "longitude": -0.4831,
+                    "time_zone": "Europe\/Madrid",
                     "_links": {
                         "self": {
-                            "href": "https://loc.api.parclick.com/v1/city/37"
-                        }
-                    }
-                }
-            }
-        },
-        {
-            "id": 2254,
-            "covered": true,
-            "flexible_entry": true,
-            "guarded": true,
-            "latitude": 40.42679480842,
-            "image_list": "//static.parclick.com/parking/2018/09/36a/d3c/e4/36ad3ce4-7da0-515a-ac30-62cc41cea7a8.jpeg",
-            "longitude": -3.7142887754449,
-            "is_cancellable": true,
-            "address": "Calle de la Princesa, 25",
-            "city": "Madrid",
-            "country": "Spain",
-            "province": "Madrid",
-            "zip": "28008",
-            "provider": {
-                "id": 227,
-                "name": "CITY PARKING MADRID"
-            },
-            "handicapped_access": false,
-            "security": true,
-            "open_24h": true,
-            "giving_keys": false,
-            "exclude_checking": false,
-            "name": "Princesa 25",
-            "max_height": 190,
-            "passes": [
-                {
-                    "id": 68831,
-                    "name": "MULTIPASS 5 hours",
-                    "vehicle_type": {
-                        "id": 1,
-                        "type": "CAR",
-                        "max_height": 190,
-                        "max_length": 500
-                    },
-                    "warning_message": "In order to enjoy the reduced price of this pass you must bring a printed-out receipt. Without the receipt you will be charged the full price.",
-                    "price": 18,
-                    "type": "pass",
-                    "internal_name": "ONEPASS 5h (18.00€)",
-                    "duration": 5,
-                    "multiparking": false,
-                    "multipass": false,
-                    "frequency": "HOURLY",
-                    "_links": {
-                        "self": [
-                            {
-                                "href": "https://loc.api.parclick.com/v1/product/68831"
-                            },
-                            {
-                                "href": "https://loc.api.parclick.com/v1/pass/68831"
-                            }
-                        ]
-                    }
-                }
-            ],
-            "subscriptions": [
-                {
-                    "id": 68784,
-                    "name": "NIGHT MONTHLY TICKET",
-                    "vehicle_type": {
-                        "id": 1,
-                        "type": "CAR",
-                        "max_height": 190,
-                        "max_length": 500
-                    },
-                    "warning_message": "",
-                    "price": 120,
-                    "type": "subscription",
-                    "subscription_type": "NIGHTLY",
-                    "duration": 12,
-                    "_links": {
-                        "self": {
-                            "href": "https://loc.api.parclick.com/v1/product/68784"
-                        }
-                    }
-                }
-            ],
-            "access": [
-                {
-                    "id": 2794,
-                    "type": "vehicle",
-                    "latitude": 40.42679480842,
-                    "longitude": -3.7142887754449
-                }
-            ],
-            "slug": "princesa-25",
-            "multiparking": false,
-            "reviews_summary": {
-                "reviews": {
-                    "4864": {
-                        "review": [],
-                        "opinion": "Muy pequeño y poco cuidado \nLo único al lado del Meliá",
-                        "average": 2.6666666666666665
-                    }
-                },
-                "questions": {
-                    "4": {
-                        "score": 2,
-                        "number": 1,
-                        "average": 2
-                    },
-                    "5": {
-                        "score": 2,
-                        "number": 1,
-                        "average": 2
-                    },
-                    "6": {
-                        "score": 4,
-                        "number": 1,
-                        "average": 4
-                    }
-                },
-                "totalScore": 2.6666666666666665
-            },
-            "_links": {
-                "self": {
-                    "href": "https://loc.api.parclick.com/v1/parking/2254"
-                }
-            },
-            "_embedded": {
-                "city": {
-                    "id": 37,
-                    "name": "Madrid",
-                    "slug": "madrid",
-                    "_links": {
-                        "self": {
-                            "href": "https://loc.api.parclick.com/v1/city/37"
-                        }
-                    }
-                }
-            }
-        },
-        {
-            "id": 577,
-            "covered": true,
-            "flexible_entry": true,
-            "guarded": true,
-            "latitude": 40.416672224936,
-            "image_list": "//static.parclick.com/parking/2017/07/b07/809/fa/b07809fa-1e69-52f7-ae21-59e0221213ec.jpeg",
-            "longitude": -3.7093525422372,
-            "image": {
-                "id": 1109,
-                "extension": "jpg"
-            },
-            "is_cancellable": true,
-            "address": "Mesón de Paños, 11",
-            "city": "Madrid",
-            "country": "España",
-            "province": "Madrid",
-            "zip": "28013",
-            "provider": {
-                "id": 124,
-                "name": "GARAJE FERMAR"
-            },
-            "handicapped_access": true,
-            "security": false,
-            "open_24h": false,
-            "giving_keys": false,
-            "exclude_checking": false,
-            "name": "Garaje Fermar",
-            "max_height": 250,
-            "passes": [
-                {
-                    "id": 61986,
-                    "name": "ONEPASS 3 hours",
-                    "vehicle_type": {
-                        "id": 1,
-                        "type": "CAR",
-                        "max_height": 190,
-                        "max_length": 500
-                    },
-                    "warning_message": "",
-                    "price": 9,
-                    "type": "pass",
-                    "internal_name": "ONEPASS 3h (9.00€)",
-                    "duration": 3,
-                    "multiparking": false,
-                    "multipass": false,
-                    "frequency": "HOURLY",
-                    "_links": {
-                        "self": [
-                            {
-                                "href": "https://loc.api.parclick.com/v1/product/61986"
-                            },
-                            {
-                                "href": "https://loc.api.parclick.com/v1/pass/61986"
-                            }
-                        ]
-                    }
-                }
-            ],
-            "subscriptions": [],
-            "access": [
-                {
-                    "id": 662,
-                    "type": "vehicle",
-                    "latitude": 40.416672224936,
-                    "longitude": -3.7093525422372
-                }
-            ],
-            "slug": "garaje_fermar",
-            "multiparking": false,
-            "reviews_summary": {
-                "reviews": {
-                    "43": {
-                        "review": [],
-                        "opinion": "Entrada con gps bastante complicada. Seguir indicaciones del personal del parking",
-                        "average": 4
-                    },
-                    "2549": {
-                        "review": [],
-                        "average": 2.6666666666666665
-                    },
-                    "3153": {
-                        "review": [],
-                        "opinion": "Excelente ubicación y el personal muy simpático y atento.",
-                        "average": 4.666666666666667
-                    },
-                    "3816": {
-                        "review": [],
-                        "average": 4.333333333333333
-                    },
-                    "5276": {
-                        "review": [],
-                        "average": 4
-                    }
-                },
-                "questions": {
-                    "4": {
-                        "score": 15,
-                        "number": 5,
-                        "average": 3
-                    },
-                    "5": {
-                        "score": 20,
-                        "number": 5,
-                        "average": 4
-                    },
-                    "6": {
-                        "score": 24,
-                        "number": 5,
-                        "average": 4.8
-                    }
-                },
-                "totalScore": 3.9333333333333327
-            },
-            "_links": {
-                "self": {
-                    "href": "https://loc.api.parclick.com/v1/parking/577"
-                }
-            },
-            "_embedded": {
-                "city": {
-                    "id": 37,
-                    "name": "Madrid",
-                    "slug": "madrid",
-                    "_links": {
-                        "self": {
-                            "href": "https://loc.api.parclick.com/v1/city/37"
-                        }
-                    }
-                }
-            }
-        },
-        {
-            "id": 1811,
-            "covered": true,
-            "flexible_entry": false,
-            "guarded": true,
-            "latitude": 40.424163418398,
-            "image_list": "//static.parclick.com/parking/2017/07/ec0/14d/a8/ec014da8-13f6-5b82-bb91-bbd0c0722579.jpeg",
-            "longitude": -3.7120694318933,
-            "is_cancellable": true,
-            "address": "Plaza de España, 18",
-            "city": "Madrid",
-            "country": "España",
-            "province": "Madrid",
-            "zip": "28008",
-            "provider": {
-                "id": 19,
-                "name": "EMT"
-            },
-            "handicapped_access": true,
-            "security": true,
-            "open_24h": true,
-            "giving_keys": false,
-            "exclude_checking": false,
-            "name": "EMT Plaza España",
-            "max_height": 190,
-            "passes": [
-                {
-                    "id": 45017,
-                    "name": "EVENING",
-                    "vehicle_type": {
-                        "id": 1,
-                        "type": "CAR",
-                        "max_height": 190,
-                        "max_length": 500
-                    },
-                    "warning_message": "Before exiting please get to the control cabin with your reservation locator to get an exit ticket from the clerk on duty",
-                    "price": 15,
-                    "type": "pass",
-                    "internal_name": "ONEPASS 6h (15.00€)",
-                    "duration": 6,
-                    "multiparking": false,
-                    "multipass": false,
-                    "frequency": "HOURLY_RANGE",
-                    "_links": {
-                        "self": [
-                            {
-                                "href": "https://loc.api.parclick.com/v1/product/45017"
-                            },
-                            {
-                                "href": "https://loc.api.parclick.com/v1/pass/45017"
-                            }
-                        ]
-                    }
-                }
-            ],
-            "subscriptions": [],
-            "access": [
-                {
-                    "id": 2448,
-                    "type": "vehicle",
-                    "latitude": 40.424163418398,
-                    "longitude": -3.7120694318933
-                }
-            ],
-            "slug": "emt-plaza-espana",
-            "multiparking": false,
-            "reviews_summary": {
-                "reviews": {
-                    "396": {
-                        "review": [],
-                        "opinion": "El parking muy bien pero el proceso de validación de la reserva muy lento y rudimentario.",
-                        "average": 4
-                    },
-                    "4563": {
-                        "review": [],
-                        "average": 3
-                    },
-                    "5039": {
-                        "review": [],
-                        "average": 4
-                    },
-                    "5301": {
-                        "review": [],
-                        "average": 4.666666666666667
-                    },
-                    "5304": {
-                        "review": [],
-                        "opinion": "Agradecer la excelente atención prestada por los trabajadores ¡repetiremos!",
-                        "average": 5
-                    },
-                    "5358": {
-                        "review": [],
-                        "opinion": "Sistema de certificación de reserva vía Parkclick muy lento en el aparcamiento",
-                        "average": 2.6666666666666665
-                    }
-                },
-                "questions": {
-                    "4": {
-                        "score": 25,
-                        "number": 6,
-                        "average": 4.166666666666667
-                    },
-                    "5": {
-                        "score": 21,
-                        "number": 6,
-                        "average": 3.5
-                    },
-                    "6": {
-                        "score": 24,
-                        "number": 6,
-                        "average": 4
-                    }
-                },
-                "totalScore": 3.8888888888888893
-            },
-            "_links": {
-                "self": {
-                    "href": "https://loc.api.parclick.com/v1/parking/1811"
-                }
-            },
-            "_embedded": {
-                "city": {
-                    "id": 37,
-                    "name": "Madrid",
-                    "slug": "madrid",
-                    "_links": {
-                        "self": {
-                            "href": "https://loc.api.parclick.com/v1/city/37"
+                            "href": "https:\/\/loc.api.parclick.com\/v1\/city\/3"
                         }
                     }
                 }
             }
         }
     ],
-    "total": 38,
+    "total": 2072,
     "params": {
-        "locale": "en_GB",
-        "group": "search",
-        "latitude": "40.4089785",
-        "longitude": "-3.761460599999964",
-        "radius": "5",
+        "locale": "en_EN",
+        "group": "export",
         "limit": "10",
-        "from": "2019-12-31 20:00",
-        "to": "2019-12-31 23:00",
-        "vehicleType": "1"
-    },
-    "_links": {
-        "self": {
-            "href": "/v1/parking?page=1&limit=10"
-        },
-        "first": {
-            "href": "/v1/parking?page=1&limit=10"
-        },
-        "last": {
-            "href": "/v1/parking?page=4&limit=10"
-        },
-        "next": {
-            "href": "/v1/parking?page=2&limit=10"
-        }
+        "page": "1"
     }
 }
 </pre>
