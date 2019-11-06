@@ -2720,6 +2720,8 @@ Authorization: Bearer {JWT_TOKEN}
 | voucher_code    | string                | false    | null             | voucher code            |
 | from            | date yyyy-MM-dd HH:mm | false    | null             | booking start date      |
 | to              | date yyyy-MM-dd HH:mm | false    | null             | booking end date        |
+| page            | integer               | false    | 1 .              | page selectec           |
+| limit           | integer               | false    | 200              | results to show         |
 
 
 ### _Response:_
@@ -2730,21 +2732,101 @@ Authorization: Bearer {JWT_TOKEN}
 <p>
 <pre>
 {
-	"items": [
+    "page": 1,
+    "limit": 200,
+    "pages": 1,
+    "items": [
         {
-            "id": 805081,
-            "createdAt": "2019-03-11T10:06:01+0000",
-            "end_booking_date": "2019-04-01T12:00:00+0000",
-            "start_booking_date": "2019-04-01T10:00:00+0000",
-            "total": 6,
-            "booking_code": "L3KNEKY",
-            "first_name": "test6",
-            "last_name": "Uno6",
-            "state": "PENDING",
-            "total_net_price": 5,
-            "total_vat": 1
+            "id": 974973,
+            "createdAt": "2019-05-30T11:53:17+0000",
+            "end_booking_date": "2019-05-31T12:00:00+0000",
+            "start_booking_date": "2019-05-31T10:00:00+0000",
+            "total": 19.47,
+            "booking_code": "QR23R45",
+            "first_name": "miki0",
+            "last_name": "mikimoto0",
+            "username": "TEST_IT\uf8ffmikimoto0@parclick.com\uf8ffTEST_IT",
+            "state": "CANCELED",
+            "total_net_price": 16.09,
+            "total_vat": 3.38
         },
-    ]
+        {
+            "id": 974998,
+            "createdAt": "2019-05-30T12:09:47+0000",
+            "end_booking_date": "2019-05-31T12:00:00+0000",
+            "start_booking_date": "2019-05-31T10:00:00+0000",
+            "total": 19.47,
+            "booking_code": "L7N6EP6",
+            "first_name": "miki1",
+            "last_name": "mikimoto1",
+            "username": "TEST_IT\uf8ffmikimoto10@parclick.com\uf8ffTEST_IT",
+            "state": "CONFIRMED",
+            "total_net_price": 16.09,
+            "total_vat": 3.38
+        },
+        {
+            "id": 979834,
+            "createdAt": "2019-06-03T13:16:35+0000",
+            "end_booking_date": "2019-06-30T12:00:00+0000",
+            "start_booking_date": "2019-06-30T10:00:00+0000",
+            "total": 19.47,
+            "booking_code": "QXP26EW",
+            "first_name": "miki00",
+            "last_name": "mikimoto00",
+            "username": "TEST_IT\uf8ffmikimoto00@parclick.com\uf8ffTEST_IT",
+            "state": "CANCELED",
+            "total_net_price": 16.09,
+            "total_vat": 3.38
+        },
+        {
+            "id": 1055102,
+            "createdAt": "2019-10-30T09:57:38+0000",
+            "end_booking_date": "2019-12-31T12:00:00+0000",
+            "start_booking_date": "2019-12-31T10:00:00+0000",
+            "total": 3,
+            "booking_code": "L982J29",
+            "first_name": "Miki",
+            "last_name": "Test1",
+            "username": "TEST_IT\uf8ffmiki.petrovic.rios@parclick.com\uf8ffTEST_IT",
+            "state": "CANCELED",
+            "total_net_price": 2.48,
+            "total_vat": 0.52
+        },
+        {
+            "id": 1055103,
+            "createdAt": "2019-10-30T16:41:39+0000",
+            "end_booking_date": "2019-12-31T12:00:00+0000",
+            "start_booking_date": "2019-12-31T10:00:00+0000",
+            "total": 3,
+            "booking_code": "QXPWGW0",
+            "first_name": "Miki",
+            "last_name": "Test1",
+            "username": "TEST_IT\uf8ffmiki.petrovic.rios@parclick.com\uf8ffTEST_IT",
+            "state": "CANCELED",
+            "total_net_price": 2.48,
+            "total_vat": 0.52
+        },
+        {
+            "id": 1055104,
+            "createdAt": "2019-11-04T09:09:14+0000",
+            "end_booking_date": "2019-12-31T12:00:00+0000",
+            "start_booking_date": "2019-12-31T10:00:00+0000",
+            "total": 3,
+            "booking_code": "Q3XDYDJ",
+            "first_name": "Miki",
+            "last_name": "Test_pre",
+            "username": "TEST_IT\uf8ffmiki.petrovic@parclick.com\uf8ffTEST_IT",
+            "state": "CANCELED",
+            "total_net_price": 2.48,
+            "total_vat": 0.52
+        }
+    ],
+    "total": 6,
+    "params": {
+        "group": "list",
+        "page": "1",
+        "limit": "200"
+    }
 }
 </pre>
 </p>
@@ -2754,57 +2836,266 @@ Authorization: Bearer {JWT_TOKEN}
 <p>
 <pre>
 {
-	"items": [
-	{
-            "id": 962978,
-            "createdAt": "2019-05-21T13:32:55+0000",
-            "end_booking_date": "2019-05-30T12:00:00+0000",
-            "start_booking_date": "2019-05-30T10:00:00+0000",
-            "total": 6,
-            "booking_code": "LKKX873",
-            "first_name": "miki1",
-            "last_name": "moto1",
-            "username": "TEST_ITmikimoto1@parclick.comTEST_IT",
+    "page": 1,
+    "limit": 200,
+    "pages": 1,
+    "items": [
+        {
+            "id": 974973,
+            "createdAt": "2019-05-30T11:53:17+0000",
+            "end_booking_date": "2019-05-31T12:00:00+0000",
+            "start_booking_date": "2019-05-31T10:00:00+0000",
+            "total": 19.47,
+            "booking_code": "QR23R45",
+            "first_name": "miki0",
+            "last_name": "mikimoto0",
+            "username": "TEST_IT\uf8ffmikimoto0@parclick.com\uf8ffTEST_IT",
             "items": [
                 {
-                    "id": 964157,
+                    "id": 976152,
                     "parking": {
-                        "id": 792,
-                        "latitude": 48.8569651,
-                        "image_list": "//static.parclick.com/parking/2017/08/627/80d/d0/62780dd0-27cd-579b-86a5-714a4f44b72c.jpeg",
-                        "longitude": 2.3496573,
+                        "id": 113,
+                        "latitude": 36.53671717596,
+                        "image_list": "\/\/static.parclick.com\/parking\/2016\/06\/parking-188-large.png",
+                        "longitude": -6.3022649907516,
                         "is_cancellable": true,
-                        "address": "6, quai de Gesvres",
-                        "city": "París",
-                        "country": "Francia",
-                        "zip": "75004",
-                        "name": "Hôtel de Ville - Paris",
+                        "address": "Paseo Santa B\u00e1rbara, S\/N",
+                        "city": "C\u00e1diz",
+                        "country": "Espa\u00f1a",
+                        "zip": "11003",
+                        "name": "IC Santa B\u00e1rbara",
                         "freemium": false,
                         "cancellation_type": 2,
                         "_links": {
                             "self": {
-                                "href": "https://loc.api.parclick.com/v1/parking/792"
+                                "href": "https:\/\/loc.api.parclick.com\/v1\/parking\/113"
                             }
                         }
                     },
                     "product": {
-                        "id": 60934,
-                        "instructions": "ARRIVAL: scan your QR code. Park in any free space. Go to the office with your reservation and the ticket. If there is no-one there, ring the intercom.\r\n\r\nDEPARTURE: Use the card/device the staff gave you.\r\n\r\nIF YOUR BOOKING ALLOWS UNLIMITED ENTRANCE AND EXIT: Use the multipass card/device the staff gave you.",
-                        "name": "MULTIPASS 2 hours",
+                        "id": 1586,
+                        "instructions": "During the purchasing process, select the date you plan to arrive. After making the online payment you will receive a voucher via email with you reservation code. \r\n\u003Cbr\/\u003E\r\n\u003Cbr\/\u003EOn the date of your reservation, enter the parking lot as usual, take a ticket at the entrance and park in any empty spot.\r\n\u003Cbr\/\u003E\r\n\u003Cbr\/\u003EOnce you\u0027re out of the car, approach the control booth with the Parclick voucher and the ticket you took. Our staff there will check your reservation using the reservation code, and will give you a card that will allow you out.",
+                        "name": "ONEPASS 1 day",
                         "vehicle_type": {
                             "id": 1
                         },
-                        "warning_message": "In case of problems while accessing to the parkings, ring the intercom.\r\nThe reception is located at level: -1",
-                        "list_price": 8.4,
-                        "price": 6,
+                        "warning_message": "\u003Cp\u003EAlthough the car park is open 24 hours, you must redeem the receipt within Customer Service Hours from Monday to Sunday from 7h to 23h.\u003C\/p\u003E",
+                        "list_price": 18.85,
+                        "price": 17,
                         "type": "pass",
                         "_links": {
                             "self": [
                                 {
-                                    "href": "https://loc.api.parclick.com/v1/product/60934"
+                                    "href": "https:\/\/loc.api.parclick.com\/v1\/product\/1586"
                                 },
                                 {
-                                    "href": "https://loc.api.parclick.com/v1/pass/60934"
+                                    "href": "https:\/\/loc.api.parclick.com\/v1\/pass\/1586"
+                                }
+                            ]
+                        }
+                    }
+                }
+            ],
+            "fees": [
+                {
+                    "id": 687791,
+                    "net_price": 2.04,
+                    "vat": 0.43,
+                    "total": 2.47,
+                    "discriminator": "administration_fee"
+                }
+            ],
+            "state": "CANCELED",
+            "total_net_price": 16.09,
+            "total_vat": 3.38
+        },
+        {
+            "id": 974998,
+            "createdAt": "2019-05-30T12:09:47+0000",
+            "end_booking_date": "2019-05-31T12:00:00+0000",
+            "start_booking_date": "2019-05-31T10:00:00+0000",
+            "total": 19.47,
+            "booking_code": "L7N6EP6",
+            "first_name": "miki1",
+            "last_name": "mikimoto1",
+            "username": "TEST_IT\uf8ffmikimoto10@parclick.com\uf8ffTEST_IT",
+            "items": [
+                {
+                    "id": 976177,
+                    "parking": {
+                        "id": 113,
+                        "latitude": 36.53671717596,
+                        "image_list": "\/\/static.parclick.com\/parking\/2016\/06\/parking-188-large.png",
+                        "longitude": -6.3022649907516,
+                        "is_cancellable": true,
+                        "address": "Paseo Santa B\u00e1rbara, S\/N",
+                        "city": "C\u00e1diz",
+                        "country": "Espa\u00f1a",
+                        "zip": "11003",
+                        "name": "IC Santa B\u00e1rbara",
+                        "freemium": false,
+                        "cancellation_type": 2,
+                        "_links": {
+                            "self": {
+                                "href": "https:\/\/loc.api.parclick.com\/v1\/parking\/113"
+                            }
+                        }
+                    },
+                    "product": {
+                        "id": 1586,
+                        "instructions": "During the purchasing process, select the date you plan to arrive. After making the online payment you will receive a voucher via email with you reservation code. \r\n\u003Cbr\/\u003E\r\n\u003Cbr\/\u003EOn the date of your reservation, enter the parking lot as usual, take a ticket at the entrance and park in any empty spot.\r\n\u003Cbr\/\u003E\r\n\u003Cbr\/\u003EOnce you\u0027re out of the car, approach the control booth with the Parclick voucher and the ticket you took. Our staff there will check your reservation using the reservation code, and will give you a card that will allow you out.",
+                        "name": "ONEPASS 1 day",
+                        "vehicle_type": {
+                            "id": 1
+                        },
+                        "warning_message": "\u003Cp\u003EAlthough the car park is open 24 hours, you must redeem the receipt within Customer Service Hours from Monday to Sunday from 7h to 23h.\u003C\/p\u003E",
+                        "list_price": 18.85,
+                        "price": 17,
+                        "type": "pass",
+                        "_links": {
+                            "self": [
+                                {
+                                    "href": "https:\/\/loc.api.parclick.com\/v1\/product\/1586"
+                                },
+                                {
+                                    "href": "https:\/\/loc.api.parclick.com\/v1\/pass\/1586"
+                                }
+                            ]
+                        }
+                    }
+                }
+            ],
+            "fees": [
+                {
+                    "id": 687813,
+                    "net_price": 2.04,
+                    "vat": 0.43,
+                    "total": 2.47,
+                    "discriminator": "administration_fee"
+                }
+            ],
+            "state": "CONFIRMED",
+            "total_net_price": 16.09,
+            "total_vat": 3.38
+        },
+        {
+            "id": 979834,
+            "createdAt": "2019-06-03T13:16:35+0000",
+            "end_booking_date": "2019-06-30T12:00:00+0000",
+            "start_booking_date": "2019-06-30T10:00:00+0000",
+            "total": 19.47,
+            "booking_code": "QXP26EW",
+            "first_name": "miki00",
+            "last_name": "mikimoto00",
+            "username": "TEST_IT\uf8ffmikimoto00@parclick.com\uf8ffTEST_IT",
+            "items": [
+                {
+                    "id": 981013,
+                    "parking": {
+                        "id": 113,
+                        "latitude": 36.53671717596,
+                        "image_list": "\/\/static.parclick.com\/parking\/2016\/06\/parking-188-large.png",
+                        "longitude": -6.3022649907516,
+                        "is_cancellable": true,
+                        "address": "Paseo Santa B\u00e1rbara, S\/N",
+                        "city": "C\u00e1diz",
+                        "country": "Espa\u00f1a",
+                        "zip": "11003",
+                        "name": "IC Santa B\u00e1rbara",
+                        "freemium": false,
+                        "cancellation_type": 2,
+                        "_links": {
+                            "self": {
+                                "href": "https:\/\/loc.api.parclick.com\/v1\/parking\/113"
+                            }
+                        }
+                    },
+                    "product": {
+                        "id": 1586,
+                        "instructions": "During the purchasing process, select the date you plan to arrive. After making the online payment you will receive a voucher via email with you reservation code. \r\n\u003Cbr\/\u003E\r\n\u003Cbr\/\u003EOn the date of your reservation, enter the parking lot as usual, take a ticket at the entrance and park in any empty spot.\r\n\u003Cbr\/\u003E\r\n\u003Cbr\/\u003EOnce you\u0027re out of the car, approach the control booth with the Parclick voucher and the ticket you took. Our staff there will check your reservation using the reservation code, and will give you a card that will allow you out.",
+                        "name": "ONEPASS 1 day",
+                        "vehicle_type": {
+                            "id": 1
+                        },
+                        "warning_message": "\u003Cp\u003EAlthough the car park is open 24 hours, you must redeem the receipt within Customer Service Hours from Monday to Sunday from 7h to 23h.\u003C\/p\u003E",
+                        "list_price": 18.85,
+                        "price": 17,
+                        "type": "pass",
+                        "_links": {
+                            "self": [
+                                {
+                                    "href": "https:\/\/loc.api.parclick.com\/v1\/product\/1586"
+                                },
+                                {
+                                    "href": "https:\/\/loc.api.parclick.com\/v1\/pass\/1586"
+                                }
+                            ]
+                        }
+                    }
+                }
+            ],
+            "fees": [
+                {
+                    "id": 691876,
+                    "net_price": 2.04,
+                    "vat": 0.43,
+                    "total": 2.47,
+                    "discriminator": "administration_fee"
+                }
+            ],
+            "state": "CANCELED",
+            "total_net_price": 16.09,
+            "total_vat": 3.38
+        },
+        {
+            "id": 1055102,
+            "createdAt": "2019-10-30T09:57:38+0000",
+            "end_booking_date": "2019-12-31T12:00:00+0000",
+            "start_booking_date": "2019-12-31T10:00:00+0000",
+            "total": 3,
+            "booking_code": "L982J29",
+            "first_name": "Miki",
+            "last_name": "Test1",
+            "username": "TEST_IT\uf8ffmiki.petrovic.rios@parclick.com\uf8ffTEST_IT",
+            "items": [
+                {
+                    "id": 1056281,
+                    "parking": {
+                        "id": 1988,
+                        "latitude": 40.404219150793,
+                        "image_list": "\/\/static.parclick.com\/parking\/2018\/04\/452\/59f\/ee\/45259fee-65be-5489-b618-81095a4280c5.jpeg",
+                        "longitude": -3.6981113117529,
+                        "is_cancellable": true,
+                        "address": "Calle de Fray Luis de Le\u00f3n, 11",
+                        "city": "Madrid",
+                        "country": "Spain",
+                        "zip": "28012",
+                        "name": "Fray Luis de Le\u00f3n - Atocha",
+                        "freemium": false,
+                        "cancellation_type": 2,
+                        "_links": {
+                            "self": {
+                                "href": "https:\/\/loc.api.parclick.com\/v1\/parking\/1988"
+                            }
+                        }
+                    },
+                    "product": {
+                        "id": 54332,
+                        "instructions": "ARRIVAL:\r\n\u003Cbr\/\u003EPresent the QR code on your reservation (on your phone or a printed version) to the orange Parclick reader, that you will find next to the entrance barrier. The light will turn green and the barrier will open (in 3-4 seconds). Park in any of the identified spaces for Parclick customers:\r\n\u003Cbr\/\u003E- Outdoor spaces: no 3, 7, 8, 9, 11.\r\n\u003Cbr\/\u003E- Underground spaces (floor -2): no 24, 25, 26, 40, 41.\r\n\u003Cbr\/\u003E\r\n\u003Cbr\/\u003EDEPARTURE:\r\n\u003Cbr\/\u003EShow your QR code to the reader. If the light turns red, contact the operator through the barrier interphone.\r\n\u003Cbr\/\u003E\r\n\u003Cbr\/\u003EIF YOUR BOOKING ALLOWS UNLIMITED ENTRANCE AND EXIT:\r\n\u003Cbr\/\u003EFollow the same process, indicated before, to enter and exit.\r\n\u003Cbr\/\u003E\r\n\u003Cbr\/\u003ECOURTESY TIME AND EXCEEDED TIME:\r\n\u003Cbr\/\u003EYou have 30 minutes\u2019 courtesy time to enter the car park before the time indicated on your booking and 30 minutes of courtesy time to leave after. If your stay exceeds the courtesy time, it will automatically charge you the difference on your card which you used to make your booking  (+0.38\u20ac \/ 15 mins).",
+                        "name": "ONEPASS 2 hours",
+                        "vehicle_type": {
+                            "id": 1
+                        },
+                        "warning_message": "For the QR reader to work properly, you must have the latest version of the app installed.",
+                        "price": 3,
+                        "type": "pass",
+                        "_links": {
+                            "self": [
+                                {
+                                    "href": "https:\/\/loc.api.parclick.com\/v1\/product\/54332"
+                                },
+                                {
+                                    "href": "https:\/\/loc.api.parclick.com\/v1\/pass\/54332"
                                 }
                             ]
                         }
@@ -2812,11 +3103,137 @@ Authorization: Bearer {JWT_TOKEN}
                 }
             ],
             "fees": [],
-            "state": "PENDING",
-            "total_net_price": 5,
-            "total_vat": 1
+            "state": "CANCELED",
+            "total_net_price": 2.48,
+            "total_vat": 0.52
+        },
+        {
+            "id": 1055103,
+            "createdAt": "2019-10-30T16:41:39+0000",
+            "end_booking_date": "2019-12-31T12:00:00+0000",
+            "start_booking_date": "2019-12-31T10:00:00+0000",
+            "total": 3,
+            "booking_code": "QXPWGW0",
+            "first_name": "Miki",
+            "last_name": "Test1",
+            "username": "TEST_IT\uf8ffmiki.petrovic.rios@parclick.com\uf8ffTEST_IT",
+            "items": [
+                {
+                    "id": 1056282,
+                    "parking": {
+                        "id": 1988,
+                        "latitude": 40.404219150793,
+                        "image_list": "\/\/static.parclick.com\/parking\/2018\/04\/452\/59f\/ee\/45259fee-65be-5489-b618-81095a4280c5.jpeg",
+                        "longitude": -3.6981113117529,
+                        "is_cancellable": true,
+                        "address": "Calle de Fray Luis de Le\u00f3n, 11",
+                        "city": "Madrid",
+                        "country": "Spain",
+                        "zip": "28012",
+                        "name": "Fray Luis de Le\u00f3n - Atocha",
+                        "freemium": false,
+                        "cancellation_type": 2,
+                        "_links": {
+                            "self": {
+                                "href": "https:\/\/loc.api.parclick.com\/v1\/parking\/1988"
+                            }
+                        }
+                    },
+                    "product": {
+                        "id": 54332,
+                        "instructions": "ARRIVAL:\r\n\u003Cbr\/\u003EPresent the QR code on your reservation (on your phone or a printed version) to the orange Parclick reader, that you will find next to the entrance barrier. The light will turn green and the barrier will open (in 3-4 seconds). Park in any of the identified spaces for Parclick customers:\r\n\u003Cbr\/\u003E- Outdoor spaces: no 3, 7, 8, 9, 11.\r\n\u003Cbr\/\u003E- Underground spaces (floor -2): no 24, 25, 26, 40, 41.\r\n\u003Cbr\/\u003E\r\n\u003Cbr\/\u003EDEPARTURE:\r\n\u003Cbr\/\u003EShow your QR code to the reader. If the light turns red, contact the operator through the barrier interphone.\r\n\u003Cbr\/\u003E\r\n\u003Cbr\/\u003EIF YOUR BOOKING ALLOWS UNLIMITED ENTRANCE AND EXIT:\r\n\u003Cbr\/\u003EFollow the same process, indicated before, to enter and exit.\r\n\u003Cbr\/\u003E\r\n\u003Cbr\/\u003ECOURTESY TIME AND EXCEEDED TIME:\r\n\u003Cbr\/\u003EYou have 30 minutes\u2019 courtesy time to enter the car park before the time indicated on your booking and 30 minutes of courtesy time to leave after. If your stay exceeds the courtesy time, it will automatically charge you the difference on your card which you used to make your booking  (+0.38\u20ac \/ 15 mins).",
+                        "name": "ONEPASS 2 hours",
+                        "vehicle_type": {
+                            "id": 1
+                        },
+                        "warning_message": "For the QR reader to work properly, you must have the latest version of the app installed.",
+                        "price": 3,
+                        "type": "pass",
+                        "_links": {
+                            "self": [
+                                {
+                                    "href": "https:\/\/loc.api.parclick.com\/v1\/product\/54332"
+                                },
+                                {
+                                    "href": "https:\/\/loc.api.parclick.com\/v1\/pass\/54332"
+                                }
+                            ]
+                        }
+                    }
+                }
+            ],
+            "fees": [],
+            "state": "CANCELED",
+            "total_net_price": 2.48,
+            "total_vat": 0.52
+        },
+        {
+            "id": 1055104,
+            "createdAt": "2019-11-04T09:09:14+0000",
+            "end_booking_date": "2019-12-31T12:00:00+0000",
+            "start_booking_date": "2019-12-31T10:00:00+0000",
+            "total": 3,
+            "booking_code": "Q3XDYDJ",
+            "first_name": "Miki",
+            "last_name": "Test_pre",
+            "username": "TEST_IT\uf8ffmiki.petrovic@parclick.com\uf8ffTEST_IT",
+            "items": [
+                {
+                    "id": 1056283,
+                    "parking": {
+                        "id": 1988,
+                        "latitude": 40.404219150793,
+                        "image_list": "\/\/static.parclick.com\/parking\/2018\/04\/452\/59f\/ee\/45259fee-65be-5489-b618-81095a4280c5.jpeg",
+                        "longitude": -3.6981113117529,
+                        "is_cancellable": true,
+                        "address": "Calle de Fray Luis de Le\u00f3n, 11",
+                        "city": "Madrid",
+                        "country": "Spain",
+                        "zip": "28012",
+                        "name": "Fray Luis de Le\u00f3n - Atocha",
+                        "freemium": false,
+                        "cancellation_type": 2,
+                        "_links": {
+                            "self": {
+                                "href": "https:\/\/loc.api.parclick.com\/v1\/parking\/1988"
+                            }
+                        }
+                    },
+                    "product": {
+                        "id": 54332,
+                        "instructions": "ARRIVAL:\r\n\u003Cbr\/\u003EPresent the QR code on your reservation (on your phone or a printed version) to the orange Parclick reader, that you will find next to the entrance barrier. The light will turn green and the barrier will open (in 3-4 seconds). Park in any of the identified spaces for Parclick customers:\r\n\u003Cbr\/\u003E- Outdoor spaces: no 3, 7, 8, 9, 11.\r\n\u003Cbr\/\u003E- Underground spaces (floor -2): no 24, 25, 26, 40, 41.\r\n\u003Cbr\/\u003E\r\n\u003Cbr\/\u003EDEPARTURE:\r\n\u003Cbr\/\u003EShow your QR code to the reader. If the light turns red, contact the operator through the barrier interphone.\r\n\u003Cbr\/\u003E\r\n\u003Cbr\/\u003EIF YOUR BOOKING ALLOWS UNLIMITED ENTRANCE AND EXIT:\r\n\u003Cbr\/\u003EFollow the same process, indicated before, to enter and exit.\r\n\u003Cbr\/\u003E\r\n\u003Cbr\/\u003ECOURTESY TIME AND EXCEEDED TIME:\r\n\u003Cbr\/\u003EYou have 30 minutes\u2019 courtesy time to enter the car park before the time indicated on your booking and 30 minutes of courtesy time to leave after. If your stay exceeds the courtesy time, it will automatically charge you the difference on your card which you used to make your booking  (+0.38\u20ac \/ 15 mins).",
+                        "name": "ONEPASS 2 hours",
+                        "vehicle_type": {
+                            "id": 1
+                        },
+                        "warning_message": "For the QR reader to work properly, you must have the latest version of the app installed.",
+                        "price": 3,
+                        "type": "pass",
+                        "_links": {
+                            "self": [
+                                {
+                                    "href": "https:\/\/loc.api.parclick.com\/v1\/product\/54332"
+                                },
+                                {
+                                    "href": "https:\/\/loc.api.parclick.com\/v1\/pass\/54332"
+                                }
+                            ]
+                        }
+                    }
+                }
+            ],
+            "fees": [],
+            "state": "CANCELED",
+            "total_net_price": 2.48,
+            "total_vat": 0.52
         }
-    ]
+    ],
+    "total": 6,
+    "params": {
+        "group": "booking",
+        "page": "1",
+        "limit": "200"
+    }
 }
 </pre>
 </p>
