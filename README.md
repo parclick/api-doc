@@ -2732,52 +2732,10 @@ Authorization: Bearer {JWT_TOKEN}
 <p>
 <pre>
 {
-    "page": 1,
-    "limit": 200,
-    "pages": 1,
+    "page": 2,
+    "limit": 3,
+    "pages": 3,
     "items": [
-        {
-            "id": 974973,
-            "createdAt": "2019-05-30T11:53:17+0000",
-            "end_booking_date": "2019-05-31T12:00:00+0000",
-            "start_booking_date": "2019-05-31T10:00:00+0000",
-            "total": 19.47,
-            "booking_code": "QR23R45",
-            "first_name": "miki0",
-            "last_name": "mikimoto0",
-            "username": "TEST_IT\uf8ffmikimoto0@parclick.com\uf8ffTEST_IT",
-            "state": "CANCELED",
-            "total_net_price": 16.09,
-            "total_vat": 3.38
-        },
-        {
-            "id": 974998,
-            "createdAt": "2019-05-30T12:09:47+0000",
-            "end_booking_date": "2019-05-31T12:00:00+0000",
-            "start_booking_date": "2019-05-31T10:00:00+0000",
-            "total": 19.47,
-            "booking_code": "L7N6EP6",
-            "first_name": "miki1",
-            "last_name": "mikimoto1",
-            "username": "TEST_IT\uf8ffmikimoto10@parclick.com\uf8ffTEST_IT",
-            "state": "CONFIRMED",
-            "total_net_price": 16.09,
-            "total_vat": 3.38
-        },
-        {
-            "id": 979834,
-            "createdAt": "2019-06-03T13:16:35+0000",
-            "end_booking_date": "2019-06-30T12:00:00+0000",
-            "start_booking_date": "2019-06-30T10:00:00+0000",
-            "total": 19.47,
-            "booking_code": "QXP26EW",
-            "first_name": "miki00",
-            "last_name": "mikimoto00",
-            "username": "TEST_IT\uf8ffmikimoto00@parclick.com\uf8ffTEST_IT",
-            "state": "CANCELED",
-            "total_net_price": 16.09,
-            "total_vat": 3.38
-        },
         {
             "id": 1055102,
             "createdAt": "2019-10-30T09:57:38+0000",
@@ -2787,7 +2745,6 @@ Authorization: Bearer {JWT_TOKEN}
             "booking_code": "L982J29",
             "first_name": "Miki",
             "last_name": "Test1",
-            "username": "TEST_IT\uf8ffmiki.petrovic.rios@parclick.com\uf8ffTEST_IT",
             "state": "CANCELED",
             "total_net_price": 2.48,
             "total_vat": 0.52
@@ -2800,8 +2757,7 @@ Authorization: Bearer {JWT_TOKEN}
             "total": 3,
             "booking_code": "QXPWGW0",
             "first_name": "Miki",
-            "last_name": "Test1",
-            "username": "TEST_IT\uf8ffmiki.petrovic.rios@parclick.com\uf8ffTEST_IT",
+            "last_name": "Test2",
             "state": "CANCELED",
             "total_net_price": 2.48,
             "total_vat": 0.52
@@ -2814,18 +2770,17 @@ Authorization: Bearer {JWT_TOKEN}
             "total": 3,
             "booking_code": "Q3XDYDJ",
             "first_name": "Miki",
-            "last_name": "Test_pre",
-            "username": "TEST_IT\uf8ffmiki.petrovic@parclick.com\uf8ffTEST_IT",
+            "last_name": "Test3",
             "state": "CANCELED",
             "total_net_price": 2.48,
             "total_vat": 0.52
         }
     ],
-    "total": 6,
+    "total": 7,
     "params": {
         "group": "list",
-        "page": "1",
-        "limit": "200"
+        "page": "2",
+        "limit": "3"
     }
 }
 </pre>
