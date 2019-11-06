@@ -2267,91 +2267,63 @@ Authorization: Bearer {JWT_TOKEN}
 <details><summary style="color:#FF6600;">Show response 200 Ok</summary>
 <p>
 <pre>
-{
-    "page": 1,
-    "limit": 10,
-    "pages": 1,
-    "items": [
-        {
-            "id": 27032,
-            "category": "ONEPASS",
-            "name": "ONEPASS 1 day",
-            "parking": {
-                "id": 1047,
-                "covered": false,
-                "flexible_entry": false,
-                "guarded": true,
-                "is_cancellable": true,
-                "airport": {
-                    "id": 19,
-                    "terminal": [
-                        {
-                            "id": 25,
-                            "terminal": {
-                                "id": 8
-                            }
-                        }
-                    ],
-                    "category_name": "Valet",
-                    "category": 2,
-                    "has_shuttle": false
-                },
-                "address": "T2 Aéroport de Nice-Côte d'Azur, Nice, France",
-                "city": "Nice",
-                "name": "T2 ECTOR Aéroport - Service Voiturier - Nice",
-                "_links": {
-                    "self": {
-                        "href": "https://loc.api.parclick.com/v1/parking/1047"
-                    }
-                },
-                "_embedded": {
-                    "city": {
-                        "id": 115,
-                        "_links": {
-                            "self": {
-                                "href": "https://loc.api.parclick.com/v1/city/115"
-                            }
+[
+    {
+        "id": 54332,
+        "category": "ONEPASS",
+        "name": "ONEPASS 2 hours",
+        "parking": {
+            "id": 1988,
+            "covered": false,
+            "flexible_entry": true,
+            "guarded": true,
+            "is_cancellable": true,
+            "address": "Calle de Fray Luis de León, 11",
+            "city": "Madrid",
+            "name": "Fray Luis de León - Atocha",
+            "_links": {
+                "self": {
+                    "href": "https://loc.api.parclick.com/v1/parking/1988"
+                }
+            },
+            "_embedded": {
+                "city": {
+                    "id": 37,
+                    "_links": {
+                        "self": {
+                            "href": "https://loc.api.parclick.com/v1/city/37"
                         }
                     }
                 }
-            },
-            "vehicle_type": {
-                "id": 1,
-                "type": "CAR"
-            },
-            "warning_message": "Please mind you need to leave the car keys with us.",
-            "administration_fee": 0,
-            "paypal_fee": 4.62,
-            "price": 49,
-            "type": "pass",
-            "internal_name": "ONEPASS 8h (49€)",
-            "token": "2338bb72051ae11083a20cd94f3b3183ede3333708b1bc7b50e6af509100ef14",
-            "duration": 8,
-            "multiparking": false,
-            "multipass": false,
-            "frequency": "HOURLY",
-            "_links": {
-                "self": [
-                    {
-                        "href": "https://loc.api.parclick.com/v1/product/27032"
-                    },
-                    {
-                        "href": "https://loc.api.parclick.com/v1/pass/27032"
-                    }
-                ]
             }
+        },
+        "vehicle_type": {
+            "id": 1,
+            "type": "CAR"
+        },
+        "warning_message": "For the QR reader to work properly, you must have the latest version of the app installed.",
+        "administration_fee": 0,
+        "paypal_fee": 1.21,
+        "price": 3,
+        "type": "pass",
+        "internal_name": "ONEPASS 2h (3.00€)",
+        "token": "2dd05be64d5f3bf031eff042565e788b84d81fa543bcac6ad3d4ac814a952241",
+        "duration": 2,
+        "multiparking": false,
+        "multipass": false,
+        "frequency": "HOURLY",
+        "_links": {
+            "self": [
+                {
+                    "href": "https://loc.api.parclick.com/v1/product/54332"
+                },
+                {
+                    "href": "https://loc.api.parclick.com/v1/pass/54332"
+                }
+            ]
         }
-    ],
-    "total": 1,
-    "params": {
-        "locale": "en_GB",
-        "group": "bestpass",
-        "from": "2019-07-22 10:00",
-        "to": "2019-07-22 18:00",
-        "parking": "1047",
-        "vehicleType": "1"
     }
-}
+]
 </pre>
 </p>
 </details>
@@ -2363,34 +2335,7 @@ Authorization: Bearer {JWT_TOKEN}
 <details><summary style="color:#FF6600;">Show response 200 No results</summary>
 <p>
 <pre>
-{  
-   "page":1,
-   "limit":10,
-   "pages":0,
-   "items":[  
-
-   ],
-   "total":0,
-   "params":{  
-      "locale":"en_GB",
-      "group":"bestpass",
-      "parking":"785",
-      "from":"2019-04-13 10:00",
-      "to":"2019-04-13 12:00",
-      "vehicleType":"6"
-   },
-   "_links":{  
-      "self":{  
-         "href":"/v1/pass?page=1&limit=10"
-      },
-      "first":{  
-         "href":"/v1/pass?page=1&limit=10"
-      },
-      "last":{  
-         "href":"/v1/pass?page=0&limit=10"
-      }
-   }
-}
+[]
 </pre>
 </p>
 </details>
