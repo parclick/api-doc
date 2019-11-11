@@ -3298,7 +3298,7 @@ Authorization: Bearer {JWT_TOKEN}
 | application_name          | string           | application name - parclick                  |
 | host                      | string           | host - parclick.com                          |
 | logo_image                | string           | logo image path                              |
-| url_FAQs                  | string           | FAQ's path                                   |
+| url_faqs                  | string           | FAQ's path                                   |
 | emailt_contact            | string           | the contact email                            |
 | from                      | string           | email from                                   |
 | from_name                 | string           | email from name                              |
@@ -3377,7 +3377,11 @@ Authorization: Bearer {JWT_TOKEN}
             "parking_country": "SPAIN",
             "parking_maximum_height": "2.2 m.",
             "parking_description": "Parking in the centre of Madrid can seem an absolute madness, but it won\u2019t be if you know how. In Parclick we\u2019ve already thought of a solution for you, whether you\u2019re just going to the centre for a few hours or want to park your car for a few days. You can leave your car in the Fray Luis de Le\u00f3n 11 Car Park and forget all your worries!\r\n\r\nLocated less than 5 minutes walking from the Embajadores Roundabout, a very centric point of the city of Madrid, the Fray Luis de Le\u00f3n 11 Car Park is as great option if what you want is to leave your car in a zone that\u2019s totally connected with most of the interesting points in the city without having to go through busy streets like Gran V\u00eda or the historic centre of Madrid. Ultimately, it\u2019s the perfect place to leave your car during your stay in the city. \r\n\r\nIn the end, the Fray Luis de Le\u00f3n 11 Car Park would be the perfect place to park your car. Covered, guarded and economic. What are you waiting for? Book your parking space with Parclick forget about your car for now!",
-            "parking_instructions": "ARRIVAL:\r\n\u003Cbr\/\u003EPresent the QR code on your reservation (on your phone or a printed version) to the orange Parclick reader, that you will find next to the entrance barrier. The light will turn green and the barrier will open (in 3-4 seconds). Park in any of the identified spaces for Parclick customers:\r\n\u003Cbr\/\u003E- Outdoor spaces: no 3, 7, 8, 9, 11.\r\n\u003Cbr\/\u003E- Underground spaces (floor -2): no 24, 25, 26, 40, 41.\r\n\u003Cbr\/\u003E\r\n\u003Cbr\/\u003EDEPARTURE:\r\n\u003Cbr\/\u003EShow your QR code to the reader. If the light turns red, contact the operator through the barrier interphone.\r\n\u003Cbr\/\u003E\r\n\u003Cbr\/\u003EIF YOUR BOOKING ALLOWS UNLIMITED ENTRANCE AND EXIT:\r\n\u003Cbr\/\u003EFollow the same process, indicated before, to enter and exit.\r\n\u003Cbr\/\u003E\r\n\u003Cbr\/\u003ECOURTESY TIME AND EXCEEDED TIME:\r\n\u003Cbr\/\u003EYou have 30 minutes\u2019 courtesy time to enter the car park before the time indicated on your booking and 30 minutes of courtesy time to leave after. If your stay exceeds the courtesy time, it will automatically charge you the difference on your card which you used to make your booking  (+0.38\u20ac \/ 15 mins).",
+            "parking_instructions": {
+                "begin": "",
+                "return": "",
+                "info": ""
+            },
             "parking_latitude": 40.404219150793,
             "parking_longitude": -3.6981113117529,
             "parking_provider_id": 439,
@@ -3395,7 +3399,7 @@ Authorization: Bearer {JWT_TOKEN}
         "application_name": "Parclick",
         "host": "parclick.es",
         "logo_image": "https:\/\/s3-eu-west-1.amazonaws.com\/static.parclick.com\/assets\/img\/Logo-Parclick.png",
-        "urlFAQs": "https:\/\/parclick.com\/faqs",
+        "url_faqs": "https:\/\/parclick.com\/faqs",
         "email_contact": "parclick-info@parclick.com"
     },
     "email": {
