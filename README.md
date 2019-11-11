@@ -3395,7 +3395,7 @@ Authorization: Bearer {JWT_TOKEN}
         "currency": "EUR",
         "has_voucher_notification": true,
         "has_receipt_notification": false,
-	"locale": "es_ES",
+        "locale": "es_ES",
         "application_name": "Parclick",
         "host": "parclick.es",
         "logo_image": "https:\/\/s3-eu-west-1.amazonaws.com\/static.parclick.com\/assets\/img\/Logo-Parclick.png",
