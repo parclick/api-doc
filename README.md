@@ -1,6 +1,6 @@
 ![alt text](https://static.parclick.com/assets/img/logotipo-parclick.svg)
 
-<p style="color:#999999;text-align:right;">Document version 1.3.0</p>
+<p style="color:#999999;text-align:right;">Document version 1.4.0</p>
 
 # <span style="color:#FF6600;">Parclick - API Reference</span>
 #### <span style="color:#999;">TECHNICAL DOCUMENTATION</span>
@@ -3294,6 +3294,12 @@ Authorization: Bearer {JWT_TOKEN}
 | currency                  | string           | currency code                                |
 | has_voucher_notification  | bool             | include voucher in notification              |
 | has_receipt_notification  | bool             | include receipt in notification              |
+| locale                    | string           | selected locale                              |
+| application_name          | string           | application name - parclick                  |
+| host                      | string           | host - parclick.com                          |
+| logo_image                | string           | logo image path                              |
+| url_FAQs                  | string           | FAQ's path                                   |
+| emailt_contact            | string           | the contact email                            |
 | from                      | string           | email from                                   |
 | from_name                 | string           | email from name                              |
 | to                        | string           | email to                                     |
@@ -3384,7 +3390,13 @@ Authorization: Bearer {JWT_TOKEN}
         "third_party_discriminator": "TEST_IT",
         "currency": "EUR",
         "has_voucher_notification": true,
-        "has_receipt_notification": false
+        "has_receipt_notification": false,
+	"locale": "es_ES",
+        "application_name": "Parclick",
+        "host": "parclick.es",
+        "logo_image": "https:\/\/s3-eu-west-1.amazonaws.com\/static.parclick.com\/assets\/img\/Logo-Parclick.png",
+        "urlFAQs": "https:\/\/parclick.com\/faqs",
+        "email_contact": "parclick-info@parclick.com"
     },
     "email": {
         "from": "miki.petrovic@parclick.com",
