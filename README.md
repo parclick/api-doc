@@ -1,6 +1,6 @@
 ![alt text](https://static.parclick.com/assets/img/logotipo-parclick.svg)
 
-<p style="color:#999999;text-align:right;">Document version 1.4.0</p>
+<p style="color:#999999;text-align:right;">Document version 1.4.1</p>
 
 # <span style="color:#FF6600;">Parclick - API Reference</span>
 #### <span style="color:#999;">TECHNICAL DOCUMENTATION</span>
@@ -186,6 +186,7 @@ This method allows third party systems to refresh a valid token.
 
 
 This method returns a list of car parks close to a location and based on the parameters used. In case you select one the **id** let get the parking details using the **get parking** endpoint. This method is secured via JWT token.
+To import all parkings for caching the group must be set to **export** without parameters except the page and limit for paginations.
 
 ### _Header:_
 Authorization: Bearer {JWT_TOKEN}
@@ -195,15 +196,15 @@ Authorization: Bearer {JWT_TOKEN}
 | Parameters      | Type                   | Required | Description                                                                       | Default             |
 | --------------- |:---------------------- | -------- | --------------------------------------------------------------------------------- |-------------------- |
 | locale          | string                 | true     | language in which the information will be returned                                | en_GB               |
-| group           | string                 | true     | **search**                                                                        | null                |
-| limit           | integer                | true     | total number of records [1-200]                                                   | 200                 |
-| page            | integer                | true     | page selected                                                   | 1                 |
-| from            | date yyyy-MM-dd HH:mm  | true     | booking start date                                                                | null                |
-| to              | date yyyy-MM-dd HH:mm  | true     | booking end date                                                                  | null                |
-| latitude        | float                  | true     | valid latitude in which to look for                                               | null                |
-| longitude       | float                  | true     | valid longitude in which to look for                                              | null                |
+| group           | string                 | true     | **search** **export**                                                                        | null                |
+| limit           | integer                | false     | total number of records [1-200]                                                   | 200                 |
+| page            | integer                | false     | page selected                                                   | 1                 |
+| from            | date yyyy-MM-dd HH:mm  | false     | booking start date                                                                | null                |
+| to              | date yyyy-MM-dd HH:mm  | false     | booking end date                                                                  | null                |
+| latitude        | float                  | false     | valid latitude in which to look for                                               | null                |
+| longitude       | float                  | false     | valid longitude in which to look for                                              | null                |
 | radius          | integer                | false    | search radius                                                                     | null                |
-| vehicleType     | integer                | true     | type of vehicle you wish to park [1 car, 2 van, 3 caravan, 4 bus, 5 truck, 6 motorbike, 7 small truck]| null                |
+| vehicleType     | integer                | false     | type of vehicle you wish to park [1 car, 2 van, 3 caravan, 4 bus, 5 truck, 6 motorbike, 7 small truck]| null                |
 | freemium        | bool                   | false    | car parks where reservations cannot be booked                                     | false                |
 
 
