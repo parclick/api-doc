@@ -186,7 +186,7 @@ This method allows third party systems to refresh a valid token.
 
 
 This method returns a list of car parks close to a location and based on the parameters used. In case you select one the **id** let get the parking details using the **get parking** endpoint. This method is secured via JWT token.
-To import all parkings for caching the group must be set to **export** without parameters except the page and limit for paginations.
+To import all parkings for caching, the group must be set to **export** without parameters except the page and limit for pagination.
 
 ### _Header:_
 Authorization: Bearer {JWT_TOKEN}
