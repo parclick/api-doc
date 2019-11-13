@@ -2746,6 +2746,7 @@ Authorization: Bearer {JWT_TOKEN}
             "booking_code": "L982J29",
             "first_name": "Miki",
             "last_name": "Test1",
+	    "voucher_id": 935441,
             "state": "CANCELED",
             "total_net_price": 2.48,
             "total_vat": 0.52
@@ -2759,6 +2760,7 @@ Authorization: Bearer {JWT_TOKEN}
             "booking_code": "QXPWGW0",
             "first_name": "Miki",
             "last_name": "Test2",
+	    "voucher_id": 935441,
             "state": "CANCELED",
             "total_net_price": 2.48,
             "total_vat": 0.52
@@ -2772,6 +2774,7 @@ Authorization: Bearer {JWT_TOKEN}
             "booking_code": "Q3XDYDJ",
             "first_name": "Miki",
             "last_name": "Test3",
+	    "voucher_id": 935442,
             "state": "CANCELED",
             "total_net_price": 2.48,
             "total_vat": 0.52
@@ -2805,6 +2808,7 @@ Authorization: Bearer {JWT_TOKEN}
             "booking_code": "QR23R45",
             "first_name": "miki0",
             "last_name": "mikimoto0",
+	    "voucher_id": 935441,
             "username": "TEST_IT\uf8ffmikimoto0@parclick.com\uf8ffTEST_IT",
             "items": [
                 {
@@ -2874,6 +2878,7 @@ Authorization: Bearer {JWT_TOKEN}
             "booking_code": "L7N6EP6",
             "first_name": "miki1",
             "last_name": "mikimoto1",
+	    "voucher_id": 935442,
             "username": "TEST_IT\uf8ffmikimoto10@parclick.com\uf8ffTEST_IT",
             "items": [
                 {
@@ -2943,6 +2948,7 @@ Authorization: Bearer {JWT_TOKEN}
             "booking_code": "QXP26EW",
             "first_name": "miki00",
             "last_name": "mikimoto00",
+	    "voucher_id": 935442,
             "username": "TEST_IT\uf8ffmikimoto00@parclick.com\uf8ffTEST_IT",
             "items": [
                 {
@@ -3012,6 +3018,7 @@ Authorization: Bearer {JWT_TOKEN}
             "booking_code": "L982J29",
             "first_name": "Miki",
             "last_name": "Test1",
+	    "voucher_id": 935443,
             "username": "TEST_IT\uf8ffmiki.petrovic.rios@parclick.com\uf8ffTEST_IT",
             "items": [
                 {
@@ -3072,6 +3079,7 @@ Authorization: Bearer {JWT_TOKEN}
             "booking_code": "QXPWGW0",
             "first_name": "Miki",
             "last_name": "Test1",
+	    "voucher_id": 935444,
             "username": "TEST_IT\uf8ffmiki.petrovic.rios@parclick.com\uf8ffTEST_IT",
             "items": [
                 {
@@ -3132,6 +3140,7 @@ Authorization: Bearer {JWT_TOKEN}
             "booking_code": "Q3XDYDJ",
             "first_name": "Miki",
             "last_name": "Test_pre",
+	    "voucher_id": 935445,
             "username": "TEST_IT\uf8ffmiki.petrovic@parclick.com\uf8ffTEST_IT",
             "items": [
                 {
