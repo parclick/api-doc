@@ -1,6 +1,6 @@
 ![alt text](https://static.parclick.com/assets/img/logotipo-parclick.svg)
 
-<p style="color:#999999;text-align:right;">Document version 1.4.1</p>
+<p style="color:#999999;text-align:right;">Document version 1.4.2</p>
 
 # <span style="color:#FF6600;">Parclick - API Reference</span>
 #### <span style="color:#999;">TECHNICAL DOCUMENTATION</span>
@@ -3283,7 +3283,7 @@ Authorization: Bearer {JWT_TOKEN}
 | parking_instructions      | array            | parking instructions ()                      |
 | parking_latitude          | float            | parking latitude                             |
 | parking_longitude         | float            | parking longitude                            |
-| parking_category          | array            | parking category                             |
+| parking_category          | array            | parking category [1 City Center, 2 Airport Official, 3 Train Station Official, 4 Port, 5 Hospital, 6 Coast, 7 Airport LowCost, 8 Airport Valet, 9 Train Station LowCost, 10 Train Station Valet]                            |
 | parking_has_shuttle       | bool             | has shuttle service                          |
 | parking_shuttle_schedule  | array            | schuttle schedule                            |
 | parking_shuttle_frequency | string           | frequency between shuttles                   |
@@ -3314,103 +3314,111 @@ Authorization: Bearer {JWT_TOKEN}
 {
     "data": {
         "user": {
-            "user_first_name": "John",
-            "user_last_name": "DoE"
+            "user_first_name": "Miki",
+            "user_last_name": "Joinup"
         },
         "product": {
-            "product": "ONEPASS 2 hours",
-	    "product_instructions": "Here are the product instrucctions",
+            "product": "ONEPASS 1 d\u00eda",
+            "product_instructions": "EL D\u00cdA ANTES DE LA SALIDA: Recibir\u00e1s un email y un SMS con el nombre y el n\u00famero de tel\u00e9fono de la persona que recoger\u00e1 tu veh\u00edculo en la estaci\u00f3n. En caso contrario, llama al n\u00famero que aparece en el voucher de Parclick una hora antes de la recogida del veh\u00edculo. Tienes que llamar desde el n\u00famero de tel\u00e9fono que hab\u00edas indicado durante tu reserva, para que te pongan en contacto directamente con el agente.\r\n\r\nA TU LLEGADA: Avisa por tel\u00e9fono 15 minutos antes de llegar a la estaci\u00f3n, donde te estar\u00e1n esperando para recoger tu veh\u00edculo. Antes de entregarle las llaves al conductor mu\u00e9strale el justificante de tu reserva de Parclick. \r\n \r\nEL D\u00cdA ANTES DE REGRESAR: Recibir\u00e1s un email y un SMS con el nombre y el n\u00famero de tel\u00e9fono de la persona que recoger\u00e1 tu veh\u00edculo en la estaci\u00f3n. \r\n \r\nA TU VUELTA: Avisa por tel\u00e9fono una vez hayas llegado. Te estar\u00e1n esperando con tu veh\u00edculo en el mismo punto de la estaci\u00f3n que a la llegada.",
             "product_category": "ONEPASS",
-            "product_warning": "For the QR reader to work properly, you must have the latest version of the app installed.",
-            "product_net_price": 2.48,
-            "product_vat_price": 0.52,
-            "product_vat_percent": "21%",
-            "product_gross_price": 3
+            "product_warning": "En este aparcamiento es necesario dejar las llaves del coche.\r\nEs importante llegar a la hora indicada en tu reserva, ya que nuestro personal estar\u00e1 all\u00ed esper\u00e1ndote para recibirte.\r\nPuedes contactar con el parking para cualquier duda o incidencia que te surja en el aparcamiento: +339 73 72 88 55 .",
+            "product_net_price": 29.17,
+            "product_vat_price": 5.83,
+            "product_vat_percent": "20%",
+            "product_gross_price": 35
         },
         "voucher": {
-            "voucher_code": "VZ87NG9",
-            "voucher_id": 920643,
-            "voucher_description": [
-                "ARRIVAL:\r",
-                "\u003Cbr\/\u003EPresent the QR code on your reservation (on your phone or a printed version) to the orange Parclick reader, that you will find next to the entrance barrier. The light will turn green and the barrier will open (in 3-4 seconds). Park in any of the identified spaces for Parclick customers:\r",
-                "\u003Cbr\/\u003E- Outdoor spaces: no 3, 7, 8, 9, 11.\r",
-                "\u003Cbr\/\u003E- Underground spaces (floor -2): no 24, 25, 26, 40, 41.\r",
-                "\u003Cbr\/\u003E\r",
-                "\u003Cbr\/\u003EDEPARTURE:\r",
-                "\u003Cbr\/\u003EShow your QR code to the reader. If the light turns red, contact the operator through the barrier interphone.\r",
-                "\u003Cbr\/\u003E\r",
-                "\u003Cbr\/\u003EIF YOUR BOOKING ALLOWS UNLIMITED ENTRANCE AND EXIT:\r",
-                "\u003Cbr\/\u003EFollow the same process, indicated before, to enter and exit.\r",
-                "\u003Cbr\/\u003E\r",
-                "\u003Cbr\/\u003ECOURTESY TIME AND EXCEEDED TIME:\r",
-                "\u003Cbr\/\u003EYou have 30 minutes\u2019 courtesy time to enter the car park before the time indicated on your booking and 30 minutes of courtesy time to leave after. If your stay exceeds the courtesy time, it will automatically charge you the difference on your card which you used to make your booking  (+0.38\u20ac \/ 15 mins)."
-            ]
+            "voucher_code": "Q572PPX",
+            "voucher_id": 935445,
+            "voucher_description": {
+                "0": "EL D\u00cdA ANTES DE LA SALIDA: Recibir\u00e1s un email y un SMS con el nombre y el n\u00famero de tel\u00e9fono de la persona que recoger\u00e1 tu veh\u00edculo en la estaci\u00f3n. En caso contrario, llama al n\u00famero que aparece en el voucher de Parclick una hora antes de la recogida del veh\u00edculo. Tienes que llamar desde el n\u00famero de tel\u00e9fono que hab\u00edas indicado durante tu reserva, para que te pongan en contacto directamente con el agente.\r",
+                "2": "A TU LLEGADA: Avisa por tel\u00e9fono 15 minutos antes de llegar a la estaci\u00f3n, donde te estar\u00e1n esperando para recoger tu veh\u00edculo. Antes de entregarle las llaves al conductor mu\u00e9strale el justificante de tu reserva de Parclick. \r",
+                "4": "EL D\u00cdA ANTES DE REGRESAR: Recibir\u00e1s un email y un SMS con el nombre y el n\u00famero de tel\u00e9fono de la persona que recoger\u00e1 tu veh\u00edculo en la estaci\u00f3n. \r",
+                "6": "A TU VUELTA: Avisa por tel\u00e9fono una vez hayas llegado. Te estar\u00e1n esperando con tu veh\u00edculo en el mismo punto de la estaci\u00f3n que a la llegada."
+            }
         },
         "booking": {
+            "booking_id": 1055120,
             "booking_state": "CONFIRMED",
             "booking_is_cancellable": true,
-            "booking_cancellation_type": 2,
+            "booking_cancellation_type": 1,
             "booking_from": "31\/12\/2019 10:00",
             "booking_to": "31\/12\/2019 12:00",
-            "total_net_price": 2.48,
-            "total_vat": 0.52,
-            "total": 3,
+            "total_net_price": 29.17,
+            "total_vat": 5.83,
+            "total": 35,
             "vehicle_type": "CAR",
-            "external_code_tech": "qrcode_1",
-            "qr_hash": "@VZ87NG9#",
-	    "booking_created_at": "30\/10\/2019 09:57",
-            "extra_fields": [
-                {
-                    "3": {
-                        "label": "Vehicle registration number",
-                        "value": "CB797XH"
-                    }
+            "booking_created_at": "13\/11\/2019 11:31",
+            "extra_fields": {
+                "1": {
+                    "label": "brand",
+                    "value": "saab"
+                },
+                "2": {
+                    "label": "model",
+                    "value": "93"
+                },
+                "3": {
+                    "label": "license_plate",
+                    "value": "1788DZN"
+                },
+                "4": {
+                    "label": "arrival_flight",
+                    "value": "1667787"
+                },
+                "5": {
+                    "label": "departure_flight",
+                    "value": "666999"
                 }
-            ]
+            }
         },
         "parking": {
-            "parking_id": 1988,
-            "parking_name": "Fray Luis de Le\u00f3n - Atocha",
-            "parking_address": "Calle de Fray Luis de Le\u00f3n, 11",
-            "parking_zip": "28012",
-            "parking_city": "Madrid",
-            "parking_province": "Madrid",
-            "parking_country": "SPAIN",
-            "parking_maximum_height": "2.2 m.",
-            "parking_description": "Parking in the centre of Madrid can seem an absolute madness, but it won\u2019t be if you know how. In Parclick we\u2019ve already thought of a solution for you, whether you\u2019re just going to the centre for a few hours or want to park your car for a few days. You can leave your car in the Fray Luis de Le\u00f3n 11 Car Park and forget all your worries!\r\n\r\nLocated less than 5 minutes walking from the Embajadores Roundabout, a very centric point of the city of Madrid, the Fray Luis de Le\u00f3n 11 Car Park is as great option if what you want is to leave your car in a zone that\u2019s totally connected with most of the interesting points in the city without having to go through busy streets like Gran V\u00eda or the historic centre of Madrid. Ultimately, it\u2019s the perfect place to leave your car during your stay in the city. \r\n\r\nIn the end, the Fray Luis de Le\u00f3n 11 Car Park would be the perfect place to park your car. Covered, guarded and economic. What are you waiting for? Book your parking space with Parclick forget about your car for now!",
+            "parking_id": 1046,
+            "parking_name": "A\u00e9roport Nantes ECTOR - Service Voiturier - Ext\u00e9rieur",
+            "parking_phone": "+33 01 76 40 00 32",
+            "parking_address": "A\u00e9roport Nantes Atlantique,",
+            "parking_zip": "44340",
+            "parking_city": "Nantes",
+            "parking_province": "Loire-Atlantique",
+            "parking_country": "FRANCE",
+            "parking_maximum_height": "1.9 m.",
+            "parking_description": "\u00bfBuscas un parking cerca del Aeropuerto de Nantes Atlantique? Entonces est\u00e1s de suerte... Conocemos uno a escasos metros que te propone un servicio de aparcacoches para aparcar en Bouguenais. Reserva tu plaza con el parking Valet A\u00e9roport Nantes ECTOR y deja que un aparcacoches conduzca tu veh\u00edculo a un parking vigilado cerca del aeropuerto de Nantes Atlantique. \r\n\r\nEl parking A\u00e9roport Nantes ECTOR dispone de un servicio valet, es decir, no tendr\u00e1s que conducir hasta el parking. Simplemente, dir\u00edgete a la terminal del Aeropuerto de Nantes Atlantique. El d\u00eda antes de tu salida, recibir\u00e1s un mensaje con los datos del operario a quien tendr\u00e1s que llamar con 15 minutos de antelaci\u00f3n para avisarle de tu llegada. All\u00ed, el conductor te estar\u00e1 esperando para recoger tu veh\u00edculo y llevarlo al aparcamiento. A tu regreso, va a pasar lo mismo: el personal de A\u00e9roport Nantes ECTOR te estar\u00e1 esperando en la terminal para entregarte, de nuevo, tu veh\u00edculo. Al fin y al cabo, \u00a1mereces que te traten como si fueras de la realeza aun cuando te vas de la ciudad del Castillo de los Duques de Breta\u00f1a!\r\n\r\nEl parking A\u00e9roport Nantes ECTOR te permite estacionar cerca del Aeropuerto Nantes Atlantique durante el tiempo que dure tu estancia. Dejar\u00e1s tu coche a un buen recaudo en este parking vigilado las 24h \u00a1Viaja sin tener que estar dando vueltas al aeropuerto buscando la entrada del parking gracias al servicio valet del parking A\u00e9roport Nantes ECTOR!",
             "parking_instructions": {
-                "begin": "",
-                "return": "",
+                "begin": "EL D\u00cdA ANTES DE LA SALIDA: Recibir\u00e1s un email y un SMS con el nombre y el n\u00famero de tel\u00e9fono de la persona que recoger\u00e1 tu veh\u00edculo en la terminal. En caso contrario, llama al n\u00famero que aparece en el voucher de Parclick una hora antes de la recogida del veh\u00edculo. Tienes que llamar desde el n\u00famero de tel\u00e9fono que hab\u00edas indicado durante tu reserva, para que te pongan en contacto directamente con el agente.",
+                "return": "El parking sigue en todo momento el estado de tu vuelo, para garantizar la presencia de un agente sin que tengas que esperar si tu vuelo llega con antelaci\u00f3n o retraso.\r\n\r\nA tu vuelta, te dejar\u00e1n una botella de agua en tu veh\u00edculo.",
                 "info": ""
             },
-            "parking_latitude": 40.404219150793,
-            "parking_longitude": -3.6981113117529,
-            "parking_provider_id": 439,
-            "parking_provider_name": "Altamira",
-            "parking_type": false,
-            "spot_name": 160,
+            "parking_latitude": 47.157590455483,
+            "parking_longitude": -1.6011363273911,
+            "parking_category": 2,
+            "parking_shuttle_schedule": [],
+            "parking_airport_terminals": [
+                {
+                    "id": 30
+                }
+            ],
+            "spot_name": 100,
             "is_box": false
         },
         "fee": [],
-        "third_party_discriminator": "TEST_IT",
+        "third_party_discriminator": "JOINUP",
         "currency": "EUR",
         "has_voucher_notification": true,
-        "has_receipt_notification": false,
-        "locale": "es_ES",
-        "application_name": "Parclick",
-        "host": "parclick.es",
-        "logo_image": "https:\/\/s3-eu-west-1.amazonaws.com\/static.parclick.com\/assets\/img\/Logo-Parclick.png",
-        "url_faqs": "https:\/\/parclick.com\/faqs",
-        "email_contact": "parclick-info@parclick.com"
+        "has_receipt_notification": false
     },
     "email": {
         "from": "miki.petrovic@parclick.com",
-        "from_name": "Parclick | IT",
-        "to": "natalia.gonzalez@parclick.com",
-        "to_name": "miki.petrovic@parclick.com",
-        "cco": "archive@parclick.com",
-        "subject": "Parclick | IT | IT"
-    }
+        "from_name": "Parclick by JOINUP",
+        "to": "hello@ectorparking.com",
+        "to_name": "A\u00e9roport Nantes ECTOR - Service Voiturier - Ext\u00e9rieur",
+        "subject": "Parclick by JOINUP Reservar Q572PPX | Parking A\u00e9roport Nantes ECTOR - Service Voiturier - Ext\u00e9rieur, ONEPASS"
+    },
+    "locale": "es_ES",
+    "application_name": "Parclick",
+    "host": "parclick.es",
+    "logo_image": "https:\/\/s3-eu-west-1.amazonaws.com\/static.parclick.com\/assets\/img\/Logo-Parclick.png",
+    "url_faqs": "https:\/\/parclick.com\/faqs",
+    "email_contact": "parclick-info@parclick.com"
 }
 </pre>
 </p>
