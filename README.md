@@ -1,6 +1,6 @@
 ![alt text](https://static.parclick.com/assets/img/logotipo-parclick.svg)
 
-<p style="color:#999999;text-align:right;">Document version 1.4.2</p>
+<p style="color:#999999;text-align:right;">Document version 1.5.0</p>
 
 # <span style="color:#FF6600;">Parclick - API Reference</span>
 #### <span style="color:#999;">TECHNICAL DOCUMENTATION</span>
@@ -18,13 +18,14 @@
 7. [Vehicle type](#vehicle_type)
 8. [Create reservation](#create_reservation)
 9. [Cancel reservation](#cancel_reservation)
-10. [List reservations](#list_reservation)
-11. [Get voucher details](#voucher_details)
-11. [Worflows](#workflows)
+10. [Modify reservation](#modify_reservation)
+11. [List reservations](#list_reservation)
+12. [Get voucher details](#voucher_details)
+13. [Worflows](#workflows)
  	- [Workflow to create a booking reservation](#workflow_reservation)
 	- [Workflow to cancel a booking](#workflow_cancel)
 	- [Workflow to list booking](#workflow_list)
-12. [Generate entry code](#entry_code)
+14. [Generate entry code](#entry_code)
 
 <br>
 
@@ -2703,6 +2704,68 @@ Authorization: Bearer {JWT_TOKEN}
 
 <br>
 
+## <a name="modify_reservation"></a><span style="color:#FF6600;">Modify reservation</span>
+
+### <span style="color:#10a54a;">`POST`</span> `/v1/booking/{booking_id}/edit`
+
+This method allows the modification of a reservation. The **booking_id** is obtained in the _new reservation_ endpoint response. The *product* and *token* parameters are obtained through the endpoint _list products_. It is also necessary to search if the parking requires additional fields through the endpoint _get parking_ (*fieldsRequested*). The process behind, delete the old reservation and create new one. The response shows the new reservation as well as the price difference between both reservations to proceed with the refund or charge.
+
+### _Header:_
+Authorization: Bearer {JWT_TOKEN}
+
+### _Request:_
+
+| Parameters      | Type                  | Required | Default          | Description             |
+| --------------- |:--------------------- | -------- | ---------------- | ----------------------- |
+| token           | string                | true     | null             | checkout token          |
+| product         | string                | true     | null             | user email              |
+| from            | date yyyy-MM-dd HH:mm | true     | null             | booking start date      |
+| to              | date yyyy-MM-dd HH:mm | true     | null             | booking end date        |
+| locale          | date yyyy-MM-dd HH:mm | true     | null             | language in which the information will be returned |
+
+
+### _Response:_
+
+**200 Ok**
+
+<details><summary style="color:#FF6600;">Show response 200 Ok</summary>
+<p>
+<pre>
+{
+    "booking_id": 1055145,
+    "voucher_id": 935470,
+    "voucher_code": "LWPMG3P",
+    "cancelled_booking_price": 17.2,
+    "new_booking_price": 17.2,
+    "difference": 0
+}
+</pre>
+</p>
+</details>
+
+<br>
+
+**401 Unauthorized**
+
+| Parameters      | Type            | Description                  |
+| --------------- |:---------------:| -----------------------------|
+| code            | integer         | http response code value     |
+| message         | string          | error description            |
+
+<details><summary style="color:#FF6600;">Show response 401 Bad credentials</summary>
+<p>
+<pre>
+{
+    "code": 401,
+    "message": "Bad credentials"
+}
+</pre>
+</p>
+</details>
+
+
+<br>
+
 ## <a name="list_reservation"></a><span style="color:#FF6600;">List reservations</span>
 
 ### <span style="color:#0f6ab4;">`GET`</span> `/v1/booking/list`
@@ -2733,58 +2796,151 @@ Authorization: Bearer {JWT_TOKEN}
 <p>
 <pre>
 {
-    "page": 2,
-    "limit": 3,
-    "pages": 3,
+    "page": "1",
+    "limit": "100",
+    "pages": 1,
     "items": [
         {
-            "id": 1055102,
-            "createdAt": "2019-10-30T09:57:38+0000",
+            "id": 1055138,
+            "createdAt": "2019-11-18T07:40:41+0000",
             "end_booking_date": "2019-12-31T12:00:00+0000",
             "start_booking_date": "2019-12-31T10:00:00+0000",
-            "total": 3,
-            "booking_code": "L982J29",
+            "total": 35,
+            "booking_code": "QEG233D",
             "first_name": "Miki",
-            "last_name": "Test1",
-	    "voucher_id": 935441,
+            "last_name": "Joinup",
+            "username": "joinup2@parclick.com",
+            "voucher_id": 935463,
             "state": "CANCELED",
-            "total_net_price": 2.48,
-            "total_vat": 0.52
+            "total_net_price": 29.17,
+            "total_vat": 5.83
         },
         {
-            "id": 1055103,
-            "createdAt": "2019-10-30T16:41:39+0000",
+            "id": 1055139,
+            "createdAt": "2019-11-18T07:53:36+0000",
             "end_booking_date": "2019-12-31T12:00:00+0000",
             "start_booking_date": "2019-12-31T10:00:00+0000",
-            "total": 3,
-            "booking_code": "QXPWGW0",
+            "total": 35,
+            "booking_code": "V49YDDK",
             "first_name": "Miki",
-            "last_name": "Test2",
-	    "voucher_id": 935441,
+            "last_name": "Joinup",
+            "username": "joinup2@parclick.com",
+            "voucher_id": 935464,
             "state": "CANCELED",
-            "total_net_price": 2.48,
-            "total_vat": 0.52
+            "total_net_price": 29.17,
+            "total_vat": 5.83
         },
         {
-            "id": 1055104,
-            "createdAt": "2019-11-04T09:09:14+0000",
+            "id": 1055140,
+            "createdAt": "2019-11-18T14:42:38+0000",
             "end_booking_date": "2019-12-31T12:00:00+0000",
             "start_booking_date": "2019-12-31T10:00:00+0000",
-            "total": 3,
-            "booking_code": "Q3XDYDJ",
+            "total": 35,
+            "booking_code": "LGDWPP4",
             "first_name": "Miki",
-            "last_name": "Test3",
-	    "voucher_id": 935442,
+            "last_name": "Joinup",
+            "username": "joinup2@parclick.com",
+            "voucher_id": 935465,
             "state": "CANCELED",
-            "total_net_price": 2.48,
-            "total_vat": 0.52
+            "total_net_price": 29.17,
+            "total_vat": 5.83
+        },
+        {
+            "id": 1055141,
+            "createdAt": "2019-11-18T14:46:36+0000",
+            "end_booking_date": "2019-12-31T12:00:00+0000",
+            "start_booking_date": "2019-12-31T10:00:00+0000",
+            "total": 35,
+            "booking_code": "V8K2WWJ",
+            "first_name": "Miki",
+            "last_name": "Joinup",
+            "username": "joinup2@parclick.com",
+            "voucher_id": 935466,
+            "state": "CANCELED",
+            "total_net_price": 29.17,
+            "total_vat": 5.83
+        },
+        {
+            "id": 1055142,
+            "createdAt": "2019-11-18T14:52:29+0000",
+            "end_booking_date": "2019-12-31T12:00:00+0000",
+            "start_booking_date": "2019-12-31T10:00:00+0000",
+            "total": 35,
+            "booking_code": "Q2Z3XDG",
+            "first_name": "Miki",
+            "last_name": "Joinup",
+            "username": "joinup2@parclick.com",
+            "voucher_id": 935467,
+            "state": "CANCELED",
+            "total_net_price": 29.17,
+            "total_vat": 5.83
+        },
+        {
+            "id": 1055143,
+            "createdAt": "2019-11-19T09:54:38+0000",
+            "end_booking_date": "2019-12-31T22:00:00+0000",
+            "start_booking_date": "2019-12-31T10:00:00+0000",
+            "total": 17.2,
+            "booking_code": "LY4YGP0",
+            "first_name": "Miki",
+            "last_name": "Joinup",
+            "username": "joinup2@parclick.com",
+            "voucher_id": 935468,
+            "state": "CANCELED",
+            "total_net_price": 14.1,
+            "total_vat": 3.1
+        },
+        {
+            "id": 1055144,
+            "createdAt": "2019-11-19T13:17:45+0000",
+            "end_booking_date": "2019-12-31T22:00:00+0000",
+            "start_booking_date": "2019-12-31T10:00:00+0000",
+            "total": 17.2,
+            "booking_code": "VME5G1X",
+            "first_name": "Miki",
+            "last_name": "Joinup",
+            "username": "joinup2@parclick.com",
+            "voucher_id": 935469,
+            "state": "CANCELED",
+            "total_net_price": 14.1,
+            "total_vat": 3.1
+        },
+        {
+            "id": 1055145,
+            "createdAt": "2019-11-20T11:40:52+0000",
+            "end_booking_date": "2019-12-31T22:00:00+0000",
+            "start_booking_date": "2019-12-31T10:00:00+0000",
+            "total": 17.2,
+            "booking_code": "LWPMG3P",
+            "first_name": "Miki",
+            "last_name": "Joinup",
+            "username": "joinup2@parclick.com",
+            "voucher_id": 935470,
+            "state": "CANCELED",
+            "total_net_price": 14.1,
+            "total_vat": 3.1
+        },
+        {
+            "id": 1055146,
+            "createdAt": "2019-11-20T14:11:41+0000",
+            "end_booking_date": "2019-12-31T22:00:00+0000",
+            "start_booking_date": "2019-12-31T10:00:00+0000",
+            "total": 42.29,
+            "booking_code": "LJK1GWN",
+            "first_name": "Miki",
+            "last_name": "Joinup",
+            "username": "joinup2@parclick.com",
+            "voucher_id": 935471,
+            "state": "CANCELED",
+            "total_net_price": 35.24,
+            "total_vat": 7.05
         }
     ],
-    "total": 7,
+    "total": 10,
     "params": {
         "group": "list",
-        "page": "2",
-        "limit": "3"
+        "page": "1",
+        "limit": "100"
     }
 }
 </pre>
