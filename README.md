@@ -200,8 +200,8 @@ Authorization: Bearer {JWT_TOKEN}
 | group           | string                 | true     | **search** **export**                                                                        | null                |
 | limit           | integer                | false     | total number of records [1-200]                                                   | 200                 |
 | page            | integer                | false     | page selected                                                   | 1                 |
-| from            | date yyyy-MM-dd HH:mm  | false     | booking start date                                                                | null                |
-| to              | date yyyy-MM-dd HH:mm  | false     | booking end date                                                                  | null                |
+| from            | date Y-m-d H:i         | false     | booking start date                                                                | null                |
+| to              | date Y-m-d H:i         | false     | booking end date                                                                  | null                |
 | latitude        | float                  | false     | valid latitude in which to look for                                               | null                |
 | longitude       | float                  | false     | valid longitude in which to look for                                              | null                |
 | radius          | integer                | false    | search radius                                                                     | null                |
@@ -2258,8 +2258,8 @@ Authorization: Bearer {JWT_TOKEN}
 | locale          | string                | true     | language in which the information will be returned |en_GB           | 
 | parking         | integer               | true     | parking identificator                              |null            |
 | vehicleType     | integer               | true     | type of vehicle you wish to park [1 car, 2 van, 3 caravan, 4 bus, 5 truck, 6 motorbike, 7 small truck]    |1               |
-| from            | date yyyy-MM-dd HH:mm | true     | booking start date                                 |null            |
-| to              | date yyyy-MM-dd HH:mm | true     | booking end date                                   |null            |
+| from            | date Y-m-d H:i        | true     | booking start date                                 |null            |
+| to              | date Y-m-d H:i        | true     | booking end date                                   |null            |
 
 
 ### _Response:_
@@ -2546,8 +2546,8 @@ Authorization: Bearer {JWT_TOKEN}
 | product         | integer               | true     | product id               | null                   |
 | firstName       | string                | true     | user fisrt name          | null                   |
 | lastName        | string                | true     | user last name           | null                   |
-| from            | date yyyy-MM-dd HH:mm | true     | booking start date       | null                   |
-| to              | date yyyy-MM-dd HH:mm | true     | booking end date         | null                   |
+| from            | date Y-m-d H:i        | true     | booking start date       | null                   |
+| to              | date Y-m-d H:i        | true     | booking end date         | null                   |
 | brand           | string                | false    | vehicle brand            | null                   |
 | model           | string                | false    | vehicle model            | null                   |
 | licence_plate   | string                | false    | vehicle licence plate    | null                   |
@@ -2719,9 +2719,9 @@ Authorization: Bearer {JWT_TOKEN}
 | --------------- |:--------------------- | -------- | ---------------- | ----------------------- |
 | token           | string                | true     | null             | checkout token          |
 | product         | string                | true     | null             | user email              |
-| from            | date yyyy-MM-dd HH:mm | true     | null             | booking start date      |
-| to              | date yyyy-MM-dd HH:mm | true     | null             | booking end date        |
-| locale          | date yyyy-MM-dd HH:mm | true     | null             | language in which the information will be returned |
+| from            | date Y-m-d H:i        | true     | null             | booking start date      |
+| to              | date Y-m-d H:i        | true     | null             | booking end date        |
+| locale          | string                | true     | null             | language in which the information will be returned |
 
 
 ### _Response:_
@@ -2782,8 +2782,8 @@ Authorization: Bearer {JWT_TOKEN}
 | group           | string                | true     | null             | **list** or **booking** |
 | email           | string                | false    | null             | user email              |
 | voucher_code    | string                | false    | null             | voucher code            |
-| from            | date yyyy-MM-dd HH:mm | false    | null             | booking start date      |
-| to              | date yyyy-MM-dd HH:mm | false    | null             | booking end date        |
+| from            | date Y-m-d H:i        | false    | null             | booking start date      |
+| to              | date Y-m-d H:i        | false    | null             | booking end date        |
 | page            | integer               | false    | 1 .              | page selectec           |
 | limit           | integer               | false    | 200              | results to show         |
 
