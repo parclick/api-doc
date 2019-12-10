@@ -2708,7 +2708,7 @@ Authorization: Bearer {JWT_TOKEN}
 
 ### <span style="color:#10a54a;">`POST`</span> `/v1/booking/{booking_id}/edit`
 
-This method allows the modification of a reservation. The **booking_id** is obtained in the _new reservation_ endpoint response. The *product* and *token* parameters are obtained through the endpoint _list products_. It is also necessary to search if the parking requires additional fields through the endpoint _get parking_ (*fieldsRequested*). The process behind, delete the old reservation and create new one. The response shows the new reservation as well as the price difference between both reservations to proceed with the refund or charge.
+This method allows the modification of a reservation. The **booking_id** is obtained in the _new reservation_ endpoint response. The *product* and *token* parameters are obtained through the endpoint _get bestpass_. It is also necessary to search if the parking requires additional fields through the endpoint _get parking_ (*fieldsRequested*). The process behind, delete the old reservation and create new one. The response shows the new reservation as well as the price difference between both reservations to proceed with the refund or charge.
 
 ### _Header:_
 Authorization: Bearer {JWT_TOKEN}
@@ -3616,7 +3616,7 @@ Authorization: Bearer {JWT_TOKEN}
 
 ![alt text](https://static.parclick.com/docs/external_integration_grap.png)
 
-As a first step and part of the development by the integrator it is necessary to select the vehicles available **Vehicle type /v1/vehicle-type**, prior to select the list of car parks for certain coordinates and a specific type of vehicle and dates. For this task it is necessary to call the endpoint **Get parkings /v1/parking/** to get the parking id. With this data it is possible to show a map with the available car parks. Once a specific car park has been selected, it is necessary to obtain the best pass (product token `2338bb72051ae11083a20cd94f3b3183ede3333708b1bc7b50e6af509100ef14`) **list products /v1/pass** for the selected period and the additional fields for that car park **get parking /v1/parking/{parking_id}** located in response fieldsRequested array.
+As a first step and part of the development by the integrator it is necessary to select the vehicles available **Vehicle type /v1/vehicle-type**, prior to select the list of car parks for certain coordinates and a specific type of vehicle and dates. For this task it is necessary to call the endpoint **Get parkings /v1/parking/** to get the parking id. With this data it is possible to show a map with the available car parks. Once a specific car park has been selected, it is necessary to obtain the best pass (product token `2338bb72051ae11083a20cd94f3b3183ede3333708b1bc7b50e6af509100ef14`) **get bestpass /v1/pass** for the selected period and the additional fields for that car park **get parking /v1/parking/{parking_id}** located in response fieldsRequested array.
 
 ### <a name="workflow_reservation"></a><span style="color:#FF6600;"> 1- Workflow to create a booking reservation</span>
 
