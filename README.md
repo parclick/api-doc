@@ -14,7 +14,7 @@
 3. [Refresh token](#refresh)
 4. [List parkings](#list_parkings)
 5. [Get parking](#get_parking)
-6. [List products](#list_products)
+6. [Bestpass](#bestpass)
 7. [Vehicle type](#vehicle_type)
 8. [Create reservation](#create_reservation)
 9. [Cancel reservation](#cancel_reservation)
@@ -2241,7 +2241,7 @@ Authorization: Bearer {JWT_TOKEN}
 
 <br>
 
-## <a name="list_products"></a><span style="color:#FF6600;">List products</span>
+## <a name="bestpass"></a><span style="color:#FF6600;">Get Bestpass</span>
 
 ### <span style="color:#0f6ab4;">`GET`</span> `/v1/pass/details`
 
