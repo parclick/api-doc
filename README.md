@@ -1,6 +1,6 @@
 ![alt text](https://static.parclick.com/assets/img/logotipo-parclick.svg)
 
-<p style="color:#999999;text-align:right;">Document version 1.5.0</p>
+<p style="color:#999999;text-align:right;">Document version 1.5.1</p>
 
 # <span style="color:#FF6600;">Parclick - API Reference</span>
 #### <span style="color:#999;">TECHNICAL DOCUMENTATION</span>
@@ -187,7 +187,20 @@ This method allows third party systems to refresh a valid token.
 
 
 This method returns a list of car parks close to a location and based on the parameters used. In case you select one the **id** let get the parking details using the **get parking** endpoint. This method is secured via JWT token.
-To import all parkings for caching, the group must be set to **export** without parameters except the page and limit for pagination.
+Depending on the group used, it is necessary to include certain parameters.
+Group export: locale, page, limit - Has pagination
+Group search: locale, latitude, longitude, radius, from, to, vehicleType, limit - Has not pagination
+To import all car parks for caching, the group must be set to **export** without parameters except the page and limit for pagination.
+The car park features are the following fields with their meaning:
+
+| Field              | Description                       | Type        |
+|--------------------|-----------------------------------|-------------|
+| covered            | Covered and guarded parking       | boolean     |
+| handicapped_access | Disabled place                    | boolean     |
+| security           | Security, CCTV                    | boolean     |
+| giving_keys        | Mandatory to leave the keys       | boolean     |
+| open_24h           | 24h service                       | boolean     |
+| max_height         | Maximum height in centimeters     | integer     |
 
 ### _Header:_
 Authorization: Bearer {JWT_TOKEN}
@@ -197,13 +210,13 @@ Authorization: Bearer {JWT_TOKEN}
 | Parameters      | Type                   | Required | Description                                                                       | Default             |
 | --------------- |:---------------------- | -------- | --------------------------------------------------------------------------------- |-------------------- |
 | locale          | string                 | true     | language in which the information will be returned                                | en_GB               |
-| group           | string                 | true     | **search** **export**                                                                        | null                |
-| limit           | integer                | false     | total number of records [1-200]                                                   | 200                 |
-| page            | integer                | false     | page selected                                                   | 1                 |
-| from            | date Y-m-d H:i         | false     | booking start date                                                                | null                |
-| to              | date Y-m-d H:i         | false     | booking end date                                                                  | null                |
-| latitude        | float                  | false     | valid latitude in which to look for                                               | null                |
-| longitude       | float                  | false     | valid longitude in which to look for                                              | null                |
+| group           | string                 | true     | **search** **export**                                                             | null                |
+| limit           | integer                | false     | total number of records [1-200]                                                  | 200                 |
+| page            | integer                | false     | page selected                                                                    | 1                   |
+| from            | string Y-m-d H:i       | false     | booking start date                                                               | null                |
+| to              | string Y-m-d H:i       | false     | booking end date                                                                 | null                |
+| latitude        | float                  | false     | valid latitude in which to look for                                              | null                |
+| longitude       | float                  | false     | valid longitude in which to look for                                             | null                |
 | radius          | integer                | false    | search radius                                                                     | null                |
 | vehicleType     | integer                | false     | type of vehicle you wish to park [1 car, 2 van, 3 caravan, 4 bus, 5 truck, 6 motorbike, 7 small truck]| null                |
 | freemium        | bool                   | false    | car parks where reservations cannot be booked                                     | false                |
@@ -772,6 +785,27 @@ This method returns parking information, products available and required fields 
 | 1   | Cancel before 23:59  |
 | 2   | Cancel one hour left |
 | 3   | Cancel disallowed    |
+
+The fieldsRequested node gives the additional fields required for a specific car park
+
+| Field                  | Description                                           | Type    |
+|------------------------|-------------------------------------------------------|---------|
+| brand                  |	Vehicle brand                                        | string  |
+| model                  |	Vehicle model                                        | string  |
+| license_plate          |	Vehicle license plate                                | string  |
+| arrival_flight         |	Return flight number                                 | string  |
+| departure_flight       |	One way flight number                                | string  |
+| return_flight_location |	City from where you return                           | string  |
+| arrival_train          |	Return train number                                  | string  |
+| departure_train        |	Departure train number                               | string  |
+| people_travelling      |	Number of passengers for the shuttle service         | integer |
+| cruise_ferry           |	Cruise or ferry flight number                        | string  |
+| cruise_ferry_name      |	Cruise Name                                          | string  |
+| passenger_email        |	Passenger email                                      | string  |
+| passenger_phone_number |	Passenger Phone Number                               | string  |
+| name_hotel             |	Hotel name                                           | string  |
+| color_vehicle          |	Vehicle color                                        | string  |
+| departure_terminal     |	Departure terminal                                   | string  |
 
 
 ### _Header:_
@@ -2258,8 +2292,8 @@ Authorization: Bearer {JWT_TOKEN}
 | locale          | string                | true     | language in which the information will be returned |en_GB           | 
 | parking         | integer               | true     | parking identificator                              |null            |
 | vehicleType     | integer               | true     | type of vehicle you wish to park [1 car, 2 van, 3 caravan, 4 bus, 5 truck, 6 motorbike, 7 small truck]    |1               |
-| from            | date Y-m-d H:i        | true     | booking start date                                 |null            |
-| to              | date Y-m-d H:i        | true     | booking end date                                   |null            |
+| from            | string Y-m-d H:i        | true     | booking start date                                 |null            |
+| to              | string Y-m-d H:i        | true     | booking end date                                   |null            |
 
 
 ### _Response:_
@@ -2546,8 +2580,8 @@ Authorization: Bearer {JWT_TOKEN}
 | product         | integer               | true     | product id               | null                   |
 | firstName       | string                | true     | user fisrt name          | null                   |
 | lastName        | string                | true     | user last name           | null                   |
-| from            | date Y-m-d H:i        | true     | booking start date       | null                   |
-| to              | date Y-m-d H:i        | true     | booking end date         | null                   |
+| from            | string Y-m-d H:i        | true     | booking start date       | null                   |
+| to              | string Y-m-d H:i        | true     | booking end date         | null                   |
 | brand           | string                | false    | vehicle brand            | null                   |
 | model           | string                | false    | vehicle model            | null                   |
 | licence_plate   | string                | false    | vehicle licence plate    | null                   |
@@ -2719,8 +2753,8 @@ Authorization: Bearer {JWT_TOKEN}
 | --------------- |:--------------------- | -------- | ---------------- | ----------------------- |
 | token           | string                | true     | null             | checkout token          |
 | product         | string                | true     | null             | user email              |
-| from            | date Y-m-d H:i        | true     | null             | booking start date      |
-| to              | date Y-m-d H:i        | true     | null             | booking end date        |
+| from            | string Y-m-d H:i        | true     | null             | booking start date      |
+| to              | string Y-m-d H:i        | true     | null             | booking end date        |
 | locale          | string                | true     | null             | language in which the information will be returned |
 
 
@@ -2782,8 +2816,8 @@ Authorization: Bearer {JWT_TOKEN}
 | group           | string                | true     | null             | **list** or **booking** |
 | email           | string                | false    | null             | user email              |
 | voucher_code    | string                | false    | null             | voucher code            |
-| from            | date Y-m-d H:i        | false    | null             | booking start date      |
-| to              | date Y-m-d H:i        | false    | null             | booking end date        |
+| from            | string Y-m-d H:i        | false    | null             | booking start date      |
+| to              | string Y-m-d H:i        | false    | null             | booking end date        |
 | page            | integer               | false    | 1 .              | page selectec           |
 | limit           | integer               | false    | 200              | results to show         |
 
