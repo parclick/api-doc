@@ -3662,7 +3662,7 @@ Authorization: Bearer {JWT_TOKEN}
 
 ![alt text](https://static.parclick.com/docs/external_integration_grap.png)
 
-As a first step and part of the development by the integrator it is necessary to select the vehicles available **Vehicle type /v1/vehicle-type**, prior to select the list of car parks for certain coordinates and a specific type of vehicle and dates. For this task it is necessary to call the endpoint **Get parkings /v1/parking/** to get the parking id. With this data it is possible to show a map with the available car parks. Once a specific car park has been selected, it is necessary to obtain the best pass (product token `2338bb72051ae11083a20cd94f3b3183ede3333708b1bc7b50e6af509100ef14`) **get bestpass /v1/pass** for the selected period and the additional fields for that car park **get parking /v1/parking/{parking_id}** located in response fieldsRequested array.
+As a first step and part of the development by the integrator it is necessary to select the vehicles available **Vehicle type /v1/vehicle-type**, prior to select the list of car parks for certain coordinates and a specific type of vehicle and dates. For this task it is necessary to call the endpoint **List parkings /v1/parking/list** to get the parking id. With this data it is possible to show a map with the available car parks. Once a specific car park has been selected, it is necessary to obtain the best pass (product ID and token `2338bb72051ae11083a20cd94f3b3183ede3333708b1bc7b50e6af509100ef14`) **get bestpass /v1/pass/details** for the selected period. The additional fields for that car park **get parking /v1/parking/{parking_id}/details** located in response fieldsRequested array.
 
 ### <a name="workflow_reservation"></a><span style="color:#FF6600;"> 1- Workflow to create a booking reservation</span>
 
@@ -3678,37 +3678,37 @@ As a first step and part of the development by the integrator it is necessary to
 <p>
 <pre>
 { 
- "_embedded":{ 
- "fieldsRequested":[ 
- { 
- "id":1,
- "name":"brand",
- "type":"Symfony\\Component\\Form\\Extension\\Core\\Type\\TextType",
- "label":"Vehicle make",
- "error":"Please enter the vehicle make\/brand",
- "required":true,
- "sequence":1
- },
- { 
- "id":2,
- "name":"model",
- "type":"Symfony\\Component\\Form\\Extension\\Core\\Type\\TextType",
- "label":"Vehicle model",
- "error":"Please enter the vehicle model",
- "required":true,
- "sequence":2
- },
- { 
- "id":3,
- "name":"license_plate",
- "type":"Symfony\\Component\\Form\\Extension\\Core\\Type\\TextType",
- "label":"Vehicle registration number",
- "error":"Please enter the vehicle\u0027s registration number",
- "required":true,
- "sequence":3
- }
- ]
- }
+   "_embedded":{ 
+      "fieldsRequested":[ 
+         { 
+            "id":1,
+            "name":"brand",
+            "type":"Symfony\\Component\\Form\\Extension\\Core\\Type\\TextType",
+            "label":"Vehicle make",
+            "error":"Please enter the vehicle make\/brand",
+            "required":true,
+            "sequence":1
+         },
+         { 
+            "id":2,
+            "name":"model",
+            "type":"Symfony\\Component\\Form\\Extension\\Core\\Type\\TextType",
+            "label":"Vehicle model",
+            "error":"Please enter the vehicle model",
+            "required":true,
+            "sequence":2
+         },
+         { 
+            "id":3,
+            "name":"license_plate",
+            "type":"Symfony\\Component\\Form\\Extension\\Core\\Type\\TextType",
+            "label":"Vehicle registration number",
+            "error":"Please enter the vehicle\u0027s registration number",
+            "required":true,
+            "sequence":3
+         }
+      ]
+   }
 }
 </pre>
 </p>
@@ -3721,101 +3721,101 @@ As a first step and part of the development by the integrator it is necessary to
 <p>
 <pre>
 { 
- "page":1,
- "limit":10,
- "pages":1,
- "items":[ 
- { 
- "id":100,
- "category":"ONEPASS",
- "name":"ONEPASS 100 days",
- "parking":{ 
- "id":1202,
- "covered":true,
- "flexible_entry":true,
- "guarded":true,
- "is_cancellable":true,
- "airport":{ 
- "id":58,
- "terminal":[ 
- { 
- "id":99,
- "terminal":{ 
- "id":4
- },
- "time_to_terminal":4
- }
- ],
- "category_name":"Official",
- "category":3,
- "has_shuttle":true
- },
- "address":"Avenida de la Hispanidad s\/n. Aeropuerto de Madrid Barajas, Terminal 4. Parking Larga Estancia\/Bajo Coste T4",
- "city":"Madrid",
- "name":"AENA Aeropuerto de Madrid-Barajas - Larga Estancia T4",
- "_links":{ 
- "self":{ 
- "href":"https:\/\/api.parclick.com\/v1\/parking\/1202"
- }
- },
- "_embedded":{ 
- "city":{ 
- "id":37,
- "_links":{ 
- "self":{ 
- "href":"https:\/\/api.parclick.com\/v1\/city\/37"
- }
- }
- }
- }
- },
- "vehicle_type":{ 
- "id":1,
- "type":"CAR"
- },
- "warning_message":"At the entrance, the ticket is issued automatically by approaching the gate.",
- "administration_fee":0,
- "paypal_fee":1.36,
- "price":37,
- "type":"pass",
- "internal_name":"ONEPASS 5d (37\u20ac)",
- "token":"6eb569c3c645afcb6c8aa439f758137f6233b98aba97fddecd45ceefdc92e4b0",
- "duration":98,
- "multiparking":false,
- "multipass":false,
- "frequency":"HOURLY",
- "_links":{ 
- "self":[ 
- { 
- "href":"https:\/\/api.parclick.com\/v1\/product\/100"
- },
- { 
- "href":"https:\/\/api.parclick.com\/v1\/pass\/100"
- }
- ]
- }
- }
- ],
- "total":1,
- "params":{ 
- "locale":"en_GB",
- "group":"bestpass",
- "parking":"1202",
- "from":"2019-03-27 10:00",
- "to":"2019-03-31 12:00",
- "vehicleType":"1"
- },
- "_links":{ 
- "self":{ 
- "href":"\/v1\/pass?page=1\u0026limit=10"
- },
- "first":{ 
- "href":"\/v1\/pass?page=1\u0026limit=10"
- },
- "last":{ 
- "href":"\/v1\/pass?page=1\u0026limit=10"
- }
- }
+   "page":1,
+   "limit":10,
+   "pages":1,
+   "items":[ 
+      { 
+         "id":100,
+         "category":"ONEPASS",
+         "name":"ONEPASS 100 days",
+         "parking":{ 
+            "id":1202,
+            "covered":true,
+            "flexible_entry":true,
+            "guarded":true,
+            "is_cancellable":true,
+            "airport":{ 
+               "id":58,
+               "terminal":[ 
+                  { 
+                     "id":99,
+                     "terminal":{ 
+                        "id":4
+                     },
+                     "time_to_terminal":4
+                  }
+               ],
+               "category_name":"Official",
+               "category":3,
+               "has_shuttle":true
+            },
+            "address":"Avenida de la Hispanidad s\/n. Aeropuerto de Madrid Barajas, Terminal 4. Parking Larga Estancia\/Bajo Coste T4",
+            "city":"Madrid",
+            "name":"AENA Aeropuerto de Madrid-Barajas - Larga Estancia T4",
+            "_links":{ 
+               "self":{ 
+                  "href":"https:\/\/api.parclick.com\/v1\/parking\/1202"
+               }
+            },
+            "_embedded":{ 
+               "city":{ 
+                  "id":37,
+                  "_links":{ 
+                     "self":{ 
+                        "href":"https:\/\/api.parclick.com\/v1\/city\/37"
+                     }
+                  }
+               }
+            }
+         },
+         "vehicle_type":{ 
+            "id":1,
+            "type":"CAR"
+         },
+         "warning_message":"At the entrance, the ticket is issued automatically by approaching the gate.",
+         "administration_fee":0,
+         "paypal_fee":1.36,
+         "price":37,
+         "type":"pass",
+         "internal_name":"ONEPASS 5d (37\u20ac)",
+         "token":"6eb569c3c645afcb6c8aa439f758137f6233b98aba97fddecd45ceefdc92e4b0",
+         "duration":98,
+         "multiparking":false,
+         "multipass":false,
+         "frequency":"HOURLY",
+         "_links":{ 
+            "self":[ 
+               { 
+                  "href":"https:\/\/api.parclick.com\/v1\/product\/100"
+               },
+               { 
+                  "href":"https:\/\/api.parclick.com\/v1\/pass\/100"
+               }
+            ]
+         }
+      }
+   ],
+   "total":1,
+   "params":{ 
+      "locale":"en_GB",
+      "group":"bestpass",
+      "parking":"1202",
+      "from":"2019-03-27 10:00",
+      "to":"2019-03-31 12:00",
+      "vehicleType":"1"
+   },
+   "_links":{ 
+      "self":{ 
+         "href":"\/v1\/pass?page=1\u0026limit=10"
+      },
+      "first":{ 
+         "href":"\/v1\/pass?page=1\u0026limit=10"
+      },
+      "last":{ 
+         "href":"\/v1\/pass?page=1\u0026limit=10"
+      }
+   }
 }
 </pre>
 </p>
@@ -3840,8 +3840,8 @@ As a first step and part of the development by the integrator it is necessary to
 | status | string | booking status available: not_modified, confirmed, canceled |
 | firstName | string | string to find |
 | lastName | string | string to find |
-| from | date YY-mm-dd | booking start date |
-| to | date YY-mm-dd | booking end date |
+| from | string Y-m-d | booking start date |
+| to | string Y-m-d | booking end date |
 
 <br>
 
