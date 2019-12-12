@@ -22,9 +22,9 @@
 11. [List reservations](#list_reservation)
 12. [Get voucher details](#voucher_details)
 13. [Worflows](#workflows)
- - [Workflow to create a booking reservation](#workflow_reservation)
- - [Workflow to cancel a booking](#workflow_cancel)
- - [Workflow to list booking](#workflow_list)
+    * [Workflow to create a booking reservation](#workflow_reservation)
+    * [Workflow to cancel a booking](#workflow_cancel)
+    * [Workflow to list booking](#workflow_list)
 14. [Generate entry code](#entry_code)
 
 <br>
