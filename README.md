@@ -202,6 +202,8 @@ The car park features are the following fields with their meaning:
 | open_24h | 24h service | boolean |
 | max_height | Maximum height in centimeters | integer |
 
+To identify if a car park has a valid product for the dates and vehicle selected, it is necessary to access the *passes* node and select the first one which is the closest one. This result is indicative since it is always mandatory to consult the bestpass to confirm availability. If the node *passes* is empty this parking does not have availability. Another possibility is the AENA car parks that show a product with a price -127. These parkings should consult the price with the bestpass.
+
 ### _Header:_
 Authorization: Bearer {JWT_TOKEN}
 
