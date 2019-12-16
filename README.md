@@ -221,7 +221,6 @@ Authorization: Bearer {JWT_TOKEN}
 | longitude | float | false | valid longitude in which to look for | null |
 | radius | integer | false | search radius | null |
 | vehicleType | integer | false | type of vehicle you wish to park [1 car, 2 van, 3 caravan, 4 bus, 5 truck, 6 motorbike, 7 small truck]| null |
-| freemium | bool | false | car parks where reservations cannot be booked | false |
 
 
 
