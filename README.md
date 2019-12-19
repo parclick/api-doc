@@ -1,6 +1,6 @@
 ![alt text](https://static.parclick.com/assets/img/logotipo-parclick.svg)
 
-<p style="color:#999999;text-align:right;">Document version 1.5.1</p>
+<p style="color:#999999;text-align:right;">Document version 1.5.2</p>
 
 # <span style="color:#FF6600;">Parclick - API Reference</span>
 #### <span style="color:#999;">TECHNICAL DOCUMENTATION</span>
@@ -221,6 +221,474 @@ Authorization: Bearer {JWT_TOKEN}
 | longitude | float | false | valid longitude in which to look for | null |
 | radius | integer | false | search radius | null |
 | vehicleType | integer | false | type of vehicle you wish to park [1 car, 2 van, 3 caravan, 4 bus, 5 truck, 6 motorbike, 7 small truck]| null |
+
+### _Response__
+
+**200 Ok group search-joinup**
+
+<details><summary style="color:#FF6600;">Show response 200 Ok</summary>
+<p>
+<pre>
+{
+    "items": [
+        {
+            "id": 1727,
+            "covered": true,
+            "description": "This is a public car park located in M\u00e1laga Plaza Shopping Centre. It\u0027s about 5 minutes walk away from the historic city centre, where you can visit the Picasso Museum, the Carmen Thyssen Museum, the cathedral or the Alcazaba citadel. You can access the car park easily by car from Avenida de Andaluc\u00eda.",
+            "flexible_entry": true,
+            "latitude": 36.718731737387,
+            "longitude": -4.4286074244724,
+            "medias": [
+                {
+                    "id": 6907,
+                    "url": "https:\/\/static.parclick.com\/parking\/2017\/06\/cd8\/48a\/90\/cd848a90-2be0-5c62-a2e9-71861fa845f4.jpeg"
+                }
+            ],
+            "is_cancellable": true,
+            "address": "Calle Armengual de la Mota, 12",
+            "city": "M\u00e1laga",
+            "country": "Espa\u00f1a",
+            "zip": "29007",
+            "provider": {
+                "id": 367,
+                "name": "NW RETAIL MALAGA"
+            },
+            "handicapped_access": true,
+            "security": true,
+            "open_24h": false,
+            "giving_keys": false,
+            "name": "CC M\u00e1laga Plaza",
+            "max_height": 190,
+            "passes": [
+                {
+                    "id": 7479,
+                    "type": "pass",
+                    "_links": {
+                        "self": [
+                            {
+                                "href": "https:\/\/loc.api.parclick.com\/v1\/product\/7479"
+                            },
+                            {
+                                "href": "https:\/\/loc.api.parclick.com\/v1\/pass\/7479"
+                            }
+                        ]
+                    }
+                }
+            ],
+            "voucher_needed": false,
+            "multiparking": false,
+            "cancellation_type": 2,
+            "reviews_summary": {
+                "reviews": {
+                    "56": {
+                        "review": [],
+                        "average": 4.333333333333333
+                    },
+                    "1244": {
+                        "review": [],
+                        "average": 5
+                    },
+                    "1286": {
+                        "review": [],
+                        "average": 5
+                    },
+                    "1777": {
+                        "review": [],
+                        "average": 3
+                    },
+                    "3328": {
+                        "review": [],
+                        "opinion": "El acceso al parking es poco visible y es bastante estrecho. Aparqu\u00e9, le indiqu\u00e9 que ten\u00eda una reserva y al no encontrarla me dijeron que a la salida volviera a d\u00e1rsela (al inicio no buscaron mucho, la verdad). As\u00ed lo hice y me dejaron salir sin problema.",
+                        "average": 3.3333333333333335
+                    },
+                    "3699": {
+                        "review": [],
+                        "average": 4.333333333333333
+                    },
+                    "9810": {
+                        "review": [],
+                        "average": 1
+                    },
+                    "10060": {
+                        "review": [],
+                        "average": 4.333333333333333
+                    },
+                    "10715": {
+                        "review": [],
+                        "average": 4.666666666666667
+                    },
+                    "12474": {
+                        "review": [],
+                        "average": 4.333333333333333
+                    }
+                },
+                "questions": {
+                    "4": {
+                        "score": 35,
+                        "number": 10,
+                        "average": 3.5
+                    },
+                    "5": {
+                        "score": 40,
+                        "number": 10,
+                        "average": 4
+                    },
+                    "6": {
+                        "score": 42,
+                        "number": 9,
+                        "average": 4.666666666666667
+                    }
+                },
+                "totalScore": 3.9333333333333327
+            },
+            "_links": {
+                "self": {
+                    "href": "https:\/\/loc.api.parclick.com\/v1\/parking\/1727"
+                }
+            }
+        },
+        {
+            "id": 2476,
+            "covered": true,
+            "description": "\u003Cstrong\u003EHOW IT WORKS: This is a valet parking service. Drive to the pick-up point at the address indicated on your booking and the valet parking staff will collect your vehicle and take it to a guarded car park, where it will remain until you ask for it to be returned. And remember! This is just the meeting point with the driver who will pick up your vehicle :)\u003C\/strong\u003E\r\n\r\n\u003Cstrong\u003EThe car park only accepts motorhomes with a maximum size of 6 meters.\u003C\/strong\u003E\r\n\r\nThe \u0022Valet Feeltravel - Estaci\u00f3n Ave Mar\u00eda Zambrano\u0022 is a car park in M\u00e1laga that offers a valet service at the M\u00e1laga train station.\r\n\r\nWith this quick and convenient option, you can park near the Mar\u00eda Zambrano station without needing to go to the car park: you just have to call the car park about 20 minutes before you arrive and agree on a meeting point. Afterwards, the driver will take your car to a covered car park in M\u00e1laga, about 8 km from the station.\r\n \r\nUpon your return, follow the same procedure: call when you\u0027ve arrived to the station so that the driver can return your car.\r\n\r\nWith this 24-hour car park in M\u00e1laga, you can leave your car and go sightseeing in the area. From the station, you can get to the famous Larios street in 10 minutes by train and the M\u00e1laga Port in just 12 minutes. This is a great option if you want to park by the M\u00e1laga Fair. It\u0027s the most convenient and quick way, since it\u0027s usually quite crowded!\r\n \r\nIf you have time before taking a train, you can go to the Larios Shopping Center with the \u0022Valet Feeltravel - Estaci\u00f3n Ave Mar\u00eda Zambrano\u0022 car park valet service. \r\n \r\nBook your spot today at the \u0022Valet Feeltravel - Estaci\u00f3n Ave Mar\u00eda Zambrano\u0022 car park.\r\n\r\nAt this car park, you must leave your car keys with the staff.",
+            "flexible_entry": true,
+            "latitude": 36.712322735551,
+            "longitude": -4.4314623818889,
+            "medias": [
+                {
+                    "id": 12748,
+                    "url": "https:\/\/static.parclick.com\/parking\/2019\/05\/e68\/fbf\/0a\/e68fbf0a-61bc-514f-bf74-846bf957f902.jpeg"
+                }
+            ],
+            "is_cancellable": true,
+            "address": "Estaci\u00f3n Maria Zambrano",
+            "city": "Estaci\u00f3n de C\u00e1rtama",
+            "country": "Espa\u00f1a",
+            "zip": "29580",
+            "provider": {
+                "id": 607,
+                "name": "AUTOCARES MARSUR"
+            },
+            "handicapped_access": false,
+            "security": true,
+            "open_24h": true,
+            "giving_keys": true,
+            "name": "Valet Feeltravel - Estaci\u00f3n Ave Mar\u00eda Zambrano",
+            "max_height": 300,
+            "passes": [
+                {
+                    "id": 84903,
+                    "type": "pass",
+                    "_links": {
+                        "self": [
+                            {
+                                "href": "https:\/\/loc.api.parclick.com\/v1\/product\/84903"
+                            },
+                            {
+                                "href": "https:\/\/loc.api.parclick.com\/v1\/pass\/84903"
+                            }
+                        ]
+                    }
+                }
+            ],
+            "voucher_needed": false,
+            "multiparking": false,
+            "cancellation_type": 2,
+            "_links": {
+                "self": {
+                    "href": "https:\/\/loc.api.parclick.com\/v1\/parking\/2476"
+                }
+            }
+        },
+        {
+            "id": 2477,
+            "covered": true,
+            "description": "\u003Cstrong\u003EHOW IT WORKS: This is a valet parking service. Drive to the pick-up point at the address indicated on your booking and the valet parking company staff will pick up your vehicle and take it to a nearby public car park. It will remain there until you ask for it to be returned.\r\nWatch out! This is just the meeting point with the driver who will collect your vehicle :)\u003C\/strong\u003E\r\n\r\nWith the Valet Feeltravel, parking near the M\u00e1laga Port isn\u0027t just easy... you don\u0027t even have to park: others will do it for you! We\u0027re talking about a car park with valet service. Because it\u0027s nicer not to go around in circles looking for parking. Plus, you don\u0027t have to be the one doing it. :)\r\n\r\nA valet driver will take your car to a car park near downtown M\u00e1laga. How? Well, it\u0027s quite easy: call 15 minutes before arriving, leave your car keys with the driver and he\u0027ll be in charge of taking it to a covered car park 15 minutes from the port. This way, your car will be monitored 24 hours a day and even better: you won\u0027t have to lug around your suitcases! \r\n \r\nUpon your return, ta-da! You\u0027ll have your car in the same spot where you left it by calling 10 minutes beforehand. Also, did you know this is a 24-hour car park?\r\n\r\nWe think that if you book the \u0022Valet Feeltravel - Puerto de M\u00e1laga\u0022 car park, you\u0027ll be delighted, especially if you\u0027re looking for maximum convenience and a car park close to the M\u00e1laga Port. ;)\r\n\r\nAt this car park, you must leave your car keys with the staff.",
+            "flexible_entry": true,
+            "latitude": 36.70726881075,
+            "longitude": -4.4146451438135,
+            "medias": [
+                {
+                    "id": 12749,
+                    "url": "https:\/\/static.parclick.com\/parking\/2019\/05\/e68\/fbf\/0a\/e68fbf0a-61bc-514f-bf74-846bf957f902.jpeg"
+                }
+            ],
+            "is_cancellable": true,
+            "address": "Puerto de M\u00e1laga",
+            "city": "M\u00e1laga",
+            "country": "Espa\u00f1a",
+            "zip": "29001",
+            "provider": {
+                "id": 607,
+                "name": "AUTOCARES MARSUR"
+            },
+            "handicapped_access": false,
+            "security": true,
+            "open_24h": true,
+            "giving_keys": false,
+            "name": "Valet Feeltravel - Puerto de M\u00e1laga",
+            "max_height": 300,
+            "passes": [
+                {
+                    "id": 85041,
+                    "type": "pass",
+                    "_links": {
+                        "self": [
+                            {
+                                "href": "https:\/\/loc.api.parclick.com\/v1\/product\/85041"
+                            },
+                            {
+                                "href": "https:\/\/loc.api.parclick.com\/v1\/pass\/85041"
+                            }
+                        ]
+                    }
+                }
+            ],
+            "voucher_needed": false,
+            "multiparking": false,
+            "cancellation_type": 2,
+            "_links": {
+                "self": {
+                    "href": "https:\/\/loc.api.parclick.com\/v1\/parking\/2477"
+                }
+            }
+        },
+        {
+            "id": 600,
+            "covered": true,
+            "description": "Car park located at Avenida de la Paloma in M\u00e1laga, close to the Museo Automovil\u00edstico and the Colecci\u00f3n del Museo Ruso. At 15 minutes walking distance you can reach Victoria Kent train station, and Pac\u00edfico street which has access to the beach. Easily accessed by car from Avenida de Juan XXIII and Avenida de Vel\u00e1zquez.",
+            "flexible_entry": true,
+            "latitude": 36.702091677217,
+            "longitude": -4.4448027819161,
+            "medias": [
+                {
+                    "id": 2621,
+                    "url": "https:\/\/static.parclick.com\/parking\/2016\/06\/parking-1155-large.jpg"
+                },
+                {
+                    "id": 2622,
+                    "url": "https:\/\/static.parclick.com\/parking\/2016\/06\/parking-1156-large.jpg"
+                },
+                {
+                    "id": 2623,
+                    "url": "https:\/\/static.parclick.com\/parking\/2016\/06\/parking-1157-large.jpg"
+                }
+            ],
+            "is_cancellable": true,
+            "address": "Avenida de la Paloma, 44",
+            "city": "M\u00e1laga",
+            "country": "Espa\u00f1a",
+            "zip": "29003",
+            "provider": {
+                "id": 136,
+                "name": "MANUEL L\u00d3PEZ"
+            },
+            "handicapped_access": true,
+            "security": true,
+            "open_24h": true,
+            "giving_keys": false,
+            "name": "Manuel L\u00f3pez",
+            "max_height": 240,
+            "passes": [
+                {
+                    "id": 7304,
+                    "type": "pass",
+                    "_links": {
+                        "self": [
+                            {
+                                "href": "https:\/\/loc.api.parclick.com\/v1\/product\/7304"
+                            },
+                            {
+                                "href": "https:\/\/loc.api.parclick.com\/v1\/pass\/7304"
+                            }
+                        ]
+                    }
+                }
+            ],
+            "voucher_needed": false,
+            "multiparking": false,
+            "cancellation_type": 2,
+            "reviews_summary": {
+                "reviews": {
+                    "250": {
+                        "review": [],
+                        "average": 3
+                    },
+                    "1494": {
+                        "review": [],
+                        "average": 3
+                    },
+                    "1451": {
+                        "review": [],
+                        "opinion": "Le falta que el ascensor llegue hasta la quinta planta por lo dem\u00e1s todo correcto. Precio y calidad",
+                        "average": 4.333333333333333
+                    },
+                    "6377": {
+                        "review": [],
+                        "average": 3.6666666666666665
+                    },
+                    "6554": {
+                        "review": [],
+                        "average": 3.6666666666666665
+                    },
+                    "8754": {
+                        "review": [],
+                        "average": 4
+                    },
+                    "8755": {
+                        "review": [],
+                        "average": 4
+                    },
+                    "11280": {
+                        "review": [],
+                        "average": 4
+                    },
+                    "10697": {
+                        "review": [],
+                        "opinion": "Un aparcamiento muy barato y justo enfrente de una parada de autob\u00fas que lleva directo al centro. L\u00e1stima que el ascensor no llegue hasta la quinta planta (la reservada a parclick).",
+                        "average": 4.333333333333333
+                    },
+                    "10728": {
+                        "review": [],
+                        "average": 4.333333333333333
+                    },
+                    "11021": {
+                        "review": [],
+                        "average": 5
+                    },
+                    "15204": {
+                        "review": [],
+                        "average": 5
+                    },
+                    "14331": {
+                        "review": [],
+                        "opinion": "Trato excelente de los empleados",
+                        "average": 4.333333333333333
+                    },
+                    "14828": {
+                        "review": [],
+                        "opinion": "Ottimo Parcheggio situato a 5 km dal centro. Non \u00e8 nulla di che ma per 6 euro al giorno va pi\u00f9 che bene. Fuori c\u0027\u00e8 la fermata del bus 1 che in 20 minuti vi porta fino al centro dove ci sono i giardini alle spalle del porto nuovo. Ascensore arriva al 4 pi",
+                        "average": 3.6666666666666665
+                    }
+                },
+                "questions": {
+                    "4": {
+                        "score": 55,
+                        "number": 14,
+                        "average": 3.9285714285714284
+                    },
+                    "5": {
+                        "score": 53,
+                        "number": 14,
+                        "average": 3.7857142857142856
+                    },
+                    "6": {
+                        "score": 61,
+                        "number": 14,
+                        "average": 4.357142857142857
+                    }
+                },
+                "totalScore": 4.023809523809524
+            },
+            "_links": {
+                "self": {
+                    "href": "https:\/\/loc.api.parclick.com\/v1\/parking\/600"
+                }
+            }
+        },
+        {
+            "id": 456,
+            "covered": false,
+            "description": "Car park at Malaga station. The bus station and Larios shopping centre are both also a 4-minute walk away. The Port and seafront are a 12-minute walk from the car park. Easily accessible via Avenida Manuel Agust\u00edn Heredia.",
+            "flexible_entry": true,
+            "latitude": 36.712758189447,
+            "longitude": -4.4320435761223,
+            "medias": [
+                {
+                    "id": 2335,
+                    "url": "https:\/\/static.parclick.com\/parking\/2016\/06\/parking-895-large.jpg"
+                }
+            ],
+            "is_cancellable": true,
+            "address": "Explanada de la Estaci\u00f3n, S\/N",
+            "city": "M\u00e1laga",
+            "country": "Espa\u00f1a",
+            "zip": "29002",
+            "provider": {
+                "id": 89,
+                "name": "SABA ADIF"
+            },
+            "handicapped_access": false,
+            "security": false,
+            "open_24h": true,
+            "giving_keys": false,
+            "name": "SABA Estaci\u00f3n M\u00e1laga Mar\u00eda Zambrano",
+            "max_height": 210,
+            "passes": [],
+            "voucher_needed": false,
+            "multiparking": false,
+            "cancellation_type": 1,
+            "_links": {
+                "self": {
+                    "href": "https:\/\/loc.api.parclick.com\/v1\/parking\/456"
+                }
+            }
+        },
+        {
+            "id": 649,
+            "covered": true,
+            "description": "This car park is close to the Cemetery of San Miguel, and 7 minutes walk away from Dr. Pascual F.A.C. Hospital and the Basilica \/ Parroquia de Santa Mar\u00eda de la Victoria y la Merced. C\u00e1novas Theatre, the Faculty of Business and Economic Sciences - also of Fine Arts - the Superior Conservatory of Music and San Telmo Art School are 10 minutes walk away, and Carlos Haya C.H. Hospital at 15 minutes.",
+            "flexible_entry": true,
+            "latitude": 36.732885,
+            "longitude": -4.4156603,
+            "medias": [
+                {
+                    "id": 2697,
+                    "url": "https:\/\/static.parclick.com\/parking\/2016\/06\/parking-1195-large.jpg"
+                }
+            ],
+            "is_cancellable": true,
+            "address": "Calle Cristo de la Epidemia, 100",
+            "city": "M\u00e1laga",
+            "country": "Espa\u00f1a",
+            "zip": "29007",
+            "provider": {
+                "id": 143,
+                "name": "Garaje Olletas"
+            },
+            "handicapped_access": false,
+            "security": true,
+            "open_24h": true,
+            "giving_keys": false,
+            "name": "Garaje Olletas",
+            "max_height": 240,
+            "passes": [],
+            "voucher_needed": false,
+            "multiparking": false,
+            "cancellation_type": 1,
+            "_links": {
+                "self": {
+                    "href": "https:\/\/loc.api.parclick.com\/v1\/parking\/649"
+                }
+            }
+        }
+    ],
+    "total": 6,
+    "params": {
+        "locale": "en_GB",
+        "group": "search-joinup",
+        "latitude": "36.71674561212",
+        "longitude": "-4.425996199999984",
+        "radius": "3",
+        "from": "2020-02-22 20:00",
+        "to": "2020-02-22 22:00",
+        "vehicleType": "1",
+        "page": "1"
+    }
+}
+</pre>
+</p>
+</details>
 
 
 
@@ -818,6 +1286,227 @@ Authorization: Bearer {JWT_TOKEN}
 | --------------- |:--------------------- | --------- |--------------------------------------------------- |--------------- |
 | group | string | false | property groups to be returned **detail** | null |
 | locale | string | false | language in which the information will be returned | en_GB | 
+
+### _Response:_
+
+**200 Ok group export-joinup**
+
+<details><summary style="color:#FF6600;">Show response 200 Ok group export-joinup</summary>
+<p>
+<pre>
+{
+    "id": 999,
+    "description": "\u003Cp\u003ECar park in downtown Barcelona, specifically right next to the famous Rambla of Barcelona. Parking near the Ramblas is no longer a problem thanks to the Ed\u00e9n car park, which you\u2019ll find less than 100 meters away; this way, you can enjoy the emblematic boardwalk full of restaurants, bars and shops. Just 400 meters away from the Ed\u00e9n car park, you can visit the Wax Museum and the Liceu Opera House; and just 700 meters away, the Boquer\u00eda Market and the Universitat Pompeu Fabra. \u003C\/p\u003E \r\n\u003Cp\u003EIf you want to spend a day visiting museums and art in Barcelona, you can park at the Ed\u00e9n car park, because it\u2019s located about 10 minutes on foot from the Museum of Illusions, the Museum of Contemporary Art (MACB), the Center for Contemporary Culture (CCCB) and the Poliorama, Raval and Coliseum theaters. Also, you can enjoy the Picasso and Xocolata museums, as well as the Basilicas of Santa Mar\u00eda del Mar and Santa Mar\u00eda del Pi, all within 10 minutes walking from the Ed\u00e9n car park. \u003C\/p\u003E \r\n\u003Cp\u003EAlso, near the Ed\u00e9n car park, you have the Mirador de Colom, Maritime Museum, Gaudi Hotel, Palau G\u00fcell and the Pla\u00e7a Reial. If you prefer, you can leave your car in the Ed\u00e9n car park to visit the most famous spots in Barcelona, including the Sala Apolo, Barts and the Apolo and Vict\u00f2ria theaters. Parking at the Barcelona Cathedral is no longer a problem thanks to the Ed\u00e9n car park, which is just 9 minutes away on foot, as well as 15 minutes from the Pla\u00e7a de Catalunya, Barcelona University and the Palau de la M\u00fasica Catalana. \u003C\/p\u003E \r\n\u003Cp\u003EAs you\u2019ll see, parking in Barcelona at the Ed\u00e9n car park gives you the chance to visit the city center and its surroundings without worrying about where to leave your car, because this car park offers a variety of nearby places to visit. \u003C\/p\u003E \r\n\u003Cp\u003EAnd, if that weren\u2019t enough, there are other interesting places that you can get to from the Ed\u00e9n car park, including: the Pla\u00e7a de Sant Jaume, Museo d\u0027Hist\u00f2ria de Catalunya and the Mirador de Poble Sec (where you\u2019ll find the Pla\u00e7a de l\u0027Armada and the Moss\u00e8n Costa i Llobera Gardens). Parking in Barcelona and enjoying its coastline and beaches is now much easier thanks to the Ed\u00e9n car park, located less than 10 minutes from the Port, where you also can visit the L\u2019Aqu\u00e0rium, Pla\u00e7a de l\u0027Ictineo or the World Trade Center business park. \u003C\/p\u003E",
+    "flexible_entry": true,
+    "latitude": 41.378874253186,
+    "longitude": 2.1739906880944,
+    "medias": [
+        {
+            "id": 9531,
+            "url": "https:\/\/static.parclick.com\/parking\/2017\/12\/824\/c14\/a8\/824c14a8-8234-5339-8069-497184a45f0d.jpeg"
+        },
+        {
+            "id": 9532,
+            "url": "https:\/\/static.parclick.com\/parking\/2017\/12\/8a6\/160\/4d\/8a61604d-7d6c-5b13-84d6-2a4972642629.jpeg"
+        },
+        {
+            "id": 9533,
+            "url": "https:\/\/static.parclick.com\/parking\/2017\/12\/e4b\/488\/06\/e4b48806-e249-536e-82e0-f253b602e93b.jpeg"
+        },
+        {
+            "id": 9534,
+            "url": "https:\/\/static.parclick.com\/parking\/2017\/12\/9fc\/1a9\/42\/9fc1a942-ff78-5272-af69-fb5f43d7ef47.jpeg"
+        }
+    ],
+    "address": "Carrer Nou de la Rambla, 12",
+    "city": "Barcelona",
+    "country": "Espa\u00f1a",
+    "province": "Barcelona",
+    "zip": "8001",
+    "provider": {
+        "id": 266,
+        "name": "INMUEBLES EDEN"
+    },
+    "handicapped_access": true,
+    "security": false,
+    "open_24h": false,
+    "giving_keys": false,
+    "name": "Ed\u00e9n",
+    "max_height": 210,
+    "schedule": [
+        {
+            "id": 2262,
+            "type": {
+                "id": 2,
+                "name": "PARKING"
+            },
+            "week_day": {
+                "key": "MONDAY",
+                "order": 1
+            },
+            "intervals": [
+                {
+                    "id": 2422,
+                    "hour_from": "1970-01-01T08:00:00+0000",
+                    "hour_to": "1970-01-01T23:59:00+0000"
+                }
+            ]
+        },
+        {
+            "id": 2263,
+            "type": {
+                "id": 2,
+                "name": "PARKING"
+            },
+            "week_day": {
+                "key": "TUESDAY",
+                "order": 2
+            },
+            "intervals": [
+                {
+                    "id": 2423,
+                    "hour_from": "1970-01-01T08:00:00+0000",
+                    "hour_to": "1970-01-01T23:59:00+0000"
+                }
+            ]
+        },
+        {
+            "id": 2264,
+            "type": {
+                "id": 2,
+                "name": "PARKING"
+            },
+            "week_day": {
+                "key": "WEDNESDAY",
+                "order": 3
+            },
+            "intervals": [
+                {
+                    "id": 2424,
+                    "hour_from": "1970-01-01T08:00:00+0000",
+                    "hour_to": "1970-01-01T23:59:00+0000"
+                }
+            ]
+        },
+        {
+            "id": 2265,
+            "type": {
+                "id": 2,
+                "name": "PARKING"
+            },
+            "week_day": {
+                "key": "THURSDAY",
+                "order": 4
+            },
+            "intervals": [
+                {
+                    "id": 2425,
+                    "hour_from": "1970-01-01T08:00:00+0000",
+                    "hour_to": "1970-01-01T23:59:00+0000"
+                }
+            ]
+        },
+        {
+            "id": 2266,
+            "type": {
+                "id": 2,
+                "name": "PARKING"
+            },
+            "week_day": {
+                "key": "FRIDAY",
+                "order": 5
+            },
+            "intervals": [
+                {
+                    "id": 2426,
+                    "hour_from": "1970-01-01T08:00:00+0000",
+                    "hour_to": "1970-01-01T23:59:00+0000"
+                }
+            ]
+        },
+        {
+            "id": 2267,
+            "type": {
+                "id": 2,
+                "name": "PARKING"
+            },
+            "week_day": {
+                "key": "SATURDAY",
+                "order": 6
+            },
+            "intervals": [
+                {
+                    "id": 2427,
+                    "hour_from": "1970-01-01T08:00:00+0000",
+                    "hour_to": "1970-01-01T23:59:00+0000"
+                }
+            ]
+        },
+        {
+            "id": 2268,
+            "type": {
+                "id": 2,
+                "name": "PARKING"
+            },
+            "week_day": {
+                "key": "SUNDAY",
+                "order": 7
+            },
+            "intervals": [
+                {
+                    "id": 2428,
+                    "hour_from": "1970-01-01T08:00:00+0000",
+                    "hour_to": "1970-01-01T23:59:00+0000"
+                }
+            ]
+        }
+    ],
+    "access": [
+        {
+            "id": 991,
+            "type": "vehicle",
+            "address": "Carrer Nou de la Rambla 12",
+            "latitude": 41.378874253186,
+            "longitude": 2.1739906880944
+        }
+    ],
+    "voucher_needed": false,
+    "multiparking": false,
+    "cancellation_type": 2,
+    "_links": {
+        "self": {
+            "href": "https:\/\/loc.api.parclick.com\/v1\/parking\/999"
+        }
+    },
+    "_embedded": {
+        "city": {
+            "id": 6,
+            "name": "Barcelona",
+            "country": {
+                "id": 199,
+                "iso": "ES",
+                "nicename": "Spain",
+                "_links": {
+                    "self": {
+                        "href": "https:\/\/loc.api.parclick.com\/v1\/country\/199"
+                    }
+                }
+            },
+            "vat_tax": 21,
+            "time_zone": "Europe\/Madrid",
+            "_links": {
+                "self": {
+                    "href": "https:\/\/loc.api.parclick.com\/v1\/city\/6"
+                }
+            }
+        },
+        "fieldsRequested": []
+    }
+}
+</pre>
+</p>
+</details>
+
 
 
 
@@ -2843,152 +3532,47 @@ Authorization: Bearer {JWT_TOKEN}
 <p>
 <pre>
 {
- "page": "1",
- "limit": "100",
- "pages": 1,
- "items": [
- {
- "id": 1055138,
- "createdAt": "2019-11-18T07:40:41+0000",
- "end_booking_date": "2019-12-31T12:00:00+0000",
- "start_booking_date": "2019-12-31T10:00:00+0000",
- "total": 35,
- "booking_code": "QEG233D",
- "first_name": "Miki",
- "last_name": "Joinup",
- "username": "joinup2@parclick.com",
- "voucher_id": 935463,
- "state": "CANCELED",
- "total_net_price": 29.17,
- "total_vat": 5.83
- },
- {
- "id": 1055139,
- "createdAt": "2019-11-18T07:53:36+0000",
- "end_booking_date": "2019-12-31T12:00:00+0000",
- "start_booking_date": "2019-12-31T10:00:00+0000",
- "total": 35,
- "booking_code": "V49YDDK",
- "first_name": "Miki",
- "last_name": "Joinup",
- "username": "joinup2@parclick.com",
- "voucher_id": 935464,
- "state": "CANCELED",
- "total_net_price": 29.17,
- "total_vat": 5.83
- },
- {
- "id": 1055140,
- "createdAt": "2019-11-18T14:42:38+0000",
- "end_booking_date": "2019-12-31T12:00:00+0000",
- "start_booking_date": "2019-12-31T10:00:00+0000",
- "total": 35,
- "booking_code": "LGDWPP4",
- "first_name": "Miki",
- "last_name": "Joinup",
- "username": "joinup2@parclick.com",
- "voucher_id": 935465,
- "state": "CANCELED",
- "total_net_price": 29.17,
- "total_vat": 5.83
- },
- {
- "id": 1055141,
- "createdAt": "2019-11-18T14:46:36+0000",
- "end_booking_date": "2019-12-31T12:00:00+0000",
- "start_booking_date": "2019-12-31T10:00:00+0000",
- "total": 35,
- "booking_code": "V8K2WWJ",
- "first_name": "Miki",
- "last_name": "Joinup",
- "username": "joinup2@parclick.com",
- "voucher_id": 935466,
- "state": "CANCELED",
- "total_net_price": 29.17,
- "total_vat": 5.83
- },
- {
- "id": 1055142,
- "createdAt": "2019-11-18T14:52:29+0000",
- "end_booking_date": "2019-12-31T12:00:00+0000",
- "start_booking_date": "2019-12-31T10:00:00+0000",
- "total": 35,
- "booking_code": "Q2Z3XDG",
- "first_name": "Miki",
- "last_name": "Joinup",
- "username": "joinup2@parclick.com",
- "voucher_id": 935467,
- "state": "CANCELED",
- "total_net_price": 29.17,
- "total_vat": 5.83
- },
- {
- "id": 1055143,
- "createdAt": "2019-11-19T09:54:38+0000",
- "end_booking_date": "2019-12-31T22:00:00+0000",
- "start_booking_date": "2019-12-31T10:00:00+0000",
- "total": 17.2,
- "booking_code": "LY4YGP0",
- "first_name": "Miki",
- "last_name": "Joinup",
- "username": "joinup2@parclick.com",
- "voucher_id": 935468,
- "state": "CANCELED",
- "total_net_price": 14.1,
- "total_vat": 3.1
- },
- {
- "id": 1055144,
- "createdAt": "2019-11-19T13:17:45+0000",
- "end_booking_date": "2019-12-31T22:00:00+0000",
- "start_booking_date": "2019-12-31T10:00:00+0000",
- "total": 17.2,
- "booking_code": "VME5G1X",
- "first_name": "Miki",
- "last_name": "Joinup",
- "username": "joinup2@parclick.com",
- "voucher_id": 935469,
- "state": "CANCELED",
- "total_net_price": 14.1,
- "total_vat": 3.1
- },
- {
- "id": 1055145,
- "createdAt": "2019-11-20T11:40:52+0000",
- "end_booking_date": "2019-12-31T22:00:00+0000",
- "start_booking_date": "2019-12-31T10:00:00+0000",
- "total": 17.2,
- "booking_code": "LWPMG3P",
- "first_name": "Miki",
- "last_name": "Joinup",
- "username": "joinup2@parclick.com",
- "voucher_id": 935470,
- "state": "CANCELED",
- "total_net_price": 14.1,
- "total_vat": 3.1
- },
- {
- "id": 1055146,
- "createdAt": "2019-11-20T14:11:41+0000",
- "end_booking_date": "2019-12-31T22:00:00+0000",
- "start_booking_date": "2019-12-31T10:00:00+0000",
- "total": 42.29,
- "booking_code": "LJK1GWN",
- "first_name": "Miki",
- "last_name": "Joinup",
- "username": "joinup2@parclick.com",
- "voucher_id": 935471,
- "state": "CANCELED",
- "total_net_price": 35.24,
- "total_vat": 7.05
- }
- ],
- "total": 10,
- "params": {
- "group": "list",
- "page": "1",
- "limit": "100"
- }
+    "page": "1",
+    "limit": "100",
+    "pages": 1,
+    "items": [
+        {
+            "id": 974973,
+            "createdAt": "2019-05-30T11:53:17+0000",
+            "end_booking_date": "2019-05-31T12:00:00+0000",
+            "start_booking_date": "2019-05-31T10:00:00+0000",
+            "total": 19.47,
+            "booking_code": "QR23R45",
+            "first_name": "John",
+            "last_name": "Doe",
+            "username": "jd@parclick.com",
+            "voucher_id": 855300,
+            "state": "CANCELED",
+            "total_net_price": 16.09,
+            "total_vat": 3.38
+        },
+        {
+            "id": 974998,
+            "createdAt": "2019-05-30T12:09:47+0000",
+            "end_booking_date": "2019-05-31T12:00:00+0000",
+            "start_booking_date": "2019-05-31T10:00:00+0000",
+            "total": 19.47,
+            "booking_code": "L7N6EP6",
+            "first_name": "John",
+            "last_name": "Doe",
+            "username": "jd@parclick.com",
+            "voucher_id": 855325,
+            "state": "CONFIRMED",
+            "total_net_price": 16.09,
+            "total_vat": 3.38
+        }
+    ],
+    "total": 2,
+    "params": {
+        "group": "list",
+        "page": "1",
+        "limit": "100"
+    }
 }
 </pre>
 </p>
@@ -2997,411 +3581,158 @@ Authorization: Bearer {JWT_TOKEN}
 <details><summary style="color:#FF6600;">Show response 200 Ok group booking</summary>
 <p>
 <pre>
-{
- "page": 1,
- "limit": 200,
- "pages": 1,
- "items": [
- {
- "id": 974973,
- "createdAt": "2019-05-30T11:53:17+0000",
- "end_booking_date": "2019-05-31T12:00:00+0000",
- "start_booking_date": "2019-05-31T10:00:00+0000",
- "total": 19.47,
- "booking_code": "QR23R45",
- "first_name": "miki0",
- "last_name": "mikimoto0",
- "voucher_id": 935441,
- "username": "TEST_IT\uf8ffmikimoto0@parclick.com\uf8ffTEST_IT",
- "items": [
- {
- "id": 976152,
- "parking": {
- "id": 113,
- "latitude": 36.53671717596,
- "image_list": "\/\/static.parclick.com\/parking\/2016\/06\/parking-188-large.png",
- "longitude": -6.3022649907516,
- "is_cancellable": true,
- "address": "Paseo Santa B\u00e1rbara, S\/N",
- "city": "C\u00e1diz",
- "country": "Espa\u00f1a",
- "zip": "11003",
- "name": "IC Santa B\u00e1rbara",
- "freemium": false,
- "cancellation_type": 2,
- "_links": {
- "self": {
- "href": "https:\/\/loc.api.parclick.com\/v1\/parking\/113"
- }
- }
- },
- "product": {
- "id": 1586,
- "instructions": "During the purchasing process, select the date you plan to arrive. After making the online payment you will receive a voucher via email with you reservation code. \r\n\u003Cbr\/\u003E\r\n\u003Cbr\/\u003EOn the date of your reservation, enter the parking lot as usual, take a ticket at the entrance and park in any empty spot.\r\n\u003Cbr\/\u003E\r\n\u003Cbr\/\u003EOnce you\u0027re out of the car, approach the control booth with the Parclick voucher and the ticket you took. Our staff there will check your reservation using the reservation code, and will give you a card that will allow you out.",
- "name": "ONEPASS 1 day",
- "vehicle_type": {
- "id": 1
- },
- "warning_message": "\u003Cp\u003EAlthough the car park is open 24 hours, you must redeem the receipt within Customer Service Hours from Monday to Sunday from 7h to 23h.\u003C\/p\u003E",
- "list_price": 18.85,
- "price": 17,
- "type": "pass",
- "_links": {
- "self": [
- {
- "href": "https:\/\/loc.api.parclick.com\/v1\/product\/1586"
- },
- {
- "href": "https:\/\/loc.api.parclick.com\/v1\/pass\/1586"
- }
- ]
- }
- }
- }
- ],
- "fees": [
- {
- "id": 687791,
- "net_price": 2.04,
- "vat": 0.43,
- "total": 2.47,
- "discriminator": "administration_fee"
- }
- ],
- "state": "CANCELED",
- "total_net_price": 16.09,
- "total_vat": 3.38
- },
- {
- "id": 974998,
- "createdAt": "2019-05-30T12:09:47+0000",
- "end_booking_date": "2019-05-31T12:00:00+0000",
- "start_booking_date": "2019-05-31T10:00:00+0000",
- "total": 19.47,
- "booking_code": "L7N6EP6",
- "first_name": "miki1",
- "last_name": "mikimoto1",
- "voucher_id": 935442,
- "username": "TEST_IT\uf8ffmikimoto10@parclick.com\uf8ffTEST_IT",
- "items": [
- {
- "id": 976177,
- "parking": {
- "id": 113,
- "latitude": 36.53671717596,
- "image_list": "\/\/static.parclick.com\/parking\/2016\/06\/parking-188-large.png",
- "longitude": -6.3022649907516,
- "is_cancellable": true,
- "address": "Paseo Santa B\u00e1rbara, S\/N",
- "city": "C\u00e1diz",
- "country": "Espa\u00f1a",
- "zip": "11003",
- "name": "IC Santa B\u00e1rbara",
- "freemium": false,
- "cancellation_type": 2,
- "_links": {
- "self": {
- "href": "https:\/\/loc.api.parclick.com\/v1\/parking\/113"
- }
- }
- },
- "product": {
- "id": 1586,
- "instructions": "During the purchasing process, select the date you plan to arrive. After making the online payment you will receive a voucher via email with you reservation code. \r\n\u003Cbr\/\u003E\r\n\u003Cbr\/\u003EOn the date of your reservation, enter the parking lot as usual, take a ticket at the entrance and park in any empty spot.\r\n\u003Cbr\/\u003E\r\n\u003Cbr\/\u003EOnce you\u0027re out of the car, approach the control booth with the Parclick voucher and the ticket you took. Our staff there will check your reservation using the reservation code, and will give you a card that will allow you out.",
- "name": "ONEPASS 1 day",
- "vehicle_type": {
- "id": 1
- },
- "warning_message": "\u003Cp\u003EAlthough the car park is open 24 hours, you must redeem the receipt within Customer Service Hours from Monday to Sunday from 7h to 23h.\u003C\/p\u003E",
- "list_price": 18.85,
- "price": 17,
- "type": "pass",
- "_links": {
- "self": [
- {
- "href": "https:\/\/loc.api.parclick.com\/v1\/product\/1586"
- },
- {
- "href": "https:\/\/loc.api.parclick.com\/v1\/pass\/1586"
- }
- ]
- }
- }
- }
- ],
- "fees": [
- {
- "id": 687813,
- "net_price": 2.04,
- "vat": 0.43,
- "total": 2.47,
- "discriminator": "administration_fee"
- }
- ],
- "state": "CONFIRMED",
- "total_net_price": 16.09,
- "total_vat": 3.38
- },
- {
- "id": 979834,
- "createdAt": "2019-06-03T13:16:35+0000",
- "end_booking_date": "2019-06-30T12:00:00+0000",
- "start_booking_date": "2019-06-30T10:00:00+0000",
- "total": 19.47,
- "booking_code": "QXP26EW",
- "first_name": "miki00",
- "last_name": "mikimoto00",
- "voucher_id": 935442,
- "username": "TEST_IT\uf8ffmikimoto00@parclick.com\uf8ffTEST_IT",
- "items": [
- {
- "id": 981013,
- "parking": {
- "id": 113,
- "latitude": 36.53671717596,
- "image_list": "\/\/static.parclick.com\/parking\/2016\/06\/parking-188-large.png",
- "longitude": -6.3022649907516,
- "is_cancellable": true,
- "address": "Paseo Santa B\u00e1rbara, S\/N",
- "city": "C\u00e1diz",
- "country": "Espa\u00f1a",
- "zip": "11003",
- "name": "IC Santa B\u00e1rbara",
- "freemium": false,
- "cancellation_type": 2,
- "_links": {
- "self": {
- "href": "https:\/\/loc.api.parclick.com\/v1\/parking\/113"
- }
- }
- },
- "product": {
- "id": 1586,
- "instructions": "During the purchasing process, select the date you plan to arrive. After making the online payment you will receive a voucher via email with you reservation code. \r\n\u003Cbr\/\u003E\r\n\u003Cbr\/\u003EOn the date of your reservation, enter the parking lot as usual, take a ticket at the entrance and park in any empty spot.\r\n\u003Cbr\/\u003E\r\n\u003Cbr\/\u003EOnce you\u0027re out of the car, approach the control booth with the Parclick voucher and the ticket you took. Our staff there will check your reservation using the reservation code, and will give you a card that will allow you out.",
- "name": "ONEPASS 1 day",
- "vehicle_type": {
- "id": 1
- },
- "warning_message": "\u003Cp\u003EAlthough the car park is open 24 hours, you must redeem the receipt within Customer Service Hours from Monday to Sunday from 7h to 23h.\u003C\/p\u003E",
- "list_price": 18.85,
- "price": 17,
- "type": "pass",
- "_links": {
- "self": [
- {
- "href": "https:\/\/loc.api.parclick.com\/v1\/product\/1586"
- },
- {
- "href": "https:\/\/loc.api.parclick.com\/v1\/pass\/1586"
- }
- ]
- }
- }
- }
- ],
- "fees": [
- {
- "id": 691876,
- "net_price": 2.04,
- "vat": 0.43,
- "total": 2.47,
- "discriminator": "administration_fee"
- }
- ],
- "state": "CANCELED",
- "total_net_price": 16.09,
- "total_vat": 3.38
- },
- {
- "id": 1055102,
- "createdAt": "2019-10-30T09:57:38+0000",
- "end_booking_date": "2019-12-31T12:00:00+0000",
- "start_booking_date": "2019-12-31T10:00:00+0000",
- "total": 3,
- "booking_code": "L982J29",
- "first_name": "Miki",
- "last_name": "Test1",
- "voucher_id": 935443,
- "username": "TEST_IT\uf8ffmiki.petrovic.rios@parclick.com\uf8ffTEST_IT",
- "items": [
- {
- "id": 1056281,
- "parking": {
- "id": 1988,
- "latitude": 40.404219150793,
- "image_list": "\/\/static.parclick.com\/parking\/2018\/04\/452\/59f\/ee\/45259fee-65be-5489-b618-81095a4280c5.jpeg",
- "longitude": -3.6981113117529,
- "is_cancellable": true,
- "address": "Calle de Fray Luis de Le\u00f3n, 11",
- "city": "Madrid",
- "country": "Spain",
- "zip": "28012",
- "name": "Fray Luis de Le\u00f3n - Atocha",
- "freemium": false,
- "cancellation_type": 2,
- "_links": {
- "self": {
- "href": "https:\/\/loc.api.parclick.com\/v1\/parking\/1988"
- }
- }
- },
- "product": {
- "id": 54332,
- "instructions": "ARRIVAL:\r\n\u003Cbr\/\u003EPresent the QR code on your reservation (on your phone or a printed version) to the orange Parclick reader, that you will find next to the entrance barrier. The light will turn green and the barrier will open (in 3-4 seconds). Park in any of the identified spaces for Parclick customers:\r\n\u003Cbr\/\u003E- Outdoor spaces: no 3, 7, 8, 9, 11.\r\n\u003Cbr\/\u003E- Underground spaces (floor -2): no 24, 25, 26, 40, 41.\r\n\u003Cbr\/\u003E\r\n\u003Cbr\/\u003EDEPARTURE:\r\n\u003Cbr\/\u003EShow your QR code to the reader. If the light turns red, contact the operator through the barrier interphone.\r\n\u003Cbr\/\u003E\r\n\u003Cbr\/\u003EIF YOUR BOOKING ALLOWS UNLIMITED ENTRANCE AND EXIT:\r\n\u003Cbr\/\u003EFollow the same process, indicated before, to enter and exit.\r\n\u003Cbr\/\u003E\r\n\u003Cbr\/\u003ECOURTESY TIME AND EXCEEDED TIME:\r\n\u003Cbr\/\u003EYou have 30 minutes\u2019 courtesy time to enter the car park before the time indicated on your booking and 30 minutes of courtesy time to leave after. If your stay exceeds the courtesy time, it will automatically charge you the difference on your card which you used to make your booking (+0.38\u20ac \/ 15 mins).",
- "name": "ONEPASS 2 hours",
- "vehicle_type": {
- "id": 1
- },
- "warning_message": "For the QR reader to work properly, you must have the latest version of the app installed.",
- "price": 3,
- "type": "pass",
- "_links": {
- "self": [
- {
- "href": "https:\/\/loc.api.parclick.com\/v1\/product\/54332"
- },
- {
- "href": "https:\/\/loc.api.parclick.com\/v1\/pass\/54332"
- }
- ]
- }
- }
- }
- ],
- "fees": [],
- "state": "CANCELED",
- "total_net_price": 2.48,
- "total_vat": 0.52
- },
- {
- "id": 1055103,
- "createdAt": "2019-10-30T16:41:39+0000",
- "end_booking_date": "2019-12-31T12:00:00+0000",
- "start_booking_date": "2019-12-31T10:00:00+0000",
- "total": 3,
- "booking_code": "QXPWGW0",
- "first_name": "Miki",
- "last_name": "Test1",
- "voucher_id": 935444,
- "username": "TEST_IT\uf8ffmiki.petrovic.rios@parclick.com\uf8ffTEST_IT",
- "items": [
- {
- "id": 1056282,
- "parking": {
- "id": 1988,
- "latitude": 40.404219150793,
- "image_list": "\/\/static.parclick.com\/parking\/2018\/04\/452\/59f\/ee\/45259fee-65be-5489-b618-81095a4280c5.jpeg",
- "longitude": -3.6981113117529,
- "is_cancellable": true,
- "address": "Calle de Fray Luis de Le\u00f3n, 11",
- "city": "Madrid",
- "country": "Spain",
- "zip": "28012",
- "name": "Fray Luis de Le\u00f3n - Atocha",
- "freemium": false,
- "cancellation_type": 2,
- "_links": {
- "self": {
- "href": "https:\/\/loc.api.parclick.com\/v1\/parking\/1988"
- }
- }
- },
- "product": {
- "id": 54332,
- "instructions": "ARRIVAL:\r\n\u003Cbr\/\u003EPresent the QR code on your reservation (on your phone or a printed version) to the orange Parclick reader, that you will find next to the entrance barrier. The light will turn green and the barrier will open (in 3-4 seconds). Park in any of the identified spaces for Parclick customers:\r\n\u003Cbr\/\u003E- Outdoor spaces: no 3, 7, 8, 9, 11.\r\n\u003Cbr\/\u003E- Underground spaces (floor -2): no 24, 25, 26, 40, 41.\r\n\u003Cbr\/\u003E\r\n\u003Cbr\/\u003EDEPARTURE:\r\n\u003Cbr\/\u003EShow your QR code to the reader. If the light turns red, contact the operator through the barrier interphone.\r\n\u003Cbr\/\u003E\r\n\u003Cbr\/\u003EIF YOUR BOOKING ALLOWS UNLIMITED ENTRANCE AND EXIT:\r\n\u003Cbr\/\u003EFollow the same process, indicated before, to enter and exit.\r\n\u003Cbr\/\u003E\r\n\u003Cbr\/\u003ECOURTESY TIME AND EXCEEDED TIME:\r\n\u003Cbr\/\u003EYou have 30 minutes\u2019 courtesy time to enter the car park before the time indicated on your booking and 30 minutes of courtesy time to leave after. If your stay exceeds the courtesy time, it will automatically charge you the difference on your card which you used to make your booking (+0.38\u20ac \/ 15 mins).",
- "name": "ONEPASS 2 hours",
- "vehicle_type": {
- "id": 1
- },
- "warning_message": "For the QR reader to work properly, you must have the latest version of the app installed.",
- "price": 3,
- "type": "pass",
- "_links": {
- "self": [
- {
- "href": "https:\/\/loc.api.parclick.com\/v1\/product\/54332"
- },
- {
- "href": "https:\/\/loc.api.parclick.com\/v1\/pass\/54332"
- }
- ]
- }
- }
- }
- ],
- "fees": [],
- "state": "CANCELED",
- "total_net_price": 2.48,
- "total_vat": 0.52
- },
- {
- "id": 1055104,
- "createdAt": "2019-11-04T09:09:14+0000",
- "end_booking_date": "2019-12-31T12:00:00+0000",
- "start_booking_date": "2019-12-31T10:00:00+0000",
- "total": 3,
- "booking_code": "Q3XDYDJ",
- "first_name": "Miki",
- "last_name": "Test_pre",
- "voucher_id": 935445,
- "username": "TEST_IT\uf8ffmiki.petrovic@parclick.com\uf8ffTEST_IT",
- "items": [
- {
- "id": 1056283,
- "parking": {
- "id": 1988,
- "latitude": 40.404219150793,
- "image_list": "\/\/static.parclick.com\/parking\/2018\/04\/452\/59f\/ee\/45259fee-65be-5489-b618-81095a4280c5.jpeg",
- "longitude": -3.6981113117529,
- "is_cancellable": true,
- "address": "Calle de Fray Luis de Le\u00f3n, 11",
- "city": "Madrid",
- "country": "Spain",
- "zip": "28012",
- "name": "Fray Luis de Le\u00f3n - Atocha",
- "freemium": false,
- "cancellation_type": 2,
- "_links": {
- "self": {
- "href": "https:\/\/loc.api.parclick.com\/v1\/parking\/1988"
- }
- }
- },
- "product": {
- "id": 54332,
- "instructions": "ARRIVAL:\r\n\u003Cbr\/\u003EPresent the QR code on your reservation (on your phone or a printed version) to the orange Parclick reader, that you will find next to the entrance barrier. The light will turn green and the barrier will open (in 3-4 seconds). Park in any of the identified spaces for Parclick customers:\r\n\u003Cbr\/\u003E- Outdoor spaces: no 3, 7, 8, 9, 11.\r\n\u003Cbr\/\u003E- Underground spaces (floor -2): no 24, 25, 26, 40, 41.\r\n\u003Cbr\/\u003E\r\n\u003Cbr\/\u003EDEPARTURE:\r\n\u003Cbr\/\u003EShow your QR code to the reader. If the light turns red, contact the operator through the barrier interphone.\r\n\u003Cbr\/\u003E\r\n\u003Cbr\/\u003EIF YOUR BOOKING ALLOWS UNLIMITED ENTRANCE AND EXIT:\r\n\u003Cbr\/\u003EFollow the same process, indicated before, to enter and exit.\r\n\u003Cbr\/\u003E\r\n\u003Cbr\/\u003ECOURTESY TIME AND EXCEEDED TIME:\r\n\u003Cbr\/\u003EYou have 30 minutes\u2019 courtesy time to enter the car park before the time indicated on your booking and 30 minutes of courtesy time to leave after. If your stay exceeds the courtesy time, it will automatically charge you the difference on your card which you used to make your booking (+0.38\u20ac \/ 15 mins).",
- "name": "ONEPASS 2 hours",
- "vehicle_type": {
- "id": 1
- },
- "warning_message": "For the QR reader to work properly, you must have the latest version of the app installed.",
- "price": 3,
- "type": "pass",
- "_links": {
- "self": [
- {
- "href": "https:\/\/loc.api.parclick.com\/v1\/product\/54332"
- },
- {
- "href": "https:\/\/loc.api.parclick.com\/v1\/pass\/54332"
- }
- ]
- }
- }
- }
- ],
- "fees": [],
- "state": "CANCELED",
- "total_net_price": 2.48,
- "total_vat": 0.52
- }
- ],
- "total": 6,
- "params": {
- "group": "booking",
- "page": "1",
- "limit": "200"
- }
+{ 
+   "page":"1",
+   "limit":"100",
+   "pages":1,
+   "items":[ 
+      { 
+         "id":974973,
+         "createdAt":"2019-05-30T11:53:17+0000",
+         "end_booking_date":"2019-05-31T12:00:00+0000",
+         "start_booking_date":"2019-05-31T10:00:00+0000",
+         "total":19.47,
+         "booking_code":"QR23R45",
+         "first_name":"John",
+         "last_name":"Doe",
+         "username":"jd@parclick.com",
+         "voucher_id":855300,
+         "items":[ 
+            { 
+               "id":976152,
+               "parking":{ 
+                  "id":113,
+                  "latitude":36.53671717596,
+                  "image_list":"\/\/static.parclick.com\/parking\/2016\/06\/parking-188-large.png",
+                  "longitude":-6.3022649907516,
+                  "is_cancellable":true,
+                  "address":"Paseo Santa B\u00e1rbara, S\/N",
+                  "city":"C\u00e1diz",
+                  "country":"Espa\u00f1a",
+                  "zip":"11003",
+                  "name":"IC Santa B\u00e1rbara",
+                  "freemium":false,
+                  "cancellation_type":2,
+                  "_links":{ 
+                     "self":{ 
+                        "href":"https:\/\/loc.api.parclick.com\/v1\/parking\/113"
+                     }
+                  }
+               },
+               "product":{ 
+                  "id":1586,
+                  "instructions":"During the purchasing process, select the date you plan to arrive. After making the online payment you will receive a voucher via email with you reservation code. \r\n\u003Cbr\/\u003E\r\n\u003Cbr\/\u003EOn the date of your reservation, enter the parking lot as usual, take a ticket at the entrance and park in any empty spot.\r\n\u003Cbr\/\u003E\r\n\u003Cbr\/\u003EOnce you\u0027re out of the car, approach the control booth with the Parclick voucher and the ticket you took. Our staff there will check your reservation using the reservation code, and will give you a card that will allow you out.",
+                  "name":"ONEPASS 1 day",
+                  "vehicle_type":{ 
+                     "id":1
+                  },
+                  "warning_message":"\u003Cp\u003EAlthough the car park is open 24 hours, you must redeem the receipt within Customer Service Hours from Monday to Sunday from 7h to 23h.\u003C\/p\u003E",
+                  "list_price":18.85,
+                  "price":17,
+                  "type":"pass",
+                  "_links":{ 
+                     "self":[ 
+                        { 
+                           "href":"https:\/\/loc.api.parclick.com\/v1\/product\/1586"
+                        },
+                        { 
+                           "href":"https:\/\/loc.api.parclick.com\/v1\/pass\/1586"
+                        }
+                     ]
+                  }
+               }
+            }
+         ],
+         "fees":[ 
+            { 
+               "id":687791,
+               "net_price":2.04,
+               "vat":0.43,
+               "total":2.47,
+               "discriminator":"administration_fee"
+            }
+         ],
+         "state":"CANCELED",
+         "total_net_price":16.09,
+         "total_vat":3.38
+      },
+      { 
+         "id":974998,
+         "createdAt":"2019-05-30T12:09:47+0000",
+         "end_booking_date":"2019-05-31T12:00:00+0000",
+         "start_booking_date":"2019-05-31T10:00:00+0000",
+         "total":19.47,
+         "booking_code":"L7N6EP6",
+         "first_name":"John",
+         "last_name":"Doe",
+         "username":"jd@parclick.com",
+         "voucher_id":855325,
+         "items":[ 
+            { 
+               "id":976177,
+               "parking":{ 
+                  "id":113,
+                  "latitude":36.53671717596,
+                  "image_list":"\/\/static.parclick.com\/parking\/2016\/06\/parking-188-large.png",
+                  "longitude":-6.3022649907516,
+                  "is_cancellable":true,
+                  "address":"Paseo Santa B\u00e1rbara, S\/N",
+                  "city":"C\u00e1diz",
+                  "country":"Espa\u00f1a",
+                  "zip":"11003",
+                  "name":"IC Santa B\u00e1rbara",
+                  "freemium":false,
+                  "cancellation_type":2,
+                  "_links":{ 
+                     "self":{ 
+                        "href":"https:\/\/loc.api.parclick.com\/v1\/parking\/113"
+                     }
+                  }
+               },
+               "product":{ 
+                  "id":1586,
+                  "instructions":"During the purchasing process, select the date you plan to arrive. After making the online payment you will receive a voucher via email with you reservation code. \r\n\u003Cbr\/\u003E\r\n\u003Cbr\/\u003EOn the date of your reservation, enter the parking lot as usual, take a ticket at the entrance and park in any empty spot.\r\n\u003Cbr\/\u003E\r\n\u003Cbr\/\u003EOnce you\u0027re out of the car, approach the control booth with the Parclick voucher and the ticket you took. Our staff there will check your reservation using the reservation code, and will give you a card that will allow you out.",
+                  "name":"ONEPASS 1 day",
+                  "vehicle_type":{ 
+                     "id":1
+                  },
+                  "warning_message":"\u003Cp\u003EAlthough the car park is open 24 hours, you must redeem the receipt within Customer Service Hours from Monday to Sunday from 7h to 23h.\u003C\/p\u003E",
+                  "list_price":18.85,
+                  "price":17,
+                  "type":"pass",
+                  "_links":{ 
+                     "self":[ 
+                        { 
+                           "href":"https:\/\/loc.api.parclick.com\/v1\/product\/1586"
+                        },
+                        { 
+                           "href":"https:\/\/loc.api.parclick.com\/v1\/pass\/1586"
+                        }
+                     ]
+                  }
+               }
+            }
+         ],
+         "fees":[ 
+            { 
+               "id":687813,
+               "net_price":2.04,
+               "vat":0.43,
+               "total":2.47,
+               "discriminator":"administration_fee"
+            }
+         ],
+         "state":"CONFIRMED",
+         "total_net_price":16.09,
+         "total_vat":3.38
+      }
+   ],
+   "total":25,
+   "params":{ 
+      "group":"booking",
+      "page":"1",
+      "limit":"100"
+   }
 }
 </pre>
 </p>
@@ -3446,6 +3777,7 @@ Authorization: Bearer {JWT_TOKEN}
 | --------------- |:--------------------| ---------| ---------| -------------------------------------------------- |
 | voucher_id | integer | true | null | voucher id |
 | locale | string | false | es_ES | language in which the information will be returned |
+| notify | bool | false | false | send voucher by email |
 
 
 ### _Response:_
@@ -3524,113 +3856,94 @@ Authorization: Bearer {JWT_TOKEN}
 <p>
 <pre>
 {
- "data": {
- "user": {
- "user_first_name": "Miki",
- "user_last_name": "Joinup"
- },
- "product": {
- "product": "ONEPASS 1 d\u00eda",
- "product_instructions": "EL D\u00cdA ANTES DE LA SALIDA: Recibir\u00e1s un email y un SMS con el nombre y el n\u00famero de tel\u00e9fono de la persona que recoger\u00e1 tu veh\u00edculo en la estaci\u00f3n. En caso contrario, llama al n\u00famero que aparece en el voucher de Parclick una hora antes de la recogida del veh\u00edculo. Tienes que llamar desde el n\u00famero de tel\u00e9fono que hab\u00edas indicado durante tu reserva, para que te pongan en contacto directamente con el agente.\r\n\r\nA TU LLEGADA: Avisa por tel\u00e9fono 15 minutos antes de llegar a la estaci\u00f3n, donde te estar\u00e1n esperando para recoger tu veh\u00edculo. Antes de entregarle las llaves al conductor mu\u00e9strale el justificante de tu reserva de Parclick. \r\n \r\nEL D\u00cdA ANTES DE REGRESAR: Recibir\u00e1s un email y un SMS con el nombre y el n\u00famero de tel\u00e9fono de la persona que recoger\u00e1 tu veh\u00edculo en la estaci\u00f3n. \r\n \r\nA TU VUELTA: Avisa por tel\u00e9fono una vez hayas llegado. Te estar\u00e1n esperando con tu veh\u00edculo en el mismo punto de la estaci\u00f3n que a la llegada.",
- "product_category": "ONEPASS",
- "product_warning": "En este aparcamiento es necesario dejar las llaves del coche.\r\nEs importante llegar a la hora indicada en tu reserva, ya que nuestro personal estar\u00e1 all\u00ed esper\u00e1ndote para recibirte.\r\nPuedes contactar con el parking para cualquier duda o incidencia que te surja en el aparcamiento: +339 73 72 88 55 .",
- "product_net_price": 29.17,
- "product_vat_price": 5.83,
- "product_vat_percent": "20%",
- "product_gross_price": 35
- },
- "voucher": {
- "voucher_code": "Q572PPX",
- "voucher_id": 935445,
- "voucher_description": {
- "0": "EL D\u00cdA ANTES DE LA SALIDA: Recibir\u00e1s un email y un SMS con el nombre y el n\u00famero de tel\u00e9fono de la persona que recoger\u00e1 tu veh\u00edculo en la estaci\u00f3n. En caso contrario, llama al n\u00famero que aparece en el voucher de Parclick una hora antes de la recogida del veh\u00edculo. Tienes que llamar desde el n\u00famero de tel\u00e9fono que hab\u00edas indicado durante tu reserva, para que te pongan en contacto directamente con el agente.\r",
- "2": "A TU LLEGADA: Avisa por tel\u00e9fono 15 minutos antes de llegar a la estaci\u00f3n, donde te estar\u00e1n esperando para recoger tu veh\u00edculo. Antes de entregarle las llaves al conductor mu\u00e9strale el justificante de tu reserva de Parclick. \r",
- "4": "EL D\u00cdA ANTES DE REGRESAR: Recibir\u00e1s un email y un SMS con el nombre y el n\u00famero de tel\u00e9fono de la persona que recoger\u00e1 tu veh\u00edculo en la estaci\u00f3n. \r",
- "6": "A TU VUELTA: Avisa por tel\u00e9fono una vez hayas llegado. Te estar\u00e1n esperando con tu veh\u00edculo en el mismo punto de la estaci\u00f3n que a la llegada."
- }
- },
- "booking": {
- "booking_id": 1055120,
- "booking_state": "CONFIRMED",
- "booking_is_cancellable": true,
- "booking_cancellation_type": 1,
- "booking_from": "31\/12\/2019 10:00",
- "booking_to": "31\/12\/2019 12:00",
- "total_net_price": 29.17,
- "total_vat": 5.83,
- "total": 35,
- "vehicle_type": "CAR",
- "booking_created_at": "13\/11\/2019 11:31",
- "extra_fields": {
- "1": {
- "label": "brand",
- "value": "saab"
- },
- "2": {
- "label": "model",
- "value": "93"
- },
- "3": {
- "label": "license_plate",
- "value": "1788DZN"
- },
- "4": {
- "label": "arrival_flight",
- "value": "1667787"
- },
- "5": {
- "label": "departure_flight",
- "value": "666999"
- }
- }
- },
- "parking": {
- "parking_id": 1046,
- "parking_name": "A\u00e9roport Nantes ECTOR - Service Voiturier - Ext\u00e9rieur",
- "parking_phone": "+33 01 76 40 00 32",
- "parking_address": "A\u00e9roport Nantes Atlantique,",
- "parking_zip": "44340",
- "parking_city": "Nantes",
- "parking_province": "Loire-Atlantique",
- "parking_country": "FRANCE",
- "parking_maximum_height": "1.9 m.",
- "parking_description": "\u00bfBuscas un parking cerca del Aeropuerto de Nantes Atlantique? Entonces est\u00e1s de suerte... Conocemos uno a escasos metros que te propone un servicio de aparcacoches para aparcar en Bouguenais. Reserva tu plaza con el parking Valet A\u00e9roport Nantes ECTOR y deja que un aparcacoches conduzca tu veh\u00edculo a un parking vigilado cerca del aeropuerto de Nantes Atlantique. \r\n\r\nEl parking A\u00e9roport Nantes ECTOR dispone de un servicio valet, es decir, no tendr\u00e1s que conducir hasta el parking. Simplemente, dir\u00edgete a la terminal del Aeropuerto de Nantes Atlantique. El d\u00eda antes de tu salida, recibir\u00e1s un mensaje con los datos del operario a quien tendr\u00e1s que llamar con 15 minutos de antelaci\u00f3n para avisarle de tu llegada. All\u00ed, el conductor te estar\u00e1 esperando para recoger tu veh\u00edculo y llevarlo al aparcamiento. A tu regreso, va a pasar lo mismo: el personal de A\u00e9roport Nantes ECTOR te estar\u00e1 esperando en la terminal para entregarte, de nuevo, tu veh\u00edculo. Al fin y al cabo, \u00a1mereces que te traten como si fueras de la realeza aun cuando te vas de la ciudad del Castillo de los Duques de Breta\u00f1a!\r\n\r\nEl parking A\u00e9roport Nantes ECTOR te permite estacionar cerca del Aeropuerto Nantes Atlantique durante el tiempo que dure tu estancia. Dejar\u00e1s tu coche a un buen recaudo en este parking vigilado las 24h \u00a1Viaja sin tener que estar dando vueltas al aeropuerto buscando la entrada del parking gracias al servicio valet del parking A\u00e9roport Nantes ECTOR!",
- "parking_instructions": {
- "begin": "EL D\u00cdA ANTES DE LA SALIDA: Recibir\u00e1s un email y un SMS con el nombre y el n\u00famero de tel\u00e9fono de la persona que recoger\u00e1 tu veh\u00edculo en la terminal. En caso contrario, llama al n\u00famero que aparece en el voucher de Parclick una hora antes de la recogida del veh\u00edculo. Tienes que llamar desde el n\u00famero de tel\u00e9fono que hab\u00edas indicado durante tu reserva, para que te pongan en contacto directamente con el agente.",
- "return": "El parking sigue en todo momento el estado de tu vuelo, para garantizar la presencia de un agente sin que tengas que esperar si tu vuelo llega con antelaci\u00f3n o retraso.\r\n\r\nA tu vuelta, te dejar\u00e1n una botella de agua en tu veh\u00edculo.",
- "info": ""
- },
- "parking_latitude": 47.157590455483,
- "parking_longitude": -1.6011363273911,
- "parking_category": 2,
- "parking_shuttle_schedule": [],
- "parking_airport_terminals": [
- {
- "id": 30
- }
- ],
- "spot_name": 100,
- "is_box": false
- },
- "fee": [],
- "third_party_discriminator": "JOINUP",
- "currency": "EUR",
- "has_voucher_notification": true,
- "has_receipt_notification": false
- },
- "email": {
- "from": "miki.petrovic@parclick.com",
- "from_name": "Parclick by JOINUP",
- "to": "hello@ectorparking.com",
- "to_name": "A\u00e9roport Nantes ECTOR - Service Voiturier - Ext\u00e9rieur",
- "subject": "Parclick by JOINUP Reservar Q572PPX | Parking A\u00e9roport Nantes ECTOR - Service Voiturier - Ext\u00e9rieur, ONEPASS"
- },
- "locale": "es_ES",
- "application_name": "Parclick",
- "host": "parclick.es",
- "logo_image": "https:\/\/s3-eu-west-1.amazonaws.com\/static.parclick.com\/assets\/img\/Logo-Parclick.png",
- "url_faqs": "https:\/\/parclick.com\/faqs",
- "email_contact": "parclick-info@parclick.com"
+    "data": {
+        "user": {
+            "user_first_name": "John",
+            "user_last_name": "Doe",
+            "user_phone": "9879867876"
+        },
+        "product": {
+            "product": "ONEPASS 7 hours",
+            "product_instructions": "During the purchasing process, select the date you plan to arrive. After making the online payment you will receive a voucher via email with your reservation code.\r\n\r\nOn the date of your reservation, enter the parking lot as usual, take a ticket at the entrance and park in any empty spot. Once you\u0027re out of the car, approach the control booth with the Parclick voucher and the ticket you took. The staff there will check your reservation using the reservation code, and will give you a card that will allow you to exit the car park. Follow this process every time you leave and reenter within the validity period of your parking pass.\r\n\r\nIf there are no personnel in the control booth, do not worry: Use the intercom located at the ATM or at the exit barrier to contact our Remote Service Centre, and follow the same process as described above.",
+            "product_category": "ONEPASS",
+            "product_warning": "Before exiting please get to the control cabin with your reservation locator to get an exit ticket from the clerk on duty",
+            "product_net_price": 15.29,
+            "product_vat_price": 3.21,
+            "product_vat_percent": "21%",
+            "product_gross_price": 18.5,
+            "product_total_time": 7
+        },
+        "voucher": {
+            "voucher_code": "L8K2WYJ",
+            "voucher_id": 935489,
+            "voucher_description": {
+                "0": "During the purchasing process, select the date you plan to arrive. After making the online payment you will receive a voucher via email with your reservation code.\r",
+                "2": "On the date of your reservation, enter the parking lot as usual, take a ticket at the entrance and park in any empty spot. Once you\u0027re out of the car, approach the control booth with the Parclick voucher and the ticket you took. The staff there will check your reservation using the reservation code, and will give you a card that will allow you to exit the car park. Follow this process every time you leave and reenter within the validity period of your parking pass.\r",
+                "4": "If there are no personnel in the control booth, do not worry: Use the intercom located at the ATM or at the exit barrier to contact our Remote Service Centre, and follow the same process as described above."
+            }
+        },
+        "booking": {
+            "booking_id": 1055164,
+            "booking_state": "CANCELED",
+            "booking_is_cancellable": true,
+            "booking_cancellation_type": 2,
+            "booking_from": "2019-12-30 10:00:00",
+            "booking_to": "2019-12-30 12:00:00",
+            "total_net_price": 17.51,
+            "total_vat": 3.68,
+            "total": 21.19,
+            "vehicle_type": "CAR",
+            "booking_created_at": "2019-12-12 15:11:38"
+        },
+        "parking": {
+            "parking_id": 260,
+            "parking_name": "EMT Jacinto Benavente",
+            "parking_phone": "",
+            "parking_address": "Plaza Jacinto Benavente, S\/N",
+            "parking_zip": "28012",
+            "parking_city": "Madrid",
+            "parking_province": "Madrid",
+            "parking_country": "SPAIN",
+            "parking_maximum_height": "1.8 m.",
+            "parking_description": "\u003Cstrong\u003EThis car park is located in the area of CENTRAL MADRID.\u003C\/strong\u003E\u2028\r\nPlease note that \u003Cstrong\u003Eyou will only be able to enter Madrid Central WITHOUT A FINE if you are going to a car park\u003C\/strong\u003E (for vehicles with the label B or C). Don\u0027t take the risk of not having a space available when you arrive and end up with a fine because the car park was full... As of now, book your place in this car park to make sure you can park as soon as you arrive!\r\n\r\nIncredibly well-located car park right in the centre of Madrid, a 5-minute walk from the Puerta del Sol and Plaza Mayor, in the main tourist area which is full of shops, bars and theatres. The car park is ideal if you wish to leave your car here are walk to the Gran V\u00eda and the Royal Palace.",
+            "parking_instructions": {
+                "begin": "",
+                "return": "",
+                "info": ""
+            },
+            "parking_latitude": 40.414339688923,
+            "parking_longitude": -3.7034317950878,
+            "parking_category": 1,
+            "spot_name": 285,
+            "is_box": false
+        },
+        "fee": [
+            {
+                "id": 757530,
+                "net_price": 2.22,
+                "vat": 0.47,
+                "total": 2.69,
+                "discriminator": "administration_fee"
+            }
+        ],
+        "third_party_discriminator": "TEST_IT",
+        "currency": "EUR",
+        "has_voucher_notification": true,
+        "has_receipt_notification": false
+    },
+    "email": {
+        "from": "john.doe@parclick.com",
+        "from_name": "Parclick by IT",
+        "to": "r.castillo@madridmovilidad.es",
+        "to_name": "EMT Jacinto Benavente",
+        "subject": "Parclick by IT Book L8K2WYJ | Car park EMT Jacinto Benavente, ONEPASS"
+    },
+    "locale": "en_GB",
+    "application_name": "Parclick",
+    "host": "parclick.com",
+    "logo_image": "https:\/\/s3-eu-west-1.amazonaws.com\/static.parclick.com\/assets\/img\/Logo-Parclick.png",
+    "url_faqs": "https:\/\/parclick.com\/faqs",
+    "email_contact": "parclick-info@parclick.com"
 }
 </pre>
 </p>
