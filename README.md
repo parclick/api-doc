@@ -1,6 +1,6 @@
 ![alt text](https://static.parclick.com/assets/img/logotipo-parclick.svg)
 
-<p style="color:#999999;text-align:right;">Document version 1.5.2</p>
+<p style="color:#999999;text-align:right;">Document version 1.5.3</p>
 
 # <span style="color:#FF6600;">Parclick - API Reference</span>
 #### <span style="color:#999;">TECHNICAL DOCUMENTATION</span>
@@ -187,10 +187,10 @@ This method allows third party systems to refresh a valid token.
 
 
 This method returns a list of car parks close to a location and based on the parameters used. In case you select one the **id** let get the parking details using the **get parking** endpoint. This method is secured via JWT token.
-Depending on the group used, it is necessary to include certain parameters.
-Group export: locale, page, limit - Has pagination
-Group search: locale, latitude, longitude, radius, from, to, vehicleType, limit (with a maximum of 200 results) - Has not pagination
-To import all car parks for caching, the group must be set to **export** without parameters except the page and limit for pagination.
+Depending on the group used, it is necessary to include certain parameters.<br>
+Group export: locale, page, limit - Has pagination<br>
+Group search: locale, latitude, longitude, radius, from, to, vehicleType, limit (with a maximum of 200 results) - Does not have pagination<br>
+To import all car parks for caching, the group must be set to **export** without parameters except the page and limit for pagination.<br>
 The car park features are the following fields with their meaning:
 
 | Field | Description | Type |
@@ -232,464 +232,178 @@ Authorization: Bearer {JWT_TOKEN}
 {
     "items": [
         {
-            "id": 1727,
+            "id": 260,
             "covered": true,
-            "description": "This is a public car park located in M\u00e1laga Plaza Shopping Centre. It\u0027s about 5 minutes walk away from the historic city centre, where you can visit the Picasso Museum, the Carmen Thyssen Museum, the cathedral or the Alcazaba citadel. You can access the car park easily by car from Avenida de Andaluc\u00eda.",
-            "flexible_entry": true,
-            "latitude": 36.718731737387,
-            "longitude": -4.4286074244724,
+            "description": "\u003Cstrong\u003EThis car park is located in the area of CENTRAL MADRID.\u003C\/strong\u003E\u2028\r\nPlease note that \u003Cstrong\u003Eyou will only be able to enter Madrid Central WITHOUT A FINE if you are going to a car park\u003C\/strong\u003E (for vehicles with the label B or C). Don\u0027t take the risk of not having a space available when you arrive and end up with a fine because the car park was full... As of now, book your place in this car park to make sure you can park as soon as you arrive!\r\n\r\nIncredibly well-located car park right in the centre of Madrid, a 5-minute walk from the Puerta del Sol and Plaza Mayor, in the main tourist area which is full of shops, bars and theatres. The car park is ideal if you wish to leave your car here are walk to the Gran V\u00eda and the Royal Palace.",
+            "flexible_entry": false,
+            "latitude": 40.414339688923,
+            "longitude": -3.7034317950878,
             "medias": [
                 {
-                    "id": 6907,
-                    "url": "https:\/\/static.parclick.com\/parking\/2017\/06\/cd8\/48a\/90\/cd848a90-2be0-5c62-a2e9-71861fa845f4.jpeg"
+                    "id": 7315,
+                    "url": "https:\/\/static.parclick.com\/parking\/2017\/07\/d85\/780\/c4\/d85780c4-bfb4-500f-ab89-1f47338e72ef.jpeg"
+                },
+                {
+                    "id": 7316,
+                    "url": "https:\/\/static.parclick.com\/parking\/2017\/07\/148\/8b0\/35\/1488b035-a4d3-5dc2-9e25-2f281d2dd183.jpeg"
+                },
+                {
+                    "id": 7317,
+                    "url": "https:\/\/static.parclick.com\/parking\/2017\/07\/d6d\/093\/70\/d6d09370-e3c3-58e6-991b-77f270ed232b.jpeg"
+                },
+                {
+                    "id": 12127,
+                    "url": "https:\/\/static.parclick.com\/parking\/2018\/12\/33d\/691\/76\/33d69176-b9bb-5b56-b4fa-6cef4d3faa37.jpeg"
                 }
             ],
-            "is_cancellable": true,
-            "address": "Calle Armengual de la Mota, 12",
-            "city": "M\u00e1laga",
+            "address": "Plaza Jacinto Benavente, S\/N",
+            "city": "Madrid",
             "country": "Espa\u00f1a",
-            "zip": "29007",
+            "province": "Madrid",
+            "zip": "28012",
             "provider": {
-                "id": 367,
-                "name": "NW RETAIL MALAGA"
+                "id": 19,
+                "name": "EMT"
             },
             "handicapped_access": true,
             "security": true,
-            "open_24h": false,
+            "open_24h": true,
             "giving_keys": false,
-            "name": "CC M\u00e1laga Plaza",
-            "max_height": 190,
+            "exclude_checking": false,
+            "name": "EMT Jacinto Benavente",
+            "max_height": 180,
             "passes": [
                 {
-                    "id": 7479,
+                    "id": 33982,
+                    "price": 15,
                     "type": "pass",
+                    "internal_name": "ONEPASS 6h (15.00\u20ac)",
+                    "duration": 6,
+                    "multiparking": false,
+                    "multipass": false,
+                    "frequency": "HOURLY_RANGE",
                     "_links": {
                         "self": [
                             {
-                                "href": "https:\/\/loc.api.parclick.com\/v1\/product\/7479"
+                                "href": "https:\/\/loc.api.parclick.com\/v1\/product\/33982"
                             },
                             {
-                                "href": "https:\/\/loc.api.parclick.com\/v1\/pass\/7479"
+                                "href": "https:\/\/loc.api.parclick.com\/v1\/pass\/33982"
                             }
                         ]
                     }
                 }
             ],
+            "schedule": [],
             "voucher_needed": false,
             "multiparking": false,
             "cancellation_type": 2,
-            "reviews_summary": {
-                "reviews": {
-                    "56": {
-                        "review": [],
-                        "average": 4.333333333333333
-                    },
-                    "1244": {
-                        "review": [],
-                        "average": 5
-                    },
-                    "1286": {
-                        "review": [],
-                        "average": 5
-                    },
-                    "1777": {
-                        "review": [],
-                        "average": 3
-                    },
-                    "3328": {
-                        "review": [],
-                        "opinion": "El acceso al parking es poco visible y es bastante estrecho. Aparqu\u00e9, le indiqu\u00e9 que ten\u00eda una reserva y al no encontrarla me dijeron que a la salida volviera a d\u00e1rsela (al inicio no buscaron mucho, la verdad). As\u00ed lo hice y me dejaron salir sin problema.",
-                        "average": 3.3333333333333335
-                    },
-                    "3699": {
-                        "review": [],
-                        "average": 4.333333333333333
-                    },
-                    "9810": {
-                        "review": [],
-                        "average": 1
-                    },
-                    "10060": {
-                        "review": [],
-                        "average": 4.333333333333333
-                    },
-                    "10715": {
-                        "review": [],
-                        "average": 4.666666666666667
-                    },
-                    "12474": {
-                        "review": [],
-                        "average": 4.333333333333333
-                    }
-                },
-                "questions": {
-                    "4": {
-                        "score": 35,
-                        "number": 10,
-                        "average": 3.5
-                    },
-                    "5": {
-                        "score": 40,
-                        "number": 10,
-                        "average": 4
-                    },
-                    "6": {
-                        "score": 42,
-                        "number": 9,
-                        "average": 4.666666666666667
-                    }
-                },
-                "totalScore": 3.9333333333333327
-            },
             "_links": {
                 "self": {
-                    "href": "https:\/\/loc.api.parclick.com\/v1\/parking\/1727"
+                    "href": "https:\/\/loc.api.parclick.com\/v1\/parking\/260"
                 }
             }
         },
         {
-            "id": 2476,
+            "id": 1952,
             "covered": true,
-            "description": "\u003Cstrong\u003EHOW IT WORKS: This is a valet parking service. Drive to the pick-up point at the address indicated on your booking and the valet parking staff will collect your vehicle and take it to a guarded car park, where it will remain until you ask for it to be returned. And remember! This is just the meeting point with the driver who will pick up your vehicle :)\u003C\/strong\u003E\r\n\r\n\u003Cstrong\u003EThe car park only accepts motorhomes with a maximum size of 6 meters.\u003C\/strong\u003E\r\n\r\nThe \u0022Valet Feeltravel - Estaci\u00f3n Ave Mar\u00eda Zambrano\u0022 is a car park in M\u00e1laga that offers a valet service at the M\u00e1laga train station.\r\n\r\nWith this quick and convenient option, you can park near the Mar\u00eda Zambrano station without needing to go to the car park: you just have to call the car park about 20 minutes before you arrive and agree on a meeting point. Afterwards, the driver will take your car to a covered car park in M\u00e1laga, about 8 km from the station.\r\n \r\nUpon your return, follow the same procedure: call when you\u0027ve arrived to the station so that the driver can return your car.\r\n\r\nWith this 24-hour car park in M\u00e1laga, you can leave your car and go sightseeing in the area. From the station, you can get to the famous Larios street in 10 minutes by train and the M\u00e1laga Port in just 12 minutes. This is a great option if you want to park by the M\u00e1laga Fair. It\u0027s the most convenient and quick way, since it\u0027s usually quite crowded!\r\n \r\nIf you have time before taking a train, you can go to the Larios Shopping Center with the \u0022Valet Feeltravel - Estaci\u00f3n Ave Mar\u00eda Zambrano\u0022 car park valet service. \r\n \r\nBook your spot today at the \u0022Valet Feeltravel - Estaci\u00f3n Ave Mar\u00eda Zambrano\u0022 car park.\r\n\r\nAt this car park, you must leave your car keys with the staff.",
+            "description": "\u003Cstrong\u003EThis car park is located in the area of CENTRAL MADRID.\u003C\/strong\u003E\r\n\u2028Please note that \u003Cstrong\u003Eyou will only be able to enter Madrid Central WITHOUT A FINE if you are going to a car park\u003C\/strong\u003E (for vehicles with the label B or C). Don\u0027t take the risk of not having a space available when you arrive and end up with a fine because the car park was full... As of now, book your place in this car park to make sure you can park as soon as you arrive!\r\n\r\n\u003Cstrong\u003EIMPORTANT: HOW TO ACCESS THE CAR PARK.\u003C\/strong\u003E\r\nThe Jardines 16 car park is located in a pedestrian area and the customers who are directed to it have permission from the Madrid City Council to travel through these pedestrian streets to the car park. \r\n\u003Cstrong\u003EHOW TO GET THERE:\u003C\/strong\u003E from Cibeles, go up Calle Alcal\u00e1, turn right along Calle Virgen de los Peligros and then take the first left on Calle Aduana until Calle Montera. Turn right on \u003Cstrong\u003EMontera (it\u00b4s pedestrian, but you can drive)\u003C\/strong\u003E and turn right again on Calle Jardines, where you\u00b4ll find the car park.\r\n[If you\u00b4re using GPS, we recommend using \u00b4bicycle\u00b4 mode to get the precise directions]\r\n\r\n-------------------------\r\n\r\nParking at Puerta del Sol? No...because you can\u00b4t, but that\u00b4s what we\u00b4re here for! As an option, we offer you parking in Calle Jardines 16, which is one of Parclick\u00b4s most central car parks. Here you can leave your car just minutes from Kil\u00f3metro 0 or almost on Gran V\u00eda itself!\r\n\r\nShopping on Preciados, Montera or Fuencarral? Going to the cinema, to the theatre or to sing in some musical on Gran V\u00eda? This is your car park! On Calle Jardines 16 you can calmly leave your car for a few hours or even for a few days if, for example, you have reserved a hotel in the centre of Madrid and you want to get around by foot. It\u00b4s a \u003Cstrong\u003Esecure car park, open 24 hours\u003C\/strong\u003E and with staff always present, where you can \u003Cstrong\u003Epark your car or van\u003C\/strong\u003E safely. The car park is covered and also offers open spaces for vehicles which exceed 2.10 metres in height.\r\n\r\nA few minutes walk away from the car park you\u00b4ll find the Plaza del Carmen, the Real Academia de Bellas Artes de San Fernando or the Casino de Madrid, and, if you leave your car in Jardines 16 and cross Gran V\u00eda, you\u00b4ll be next to the Fundaci\u00f3n Telef\u00f3nica and the Chueca neighbourhood. So if the day is over before you realise...no problem! You won\u00b4t have to think about parking times because it is open and available at any time of the day!\r\n\r\nAlso you can leave your car in this very central car park and travel to other places in the city by metro, since, practically a stone\u00b4s throw away, you\u00b4ll find the Gran V\u00eda station (line 1) and the Sevilla station (line 2).\r\n\r\nDon\u00b4t hesitate and make your reservation for this car park in the centre of Madrid!\r\n\r\nAt this car park, you must leave your car keys with the staff.",
             "flexible_entry": true,
-            "latitude": 36.712322735551,
-            "longitude": -4.4314623818889,
+            "latitude": 40.418888333632,
+            "longitude": -3.7010293058413,
             "medias": [
                 {
-                    "id": 12748,
-                    "url": "https:\/\/static.parclick.com\/parking\/2019\/05\/e68\/fbf\/0a\/e68fbf0a-61bc-514f-bf74-846bf957f902.jpeg"
+                    "id": 9766,
+                    "url": "https:\/\/static.parclick.com\/parking\/2017\/12\/63b\/a16\/b1\/63ba16b1-9060-5794-95d3-cbc41f96cf40.jpeg"
+                },
+                {
+                    "id": 9767,
+                    "url": "https:\/\/static.parclick.com\/parking\/2017\/12\/c5f\/cb4\/0d\/c5fcb40d-cebc-5f2e-9d74-6bb8344efa33.jpeg"
+                },
+                {
+                    "id": 12128,
+                    "url": "https:\/\/static.parclick.com\/parking\/2018\/12\/33d\/691\/76\/33d69176-b9bb-5b56-b4fa-6cef4d3faa37.jpeg"
                 }
             ],
-            "is_cancellable": true,
-            "address": "Estaci\u00f3n Maria Zambrano",
-            "city": "Estaci\u00f3n de C\u00e1rtama",
+            "address": "Calle Jardines, 16",
+            "city": "Madrid",
             "country": "Espa\u00f1a",
-            "zip": "29580",
+            "province": "Madrid",
+            "zip": "28013",
             "provider": {
-                "id": 607,
-                "name": "AUTOCARES MARSUR"
+                "id": 422,
+                "name": "MOVEL CASTRO"
             },
             "handicapped_access": false,
             "security": true,
             "open_24h": true,
             "giving_keys": true,
-            "name": "Valet Feeltravel - Estaci\u00f3n Ave Mar\u00eda Zambrano",
-            "max_height": 300,
+            "exclude_checking": false,
+            "name": "Jardines 16 - Centro Madrid",
+            "max_height": 295,
             "passes": [
                 {
-                    "id": 84903,
+                    "id": 51580,
+                    "price": 5.8,
                     "type": "pass",
+                    "internal_name": "ONEPASS 2h (5.80\u20ac)",
+                    "duration": 2,
+                    "multiparking": false,
+                    "multipass": false,
+                    "frequency": "HOURLY",
                     "_links": {
                         "self": [
                             {
-                                "href": "https:\/\/loc.api.parclick.com\/v1\/product\/84903"
+                                "href": "https:\/\/loc.api.parclick.com\/v1\/product\/51580"
                             },
                             {
-                                "href": "https:\/\/loc.api.parclick.com\/v1\/pass\/84903"
+                                "href": "https:\/\/loc.api.parclick.com\/v1\/pass\/51580"
                             }
                         ]
                     }
                 }
             ],
+            "schedule": [],
             "voucher_needed": false,
             "multiparking": false,
             "cancellation_type": 2,
             "_links": {
                 "self": {
-                    "href": "https:\/\/loc.api.parclick.com\/v1\/parking\/2476"
-                }
-            }
-        },
-        {
-            "id": 2477,
-            "covered": true,
-            "description": "\u003Cstrong\u003EHOW IT WORKS: This is a valet parking service. Drive to the pick-up point at the address indicated on your booking and the valet parking company staff will pick up your vehicle and take it to a nearby public car park. It will remain there until you ask for it to be returned.\r\nWatch out! This is just the meeting point with the driver who will collect your vehicle :)\u003C\/strong\u003E\r\n\r\nWith the Valet Feeltravel, parking near the M\u00e1laga Port isn\u0027t just easy... you don\u0027t even have to park: others will do it for you! We\u0027re talking about a car park with valet service. Because it\u0027s nicer not to go around in circles looking for parking. Plus, you don\u0027t have to be the one doing it. :)\r\n\r\nA valet driver will take your car to a car park near downtown M\u00e1laga. How? Well, it\u0027s quite easy: call 15 minutes before arriving, leave your car keys with the driver and he\u0027ll be in charge of taking it to a covered car park 15 minutes from the port. This way, your car will be monitored 24 hours a day and even better: you won\u0027t have to lug around your suitcases! \r\n \r\nUpon your return, ta-da! You\u0027ll have your car in the same spot where you left it by calling 10 minutes beforehand. Also, did you know this is a 24-hour car park?\r\n\r\nWe think that if you book the \u0022Valet Feeltravel - Puerto de M\u00e1laga\u0022 car park, you\u0027ll be delighted, especially if you\u0027re looking for maximum convenience and a car park close to the M\u00e1laga Port. ;)\r\n\r\nAt this car park, you must leave your car keys with the staff.",
-            "flexible_entry": true,
-            "latitude": 36.70726881075,
-            "longitude": -4.4146451438135,
-            "medias": [
-                {
-                    "id": 12749,
-                    "url": "https:\/\/static.parclick.com\/parking\/2019\/05\/e68\/fbf\/0a\/e68fbf0a-61bc-514f-bf74-846bf957f902.jpeg"
-                }
-            ],
-            "is_cancellable": true,
-            "address": "Puerto de M\u00e1laga",
-            "city": "M\u00e1laga",
-            "country": "Espa\u00f1a",
-            "zip": "29001",
-            "provider": {
-                "id": 607,
-                "name": "AUTOCARES MARSUR"
-            },
-            "handicapped_access": false,
-            "security": true,
-            "open_24h": true,
-            "giving_keys": false,
-            "name": "Valet Feeltravel - Puerto de M\u00e1laga",
-            "max_height": 300,
-            "passes": [
-                {
-                    "id": 85041,
-                    "type": "pass",
-                    "_links": {
-                        "self": [
-                            {
-                                "href": "https:\/\/loc.api.parclick.com\/v1\/product\/85041"
-                            },
-                            {
-                                "href": "https:\/\/loc.api.parclick.com\/v1\/pass\/85041"
-                            }
-                        ]
-                    }
-                }
-            ],
-            "voucher_needed": false,
-            "multiparking": false,
-            "cancellation_type": 2,
-            "_links": {
-                "self": {
-                    "href": "https:\/\/loc.api.parclick.com\/v1\/parking\/2477"
-                }
-            }
-        },
-        {
-            "id": 600,
-            "covered": true,
-            "description": "Car park located at Avenida de la Paloma in M\u00e1laga, close to the Museo Automovil\u00edstico and the Colecci\u00f3n del Museo Ruso. At 15 minutes walking distance you can reach Victoria Kent train station, and Pac\u00edfico street which has access to the beach. Easily accessed by car from Avenida de Juan XXIII and Avenida de Vel\u00e1zquez.",
-            "flexible_entry": true,
-            "latitude": 36.702091677217,
-            "longitude": -4.4448027819161,
-            "medias": [
-                {
-                    "id": 2621,
-                    "url": "https:\/\/static.parclick.com\/parking\/2016\/06\/parking-1155-large.jpg"
-                },
-                {
-                    "id": 2622,
-                    "url": "https:\/\/static.parclick.com\/parking\/2016\/06\/parking-1156-large.jpg"
-                },
-                {
-                    "id": 2623,
-                    "url": "https:\/\/static.parclick.com\/parking\/2016\/06\/parking-1157-large.jpg"
-                }
-            ],
-            "is_cancellable": true,
-            "address": "Avenida de la Paloma, 44",
-            "city": "M\u00e1laga",
-            "country": "Espa\u00f1a",
-            "zip": "29003",
-            "provider": {
-                "id": 136,
-                "name": "MANUEL L\u00d3PEZ"
-            },
-            "handicapped_access": true,
-            "security": true,
-            "open_24h": true,
-            "giving_keys": false,
-            "name": "Manuel L\u00f3pez",
-            "max_height": 240,
-            "passes": [
-                {
-                    "id": 7304,
-                    "type": "pass",
-                    "_links": {
-                        "self": [
-                            {
-                                "href": "https:\/\/loc.api.parclick.com\/v1\/product\/7304"
-                            },
-                            {
-                                "href": "https:\/\/loc.api.parclick.com\/v1\/pass\/7304"
-                            }
-                        ]
-                    }
-                }
-            ],
-            "voucher_needed": false,
-            "multiparking": false,
-            "cancellation_type": 2,
-            "reviews_summary": {
-                "reviews": {
-                    "250": {
-                        "review": [],
-                        "average": 3
-                    },
-                    "1494": {
-                        "review": [],
-                        "average": 3
-                    },
-                    "1451": {
-                        "review": [],
-                        "opinion": "Le falta que el ascensor llegue hasta la quinta planta por lo dem\u00e1s todo correcto. Precio y calidad",
-                        "average": 4.333333333333333
-                    },
-                    "6377": {
-                        "review": [],
-                        "average": 3.6666666666666665
-                    },
-                    "6554": {
-                        "review": [],
-                        "average": 3.6666666666666665
-                    },
-                    "8754": {
-                        "review": [],
-                        "average": 4
-                    },
-                    "8755": {
-                        "review": [],
-                        "average": 4
-                    },
-                    "11280": {
-                        "review": [],
-                        "average": 4
-                    },
-                    "10697": {
-                        "review": [],
-                        "opinion": "Un aparcamiento muy barato y justo enfrente de una parada de autob\u00fas que lleva directo al centro. L\u00e1stima que el ascensor no llegue hasta la quinta planta (la reservada a parclick).",
-                        "average": 4.333333333333333
-                    },
-                    "10728": {
-                        "review": [],
-                        "average": 4.333333333333333
-                    },
-                    "11021": {
-                        "review": [],
-                        "average": 5
-                    },
-                    "15204": {
-                        "review": [],
-                        "average": 5
-                    },
-                    "14331": {
-                        "review": [],
-                        "opinion": "Trato excelente de los empleados",
-                        "average": 4.333333333333333
-                    },
-                    "14828": {
-                        "review": [],
-                        "opinion": "Ottimo Parcheggio situato a 5 km dal centro. Non \u00e8 nulla di che ma per 6 euro al giorno va pi\u00f9 che bene. Fuori c\u0027\u00e8 la fermata del bus 1 che in 20 minuti vi porta fino al centro dove ci sono i giardini alle spalle del porto nuovo. Ascensore arriva al 4 pi",
-                        "average": 3.6666666666666665
-                    }
-                },
-                "questions": {
-                    "4": {
-                        "score": 55,
-                        "number": 14,
-                        "average": 3.9285714285714284
-                    },
-                    "5": {
-                        "score": 53,
-                        "number": 14,
-                        "average": 3.7857142857142856
-                    },
-                    "6": {
-                        "score": 61,
-                        "number": 14,
-                        "average": 4.357142857142857
-                    }
-                },
-                "totalScore": 4.023809523809524
-            },
-            "_links": {
-                "self": {
-                    "href": "https:\/\/loc.api.parclick.com\/v1\/parking\/600"
-                }
-            }
-        },
-        {
-            "id": 456,
-            "covered": false,
-            "description": "Car park at Malaga station. The bus station and Larios shopping centre are both also a 4-minute walk away. The Port and seafront are a 12-minute walk from the car park. Easily accessible via Avenida Manuel Agust\u00edn Heredia.",
-            "flexible_entry": true,
-            "latitude": 36.712758189447,
-            "longitude": -4.4320435761223,
-            "medias": [
-                {
-                    "id": 2335,
-                    "url": "https:\/\/static.parclick.com\/parking\/2016\/06\/parking-895-large.jpg"
-                }
-            ],
-            "is_cancellable": true,
-            "address": "Explanada de la Estaci\u00f3n, S\/N",
-            "city": "M\u00e1laga",
-            "country": "Espa\u00f1a",
-            "zip": "29002",
-            "provider": {
-                "id": 89,
-                "name": "SABA ADIF"
-            },
-            "handicapped_access": false,
-            "security": false,
-            "open_24h": true,
-            "giving_keys": false,
-            "name": "SABA Estaci\u00f3n M\u00e1laga Mar\u00eda Zambrano",
-            "max_height": 210,
-            "passes": [],
-            "voucher_needed": false,
-            "multiparking": false,
-            "cancellation_type": 1,
-            "_links": {
-                "self": {
-                    "href": "https:\/\/loc.api.parclick.com\/v1\/parking\/456"
-                }
-            }
-        },
-        {
-            "id": 649,
-            "covered": true,
-            "description": "This car park is close to the Cemetery of San Miguel, and 7 minutes walk away from Dr. Pascual F.A.C. Hospital and the Basilica \/ Parroquia de Santa Mar\u00eda de la Victoria y la Merced. C\u00e1novas Theatre, the Faculty of Business and Economic Sciences - also of Fine Arts - the Superior Conservatory of Music and San Telmo Art School are 10 minutes walk away, and Carlos Haya C.H. Hospital at 15 minutes.",
-            "flexible_entry": true,
-            "latitude": 36.732885,
-            "longitude": -4.4156603,
-            "medias": [
-                {
-                    "id": 2697,
-                    "url": "https:\/\/static.parclick.com\/parking\/2016\/06\/parking-1195-large.jpg"
-                }
-            ],
-            "is_cancellable": true,
-            "address": "Calle Cristo de la Epidemia, 100",
-            "city": "M\u00e1laga",
-            "country": "Espa\u00f1a",
-            "zip": "29007",
-            "provider": {
-                "id": 143,
-                "name": "Garaje Olletas"
-            },
-            "handicapped_access": false,
-            "security": true,
-            "open_24h": true,
-            "giving_keys": false,
-            "name": "Garaje Olletas",
-            "max_height": 240,
-            "passes": [],
-            "voucher_needed": false,
-            "multiparking": false,
-            "cancellation_type": 1,
-            "_links": {
-                "self": {
-                    "href": "https:\/\/loc.api.parclick.com\/v1\/parking\/649"
+                    "href": "https:\/\/loc.api.parclick.com\/v1\/parking\/1952"
                 }
             }
         }
     ],
-    "total": 6,
-    "params": {
-        "locale": "en_GB",
-        "group": "search-joinup",
-        "latitude": "36.71674561212",
-        "longitude": "-4.425996199999984",
-        "radius": "3",
-        "from": "2020-02-22 20:00",
-        "to": "2020-02-22 22:00",
-        "vehicleType": "1",
-        "page": "1"
+        "total": 135,
+        "params": {
+            "locale": "en_GB",
+            "group": "search-joinup",
+            "latitude": "40.4167754",
+            "longitude": "-3.7037901999999576",
+            "radius": "4",
+            "from": "2020-02-22 20:00",
+            "to": "2020-02-22 22:00",
+            "vehicleType": "1",
+            "page": "1",
+            "limit": ""
+        }
     }
-}
 </pre>
 </p>
 </details>
 
+
+### _Response__
+
+**200 Ok group export-joinup**
+
+<details><summary style="color:#FF6600;">Show response 200 Ok group export-joinup</summary>
+<p>
+<pre>
+
+</pre>
+</p>
+</details>
 
 
 ### _Response:_
@@ -700,490 +414,212 @@ Authorization: Bearer {JWT_TOKEN}
 <p>
 <pre>
 {
- "page": 1,
- "limit": 10,
- "pages": 208,
- "items": [
- {
- "id": 4,
- "extra_info": [],
- "address": "Carrer de Santal\u00f3, 12",
- "city": "Barcelona",
- "country": "Espa\u00f1a",
- "province": "Barcelona",
- "zip": "8021",
- "handicapped_access": true,
- "security": true,
- "open_24h": true,
- "giving_keys": false,
- "exclude_checking": true,
- "license_info": false,
- "vehicle_info": false,
- "flight": false,
- "return_flight_location": false,
- "train": false,
- "name": "NN Santal\u00f3",
- "access_phone": "00 34 647 07 97 31",
- "max_height": 180,
- "slug": "nn_santalo",
- "voucher_needed": false,
- "freemium": false,
- "multiparking": false,
- "instructions": "",
- "cancellation_type": 2,
- "_links": {
- "self": {
- "href": "https:\/\/loc.api.parclick.com\/v1\/parking\/4"
- }
- },
- "_embedded": {
- "city": {
- "id": 6,
- "name": "Barcelona",
- "slug": "barcelona",
- "latitude": 41.3851,
- "longitude": 2.1734,
- "time_zone": "Europe\/Madrid",
- "_links": {
- "self": {
- "href": "https:\/\/loc.api.parclick.com\/v1\/city\/6"
- }
- }
- }
- }
- },
- {
- "id": 5,
- "extra_info": [],
- "address": "Comte d\u0027Urgell, 154",
- "city": "Barcelona",
- "country": "Espa\u00f1a",
- "province": "Barcelona",
- "zip": "8036",
- "handicapped_access": true,
- "security": true,
- "open_24h": true,
- "giving_keys": false,
- "exclude_checking": false,
- "license_info": false,
- "vehicle_info": false,
- "flight": false,
- "return_flight_location": false,
- "train": false,
- "name": "NN Urgell 2",
- "max_height": 195,
- "slug": "nn_urgell_2",
- "voucher_needed": false,
- "freemium": false,
- "multiparking": false,
- "instructions": "",
- "cancellation_type": 2,
- "_links": {
- "self": {
- "href": "https:\/\/loc.api.parclick.com\/v1\/parking\/5"
- }
- },
- "_embedded": {
- "city": {
- "id": 6,
- "name": "Barcelona",
- "slug": "barcelona",
- "latitude": 41.3851,
- "longitude": 2.1734,
- "time_zone": "Europe\/Madrid",
- "_links": {
- "self": {
- "href": "https:\/\/loc.api.parclick.com\/v1\/city\/6"
- }
- }
- }
- }
- },
- {
- "id": 6,
- "extra_info": [],
- "address": "Comte Borrell, 26-28",
- "city": "Barcelona",
- "country": "Espa\u00f1a",
- "province": "Barcelona",
- "zip": "8015",
- "handicapped_access": true,
- "security": true,
- "open_24h": true,
- "giving_keys": false,
- "exclude_checking": false,
- "license_info": false,
- "vehicle_info": false,
- "flight": false,
- "return_flight_location": false,
- "train": false,
- "name": "NN Borrell",
- "access_phone": "00 34 634 30 42 14",
- "max_height": 210,
- "slug": "nn_borrell",
- "voucher_needed": false,
- "freemium": false,
- "multiparking": false,
- "instructions": "",
- "cancellation_type": 2,
- "_links": {
- "self": {
- "href": "https:\/\/loc.api.parclick.com\/v1\/parking\/6"
- }
- },
- "_embedded": {
- "city": {
- "id": 6,
- "name": "Barcelona",
- "slug": "barcelona",
- "latitude": 41.3851,
- "longitude": 2.1734,
- "time_zone": "Europe\/Madrid",
- "_links": {
- "self": {
- "href": "https:\/\/loc.api.parclick.com\/v1\/city\/6"
- }
- }
- }
- }
- },
- {
- "id": 7,
- "extra_info": [],
- "address": "Valencia, 243",
- "city": "Barcelona",
- "country": "Espa\u00f1a",
- "province": "Barcelona",
- "zip": "8007",
- "handicapped_access": true,
- "security": true,
- "open_24h": true,
- "giving_keys": false,
- "exclude_checking": false,
- "license_info": false,
- "vehicle_info": false,
- "flight": false,
- "return_flight_location": false,
- "train": false,
- "name": "NN Valencia II",
- "max_height": 200,
- "slug": "nn_valencia_ii",
- "voucher_needed": false,
- "freemium": false,
- "multiparking": false,
- "instructions": "",
- "cancellation_type": 2,
- "_links": {
- "self": {
- "href": "https:\/\/loc.api.parclick.com\/v1\/parking\/7"
- }
- },
- "_embedded": {
- "city": {
- "id": 6,
- "name": "Barcelona",
- "slug": "barcelona",
- "latitude": 41.3851,
- "longitude": 2.1734,
- "time_zone": "Europe\/Madrid",
- "_links": {
- "self": {
- "href": "https:\/\/loc.api.parclick.com\/v1\/city\/6"
- }
- }
- }
- }
- },
- {
- "id": 8,
- "extra_info": [],
- "address": "Valencia, 511",
- "city": "Barcelona",
- "country": "Espa\u00f1a",
- "province": "Barcelona",
- "zip": "8013",
- "handicapped_access": true,
- "security": true,
- "open_24h": true,
- "giving_keys": false,
- "exclude_checking": false,
- "license_info": false,
- "vehicle_info": false,
- "flight": false,
- "return_flight_location": false,
- "train": false,
- "name": "NN Valencia III",
- "max_height": 190,
- "slug": "nn_valencia_iii",
- "voucher_needed": false,
- "freemium": false,
- "multiparking": false,
- "instructions": "",
- "cancellation_type": 2,
- "_links": {
- "self": {
- "href": "https:\/\/loc.api.parclick.com\/v1\/parking\/8"
- }
- },
- "_embedded": {
- "city": {
- "id": 6,
- "name": "Barcelona",
- "slug": "barcelona",
- "latitude": 41.3851,
- "longitude": 2.1734,
- "time_zone": "Europe\/Madrid",
- "_links": {
- "self": {
- "href": "https:\/\/loc.api.parclick.com\/v1\/city\/6"
- }
- }
- }
- }
- },
- {
- "id": 9,
- "extra_info": [],
- "address": "Rocafort, 64",
- "city": "Barcelona",
- "country": "Espa\u00f1a",
- "province": "Barcelona",
- "zip": "8015",
- "handicapped_access": true,
- "security": true,
- "open_24h": true,
- "giving_keys": false,
- "exclude_checking": true,
- "license_info": false,
- "vehicle_info": false,
- "flight": false,
- "return_flight_location": false,
- "train": false,
- "name": "NN Rocafort",
- "access_phone": "00 34 687 61 05 23",
- "max_height": 190,
- "slug": "nn_rocafort",
- "voucher_needed": false,
- "freemium": false,
- "multiparking": false,
- "instructions": "",
- "cancellation_type": 2,
- "_links": {
- "self": {
- "href": "https:\/\/loc.api.parclick.com\/v1\/parking\/9"
- }
- },
- "_embedded": {
- "city": {
- "id": 6,
- "name": "Barcelona",
- "slug": "barcelona",
- "latitude": 41.3851,
- "longitude": 2.1734,
- "time_zone": "Europe\/Madrid",
- "_links": {
- "self": {
- "href": "https:\/\/loc.api.parclick.com\/v1\/city\/6"
- }
- }
- }
- }
- },
- {
- "id": 10,
- "extra_info": [],
- "address": "Tarragona, 141",
- "city": "Barcelona",
- "country": "Espa\u00f1a",
- "province": "Barcelona",
- "zip": "8014",
- "handicapped_access": true,
- "security": true,
- "open_24h": false,
- "giving_keys": false,
- "exclude_checking": false,
- "license_info": false,
- "vehicle_info": false,
- "flight": false,
- "return_flight_location": false,
- "train": false,
- "name": "NN Tarragona",
- "max_height": 210,
- "slug": "nn_tarragona",
- "voucher_needed": false,
- "freemium": false,
- "multiparking": false,
- "instructions": "",
- "cancellation_type": 2,
- "_links": {
- "self": {
- "href": "https:\/\/loc.api.parclick.com\/v1\/parking\/10"
- }
- },
- "_embedded": {
- "city": {
- "id": 6,
- "name": "Barcelona",
- "slug": "barcelona",
- "latitude": 41.3851,
- "longitude": 2.1734,
- "time_zone": "Europe\/Madrid",
- "_links": {
- "self": {
- "href": "https:\/\/loc.api.parclick.com\/v1\/city\/6"
- }
- }
- }
- }
- },
- {
- "id": 14,
- "extra_info": [],
- "address": "Passeig de Colom,",
- "city": "Barcelona",
- "country": "Espa\u00f1a",
- "province": "Barcelona",
- "zip": "08002",
- "handicapped_access": true,
- "security": true,
- "open_24h": true,
- "giving_keys": false,
- "exclude_checking": false,
- "license_info": false,
- "vehicle_info": false,
- "flight": false,
- "return_flight_location": false,
- "train": false,
- "name": "BSM Moll de la Fusta",
- "max_height": 195,
- "slug": "bsm_moll_de_la_fusta",
- "voucher_needed": false,
- "freemium": false,
- "multiparking": true,
- "instructions": "",
- "cancellation_type": 1,
- "_links": {
- "self": {
- "href": "https:\/\/loc.api.parclick.com\/v1\/parking\/14"
- }
- },
- "_embedded": {
- "city": {
- "id": 6,
- "name": "Barcelona",
- "slug": "barcelona",
- "latitude": 41.3851,
- "longitude": 2.1734,
- "time_zone": "Europe\/Madrid",
- "_links": {
- "self": {
- "href": "https:\/\/loc.api.parclick.com\/v1\/city\/6"
- }
- }
- }
- }
- },
- {
- "id": 18,
- "extra_info": [],
- "address": "C. Carreras i Candi, 65",
- "city": "Barcelona",
- "country": "Espa\u00f1a",
- "province": "Barcelona",
- "zip": "8028",
- "handicapped_access": true,
- "security": true,
- "open_24h": true,
- "giving_keys": false,
- "exclude_checking": false,
- "license_info": false,
- "vehicle_info": false,
- "flight": false,
- "return_flight_location": false,
- "train": false,
- "name": "Parking Viajeros",
- "max_height": 210,
- "slug": "parking_viajeros_1",
- "voucher_needed": false,
- "freemium": false,
- "multiparking": false,
- "instructions": "",
- "cancellation_type": 2,
- "_links": {
- "self": {
- "href": "https:\/\/loc.api.parclick.com\/v1\/parking\/18"
- }
- },
- "_embedded": {
- "city": {
- "id": 6,
- "name": "Barcelona",
- "slug": "barcelona",
- "latitude": 41.3851,
- "longitude": 2.1734,
- "time_zone": "Europe\/Madrid",
- "_links": {
- "self": {
- "href": "https:\/\/loc.api.parclick.com\/v1\/city\/6"
- }
- }
- }
- }
- },
- {
- "id": 19,
- "extra_info": [],
- "address": "Aeropuerto de Alicante",
- "city": "Alicante",
- "country": "Espa\u00f1a",
- "province": "Alicante",
- "zip": "3195",
- "handicapped_access": false,
- "security": true,
- "open_24h": false,
- "giving_keys": true,
- "exclude_checking": false,
- "license_info": true,
- "vehicle_info": true,
- "flight": false,
- "return_flight_location": false,
- "train": false,
- "name": "ALC Valet Parking - Aeropuerto Alicante",
- "slug": "alc_valet_parking_aeropuerto_alicante",
- "voucher_needed": false,
- "freemium": true,
- "multiparking": false,
- "instructions": "",
- "cancellation_type": 2,
- "_links": {
- "self": {
- "href": "https:\/\/loc.api.parclick.com\/v1\/parking\/19"
- }
- },
- "_embedded": {
- "city": {
- "id": 3,
- "name": "Alicante",
- "slug": "alicante",
- "latitude": 38.3453,
- "longitude": -0.4831,
- "time_zone": "Europe\/Madrid",
- "_links": {
- "self": {
- "href": "https:\/\/loc.api.parclick.com\/v1\/city\/3"
- }
- }
- }
- }
- }
- ],
- "total": 2072,
- "params": {
- "locale": "en_EN",
- "group": "export",
- "limit": "10",
- "page": "1"
- }
+    "page": "1",
+    "limit": "2",
+    "pages": 776,
+    "items": [
+        {
+            "id": 4,
+            "covered": true,
+            "description": "Car park located in the district of Sant Gervasi-Galvany, near to Avenida Diagonal and a 10-minute walk from Barcelona Clinical and Provincial Hospital.\r\n\r\n<p>IMPORTANT: Remember when you book to give us the number of the mobile phone which you'll be using while visiting Barcelona. </p>\r\n<p>TELEPHONIC access to car park. REMOTE customer service. </p>",
+            "flexible_entry": true,
+            "latitude": 41.395107706311,
+            "longitude": 2.1466153666872,
+            "medias": [
+                {
+                    "id": 9396,
+                    "url": "https://static.parclick.com/parking/2017/11/cca/e73/a1/ccae73a1-ae1d-563c-b275-14577efbdf1a.jpeg"
+                },
+                {
+                    "id": 9397,
+                    "url": "https://static.parclick.com/parking/2017/11/5ee/981/54/5ee98154-09fc-57ca-b3f0-d05ba085bba9.jpeg"
+                },
+                {
+                    "id": 9398,
+                    "url": "https://static.parclick.com/parking/2017/11/9ab/225/2e/9ab2252e-2977-52e3-8541-bb52d14a1eb3.jpeg"
+                },
+                {
+                    "id": 9399,
+                    "url": "https://static.parclick.com/parking/2017/11/77a/31f/88/77a31f88-89b8-5303-93d6-f18c48542057.jpeg"
+                }
+            ],
+            "address": "Carrer de Santaló, 12",
+            "city": "Barcelona",
+            "country": "España",
+            "province": "Barcelona",
+            "zip": "8021",
+            "provider": {
+                "id": 2,
+                "name": "NYN"
+            },
+            "handicapped_access": true,
+            "security": true,
+            "open_24h": true,
+            "giving_keys": false,
+            "exclude_checking": true,
+            "name": "NN Santaló",
+            "access_phone": "00 34 647 07 97 31",
+            "max_height": 180,
+            "schedule": [],
+            "access": [
+                {
+                    "id": 938,
+                    "type": "vehicle",
+                    "address": "Carrer de Santaló 12",
+                    "latitude": 41.395107706311,
+                    "longitude": 2.1466153666872
+                }
+            ],
+            "voucher_needed": false,
+            "multiparking": false,
+            "cancellation_type": 2,
+            "_links": {
+                "self": {
+                    "href": "https://pre.api.parclick.com/v1/parking/4"
+                }
+            },
+            "_embedded": {
+                "city": {
+                    "id": 6,
+                    "name": "Barcelona",
+                    "country": {
+                        "id": 199,
+                        "iso": "ES",
+                        "nicename": "Spain",
+                        "_links": {
+                            "self": {
+                                "href": "https://pre.api.parclick.com/v1/country/199"
+                            }
+                        }
+                    },
+                    "vat_tax": 21,
+                    "time_zone": "Europe/Madrid",
+                    "_links": {
+                        "self": {
+                            "href": "https://pre.api.parclick.com/v1/city/6"
+                        }
+                    }
+                },
+                "fieldsRequested": []
+            }
+        },
+        {
+            "id": 5,
+            "covered": true,
+            "description": "Car park close to the Hospital Clínic and the Teatre Villarroel. The metro stations Hospital Clínic (line 5) and Urgell (line 1) are both roughly a 10-minute walk away. Easy access to the Gran Vía de las Cortes Catalanas and Avenida Diagonal.",
+            "flexible_entry": true,
+            "latitude": 41.386092962311,
+            "longitude": 2.1536075582364,
+            "medias": [
+                {
+                    "id": 9420,
+                    "url": "https://static.parclick.com/parking/2017/11/4da/76d/b3/4da76db3-f676-5850-843b-c1c1b02c36b6.jpeg"
+                },
+                {
+                    "id": 9421,
+                    "url": "https://static.parclick.com/parking/2017/11/8ad/b6c/ce/8adb6cce-f5de-54b3-b995-6900d2ab2db1.jpeg"
+                },
+                {
+                    "id": 9422,
+                    "url": "https://static.parclick.com/parking/2017/11/e86/ad9/60/e86ad960-f131-5ed4-8260-d123b8b88731.jpeg"
+                },
+                {
+                    "id": 9423,
+                    "url": "https://static.parclick.com/parking/2017/11/fa4/067/b8/fa4067b8-9ca3-5d87-81e0-d3d3a10133bc.jpeg"
+                }
+            ],
+            "address": "Comte d'Urgell, 154",
+            "city": "Barcelona",
+            "country": "España",
+            "province": "Barcelona",
+            "zip": "8036",
+            "provider": {
+                "id": 2,
+                "name": "NYN"
+            },
+            "handicapped_access": true,
+            "security": true,
+            "open_24h": true,
+            "giving_keys": false,
+            "exclude_checking": false,
+            "name": "NN Urgell 2",
+            "max_height": 195,
+            "schedule": [
+                {
+                    "id": 9708,
+                    "type": {
+                        "id": 2,
+                        "name": "PARKING"
+                    },
+                    "week_day": {
+                        "key": "MONDAY",
+                        "order": 1
+                    },
+                    "intervals": [
+                        {
+                            "id": 13618,
+                            "hour_from": "1970-01-01T04:00:00+0000",
+                            "hour_to": "1970-01-01T21:00:00+0000"
+                        }
+                    ]
+                }
+            ],
+            "access": [
+                {
+                    "id": 343,
+                    "type": "vehicle",
+                    "address": "Carrer del Comte d'Urgell 152",
+                    "latitude": 41.386092962311,
+                    "longitude": 2.1536075582364
+                }
+            ],
+            "voucher_needed": false,
+            "multiparking": false,
+            "cancellation_type": 2,
+            "_links": {
+                "self": {
+                    "href": "https://pre.api.parclick.com/v1/parking/5"
+                }
+            },
+            "_embedded": {
+                "city": {
+                    "id": 6,
+                    "name": "Barcelona",
+                    "country": {
+                        "id": 199,
+                        "iso": "ES",
+                        "nicename": "Spain",
+                        "_links": {
+                            "self": {
+                                "href": "https://pre.api.parclick.com/v1/country/199"
+                            }
+                        }
+                    },
+                    "vat_tax": 21,
+                    "time_zone": "Europe/Madrid",
+                    "_links": {
+                        "self": {
+                            "href": "https://pre.api.parclick.com/v1/city/6"
+                        }
+                    }
+                },
+                "fieldsRequested": []
+            }
+        }
+    ],
+    "total": 1552,
+    "params": {
+        "locale": "en_GB",
+        "group": "export-joinup",
+        "latitude": "40.4167754",
+        "longitude": "-3.7037901999999576",
+        "radius": "4",
+        "from": "2020-02-22 20:00",
+        "to": "2020-02-22 22:00",
+        "vehicleType": "1",
+        "page": "1",
+        "limit": "2"
+    }
 }
 </pre>
 </p>
@@ -1295,179 +731,54 @@ Authorization: Bearer {JWT_TOKEN}
 <p>
 <pre>
 {
-    "id": 999,
-    "description": "\u003Cp\u003ECar park in downtown Barcelona, specifically right next to the famous Rambla of Barcelona. Parking near the Ramblas is no longer a problem thanks to the Ed\u00e9n car park, which you\u2019ll find less than 100 meters away; this way, you can enjoy the emblematic boardwalk full of restaurants, bars and shops. Just 400 meters away from the Ed\u00e9n car park, you can visit the Wax Museum and the Liceu Opera House; and just 700 meters away, the Boquer\u00eda Market and the Universitat Pompeu Fabra. \u003C\/p\u003E \r\n\u003Cp\u003EIf you want to spend a day visiting museums and art in Barcelona, you can park at the Ed\u00e9n car park, because it\u2019s located about 10 minutes on foot from the Museum of Illusions, the Museum of Contemporary Art (MACB), the Center for Contemporary Culture (CCCB) and the Poliorama, Raval and Coliseum theaters. Also, you can enjoy the Picasso and Xocolata museums, as well as the Basilicas of Santa Mar\u00eda del Mar and Santa Mar\u00eda del Pi, all within 10 minutes walking from the Ed\u00e9n car park. \u003C\/p\u003E \r\n\u003Cp\u003EAlso, near the Ed\u00e9n car park, you have the Mirador de Colom, Maritime Museum, Gaudi Hotel, Palau G\u00fcell and the Pla\u00e7a Reial. If you prefer, you can leave your car in the Ed\u00e9n car park to visit the most famous spots in Barcelona, including the Sala Apolo, Barts and the Apolo and Vict\u00f2ria theaters. Parking at the Barcelona Cathedral is no longer a problem thanks to the Ed\u00e9n car park, which is just 9 minutes away on foot, as well as 15 minutes from the Pla\u00e7a de Catalunya, Barcelona University and the Palau de la M\u00fasica Catalana. \u003C\/p\u003E \r\n\u003Cp\u003EAs you\u2019ll see, parking in Barcelona at the Ed\u00e9n car park gives you the chance to visit the city center and its surroundings without worrying about where to leave your car, because this car park offers a variety of nearby places to visit. \u003C\/p\u003E \r\n\u003Cp\u003EAnd, if that weren\u2019t enough, there are other interesting places that you can get to from the Ed\u00e9n car park, including: the Pla\u00e7a de Sant Jaume, Museo d\u0027Hist\u00f2ria de Catalunya and the Mirador de Poble Sec (where you\u2019ll find the Pla\u00e7a de l\u0027Armada and the Moss\u00e8n Costa i Llobera Gardens). Parking in Barcelona and enjoying its coastline and beaches is now much easier thanks to the Ed\u00e9n car park, located less than 10 minutes from the Port, where you also can visit the L\u2019Aqu\u00e0rium, Pla\u00e7a de l\u0027Ictineo or the World Trade Center business park. \u003C\/p\u003E",
-    "flexible_entry": true,
-    "latitude": 41.378874253186,
-    "longitude": 2.1739906880944,
+    "id": 983,
+    "covered": true,
+    "description": "Car park in the center of Barcelona, in the Carrer de l'Hospital, just 500 meters from the famous Paseo de Las Ramblas and the Liceo Theater, known for its opera in Barcelona. Parking in El Nou Raval car park lets you visit this restaurant and leisure area with its numerous shops, restaurants, bars and street art. At the same distance from El Nou Raval car park, you’ll find the Rubió i Lluch Gardens, the Monastery of Sant Pau del Camp, and a little farther, you can visit the art district of Barcelona: the Museum of Contemporary Art (MACBA), the Center of Contemporary Culture of Barcelona (CCCB) and the Filmoteca de Catalunya. Parking in the heart of Barcelona is no longer a problem, for the Catalonia Square is located just 10 minutes walking from El Nou Raval car park, where you can enjoy the Francesc Macià Monument. Likewise, in just 10 minutes, you can visit one of the most famous Barcelona sites, the Güell Palace, or the Main Theater. El Nou Raval car park is also very close to the Rambla del Raval, the La Boquería market, the Sant Antoni market and the Basilica of Santa María del Pi. Also, El Nou Raval car park is located less than 15 minutes walking from the Plaça de Sant Jaume, where you’ll find the Barcelona City Hall, Palau de la Generalitat de Catalunya, Basilica of Sants Màrtirs Just i Pastor and the Roman Wall; likewise, right next door, you can visit the History Museum of Barcelona (MUHBA), the Mirador del Rei Martí, the Frederic Marès Museum and the Catalan Museum. El Nou Raval car park is ideal if you need to park in the Eixample Sant Antoni or the historic center of Barcelona, especially in the El Raval or the Gothic Quarter, as well as the University Plaza, where you’ll find the University of Barcelona’s Faculty of Mathematics, among others. El Nou Raval car park gives you the chance to leave your car in good hands anytime, thanks to their 24/7 schedule and video surveillance system. You can also get around Barcelona on public transit using line L2 from the Sant Antoni station, just 5 minutes from the car park, or L3 from the Liceu station.",
+    "flexible_entry": false,
+    "latitude": 41.37944030469,
+    "longitude": 2.1672597228639,
     "medias": [
         {
-            "id": 9531,
-            "url": "https:\/\/static.parclick.com\/parking\/2017\/12\/824\/c14\/a8\/824c14a8-8234-5339-8069-497184a45f0d.jpeg"
+            "id": 7571,
+            "url": "https://static.parclick.com/parking/2017/07/85a/485/c4/85a485c4-d29d-5c3c-b9c3-ffc41de8b75f.jpeg"
         },
         {
-            "id": 9532,
-            "url": "https:\/\/static.parclick.com\/parking\/2017\/12\/8a6\/160\/4d\/8a61604d-7d6c-5b13-84d6-2a4972642629.jpeg"
+            "id": 7572,
+            "url": "https://static.parclick.com/parking/2017/07/62d/e02/10/62de0210-b385-5084-88b5-0ddf50d03781.jpeg"
         },
         {
-            "id": 9533,
-            "url": "https:\/\/static.parclick.com\/parking\/2017\/12\/e4b\/488\/06\/e4b48806-e249-536e-82e0-f253b602e93b.jpeg"
+            "id": 7573,
+            "url": "https://static.parclick.com/parking/2017/07/6be/1b2/e5/6be1b2e5-f4f1-55da-8ecc-d299fa1c1f47.jpeg"
         },
         {
-            "id": 9534,
-            "url": "https:\/\/static.parclick.com\/parking\/2017\/12\/9fc\/1a9\/42\/9fc1a942-ff78-5272-af69-fb5f43d7ef47.jpeg"
+            "id": 7574,
+            "url": "https://static.parclick.com/parking/2017/07/a8b/790/89/a8b79089-358b-59cc-8442-39f02ba424be.jpeg"
         }
     ],
-    "address": "Carrer Nou de la Rambla, 12",
+    "address": "Carrer de l'Hospital, 141",
     "city": "Barcelona",
-    "country": "Espa\u00f1a",
+    "country": "España",
     "province": "Barcelona",
     "zip": "8001",
     "provider": {
-        "id": 266,
-        "name": "INMUEBLES EDEN"
+        "id": 254,
+        "name": "EL NOU RAVAL"
     },
     "handicapped_access": true,
-    "security": false,
-    "open_24h": false,
+    "security": true,
+    "open_24h": true,
     "giving_keys": false,
-    "name": "Ed\u00e9n",
-    "max_height": 210,
-    "schedule": [
-        {
-            "id": 2262,
-            "type": {
-                "id": 2,
-                "name": "PARKING"
-            },
-            "week_day": {
-                "key": "MONDAY",
-                "order": 1
-            },
-            "intervals": [
-                {
-                    "id": 2422,
-                    "hour_from": "1970-01-01T08:00:00+0000",
-                    "hour_to": "1970-01-01T23:59:00+0000"
-                }
-            ]
-        },
-        {
-            "id": 2263,
-            "type": {
-                "id": 2,
-                "name": "PARKING"
-            },
-            "week_day": {
-                "key": "TUESDAY",
-                "order": 2
-            },
-            "intervals": [
-                {
-                    "id": 2423,
-                    "hour_from": "1970-01-01T08:00:00+0000",
-                    "hour_to": "1970-01-01T23:59:00+0000"
-                }
-            ]
-        },
-        {
-            "id": 2264,
-            "type": {
-                "id": 2,
-                "name": "PARKING"
-            },
-            "week_day": {
-                "key": "WEDNESDAY",
-                "order": 3
-            },
-            "intervals": [
-                {
-                    "id": 2424,
-                    "hour_from": "1970-01-01T08:00:00+0000",
-                    "hour_to": "1970-01-01T23:59:00+0000"
-                }
-            ]
-        },
-        {
-            "id": 2265,
-            "type": {
-                "id": 2,
-                "name": "PARKING"
-            },
-            "week_day": {
-                "key": "THURSDAY",
-                "order": 4
-            },
-            "intervals": [
-                {
-                    "id": 2425,
-                    "hour_from": "1970-01-01T08:00:00+0000",
-                    "hour_to": "1970-01-01T23:59:00+0000"
-                }
-            ]
-        },
-        {
-            "id": 2266,
-            "type": {
-                "id": 2,
-                "name": "PARKING"
-            },
-            "week_day": {
-                "key": "FRIDAY",
-                "order": 5
-            },
-            "intervals": [
-                {
-                    "id": 2426,
-                    "hour_from": "1970-01-01T08:00:00+0000",
-                    "hour_to": "1970-01-01T23:59:00+0000"
-                }
-            ]
-        },
-        {
-            "id": 2267,
-            "type": {
-                "id": 2,
-                "name": "PARKING"
-            },
-            "week_day": {
-                "key": "SATURDAY",
-                "order": 6
-            },
-            "intervals": [
-                {
-                    "id": 2427,
-                    "hour_from": "1970-01-01T08:00:00+0000",
-                    "hour_to": "1970-01-01T23:59:00+0000"
-                }
-            ]
-        },
-        {
-            "id": 2268,
-            "type": {
-                "id": 2,
-                "name": "PARKING"
-            },
-            "week_day": {
-                "key": "SUNDAY",
-                "order": 7
-            },
-            "intervals": [
-                {
-                    "id": 2428,
-                    "hour_from": "1970-01-01T08:00:00+0000",
-                    "hour_to": "1970-01-01T23:59:00+0000"
-                }
-            ]
-        }
-    ],
+    "exclude_checking": false,
+    "name": "El Nou Raval",
+    "max_height": 190,
+    "schedule": [],
     "access": [
         {
-            "id": 991,
+            "id": 924,
             "type": "vehicle",
-            "address": "Carrer Nou de la Rambla 12",
-            "latitude": 41.378874253186,
-            "longitude": 2.1739906880944
+            "address": "Carrer de la Cera 1",
+            "latitude": 41.37944030469,
+            "longitude": 2.1672597228639
         }
     ],
     "voucher_needed": false,
@@ -1475,7 +786,7 @@ Authorization: Bearer {JWT_TOKEN}
     "cancellation_type": 2,
     "_links": {
         "self": {
-            "href": "https:\/\/loc.api.parclick.com\/v1\/parking\/999"
+            "href": "https://pre.api.parclick.com/v1/parking/983"
         }
     },
     "_embedded": {
@@ -1488,15 +799,15 @@ Authorization: Bearer {JWT_TOKEN}
                 "nicename": "Spain",
                 "_links": {
                     "self": {
-                        "href": "https:\/\/loc.api.parclick.com\/v1\/country\/199"
+                        "href": "https://pre.api.parclick.com/v1/country/199"
                     }
                 }
             },
             "vat_tax": 21,
-            "time_zone": "Europe\/Madrid",
+            "time_zone": "Europe/Madrid",
             "_links": {
                 "self": {
-                    "href": "https:\/\/loc.api.parclick.com\/v1\/city\/6"
+                    "href": "https://pre.api.parclick.com/v1/city/6"
                 }
             }
         },
@@ -1514,1425 +825,326 @@ Authorization: Bearer {JWT_TOKEN}
 
 **200 Ok**
 
-<details><summary style="color:#FF6600;">Show response 200 Ok</summary>
+<details><summary style="color:#FF6600;">Show response 200 Ok group detail</summary>
 <p>
 <pre>
 {
- "id": 1047,
- "covered": false,
- "description": "<p>Car park at the Nice Airport, located a few kilometers away. The Aéroport Nice Côte d'Azur ECTOR car park has outdoor parking spots with all-day surveillance. Although it’s an uncovered lot, you don’t have to worry about leaving your car here. The Aéroport Nice Côte d'Azur ECTOR car park has the lowest market rates and also offers a pick-up and drop-off service at your airport terminal. </p> \r\n<p>The difficulty of accessing car parks near the Niza Costa Azul Airport makes their valet service perfect for avoiding traffic jams and lets you save time by going directly to the Airport and leaving your car in the good hands of the Aéroport Nice Côte d'Azur ECTOR car park staff. Unlike other car parks, the Aéroport Nice Côte d'Azur ECTOR car park provides direct access to the terminal, so your trip will go more smoothly knowing your car is parked at our 24-hour enclosed, guarded and monitored facilities. </p> \r\n<p>The procedure is very simple: a day before your arrival at the Aéroport Nice Côte d'Azur ECTOR car park, you’ll receive a message with the phone number of the staff member who will pick you up the next day, so all you have to do is call this number 15 minutes beforehand to advise of your arrival, and for your return, you should do the same. </p> \r\n<p>The staff is completely qualified to drive any kind of vehicle, but the Aéroport Nice Côte d'Azur ECTOR car park provides insurance that covers 100% of any damage that may occur to your vehicle from the moment you leave it to the moment it’s returned. Parking at the Nice Airport is much easier and comfortable with the Aéroport Nice Côte d'Azur ECTOR car park, and thanks to their valet service, you don’t have to lose any time, only head to the terminal and they’ll pick up your car and park it safely while you fully enjoy your vacation. </p>\r\nPlease mind you need to leave the car keys with us.",
- "flexible_entry": false,
- "guarded": true,
- "latitude": 43.660659839364,
- "image_list": "//static.parclick.com/parking/2017/10/72f/462/d8/72f462d8-ba0d-5f77-9bde-9be1d3767ecb.jpeg",
- "longitude": 7.2046668846012,
- "medias": [
- {
- "id": 8914,
- "url": "https://static.parclick.com/parking/2017/10/72f/462/d8/72f462d8-ba0d-5f77-9bde-9be1d3767ecb.jpeg"
- }
- ],
- "airport": {
- "id": 19,
- "terminal": [
- {
- "id": 25,
- "terminal": {
- "id": 8,
- "name": "T2",
- "latitude": 43.660056,
- "longitude": 7.205496
- },
- "in_bound_meeting_point": "",
- "out_bound_meeting_point": ""
- }
- ],
- "category_name": "Valet",
- "shuttle_schedule": [],
- "category": 2,
- "additional_information": "",
- "special_needs": "Car wash.",
- "call_reserve_bus": false,
- "vehicle_inspection": true,
- "has_shuttle": false,
- "shuttle_child_sit": false,
- "minutes_call_before_out_bound": 15,
- "call_to_get_car": true,
- "call_parking_out_bound": false,
- "out_bound_meeting_point": "",
- "out_bound_custumer_service_control": false,
- "in_bound_custumer_service_control": false,
- "customer_service_place": "",
- "additional_instructions_beginning": "THE DAY BEFORE YOUR ARRIVAL: You’ll receive an email and an SMS with the name and number of the person who will pick up your car at the terminal. If these don't come through, call the number on the Parclick voucher an hour before your pick-up time. You must call from the number linked with your reservation, so they put you in contact with the right person.",
- "additional_instructions_return": "When you return, they will leave a bottle of water for you in your car. \r\n \r\nThe car park constantly follows the status of your flight, so there will definitely be someone waiting for you, even if your flight arrives early or late."
- },
- "address": "T2 Aéroport de Nice-Côte d'Azur, Nice, France",
- "city": "Nice",
- "country": "France",
- "province": "Alpes-Maritimes",
- "zip": "06200",
- "provider": {
- "id": 276,
- "name": "ECTOR"
- },
- "handicapped_access": true,
- "security": false,
- "open_24h": false,
- "giving_keys": true,
- "exclude_checking": false,
- "license_info": true,
- "vehicle_info": true,
- "flight": true,
- "return_flight_location": false,
- "train": false,
- "name": "T2 ECTOR Aéroport - Service Voiturier - Nice",
- "external": [
- {
- "id": 259,
- "discriminator": "ector"
- }
- ],
- "max_height": 190,
- "passes": [
- {
- "id": 27032,
- "category": "ONEPASS",
- "instructions": "While you are making your purchase choose the date on which you are going to arrive. After making the payment online you will receive a billing confirmation by email containing the reference number of your reservation. THE DAY OF YOUR RESERVATION: Let us know by telephone 15 minutes before arriving at the airport. The driver will direct you to which point of the terminal you can hand your vehicle over to us. Show your Parclick booking confirmation to the driver before handing over your keys. UPON YOUR RETURN: Let us know by telephone when you are picking up your luggage (or once you have landed if you do not have luggage). We will be waiting for you with your vehicle at the same point of the Departure Terminal where we picked it up.",
- "name": "ONEPASS 1 day",
- "vehicle_type": {
- "id": 1,
- "type": "CAR"
- },
- "warning_message": "Please mind you need to leave the car keys with us.\r\n<br/>It is important to arrive at the hour indicated on your reservation, since that our staff will be there waiting to serve you.\r\n<br/>You can contact our car park on +339 73 72 88 55 if you have any query or if any incident occurs.",
- "administration_fee": 0,
- "paypal_fee": 4.62,
- "price": 154,
- "status": "INACTIVE",
- "type": "pass",
- "internal_name": "ONEPASS 16d (154.00€)",
- "token": "",
- "duration": 366,
- "multiparking": false,
- "multipass": false,
- "frequency": "HOURLY",
- "_links": {
- "self": [
- {
- "href": "https://loc.api.parclick.com/v1/product/27032"
- },
- {
- "href": "https://loc.api.parclick.com/v1/pass/27032"
- }
- ]
- }
- },
- {
- "id": 27036,
- "category": "ONEPASS",
- "instructions": "While you are making your purchase choose the date on which you are going to arrive. After making the payment online you will receive a billing confirmation by email containing the reference number of your reservation. THE DAY OF YOUR RESERVATION: Let us know by telephone 15 minutes before arriving at the airport. The driver will direct you to which point of the terminal you can hand your vehicle over to us. Show your Parclick booking confirmation to the driver before handing over your keys. UPON YOUR RETURN: Let us know by telephone when you are picking up your luggage (or once you have landed if you do not have luggage). We will be waiting for you with your vehicle at the same point of the Departure Terminal where we picked it up.",
- "name": "ONEPASS 2 days",
- "vehicle_type": {
- "id": 1,
- "type": "CAR"
- },
- "warning_message": "Please mind you need to leave the car keys with us.\r\n<br/>It is important to arrive at the hour indicated on your reservation, since that our staff will be there waiting to serve you.\r\n<br/>You can contact our car park on +339 73 72 88 55 if you have any query or if any incident occurs.",
- "administration_fee": 0,
- "paypal_fee": 1.8,
- "price": 60,
- "status": "INACTIVE",
- "type": "pass",
- "internal_name": "ONEPASS 2d (60.00€)",
- "token": "",
- "duration": 48,
- "multiparking": false,
- "multipass": false,
- "frequency": "HOURLY",
- "_links": {
- "self": [
- {
- "href": "https://loc.api.parclick.com/v1/product/27036"
- },
- {
- "href": "https://loc.api.parclick.com/v1/pass/27036"
- }
- ]
- }
- },
- {
- "id": 27040,
- "category": "ONEPASS",
- "instructions": "While you are making your purchase choose the date on which you are going to arrive. After making the payment online you will receive a billing confirmation by email containing the reference number of your reservation. THE DAY OF YOUR RESERVATION: Let us know by telephone 15 minutes before arriving at the airport. The driver will direct you to which point of the terminal you can hand your vehicle over to us. Show your Parclick booking confirmation to the driver before handing over your keys. UPON YOUR RETURN: Let us know by telephone when you are picking up your luggage (or once you have landed if you do not have luggage). We will be waiting for you with your vehicle at the same point of the Departure Terminal where we picked it up.",
- "name": "ONEPASS 3 days",
- "vehicle_type": {
- "id": 1,
- "type": "CAR"
- },
- "warning_message": "Please mind you need to leave the car keys with us.\r\n<br/>It is important to arrive at the hour indicated on your reservation, since that our staff will be there waiting to serve you.\r\n<br/>You can contact our car park on +339 73 72 88 55 if you have any query or if any incident occurs.",
- "administration_fee": 0,
- "paypal_fee": 2.1,
- "price": 70,
- "status": "INACTIVE",
- "type": "pass",
- "internal_name": "ONEPASS 3d (70.00€)",
- "token": "",
- "duration": 72,
- "multiparking": false,
- "multipass": false,
- "frequency": "HOURLY",
- "_links": {
- "self": [
- {
- "href": "https://loc.api.parclick.com/v1/product/27040"
- },
- {
- "href": "https://loc.api.parclick.com/v1/pass/27040"
- }
- ]
- }
- },
- {
- "id": 27044,
- "category": "ONEPASS",
- "instructions": "While you are making your purchase choose the date on which you are going to arrive. After making the payment online you will receive a billing confirmation by email containing the reference number of your reservation. THE DAY OF YOUR RESERVATION: Let us know by telephone 15 minutes before arriving at the airport. The driver will direct you to which point of the terminal you can hand your vehicle over to us. Show your Parclick booking confirmation to the driver before handing over your keys. UPON YOUR RETURN: Let us know by telephone when you are picking up your luggage (or once you have landed if you do not have luggage). We will be waiting for you with your vehicle at the same point of the Departure Terminal where we picked it up.",
- "name": "ONEPASS 4 days",
- "vehicle_type": {
- "id": 1,
- "type": "CAR"
- },
- "warning_message": "Please mind you need to leave the car keys with us.\r\n<br/>It is important to arrive at the hour indicated on your reservation, since that our staff will be there waiting to serve you.\r\n<br/>You can contact our car park on +339 73 72 88 55 if you have any query or if any incident occurs.",
- "administration_fee": 0,
- "paypal_fee": 2.4,
- "price": 80,
- "status": "INACTIVE",
- "type": "pass",
- "internal_name": "ONEPASS 4d (80.00€)",
- "token": "",
- "duration": 96,
- "multiparking": false,
- "multipass": false,
- "frequency": "HOURLY",
- "_links": {
- "self": [
- {
- "href": "https://loc.api.parclick.com/v1/product/27044"
- },
- {
- "href": "https://loc.api.parclick.com/v1/pass/27044"
- }
- ]
- }
- },
- {
- "id": 27048,
- "category": "ONEPASS",
- "instructions": "While you are making your purchase choose the date on which you are going to arrive. After making the payment online you will receive a billing confirmation by email containing the reference number of your reservation. THE DAY OF YOUR RESERVATION: Let us know by telephone 15 minutes before arriving at the airport. The driver will direct you to which point of the terminal you can hand your vehicle over to us. Show your Parclick booking confirmation to the driver before handing over your keys. UPON YOUR RETURN: Let us know by telephone when you are picking up your luggage (or once you have landed if you do not have luggage). We will be waiting for you with your vehicle at the same point of the Departure Terminal where we picked it up.",
- "name": "ONEPASS 5 days",
- "vehicle_type": {
- "id": 1,
- "type": "CAR"
- },
- "warning_message": "Please mind you need to leave the car keys with us.\r\n<br/>It is important to arrive at the hour indicated on your reservation, since that our staff will be there waiting to serve you.\r\n<br/>You can contact our car park on +339 73 72 88 55 if you have any query or if any incident occurs.",
- "administration_fee": 0,
- "paypal_fee": 2.7,
- "price": 90,
- "status": "INACTIVE",
- "type": "pass",
- "internal_name": "ONEPASS 5d (90.00€)",
- "token": "",
- "duration": 120,
- "multiparking": false,
- "multipass": false,
- "frequency": "HOURLY",
- "_links": {
- "self": [
- {
- "href": "https://loc.api.parclick.com/v1/product/27048"
- },
- {
- "href": "https://loc.api.parclick.com/v1/pass/27048"
- }
- ]
- }
- },
- {
- "id": 27052,
- "category": "ONEPASS",
- "instructions": "While you are making your purchase choose the date on which you are going to arrive. After making the payment online you will receive a billing confirmation by email containing the reference number of your reservation. THE DAY OF YOUR RESERVATION: Let us know by telephone 15 minutes before arriving at the airport. The driver will direct you to which point of the terminal you can hand your vehicle over to us. Show your Parclick booking confirmation to the driver before handing over your keys. UPON YOUR RETURN: Let us know by telephone when you are picking up your luggage (or once you have landed if you do not have luggage). We will be waiting for you with your vehicle at the same point of the Departure Terminal where we picked it up.",
- "name": "ONEPASS 6 days",
- "vehicle_type": {
- "id": 1,
- "type": "CAR"
- },
- "warning_message": "Please mind you need to leave the car keys with us.\r\n<br/>It is important to arrive at the hour indicated on your reservation, since that our staff will be there waiting to serve you.\r\n<br/>You can contact our car park on +339 73 72 88 55 if you have any query or if any incident occurs.",
- "administration_fee": 0,
- "paypal_fee": 3,
- "price": 100,
- "status": "INACTIVE",
- "type": "pass",
- "internal_name": "ONEPASS 6d (100.00€)",
- "token": "",
- "duration": 144,
- "multiparking": false,
- "multipass": false,
- "frequency": "HOURLY",
- "_links": {
- "self": [
- {
- "href": "https://loc.api.parclick.com/v1/product/27052"
- },
- {
- "href": "https://loc.api.parclick.com/v1/pass/27052"
- }
- ]
- }
- },
- {
- "id": 27056,
- "category": "ONEPASS",
- "instructions": "While you are making your purchase choose the date on which you are going to arrive. After making the payment online you will receive a billing confirmation by email containing the reference number of your reservation. THE DAY OF YOUR RESERVATION: Let us know by telephone 15 minutes before arriving at the airport. The driver will direct you to which point of the terminal you can hand your vehicle over to us. Show your Parclick booking confirmation to the driver before handing over your keys. UPON YOUR RETURN: Let us know by telephone when you are picking up your luggage (or once you have landed if you do not have luggage). We will be waiting for you with your vehicle at the same point of the Departure Terminal where we picked it up.",
- "name": "ONEPASS 7 days",
- "vehicle_type": {
- "id": 1,
- "type": "CAR"
- },
- "warning_message": "Please mind you need to leave the car keys with us.\r\n<br/>It is important to arrive at the hour indicated on your reservation, since that our staff will be there waiting to serve you.\r\n<br/>You can contact our car park on +339 73 72 88 55 if you have any query or if any incident occurs.",
- "administration_fee": 0,
- "paypal_fee": 3.15,
- "price": 105,
- "status": "INACTIVE",
- "type": "pass",
- "internal_name": "ONEPASS 7d (105.00€)",
- "token": "",
- "duration": 168,
- "multiparking": false,
- "multipass": false,
- "frequency": "HOURLY",
- "_links": {
- "self": [
- {
- "href": "https://loc.api.parclick.com/v1/product/27056"
- },
- {
- "href": "https://loc.api.parclick.com/v1/pass/27056"
- }
- ]
- }
- },
- {
- "id": 27060,
- "category": "ONEPASS",
- "instructions": "While you are making your purchase choose the date on which you are going to arrive. After making the payment online you will receive a billing confirmation by email containing the reference number of your reservation. THE DAY OF YOUR RESERVATION: Let us know by telephone 15 minutes before arriving at the airport. The driver will direct you to which point of the terminal you can hand your vehicle over to us. Show your Parclick booking confirmation to the driver before handing over your keys. UPON YOUR RETURN: Let us know by telephone when you are picking up your luggage (or once you have landed if you do not have luggage). We will be waiting for you with your vehicle at the same point of the Departure Terminal where we picked it up.",
- "name": "ONEPASS 8 days",
- "vehicle_type": {
- "id": 1,
- "type": "CAR"
- },
- "warning_message": "Please mind you need to leave the car keys with us.\r\n<br/>It is important to arrive at the hour indicated on your reservation, since that our staff will be there waiting to serve you.\r\n<br/>You can contact our car park on +339 73 72 88 55 if you have any query or if any incident occurs.",
- "administration_fee": 0,
- "paypal_fee": 3.45,
- "price": 115,
- "status": "INACTIVE",
- "type": "pass",
- "internal_name": "ONEPASS 8d (115.00€)",
- "token": "",
- "duration": 192,
- "multiparking": false,
- "multipass": false,
- "frequency": "HOURLY",
- "_links": {
- "self": [
- {
- "href": "https://loc.api.parclick.com/v1/product/27060"
- },
- {
- "href": "https://loc.api.parclick.com/v1/pass/27060"
- }
- ]
- }
- },
- {
- "id": 27064,
- "category": "ONEPASS",
- "instructions": "While you are making your purchase choose the date on which you are going to arrive. After making the payment online you will receive a billing confirmation by email containing the reference number of your reservation. THE DAY OF YOUR RESERVATION: Let us know by telephone 15 minutes before arriving at the airport. The driver will direct you to which point of the terminal you can hand your vehicle over to us. Show your Parclick booking confirmation to the driver before handing over your keys. UPON YOUR RETURN: Let us know by telephone when you are picking up your luggage (or once you have landed if you do not have luggage). We will be waiting for you with your vehicle at the same point of the Departure Terminal where we picked it up.",
- "name": "ONEPASS 9 days",
- "vehicle_type": {
- "id": 1,
- "type": "CAR"
- },
- "warning_message": "Please mind you need to leave the car keys with us.\r\n<br/>It is important to arrive at the hour indicated on your reservation, since that our staff will be there waiting to serve you.\r\n<br/>You can contact our car park on +339 73 72 88 55 if you have any query or if any incident occurs.",
- "administration_fee": 0,
- "paypal_fee": 3.75,
- "price": 125,
- "status": "INACTIVE",
- "type": "pass",
- "internal_name": "ONEPASS 9d (125.00€)",
- "token": "",
- "duration": 216,
- "multiparking": false,
- "multipass": false,
- "frequency": "HOURLY",
- "_links": {
- "self": [
- {
- "href": "https://loc.api.parclick.com/v1/product/27064"
- },
- {
- "href": "https://loc.api.parclick.com/v1/pass/27064"
- }
- ]
- }
- },
- {
- "id": 27068,
- "category": "ONEPASS",
- "instructions": "While you are making your purchase choose the date on which you are going to arrive. After making the payment online you will receive a billing confirmation by email containing the reference number of your reservation. THE DAY OF YOUR RESERVATION: Let us know by telephone 15 minutes before arriving at the airport. The driver will direct you to which point of the terminal you can hand your vehicle over to us. Show your Parclick booking confirmation to the driver before handing over your keys. UPON YOUR RETURN: Let us know by telephone when you are picking up your luggage (or once you have landed if you do not have luggage). We will be waiting for you with your vehicle at the same point of the Departure Terminal where we picked it up.",
- "name": "ONEPASS 10 days",
- "vehicle_type": {
- "id": 1,
- "type": "CAR"
- },
- "warning_message": "Please mind you need to leave the car keys with us.\r\n<br/>It is important to arrive at the hour indicated on your reservation, since that our staff will be there waiting to serve you.\r\n<br/>You can contact our car park on +339 73 72 88 55 if you have any query or if any incident occurs.",
- "administration_fee": 0,
- "paypal_fee": 4.05,
- "price": 135,
- "status": "INACTIVE",
- "type": "pass",
- "internal_name": "ONEPASS 10d (135.00€)",
- "token": "",
- "duration": 240,
- "multiparking": false,
- "multipass": false,
- "frequency": "HOURLY",
- "_links": {
- "self": [
- {
- "href": "https://loc.api.parclick.com/v1/product/27068"
- },
- {
- "href": "https://loc.api.parclick.com/v1/pass/27068"
- }
- ]
- }
- },
- {
- "id": 27072,
- "category": "ONEPASS",
- "instructions": "While you are making your purchase choose the date on which you are going to arrive. After making the payment online you will receive a billing confirmation by email containing the reference number of your reservation. THE DAY OF YOUR RESERVATION: Let us know by telephone 15 minutes before arriving at the airport. The driver will direct you to which point of the terminal you can hand your vehicle over to us. Show your Parclick booking confirmation to the driver before handing over your keys. UPON YOUR RETURN: Let us know by telephone when you are picking up your luggage (or once you have landed if you do not have luggage). We will be waiting for you with your vehicle at the same point of the Departure Terminal where we picked it up.",
- "name": "ONEPASS 11 days",
- "vehicle_type": {
- "id": 1,
- "type": "CAR"
- },
- "warning_message": "Please mind you need to leave the car keys with us.\r\n<br/>It is important to arrive at the hour indicated on your reservation, since that our staff will be there waiting to serve you.\r\n<br/>You can contact our car park on +339 73 72 88 55 if you have any query or if any incident occurs.",
- "administration_fee": 0,
- "paypal_fee": 4.35,
- "price": 145,
- "status": "INACTIVE",
- "type": "pass",
- "internal_name": "ONEPASS 11d (145.00€)",
- "token": "",
- "duration": 264,
- "multiparking": false,
- "multipass": false,
- "frequency": "HOURLY",
- "_links": {
- "self": [
- {
- "href": "https://loc.api.parclick.com/v1/product/27072"
- },
- {
- "href": "https://loc.api.parclick.com/v1/pass/27072"
- }
- ]
- }
- },
- {
- "id": 27076,
- "category": "ONEPASS",
- "instructions": "While you are making your purchase choose the date on which you are going to arrive. After making the payment online you will receive a billing confirmation by email containing the reference number of your reservation. THE DAY OF YOUR RESERVATION: Let us know by telephone 15 minutes before arriving at the airport. The driver will direct you to which point of the terminal you can hand your vehicle over to us. Show your Parclick booking confirmation to the driver before handing over your keys. UPON YOUR RETURN: Let us know by telephone when you are picking up your luggage (or once you have landed if you do not have luggage). We will be waiting for you with your vehicle at the same point of the Departure Terminal where we picked it up.",
- "name": "ONEPASS 12 days",
- "vehicle_type": {
- "id": 1,
- "type": "CAR"
- },
- "warning_message": "Please mind you need to leave the car keys with us.\r\n<br/>It is important to arrive at the hour indicated on your reservation, since that our staff will be there waiting to serve you.\r\n<br/>You can contact our car park on +339 73 72 88 55 if you have any query or if any incident occurs.",
- "administration_fee": 0,
- "paypal_fee": 4.65,
- "price": 155,
- "status": "INACTIVE",
- "type": "pass",
- "internal_name": "ONEPASS 12d (155.00€)",
- "token": "",
- "duration": 288,
- "multiparking": false,
- "multipass": false,
- "frequency": "HOURLY",
- "_links": {
- "self": [
- {
- "href": "https://loc.api.parclick.com/v1/product/27076"
- },
- {
- "href": "https://loc.api.parclick.com/v1/pass/27076"
- }
- ]
- }
- },
- {
- "id": 27080,
- "category": "ONEPASS",
- "instructions": "While you are making your purchase choose the date on which you are going to arrive. After making the payment online you will receive a billing confirmation by email containing the reference number of your reservation. THE DAY OF YOUR RESERVATION: Let us know by telephone 15 minutes before arriving at the airport. The driver will direct you to which point of the terminal you can hand your vehicle over to us. Show your Parclick booking confirmation to the driver before handing over your keys. UPON YOUR RETURN: Let us know by telephone when you are picking up your luggage (or once you have landed if you do not have luggage). We will be waiting for you with your vehicle at the same point of the Departure Terminal where we picked it up.",
- "name": "ONEPASS 13 days",
- "vehicle_type": {
- "id": 1,
- "type": "CAR"
- },
- "warning_message": "Please mind you need to leave the car keys with us.\r\n<br/>It is important to arrive at the hour indicated on your reservation, since that our staff will be there waiting to serve you.\r\n<br/>You can contact our car park on +339 73 72 88 55 if you have any query or if any incident occurs.",
- "administration_fee": 0,
- "paypal_fee": 4.95,
- "price": 165,
- "status": "INACTIVE",
- "type": "pass",
- "internal_name": "ONEPASS 13d (165.00€)",
- "token": "",
- "duration": 312,
- "multiparking": false,
- "multipass": false,
- "frequency": "HOURLY",
- "_links": {
- "self": [
- {
- "href": "https://loc.api.parclick.com/v1/product/27080"
- },
- {
- "href": "https://loc.api.parclick.com/v1/pass/27080"
- }
- ]
- }
- },
- {
- "id": 27084,
- "category": "ONEPASS",
- "instructions": "While you are making your purchase choose the date on which you are going to arrive. After making the payment online you will receive a billing confirmation by email containing the reference number of your reservation. THE DAY OF YOUR RESERVATION: Let us know by telephone 15 minutes before arriving at the airport. The driver will direct you to which point of the terminal you can hand your vehicle over to us. Show your Parclick booking confirmation to the driver before handing over your keys. UPON YOUR RETURN: Let us know by telephone when you are picking up your luggage (or once you have landed if you do not have luggage). We will be waiting for you with your vehicle at the same point of the Departure Terminal where we picked it up.",
- "name": "ONEPASS 14 days",
- "vehicle_type": {
- "id": 1,
- "type": "CAR"
- },
- "warning_message": "Please mind you need to leave the car keys with us.\r\n<br/>It is important to arrive at the hour indicated on your reservation, since that our staff will be there waiting to serve you.\r\n<br/>You can contact our car park on +339 73 72 88 55 if you have any query or if any incident occurs.",
- "administration_fee": 0,
- "paypal_fee": 5.1,
- "price": 170,
- "status": "INACTIVE",
- "type": "pass",
- "internal_name": "ONEPASS 14d (170.00€)",
- "token": "",
- "duration": 336,
- "multiparking": false,
- "multipass": false,
- "frequency": "HOURLY",
- "_links": {
- "self": [
- {
- "href": "https://loc.api.parclick.com/v1/product/27084"
- },
- {
- "href": "https://loc.api.parclick.com/v1/pass/27084"
- }
- ]
- }
- },
- {
- "id": 27088,
- "category": "ONEPASS",
- "instructions": "While you are making your purchase choose the date on which you are going to arrive. After making the payment online you will receive a billing confirmation by email containing the reference number of your reservation. THE DAY OF YOUR RESERVATION: Let us know by telephone 15 minutes before arriving at the airport. The driver will direct you to which point of the terminal you can hand your vehicle over to us. Show your Parclick booking confirmation to the driver before handing over your keys. UPON YOUR RETURN: Let us know by telephone when you are picking up your luggage (or once you have landed if you do not have luggage). We will be waiting for you with your vehicle at the same point of the Departure Terminal where we picked it up.",
- "name": "ONEPASS 15 days",
- "vehicle_type": {
- "id": 1,
- "type": "CAR"
- },
- "warning_message": "Please mind you need to leave the car keys with us.\r\n<br/>It is important to arrive at the hour indicated on your reservation, since that our staff will be there waiting to serve you.\r\n<br/>You can contact our car park on +339 73 72 88 55 if you have any query or if any incident occurs.",
- "administration_fee": 0,
- "paypal_fee": 5.25,
- "price": 175,
- "status": "INACTIVE",
- "type": "pass",
- "internal_name": "ONEPASS 15d (175.00€)",
- "token": "",
- "duration": 360,
- "multiparking": false,
- "multipass": false,
- "frequency": "HOURLY",
- "_links": {
- "self": [
- {
- "href": "https://loc.api.parclick.com/v1/product/27088"
- },
- {
- "href": "https://loc.api.parclick.com/v1/pass/27088"
- }
- ]
- }
- },
- {
- "id": 27092,
- "category": "ONEPASS",
- "instructions": "While you are making your purchase choose the date on which you are going to arrive. After making the payment online you will receive a billing confirmation by email containing the reference number of your reservation. THE DAY OF YOUR RESERVATION: Let us know by telephone 15 minutes before arriving at the airport. The driver will direct you to which point of the terminal you can hand your vehicle over to us. Show your Parclick booking confirmation to the driver before handing over your keys. UPON YOUR RETURN: Let us know by telephone when you are picking up your luggage (or once you have landed if you do not have luggage). We will be waiting for you with your vehicle at the same point of the Departure Terminal where we picked it up.",
- "name": "ONEPASS 16 days",
- "vehicle_type": {
- "id": 1,
- "type": "CAR"
- },
- "warning_message": "Please mind you need to leave the car keys with us.\r\n<br/>It is important to arrive at the hour indicated on your reservation, since that our staff will be there waiting to serve you.\r\n<br/>You can contact our car park on +339 73 72 88 55 if you have any query or if any incident occurs.",
- "administration_fee": 0,
- "paypal_fee": 5.55,
- "price": 185,
- "status": "INACTIVE",
- "type": "pass",
- "internal_name": "ONEPASS 16d (185.00€)",
- "token": "",
- "duration": 384,
- "multiparking": false,
- "multipass": false,
- "frequency": "HOURLY",
- "_links": {
- "self": [
- {
- "href": "https://loc.api.parclick.com/v1/product/27092"
- },
- {
- "href": "https://loc.api.parclick.com/v1/pass/27092"
- }
- ]
- }
- },
- {
- "id": 27096,
- "category": "ONEPASS",
- "instructions": "While you are making your purchase choose the date on which you are going to arrive. After making the payment online you will receive a billing confirmation by email containing the reference number of your reservation. THE DAY OF YOUR RESERVATION: Let us know by telephone 15 minutes before arriving at the airport. The driver will direct you to which point of the terminal you can hand your vehicle over to us. Show your Parclick booking confirmation to the driver before handing over your keys. UPON YOUR RETURN: Let us know by telephone when you are picking up your luggage (or once you have landed if you do not have luggage). We will be waiting for you with your vehicle at the same point of the Departure Terminal where we picked it up.",
- "name": "ONEPASS 17 days",
- "vehicle_type": {
- "id": 1,
- "type": "CAR"
- },
- "warning_message": "Please mind you need to leave the car keys with us.\r\n<br/>It is important to arrive at the hour indicated on your reservation, since that our staff will be there waiting to serve you.\r\n<br/>You can contact our car park on +339 73 72 88 55 if you have any query or if any incident occurs.",
- "administration_fee": 0,
- "paypal_fee": 5.85,
- "price": 195,
- "status": "INACTIVE",
- "type": "pass",
- "internal_name": "ONEPASS 17d (195.00€)",
- "token": "",
- "duration": 408,
- "multiparking": false,
- "multipass": false,
- "frequency": "HOURLY",
- "_links": {
- "self": [
- {
- "href": "https://loc.api.parclick.com/v1/product/27096"
- },
- {
- "href": "https://loc.api.parclick.com/v1/pass/27096"
- }
- ]
- }
- },
- {
- "id": 27100,
- "category": "ONEPASS",
- "instructions": "While you are making your purchase choose the date on which you are going to arrive. After making the payment online you will receive a billing confirmation by email containing the reference number of your reservation. THE DAY OF YOUR RESERVATION: Let us know by telephone 15 minutes before arriving at the airport. The driver will direct you to which point of the terminal you can hand your vehicle over to us. Show your Parclick booking confirmation to the driver before handing over your keys. UPON YOUR RETURN: Let us know by telephone when you are picking up your luggage (or once you have landed if you do not have luggage). We will be waiting for you with your vehicle at the same point of the Departure Terminal where we picked it up.",
- "name": "ONEPASS 18 days",
- "vehicle_type": {
- "id": 1,
- "type": "CAR"
- },
- "warning_message": "Please mind you need to leave the car keys with us.\r\n<br/>It is important to arrive at the hour indicated on your reservation, since that our staff will be there waiting to serve you.\r\n<br/>You can contact our car park on +339 73 72 88 55 if you have any query or if any incident occurs.",
- "administration_fee": 0,
- "paypal_fee": 6.15,
- "price": 205,
- "status": "INACTIVE",
- "type": "pass",
- "internal_name": "ONEPASS 18d (205.00€)",
- "token": "",
- "duration": 432,
- "multiparking": false,
- "multipass": false,
- "frequency": "HOURLY",
- "_links": {
- "self": [
- {
- "href": "https://loc.api.parclick.com/v1/product/27100"
- },
- {
- "href": "https://loc.api.parclick.com/v1/pass/27100"
- }
- ]
- }
- },
- {
- "id": 27104,
- "category": "ONEPASS",
- "instructions": "While you are making your purchase choose the date on which you are going to arrive. After making the payment online you will receive a billing confirmation by email containing the reference number of your reservation. THE DAY OF YOUR RESERVATION: Let us know by telephone 15 minutes before arriving at the airport. The driver will direct you to which point of the terminal you can hand your vehicle over to us. Show your Parclick booking confirmation to the driver before handing over your keys. UPON YOUR RETURN: Let us know by telephone when you are picking up your luggage (or once you have landed if you do not have luggage). We will be waiting for you with your vehicle at the same point of the Departure Terminal where we picked it up.",
- "name": "ONEPASS 19 days",
- "vehicle_type": {
- "id": 1,
- "type": "CAR"
- },
- "warning_message": "Please mind you need to leave the car keys with us.\r\n<br/>It is important to arrive at the hour indicated on your reservation, since that our staff will be there waiting to serve you.\r\n<br/>You can contact our car park on +339 73 72 88 55 if you have any query or if any incident occurs.",
- "administration_fee": 0,
- "paypal_fee": 6.45,
- "price": 215,
- "status": "INACTIVE",
- "type": "pass",
- "internal_name": "ONEPASS 19d (215.00€)",
- "token": "",
- "duration": 456,
- "multiparking": false,
- "multipass": false,
- "frequency": "HOURLY",
- "_links": {
- "self": [
- {
- "href": "https://loc.api.parclick.com/v1/product/27104"
- },
- {
- "href": "https://loc.api.parclick.com/v1/pass/27104"
- }
- ]
- }
- },
- {
- "id": 27108,
- "category": "ONEPASS",
- "instructions": "While you are making your purchase choose the date on which you are going to arrive. After making the payment online you will receive a billing confirmation by email containing the reference number of your reservation. THE DAY OF YOUR RESERVATION: Let us know by telephone 15 minutes before arriving at the airport. The driver will direct you to which point of the terminal you can hand your vehicle over to us. Show your Parclick booking confirmation to the driver before handing over your keys. UPON YOUR RETURN: Let us know by telephone when you are picking up your luggage (or once you have landed if you do not have luggage). We will be waiting for you with your vehicle at the same point of the Departure Terminal where we picked it up.",
- "name": "ONEPASS 20 days",
- "vehicle_type": {
- "id": 1,
- "type": "CAR"
- },
- "warning_message": "Please mind you need to leave the car keys with us.\r\n<br/>It is important to arrive at the hour indicated on your reservation, since that our staff will be there waiting to serve you.\r\n<br/>You can contact our car park on +339 73 72 88 55 if you have any query or if any incident occurs.",
- "administration_fee": 0,
- "paypal_fee": 6.75,
- "price": 225,
- "status": "INACTIVE",
- "type": "pass",
- "internal_name": "ONEPASS 20d (225.00€)",
- "token": "",
- "duration": 480,
- "multiparking": false,
- "multipass": false,
- "frequency": "HOURLY",
- "_links": {
- "self": [
- {
- "href": "https://loc.api.parclick.com/v1/product/27108"
- },
- {
- "href": "https://loc.api.parclick.com/v1/pass/27108"
- }
- ]
- }
- },
- {
- "id": 27112,
- "category": "ONEPASS",
- "instructions": "While you are making your purchase choose the date on which you are going to arrive. After making the payment online you will receive a billing confirmation by email containing the reference number of your reservation. THE DAY OF YOUR RESERVATION: Let us know by telephone 15 minutes before arriving at the airport. The driver will direct you to which point of the terminal you can hand your vehicle over to us. Show your Parclick booking confirmation to the driver before handing over your keys. UPON YOUR RETURN: Let us know by telephone when you are picking up your luggage (or once you have landed if you do not have luggage). We will be waiting for you with your vehicle at the same point of the Departure Terminal where we picked it up.",
- "name": "ONEPASS 21 days",
- "vehicle_type": {
- "id": 1,
- "type": "CAR"
- },
- "warning_message": "Please mind you need to leave the car keys with us.\r\n<br/>It is important to arrive at the hour indicated on your reservation, since that our staff will be there waiting to serve you.\r\n<br/>You can contact our car park on +339 73 72 88 55 if you have any query or if any incident occurs.",
- "administration_fee": 0,
- "paypal_fee": 6.75,
- "price": 225,
- "status": "INACTIVE",
- "type": "pass",
- "internal_name": "ONEPASS 21d (225.00€)",
- "token": "",
- "duration": 504,
- "multiparking": false,
- "multipass": false,
- "frequency": "HOURLY",
- "_links": {
- "self": [
- {
- "href": "https://loc.api.parclick.com/v1/product/27112"
- },
- {
- "href": "https://loc.api.parclick.com/v1/pass/27112"
- }
- ]
- }
- },
- {
- "id": 27116,
- "category": "ONEPASS",
- "instructions": "While you are making your purchase choose the date on which you are going to arrive. After making the payment online you will receive a billing confirmation by email containing the reference number of your reservation. THE DAY OF YOUR RESERVATION: Let us know by telephone 15 minutes before arriving at the airport. The driver will direct you to which point of the terminal you can hand your vehicle over to us. Show your Parclick booking confirmation to the driver before handing over your keys. UPON YOUR RETURN: Let us know by telephone when you are picking up your luggage (or once you have landed if you do not have luggage). We will be waiting for you with your vehicle at the same point of the Departure Terminal where we picked it up.",
- "name": "ONEPASS 22 days",
- "vehicle_type": {
- "id": 1,
- "type": "CAR"
- },
- "warning_message": "Please mind you need to leave the car keys with us.\r\n<br/>It is important to arrive at the hour indicated on your reservation, since that our staff will be there waiting to serve you.\r\n<br/>You can contact our car park on +339 73 72 88 55 if you have any query or if any incident occurs.",
- "administration_fee": 0,
- "paypal_fee": 7.05,
- "price": 235,
- "status": "INACTIVE",
- "type": "pass",
- "internal_name": "ONEPASS 22d (235.00€)",
- "token": "",
- "duration": 528,
- "multiparking": false,
- "multipass": false,
- "frequency": "HOURLY",
- "_links": {
- "self": [
- {
- "href": "https://loc.api.parclick.com/v1/product/27116"
- },
- {
- "href": "https://loc.api.parclick.com/v1/pass/27116"
- }
- ]
- }
- },
- {
- "id": 27120,
- "category": "ONEPASS",
- "instructions": "While you are making your purchase choose the date on which you are going to arrive. After making the payment online you will receive a billing confirmation by email containing the reference number of your reservation. THE DAY OF YOUR RESERVATION: Let us know by telephone 15 minutes before arriving at the airport. The driver will direct you to which point of the terminal you can hand your vehicle over to us. Show your Parclick booking confirmation to the driver before handing over your keys. UPON YOUR RETURN: Let us know by telephone when you are picking up your luggage (or once you have landed if you do not have luggage). We will be waiting for you with your vehicle at the same point of the Departure Terminal where we picked it up.",
- "name": "ONEPASS 23 days",
- "vehicle_type": {
- "id": 1,
- "type": "CAR"
- },
- "warning_message": "Please mind you need to leave the car keys with us.\r\n<br/>It is important to arrive at the hour indicated on your reservation, since that our staff will be there waiting to serve you.\r\n<br/>You can contact our car park on +339 73 72 88 55 if you have any query or if any incident occurs.",
- "administration_fee": 0,
- "paypal_fee": 7.35,
- "price": 245,
- "status": "INACTIVE",
- "type": "pass",
- "internal_name": "ONEPASS 23d (245.00€)",
- "token": "",
- "duration": 552,
- "multiparking": false,
- "multipass": false,
- "frequency": "HOURLY",
- "_links": {
- "self": [
- {
- "href": "https://loc.api.parclick.com/v1/product/27120"
- },
- {
- "href": "https://loc.api.parclick.com/v1/pass/27120"
- }
- ]
- }
- },
- {
- "id": 27124,
- "category": "ONEPASS",
- "instructions": "While you are making your purchase choose the date on which you are going to arrive. After making the payment online you will receive a billing confirmation by email containing the reference number of your reservation. THE DAY OF YOUR RESERVATION: Let us know by telephone 15 minutes before arriving at the airport. The driver will direct you to which point of the terminal you can hand your vehicle over to us. Show your Parclick booking confirmation to the driver before handing over your keys. UPON YOUR RETURN: Let us know by telephone when you are picking up your luggage (or once you have landed if you do not have luggage). We will be waiting for you with your vehicle at the same point of the Departure Terminal where we picked it up.",
- "name": "ONEPASS 24 days",
- "vehicle_type": {
- "id": 1,
- "type": "CAR"
- },
- "warning_message": "Please mind you need to leave the car keys with us.\r\n<br/>It is important to arrive at the hour indicated on your reservation, since that our staff will be there waiting to serve you.\r\n<br/>You can contact our car park on +339 73 72 88 55 if you have any query or if any incident occurs.",
- "administration_fee": 0,
- "paypal_fee": 7.65,
- "price": 255,
- "status": "INACTIVE",
- "type": "pass",
- "internal_name": "ONEPASS 24d (255.00€)",
- "token": "",
- "duration": 576,
- "multiparking": false,
- "multipass": false,
- "frequency": "HOURLY",
- "_links": {
- "self": [
- {
- "href": "https://loc.api.parclick.com/v1/product/27124"
- },
- {
- "href": "https://loc.api.parclick.com/v1/pass/27124"
- }
- ]
- }
- },
- {
- "id": 27128,
- "category": "ONEPASS",
- "instructions": "While you are making your purchase choose the date on which you are going to arrive. After making the payment online you will receive a billing confirmation by email containing the reference number of your reservation. THE DAY OF YOUR RESERVATION: Let us know by telephone 15 minutes before arriving at the airport. The driver will direct you to which point of the terminal you can hand your vehicle over to us. Show your Parclick booking confirmation to the driver before handing over your keys. UPON YOUR RETURN: Let us know by telephone when you are picking up your luggage (or once you have landed if you do not have luggage). We will be waiting for you with your vehicle at the same point of the Departure Terminal where we picked it up.",
- "name": "ONEPASS 25 days",
- "vehicle_type": {
- "id": 1,
- "type": "CAR"
- },
- "warning_message": "Please mind you need to leave the car keys with us.\r\n<br/>It is important to arrive at the hour indicated on your reservation, since that our staff will be there waiting to serve you.\r\n<br/>You can contact our car park on +339 73 72 88 55 if you have any query or if any incident occurs.",
- "administration_fee": 0,
- "paypal_fee": 7.8,
- "price": 260,
- "status": "INACTIVE",
- "type": "pass",
- "internal_name": "ONEPASS 25d (260.00€)",
- "token": "",
- "duration": 600,
- "multiparking": false,
- "multipass": false,
- "frequency": "HOURLY",
- "_links": {
- "self": [
- {
- "href": "https://loc.api.parclick.com/v1/product/27128"
- },
- {
- "href": "https://loc.api.parclick.com/v1/pass/27128"
- }
- ]
- }
- },
- {
- "id": 27132,
- "category": "ONEPASS",
- "instructions": "While you are making your purchase choose the date on which you are going to arrive. After making the payment online you will receive a billing confirmation by email containing the reference number of your reservation. THE DAY OF YOUR RESERVATION: Let us know by telephone 15 minutes before arriving at the airport. The driver will direct you to which point of the terminal you can hand your vehicle over to us. Show your Parclick booking confirmation to the driver before handing over your keys. UPON YOUR RETURN: Let us know by telephone when you are picking up your luggage (or once you have landed if you do not have luggage). We will be waiting for you with your vehicle at the same point of the Departure Terminal where we picked it up.",
- "name": "ONEPASS 26 days",
- "vehicle_type": {
- "id": 1,
- "type": "CAR"
- },
- "warning_message": "Please mind you need to leave the car keys with us.\r\n<br/>It is important to arrive at the hour indicated on your reservation, since that our staff will be there waiting to serve you.\r\n<br/>You can contact our car park on +339 73 72 88 55 if you have any query or if any incident occurs.",
- "administration_fee": 0,
- "paypal_fee": 7.8,
- "price": 260,
- "status": "INACTIVE",
- "type": "pass",
- "internal_name": "ONEPASS 26d (260.00€)",
- "token": "",
- "duration": 624,
- "multiparking": false,
- "multipass": false,
- "frequency": "HOURLY",
- "_links": {
- "self": [
- {
- "href": "https://loc.api.parclick.com/v1/product/27132"
- },
- {
- "href": "https://loc.api.parclick.com/v1/pass/27132"
- }
- ]
- }
- },
- {
- "id": 27136,
- "category": "ONEPASS",
- "instructions": "While you are making your purchase choose the date on which you are going to arrive. After making the payment online you will receive a billing confirmation by email containing the reference number of your reservation. THE DAY OF YOUR RESERVATION: Let us know by telephone 15 minutes before arriving at the airport. The driver will direct you to which point of the terminal you can hand your vehicle over to us. Show your Parclick booking confirmation to the driver before handing over your keys. UPON YOUR RETURN: Let us know by telephone when you are picking up your luggage (or once you have landed if you do not have luggage). We will be waiting for you with your vehicle at the same point of the Departure Terminal where we picked it up.",
- "name": "ONEPASS 27 days",
- "vehicle_type": {
- "id": 1,
- "type": "CAR"
- },
- "warning_message": "Please mind you need to leave the car keys with us.\r\n<br/>It is important to arrive at the hour indicated on your reservation, since that our staff will be there waiting to serve you.\r\n<br/>You can contact our car park on +339 73 72 88 55 if you have any query or if any incident occurs.",
- "administration_fee": 0,
- "paypal_fee": 7.8,
- "price": 260,
- "status": "INACTIVE",
- "type": "pass",
- "internal_name": "ONEPASS 27d (260.00€)",
- "token": "",
- "duration": 648,
- "multiparking": false,
- "multipass": false,
- "frequency": "HOURLY",
- "_links": {
- "self": [
- {
- "href": "https://loc.api.parclick.com/v1/product/27136"
- },
- {
- "href": "https://loc.api.parclick.com/v1/pass/27136"
- }
- ]
- }
- },
- {
- "id": 27140,
- "category": "ONEPASS",
- "instructions": "While you are making your purchase choose the date on which you are going to arrive. After making the payment online you will receive a billing confirmation by email containing the reference number of your reservation. THE DAY OF YOUR RESERVATION: Let us know by telephone 15 minutes before arriving at the airport. The driver will direct you to which point of the terminal you can hand your vehicle over to us. Show your Parclick booking confirmation to the driver before handing over your keys. UPON YOUR RETURN: Let us know by telephone when you are picking up your luggage (or once you have landed if you do not have luggage). We will be waiting for you with your vehicle at the same point of the Departure Terminal where we picked it up.",
- "name": "ONEPASS 28 days",
- "vehicle_type": {
- "id": 1,
- "type": "CAR"
- },
- "warning_message": "Please mind you need to leave the car keys with us.\r\n<br/>It is important to arrive at the hour indicated on your reservation, since that our staff will be there waiting to serve you.\r\n<br/>You can contact our car park on +339 73 72 88 55 if you have any query or if any incident occurs.",
- "administration_fee": 0,
- "paypal_fee": 7.8,
- "price": 260,
- "status": "INACTIVE",
- "type": "pass",
- "internal_name": "ONEPASS 28d (260.00€)",
- "token": "",
- "duration": 672,
- "multiparking": false,
- "multipass": false,
- "frequency": "HOURLY",
- "_links": {
- "self": [
- {
- "href": "https://loc.api.parclick.com/v1/product/27140"
- },
- {
- "href": "https://loc.api.parclick.com/v1/pass/27140"
- }
- ]
- }
- },
- {
- "id": 27144,
- "category": "ONEPASS",
- "instructions": "While you are making your purchase choose the date on which you are going to arrive. After making the payment online you will receive a billing confirmation by email containing the reference number of your reservation. THE DAY OF YOUR RESERVATION: Let us know by telephone 15 minutes before arriving at the airport. The driver will direct you to which point of the terminal you can hand your vehicle over to us. Show your Parclick booking confirmation to the driver before handing over your keys. UPON YOUR RETURN: Let us know by telephone when you are picking up your luggage (or once you have landed if you do not have luggage). We will be waiting for you with your vehicle at the same point of the Departure Terminal where we picked it up.",
- "name": "ONEPASS 29 days",
- "vehicle_type": {
- "id": 1,
- "type": "CAR"
- },
- "warning_message": "Please mind you need to leave the car keys with us.\r\n<br/>It is important to arrive at the hour indicated on your reservation, since that our staff will be there waiting to serve you.\r\n<br/>You can contact our car park on +339 73 72 88 55 if you have any query or if any incident occurs.",
- "administration_fee": 0,
- "paypal_fee": 8.1,
- "price": 270,
- "status": "INACTIVE",
- "type": "pass",
- "internal_name": "ONEPASS 29d (270.00€)",
- "token": "",
- "duration": 696,
- "multiparking": false,
- "multipass": false,
- "frequency": "HOURLY",
- "_links": {
- "self": [
- {
- "href": "https://loc.api.parclick.com/v1/product/27144"
- },
- {
- "href": "https://loc.api.parclick.com/v1/pass/27144"
- }
- ]
- }
- },
- {
- "id": 27148,
- "category": "ONEPASS",
- "instructions": "While you are making your purchase choose the date on which you are going to arrive. After making the payment online you will receive a billing confirmation by email containing the reference number of your reservation. THE DAY OF YOUR RESERVATION: Let us know by telephone 15 minutes before arriving at the airport. The driver will direct you to which point of the terminal you can hand your vehicle over to us. Show your Parclick booking confirmation to the driver before handing over your keys. UPON YOUR RETURN: Let us know by telephone when you are picking up your luggage (or once you have landed if you do not have luggage). We will be waiting for you with your vehicle at the same point of the Departure Terminal where we picked it up.",
- "name": "ONEPASS 30 days",
- "vehicle_type": {
- "id": 1,
- "type": "CAR"
- },
- "warning_message": "Please mind you need to leave the car keys with us.\r\n<br/>It is important to arrive at the hour indicated on your reservation, since that our staff will be there waiting to serve you.\r\n<br/>You can contact our car park on +339 73 72 88 55 if you have any query or if any incident occurs.",
- "administration_fee": 0,
- "paypal_fee": 8.4,
- "price": 280,
- "status": "INACTIVE",
- "type": "pass",
- "internal_name": "ONEPASS 30d (280.00€)",
- "token": "",
- "duration": 720,
- "multiparking": false,
- "multipass": false,
- "frequency": "HOURLY",
- "_links": {
- "self": [
- {
- "href": "https://loc.api.parclick.com/v1/product/27148"
- },
- {
- "href": "https://loc.api.parclick.com/v1/pass/27148"
- }
- ]
- }
- },
- {
- "id": 40455,
- "category": "ONEPASS",
- "instructions": "While you are making your purchase choose the date on which you are going to arrive. After making the payment online you will receive a billing confirmation by email containing the reference number of your reservation. THE DAY OF YOUR RESERVATION: Let us know by telephone 15 minutes before arriving at the airport. The driver will direct you to which point of the terminal you can hand your vehicle over to us. Show your Parclick booking confirmation to the driver before handing over your keys. UPON YOUR RETURN: Let us know by telephone when you are picking up your luggage (or once you have landed if you do not have luggage). We will be waiting for you with your vehicle at the same point of the Departure Terminal where we picked it up.",
- "name": "ONEPASS 31 days",
- "vehicle_type": {
- "id": 1,
- "type": "CAR"
- },
- "warning_message": "Please mind you need to leave the car keys with us.\r\n<br/>It is important to arrive at the hour indicated on your reservation, since that our staff will be there waiting to serve you.\r\n<br/>You can contact our car park on +339 73 72 88 55 if you have any query or if any incident occurs.",
- "administration_fee": 0,
- "paypal_fee": 8.7,
- "price": 290,
- "status": "INACTIVE",
- "type": "pass",
- "internal_name": "ONEPASS 31d (290.00€)",
- "token": "",
- "duration": 744,
- "multiparking": false,
- "multipass": false,
- "frequency": "HOURLY",
- "_links": {
- "self": [
- {
- "href": "https://loc.api.parclick.com/v1/product/40455"
- },
- {
- "href": "https://loc.api.parclick.com/v1/pass/40455"
- }
- ]
- }
- },
- {
- "id": 40456,
- "category": "ONEPASS",
- "instructions": "While you are making your purchase choose the date on which you are going to arrive. After making the payment online you will receive a billing confirmation by email containing the reference number of your reservation. THE DAY OF YOUR RESERVATION: Let us know by telephone 15 minutes before arriving at the airport. The driver will direct you to which point of the terminal you can hand your vehicle over to us. Show your Parclick booking confirmation to the driver before handing over your keys. UPON YOUR RETURN: Let us know by telephone when you are picking up your luggage (or once you have landed if you do not have luggage). We will be waiting for you with your vehicle at the same point of the Departure Terminal where we picked it up.",
- "name": "ONEPASS 32 days",
- "vehicle_type": {
- "id": 1,
- "type": "CAR"
- },
- "warning_message": "Please mind you need to leave the car keys with us.\r\n<br/>It is important to arrive at the hour indicated on your reservation, since that our staff will be there waiting to serve you.\r\n<br/>You can contact our car park on +339 73 72 88 55 if you have any query or if any incident occurs.",
- "administration_fee": 0,
- "paypal_fee": 6.6,
- "price": 220,
- "status": "INACTIVE",
- "type": "pass",
- "internal_name": "ONEPASS 32d (220.00€)",
- "token": "",
- "duration": 768,
- "multiparking": false,
- "multipass": false,
- "frequency": "HOURLY",
- "_links": {
- "self": [
- {
- "href": "https://loc.api.parclick.com/v1/product/40456"
- },
- {
- "href": "https://loc.api.parclick.com/v1/pass/40456"
- }
- ]
- }
- },
- {
- "id": 40457,
- "category": "ONEPASS",
- "instructions": "While you are making your purchase choose the date on which you are going to arrive. After making the payment online you will receive a billing confirmation by email containing the reference number of your reservation. THE DAY OF YOUR RESERVATION: Let us know by telephone 15 minutes before arriving at the airport. The driver will direct you to which point of the terminal you can hand your vehicle over to us. Show your Parclick booking confirmation to the driver before handing over your keys. UPON YOUR RETURN: Let us know by telephone when you are picking up your luggage (or once you have landed if you do not have luggage). We will be waiting for you with your vehicle at the same point of the Departure Terminal where we picked it up.",
- "name": "ONEPASS 33 days",
- "vehicle_type": {
- "id": 1,
- "type": "CAR"
- },
- "warning_message": "Please mind you need to leave the car keys with us.\r\n<br/>It is important to arrive at the hour indicated on your reservation, since that our staff will be there waiting to serve you.\r\n<br/>You can contact our car park on +339 73 72 88 55 if you have any query or if any incident occurs.",
- "administration_fee": 0,
- "paypal_fee": 6.9,
- "price": 230,
- "status": "INACTIVE",
- "type": "pass",
- "internal_name": "ONEPASS 33d (230.00€)",
- "token": "",
- "duration": 792,
- "multiparking": false,
- "multipass": false,
- "frequency": "HOURLY",
- "_links": {
- "self": [
- {
- "href": "https://loc.api.parclick.com/v1/product/40457"
- },
- {
- "href": "https://loc.api.parclick.com/v1/pass/40457"
- }
- ]
- }
- },
- {
- "id": 40458,
- "category": "ONEPASS",
- "instructions": "While you are making your purchase choose the date on which you are going to arrive. After making the payment online you will receive a billing confirmation by email containing the reference number of your reservation. THE DAY OF YOUR RESERVATION: Let us know by telephone 15 minutes before arriving at the airport. The driver will direct you to which point of the terminal you can hand your vehicle over to us. Show your Parclick booking confirmation to the driver before handing over your keys. UPON YOUR RETURN: Let us know by telephone when you are picking up your luggage (or once you have landed if you do not have luggage). We will be waiting for you with your vehicle at the same point of the Departure Terminal where we picked it up.",
- "name": "ONEPASS 34 days",
- "vehicle_type": {
- "id": 1,
- "type": "CAR"
- },
- "warning_message": "Please mind you need to leave the car keys with us.\r\n<br/>It is important to arrive at the hour indicated on your reservation, since that our staff will be there waiting to serve you.\r\n<br/>You can contact our car park on +339 73 72 88 55 if you have any query or if any incident occurs.",
- "administration_fee": 0,
- "paypal_fee": 7.2,
- "price": 240,
- "status": "INACTIVE",
- "type": "pass",
- "internal_name": "ONEPASS 34d (240.00€)",
- "token": "",
- "duration": 816,
- "multiparking": false,
- "multipass": false,
- "frequency": "HOURLY",
- "_links": {
- "self": [
- {
- "href": "https://loc.api.parclick.com/v1/product/40458"
- },
- {
- "href": "https://loc.api.parclick.com/v1/pass/40458"
- }
- ]
- }
- },
- {
- "id": 65880,
- "category": "ONEPASS",
- "instructions": "While you are making your purchase choose the date on which you are going to arrive. After making the payment online you will receive a billing confirmation by email containing the reference number of your reservation. THE DAY OF YOUR RESERVATION: Let us know by telephone 15 minutes before arriving at the airport. The driver will direct you to which point of the terminal you can hand your vehicle over to us. Show your Parclick booking confirmation to the driver before handing over your keys. UPON YOUR RETURN: Let us know by telephone when you are picking up your luggage (or once you have landed if you do not have luggage). We will be waiting for you with your vehicle at the same point of the Departure Terminal where we picked it up.",
- "name": "ONEPASS 100 days",
- "vehicle_type": {
- "id": 1,
- "type": "CAR"
- },
- "warning_message": "Please mind you need to leave the car keys with us.\r\n<br/>It is important to arrive at the hour indicated on your reservation, since that our staff will be there waiting to serve you.\r\n<br/>You can contact our car park on +339 73 72 88 55 if you have any query or if any incident occurs.",
- "administration_fee": 0,
- "paypal_fee": 1.2,
- "price": 0,
- "status": "ACTIVE",
- "type": "pass",
- "internal_name": "ONEPASS 100d (0.00€)",
- "token": "",
- "duration": 2400,
- "multiparking": false,
- "multipass": false,
- "frequency": "HOURLY",
- "_links": {
- "self": [
- {
- "href": "https://loc.api.parclick.com/v1/product/65880"
- },
- {
- "href": "https://loc.api.parclick.com/v1/pass/65880"
- }
- ]
- }
- }
- ],
- "subscriptions": [],
- "schedule": [
- {
- "id": 2372,
- "type": {
- "id": 2,
- "name": "PARKING"
- },
- "week_day": {
- "key": "MONDAY",
- "order": 1
- },
- "intervals": [
- {
- "id": 2605,
- "hour_from": "1970-01-01T06:00:00+0000",
- "hour_to": "1970-01-01T00:00:00+0000"
- }
- ]
- },
- {
- "id": 2373,
- "type": {
- "id": 2,
- "name": "PARKING"
- },
- "week_day": {
- "key": "TUESDAY",
- "order": 2
- },
- "intervals": [
- {
- "id": 2606,
- "hour_from": "1970-01-01T06:00:00+0000",
- "hour_to": "1970-01-01T00:00:00+0000"
- }
- ]
- },
- {
- "id": 2374,
- "type": {
- "id": 2,
- "name": "PARKING"
- },
- "week_day": {
- "key": "WEDNESDAY",
- "order": 3
- },
- "intervals": [
- {
- "id": 2607,
- "hour_from": "1970-01-01T06:00:00+0000",
- "hour_to": "1970-01-01T00:00:00+0000"
- }
- ]
- },
- {
- "id": 2375,
- "type": {
- "id": 2,
- "name": "PARKING"
- },
- "week_day": {
- "key": "THURSDAY",
- "order": 4
- },
- "intervals": [
- {
- "id": 2608,
- "hour_from": "1970-01-01T06:00:00+0000",
- "hour_to": "1970-01-01T00:00:00+0000"
- }
- ]
- },
- {
- "id": 2376,
- "type": {
- "id": 2,
- "name": "PARKING"
- },
- "week_day": {
- "key": "FRIDAY",
- "order": 5
- },
- "intervals": [
- {
- "id": 2609,
- "hour_from": "1970-01-01T06:00:00+0000",
- "hour_to": "1970-01-01T00:00:00+0000"
- }
- ]
- },
- {
- "id": 2377,
- "type": {
- "id": 2,
- "name": "PARKING"
- },
- "week_day": {
- "key": "SATURDAY",
- "order": 6
- },
- "intervals": [
- {
- "id": 2613,
- "hour_from": "1970-01-01T06:00:00+0000",
- "hour_to": "1970-01-01T00:00:00+0000"
- }
- ]
- },
- {
- "id": 2378,
- "type": {
- "id": 2,
- "name": "PARKING"
- },
- "week_day": {
- "key": "SUNDAY",
- "order": 7
- },
- "intervals": [
- {
- "id": 2611,
- "hour_from": "1970-01-01T06:00:00+0000",
- "hour_to": "1970-01-01T00:00:00+0000"
- }
- ]
- }
- ],
- "access": [
- {
- "id": 1021,
- "type": "vehicle",
- "address": "Dépose-minute terminal 2",
- "latitude": 43.660659839364,
- "longitude": 7.2046668846012
- }
- ],
- "slug": "aeroport-nice-cote-d-azur-ector-service-voiturier-exterieur",
- "voucher_needed": false,
- "freemium": false,
- "multiparking": false,
- "instructions": "",
- "cancellation_type": 1,
- "_links": {
- "self": {
- "href": "https://loc.api.parclick.com/v1/parking/1047"
- }
- },
- "_embedded": {
- "city": {
- "id": 115,
- "name": "Nice",
- "slug": "nice",
- "vat_tax": 20,
- "_links": {
- "self": {
- "href": "https://loc.api.parclick.com/v1/city/115"
- }
- }
- },
- "fieldsRequested": [
- {
- "id": 1,
- "name": "brand",
- "type": "Symfony\\Component\\Form\\Extension\\Core\\Type\\TextType",
- "label": "Vehicle make",
- "error": "Please enter the vehicle make/brand",
- "required": true,
- "sequence": 1
- },
- {
- "id": 2,
- "name": "model",
- "type": "Symfony\\Component\\Form\\Extension\\Core\\Type\\TextType",
- "label": "Vehicle model",
- "error": "Please enter the vehicle model",
- "required": true,
- "sequence": 2
- },
- {
- "id": 3,
- "name": "license_plate",
- "type": "Symfony\\Component\\Form\\Extension\\Core\\Type\\TextType",
- "label": "Vehicle registration number",
- "error": "Please enter the vehicle's registration number",
- "required": true,
- "sequence": 3
- },
- {
- "id": 4,
- "name": "arrival_flight",
- "type": "Symfony\\Component\\Form\\Extension\\Core\\Type\\TextType",
- "label": "Return flight number",
- "error": "Please enter your return flight number",
- "required": true,
- "sequence": 4
- },
- {
- "id": 5,
- "name": "departure_flight",
- "type": "Symfony\\Component\\Form\\Extension\\Core\\Type\\TextType",
- "label": "Departing flight number",
- "error": "Please enter your departing flight number",
- "required": true,
- "sequence": 5
- },
- {
- "id": 15,
- "name": "color_vehicle",
- "type": "Symfony\\Component\\Form\\Extension\\Core\\Type\\TextType",
- "label": "Colour of vehicle",
- "error": "Please, indicate the colour of your vehicle.",
- "required": true,
- "sequence": 15
- }
- ]
- }
+    "id": 983,
+    "covered": true,
+    "description": "Car park in the center of Barcelona, in the Carrer de l'Hospital, just 500 meters from the famous Paseo de Las Ramblas and the Liceo Theater, known for its opera in Barcelona. Parking in El Nou Raval car park lets you visit this restaurant and leisure area with its numerous shops, restaurants, bars and street art. At the same distance from El Nou Raval car park, you’ll find the Rubió i Lluch Gardens, the Monastery of Sant Pau del Camp, and a little farther, you can visit the art district of Barcelona: the Museum of Contemporary Art (MACBA), the Center of Contemporary Culture of Barcelona (CCCB) and the Filmoteca de Catalunya. Parking in the heart of Barcelona is no longer a problem, for the Catalonia Square is located just 10 minutes walking from El Nou Raval car park, where you can enjoy the Francesc Macià Monument. Likewise, in just 10 minutes, you can visit one of the most famous Barcelona sites, the Güell Palace, or the Main Theater. El Nou Raval car park is also very close to the Rambla del Raval, the La Boquería market, the Sant Antoni market and the Basilica of Santa María del Pi. Also, El Nou Raval car park is located less than 15 minutes walking from the Plaça de Sant Jaume, where you’ll find the Barcelona City Hall, Palau de la Generalitat de Catalunya, Basilica of Sants Màrtirs Just i Pastor and the Roman Wall; likewise, right next door, you can visit the History Museum of Barcelona (MUHBA), the Mirador del Rei Martí, the Frederic Marès Museum and the Catalan Museum. El Nou Raval car park is ideal if you need to park in the Eixample Sant Antoni or the historic center of Barcelona, especially in the El Raval or the Gothic Quarter, as well as the University Plaza, where you’ll find the University of Barcelona’s Faculty of Mathematics, among others. El Nou Raval car park gives you the chance to leave your car in good hands anytime, thanks to their 24/7 schedule and video surveillance system. You can also get around Barcelona on public transit using line L2 from the Sant Antoni station, just 5 minutes from the car park, or L3 from the Liceu station.",
+    "flexible_entry": false,
+    "guarded": true,
+    "latitude": 41.37944030469,
+    "image_list": "//static.parclick.com/parking/2017/07/85a/485/c4/85a485c4-d29d-5c3c-b9c3-ffc41de8b75f.jpeg",
+    "longitude": 2.1672597228639,
+    "medias": [
+        {
+            "id": 7571,
+            "url": "https://static.parclick.com/parking/2017/07/85a/485/c4/85a485c4-d29d-5c3c-b9c3-ffc41de8b75f.jpeg"
+        },
+        {
+            "id": 7572,
+            "url": "https://static.parclick.com/parking/2017/07/62d/e02/10/62de0210-b385-5084-88b5-0ddf50d03781.jpeg"
+        },
+        {
+            "id": 7573,
+            "url": "https://static.parclick.com/parking/2017/07/6be/1b2/e5/6be1b2e5-f4f1-55da-8ecc-d299fa1c1f47.jpeg"
+        },
+        {
+            "id": 7574,
+            "url": "https://static.parclick.com/parking/2017/07/a8b/790/89/a8b79089-358b-59cc-8442-39f02ba424be.jpeg"
+        }
+    ],
+    "extra_info": [],
+    "address": "Carrer de l'Hospital, 141",
+    "city": "Barcelona",
+    "country": "España",
+    "province": "Barcelona",
+    "zip": "8001",
+    "provider": {
+        "id": 254,
+        "name": "EL NOU RAVAL"
+    },
+    "feature_electric_cars": true,
+    "handicapped_access": true,
+    "security": true,
+    "open_24h": true,
+    "giving_keys": false,
+    "exclude_checking": false,
+    "license_info": false,
+    "vehicle_info": false,
+    "flight": false,
+    "return_flight_location": false,
+    "train": false,
+    "stuff_required_at_check_in": false,
+    "name": "El Nou Raval",
+    "external": [],
+    "max_height": 190,
+    "passes": [
+        {
+            "id": 25205,
+            "category": "MULTIPASS",
+            "instructions": "During the purchasing process, select the date you plan to arrive. After making the online payment you will receive a voucher via email with you reservation code.\r\n\r\nOn the date of your reservation, enter the parking lot as usual, take a ticket at the entrance and park in any empty spot.\r\n\r\nOnce you're out of the car, approach the control booth with the Parclick voucher and the ticket you took. Our staff there will check your reservation using the reservation code, and will give you a card that will allow you multiple ins and outs.",
+            "name": "MULTIPASS 1 day",
+            "vehicle_type": {
+                "id": 1,
+                "type": "CAR"
+            },
+            "warning_message": "You must bring the printed receipt.",
+            "administration_fee": 2.9,
+            "paypal_fee": 1.21,
+            "price": 20,
+            "status": "ACTIVE",
+            "type": "pass",
+            "internal_name": "MULTIPASS 1d (20.00€)",
+            "token": "",
+            "duration": 24,
+            "multiparking": false,
+            "multipass": true,
+            "frequency": "HOURLY",
+            "_links": {
+                "self": [
+                    {
+                        "href": "https://pre.api.parclick.com/v1/product/25205"
+                    },
+                    {
+                        "href": "https://pre.api.parclick.com/v1/pass/25205"
+                    }
+                ]
+            }
+        },
+        {
+            "id": 25206,
+            "category": "MULTIPASS",
+            "instructions": "During the purchasing process, select the date you plan to arrive. After making the online payment you will receive a voucher via email with you reservation code.\r\n\r\nOn the date of your reservation, enter the parking lot as usual, take a ticket at the entrance and park in any empty spot.\r\n\r\nOnce you're out of the car, approach the control booth with the Parclick voucher and the ticket you took. Our staff there will check your reservation using the reservation code, and will give you a card that will allow you multiple ins and outs.",
+            "name": "MULTIPASS 2 days",
+            "vehicle_type": {
+                "id": 1,
+                "type": "CAR"
+            },
+            "warning_message": "You must bring the printed receipt.",
+            "administration_fee": 3.48,
+            "paypal_fee": 1.12,
+            "price": 37,
+            "status": "ACTIVE",
+            "type": "pass",
+            "internal_name": "MULTIPASS 2d (37.00€)",
+            "token": "",
+            "duration": 48,
+            "multiparking": false,
+            "multipass": true,
+            "frequency": "HOURLY",
+            "_links": {
+                "self": [
+                    {
+                        "href": "https://pre.api.parclick.com/v1/product/25206"
+                    },
+                    {
+                        "href": "https://pre.api.parclick.com/v1/pass/25206"
+                    }
+                ]
+            }
+        },
+        {
+            "id": 25207,
+            "category": "MULTIPASS",
+            "instructions": "During the purchasing process, select the date you plan to arrive. After making the online payment you will receive a voucher via email with you reservation code.\r\n\r\nOn the date of your reservation, enter the parking lot as usual, take a ticket at the entrance and park in any empty spot.\r\n\r\nOnce you're out of the car, approach the control booth with the Parclick voucher and the ticket you took. Our staff there will check your reservation using the reservation code, and will give you a card that will allow you multiple ins and outs.",
+            "name": "MULTIPASS 3 days",
+            "vehicle_type": {
+                "id": 1,
+                "type": "CAR"
+            },
+            "warning_message": "You must bring the printed receipt.",
+            "administration_fee": 3.48,
+            "paypal_fee": 1.48,
+            "price": 49,
+            "status": "ACTIVE",
+            "type": "pass",
+            "internal_name": "MULTIPASS 3d (49.00€)",
+            "token": "",
+            "duration": 72,
+            "multiparking": false,
+            "multipass": true,
+            "frequency": "HOURLY",
+            "_links": {
+                "self": [
+                    {
+                        "href": "https://pre.api.parclick.com/v1/product/25207"
+                    },
+                    {
+                        "href": "https://pre.api.parclick.com/v1/pass/25207"
+                    }
+                ]
+            }
+        }
+    ],
+    "subscriptions": [],
+    "schedule": [],
+    "access": [
+        {
+            "id": 924,
+            "type": "vehicle",
+            "address": "Carrer de la Cera 1",
+            "latitude": 41.37944030469,
+            "longitude": 2.1672597228639
+        }
+    ],
+    "slug": "el_nou_raval",
+    "voucher_needed": false,
+    "freemium": false,
+    "minutes_before_sell": 0,
+    "multiparking": false,
+    "instructions": "",
+    "cancellation_type": 2,
+    "reviews_summary": {
+        "reviews": {
+            "1110": {
+                "review": [],
+                "opinion": "Positiv, dass es eine Toilette gab.",
+                "average": 4
+            },
+            "1200": {
+                "review": [],
+                "average": 3
+            },
+            "1651": {
+                "review": [],
+                "average": 4
+            },
+            "2840": {
+                "review": [],
+                "average": 3.3333333333333335
+            },
+            "2943": {
+                "review": [],
+                "average": 4.333333333333333
+            },
+            "3472": {
+                "review": [],
+                "opinion": "Il faudrait mentionner que ce parking est accessible au petite voiture",
+                "average": 2
+            },
+            "4600": {
+                "review": [],
+                "average": 4
+            },
+            "5004": {
+                "review": [],
+                "average": 3.6666666666666665
+            },
+            "6559": {
+                "review": [],
+                "average": 4
+            },
+            "6514": {
+                "review": [],
+                "opinion": "Bien placé mais place un peu étroite.",
+                "average": 4
+            },
+            "6412": {
+                "review": [],
+                "average": 4.333333333333333
+            },
+            "7357": {
+                "review": [],
+                "opinion": "el portero muy amable,los aparcamientos un poco justos por coches familiares, parquing bien situado para ir al centro.",
+                "average": 3.6666666666666665
+            },
+            "8043": {
+                "review": [],
+                "average": 4
+            },
+            "9901": {
+                "review": [],
+                "opinion": "Propre, facile d'accès. Par contre petites places, et sortie piétons ( dans le parjing)mal indiquée.",
+                "average": 3.3333333333333335
+            },
+            "12311": {
+                "review": [],
+                "average": 3.6666666666666665
+            },
+            "12313": {
+                "review": [],
+                "average": 4
+            },
+            "14537": {
+                "review": [],
+                "opinion": "Taille des places un peu petite. Attention aux grosses voitures. Personnel disponible +++",
+                "average": 4.333333333333333
+            },
+            "14867": {
+                "review": [],
+                "average": 4
+            },
+            "15152": {
+                "review": [],
+                "average": 5
+            },
+            "17790": {
+                "review": [],
+                "average": 4.333333333333333
+            },
+            "18194": {
+                "review": [],
+                "average": 5
+            },
+            "18814": {
+                "review": [],
+                "average": 4.333333333333333
+            },
+            "19450": {
+                "review": [],
+                "average": 5
+            },
+            "19864": {
+                "review": [],
+                "average": 3.3333333333333335
+            }
+        },
+        "questions": {
+            "4": {
+                "score": 93,
+                "number": 24,
+                "average": 3.875
+            },
+            "5": {
+                "score": 89,
+                "number": 24,
+                "average": 3.7083333333333335
+            },
+            "6": {
+                "score": 100,
+                "number": 23,
+                "average": 4.3478260869565215
+            }
+        },
+        "totalScore": 3.944444444444444
+    },
+    "_links": {
+        "self": {
+            "href": "https://pre.api.parclick.com/v1/parking/983"
+        }
+    },
+    "_embedded": {
+        "city": {
+            "id": 6,
+            "name": "Barcelona",
+            "slug": "barcelona",
+            "extra_info": [],
+            "latitude": 41.3851,
+            "longitude": 2.1734,
+            "vat_tax": 21,
+            "content": "<p>A cosmopolitan city with parties, good vibes, great weather… With beaches, mountains, parks, and incredible monuments… There aren’t many cities that have all that in one place, especially one with a population of 2 million. That has to be why <strong>Barcelona</strong> has become one of the <strong>world’s major destinations</strong>! Want to know all about the <strong>Capital of Catalonia</strong>? Read on!</p>\r\n\r\n<div>\r\n<h2>Driving in Barcelona</h2>\r\n\r\n<p><strong>Driving in Barcelona</strong> can be complicated, considering it’s the second-largest city in Spain. Nearly <strong>2 million people</strong> live in the city, so don’t be surprised if the streets aren’t exactly deserted when it comes to parking…</p>\r\n\r\n<p>The most important things that you have to be aware of when driving in Barcelona are the <strong>pollution laws</strong>. Like we mentioned in the previous paragraph, Barcelona is an extremely populous city, and that means high levels of pollution during certain times of the year. The biggest measure the Capital of Catalonia has taken against pollution is to restrict the most polluting vehicles from driving in the city, citing the&nbsp;Traffic Administration’s standards as an example. To find out if your vehicle could be affected by these restrictions, make sure to check <a href=\"http://www.dgt.es/es/seguridad-vial/distintivo-ambiental/\" target=\"_blank\">your car’s environmental label</a> (webpage in Spanish).&nbsp;</p>\r\n\r\n<p>Another thing to consider carefully is what time of year you want to visit Barcelona. In summer, the massive influx of tourists won’t only make it hard to get around Barcelona’s streets, but also to find a parking space.</p>\r\n\r\n<p>But enough bad news! If you’ve read this far, you’re ready to read about all the entertainment the city has to offer, and, the most important thing when it comes to getting around: <strong>parking in Barcelona</strong>. It’s going to seem so easy once you’ve read this post! Ready to become an expert on the Capital of Catalonia? Let’s go!</p>\r\n\r\n<h2>Parking in Barcelona</h2>\r\n\r\n<p>The majority of the streets in Barcelona have parking spaces divided into either “Área Blava” or “Área Verda”.</p>\r\n\r\n<ul>\r\n\t<li>\r\n\t<p><strong>Área Blava (Blue Zone):</strong> You can park your car, having pre-paid, <strong>up to 4 hours</strong>. If you want to extend the time, you will have to move your car to another place. These parking spaces are designed more for shopping districts, with the idea that you park, spend a while there, and then leave the space available for the next person. The Blue Zone is divided into four categories (A, B, C, and D) and each one has a different fare.</p>\r\n\t</li>\r\n\t<li>\r\n\t<p><strong>Área Verda (Green Zone):</strong> These zones are designed for residents, who can park in the zone that corresponds to their home by paying around 5 euros a month with a special card. For everyone else, the price to park in these zones is more expensive than in the Blue Zone and is limited to a <strong>maximum of 2 hours</strong>. The intention is to leave these spaces available for the residents that pay for them.</p>\r\n\t</li>\r\n</ul>\r\n\r\n<p>If you don’t follow the rules about the maximum times, your car could be towed and you would have to pay a fine. The same situation applies if you park your car in either of the zones without paying.</p>\r\n\r\n<p>And if you’re <strong>visiting Barcelona</strong> in the comfort of your own car, we can imagine that you’re not going to want to be feeding the parking meters your whole trip, or having to move your car every time you hit the maximum time limit. Without a doubt, the best option for those of you that don’t want to cancel your road trip is to book an <strong>affordable parking space in Barcelona</strong>. You think <strong>parking in the center of Barcelona</strong> costs an arm and a leg? Check out our directory of car parks in Barcelona, further up on this page, and take a good look at the prices. Leaving your car in a safe and secure place has never been so easy (or cheap!). ;)</p>\r\n\r\n<p>What if you just want to go run a quick errand? You could spend more time looking for a car park in the city center than doing what you actually needed to do. But we have solutions for that too: Now you can pay the <strong>parking meters in Barcelona</strong> with the <a href=\"https://parclick.app/\" target=\"_blank\"><strong>Parclick app</strong></a>! &nbsp;&nbsp;<br />\r\nFast, easy, and practical. Download Parclick’s app and select the street parking option. Enter your license plate number, your payment method, and park without worrying. The era of having to go all the way to the parking meter with a pocket full of change is over. In less than a minute, and without even getting out of your car, you can avoid a parking ticket.</p>\r\n\r\n<h2>Renting in a monthly car park in Barcelona</h2>\r\n\r\n<p>In addition to being able to <strong>book a parking space</strong> for hours or days, in Parclick we also give you the opportunity to <strong>rent a long-term parking space in a car park in Barcelona</strong>, so that month to month you’ll always have a spot, guaranteed. We have <strong>monthly passes</strong> with 24-hour access, which let you use the <strong>car park</strong> any time, any day of the week. Or if you just need to park your car, motorbike, or van for a few hours a day on a regular basis, we can offer you <strong>daily passes</strong> for the workday or <strong>nightly passes</strong> so that you can always park your car close to home at nighttime.</p>\r\n\r\n<p>Check out our offers on <a href=\"https://parclick.com/parking-barcelona?lt=41.3851&amp;ln=2.1734&amp;df=2019-09-28%2010:00&amp;dt=2019-09-28%2012:00&amp;ft=1&amp;group=subscription&amp;ts=2&amp;q=Barcelona&amp;limit=200\" target=\"_blank\"><strong>monthly passes to park in Barcelona</strong></a> and, if you don’t find what you’re looking for, get in contact with us and we’ll find you the best option in the area you want to park in.</p>\r\n\r\n<h2>Getting around Barcelona</h2>\r\n\r\n<ul>\r\n\t<li>\r\n\t<p><strong>Metro</strong></p>\r\n\t</li>\r\n</ul>\r\n\r\n<p>The metro system in Barcelona has <strong>11 lines</strong> that connect 165 stations all over the city. It is without a doubt one of the most efficient ways to get from one part of the city to another, without wasting time stuck in traffic. If you’re going to visit places like <strong>Park Güell</strong> or the <strong>bunkers</strong> (highly recommended for an unparalleled panoramic view of the city), the best way to avoid walking up the hill to get there is taking the metro. A one-way ticket is about <strong>2€</strong> (careful with going to the airport though, that’ll cost you approximately <strong>4.50€</strong>).</p>\r\n\r\n<p>If you’re thinking of getting around the city by metro, the best would be to get a 1-day card (about <strong>8€</strong>) that you’ll be able to use as many times as you want. There are also cards for more than one person in case you’re not travelling alone. You can find more information on the <a href=\"https://www.tmb.cat/en/barcelona-fares-metro-bus/single-and-integrated/choose-ticket\" target=\"_blank\">Barcelona Metro webpage</a>.</p>\r\n\r\n<ul>\r\n\t<li>\r\n\t<p><strong>Bus</strong></p>\r\n\t</li>\r\n</ul>\r\n\r\n<p>The bus system in Barcelona has more than <strong>200 lines</strong>. It’s a good option if you don’t like the hustle and bustle of the metro and are one of those people that love looking at the scenery pass by the window. The only thing you need to have in mind is if there’s traffic and you’re in a hurry, maybe it’d be better to use another type of transportation… The price of a one-way ticket for the buses in Barcelona is around <strong>2€</strong>, the same as the metro, but you have a lot more options in terms of passes that have packages for multiple trips or even special passes for tourists.</p>\r\n\r\n<p>Another benefit of the bus is that, from the center of the city, you can travel to other nearby places, like Hospitalet, Terrassa, or Sant Adrià del Besòs if you want to see even more than Barcelona.</p>\r\n\r\n<h2>What to do in Barcelona</h2>\r\n\r\n<p>Barcelona is definitely one of the Spanish cities with the most charm. As such, some major places to visit quickly come to mind, like <strong><a href=\"https://parclick.com/parking/car-parks-near-la-sagrada-familia-barcelona\" target=\"_blank\">La Sagrada Familia</a>,</strong>&nbsp;the beaches (especially <strong><a href=\"https://parclick.com/parking/car-parks-close-to-la-barceloneta\" target=\"_blank\">La Barceloneta</a>),&nbsp;</strong>and <a href=\"https://parclick.com/parking/car-parks-near-camp-nou\" target=\"_blank\"><strong>Camp Nou</strong></a>,<br />\r\nFC Barcelona’s stadium. But Barcelona is so much more. It’s art, it’s culture, it’s enormous yet cozy, it’s different, and it’s one of the most multicultural cities in Europe. Keep reading to discover everything you can do here. ;)</p>\r\n\r\n<h3>Barcelona neighborhoods</h3>\r\n\r\n<p>Even though a short visit is never enough, if you need a quick overview of the Capital of Catalonia, take a stroll down <a href=\"https://parclick.com/parking/book-car-parks-near-las-ramblas\" target=\"_blank\"><strong>Las Ramblas</strong></a>, it’s definitely the best way to get know a bit of the essence of Barcelona. It has a modernist soul, where, in addition to La Sagrada Familia, you can see the important influence of some daring architects in buildings like <strong>Casa Fuster</strong>, <a href=\"https://parclick.com/parking/car-parks-near-the-casa-batllo-barcelona\" target=\"_blank\"><strong>Casa Batlló</strong></a>, or <a href=\"https://parclick.com/parking/car-parks-near-to-la-pedrera\" target=\"_blank\"><strong>La Pedrera</strong></a>. And of course it’s in fine form at <a href=\"https://parclick.com/parking/car-parks-close-to-the-park-guell\" target=\"_blank\"><strong>Parc Güell</strong></a>, where you can enjoy a nice nature walk. But Barcelona isn’t just specific places, it’s a sum of its parts and all of its neighborhoods are super “walkable”, perfect for strolling and exploring their peculiar design.</p>\r\n\r\n<h3>Theatres and entertainment in Barcelona</h3>\r\n\r\n<p>If you want to experience true art, you have to see a play at either <a href=\"https://parclick.com/parking/parking-near-poliorama-theatre\" target=\"_blank\"><strong>Poliorama Theatre</strong></a>, the <a href=\"https://parclick.com/parking/car-parks-near-the-teatro-nacional-de-cataluna\" target=\"_blank\"><strong>National Theatre of Catalonia</strong></a>,&nbsp;or the <a href=\"https://parclick.com/parking/car-parks-near-the-gran-teatro-del-liceo\" target=\"_blank\"><strong>Grand Lyceum Theatre</strong></a>. They will surely offer shows to remember. But if you’re more into enjoying the Barcelona night life (something we perfectly understand), you have to know where to go on a night out. You can enjoy the major <a href=\"https://parclick.com/parking/car-parks-close-to-razzmatazz-in-barcelona\" target=\"_blank\"><strong>night club Razzmatazz</strong></a> or get to know how each <a href=\"https://parclick.com/parking/barcelona/districts-barcelona\" target=\"_blank\"><strong>Barcelona neighborhood</strong></a>&nbsp;parties. Check out the <a href=\"https://parclick.com/parking/book-parking-in-the-heart-of-barcelona\" target=\"_blank\"><strong>city center</strong></a>, <a href=\"https://parclick.com/parking/car-parks-in-eixample\" target=\"_blank\"><strong>Eixample</strong></a>, <a href=\"https://parclick.com/parking/book-parking-in-les-corts\" target=\"_blank\"><strong>Ies Corts</strong></a>, or&nbsp;<a href=\"https://parclick.com/parking/car-parks-in-ciutat-vella-barcelona\" target=\"_blank\"><strong>Ciutat Vella</strong></a> for different vibes or go to a concert at the famous <strong>Palau Sant Jordi</strong>.</p>\r\n\r\n<h3>Hotels in Barcelona</h3>\r\n\r\n<p>Still don’t have a <strong>place to stay in Barcelona</strong> during your trip? Had fights with your partner or friends about not knowing where to stay? <em>Keep calm</em>. We recommend you take a look at the <strong><a href=\"https://parclick.com/parking/barcelona/hotels-barcelona\" target=\"_blank\">hotels in Barcelona</a>&nbsp;</strong>we’ve written about on this same website. You can see the location, what they offer, and the car parks close by, so you can kill two birds with one stone. What more could you ask for? To start, we suggest looking at the <strong>W Hotel</strong>, one of the most emblematic hotels the Capital of Catalonia has to offer. Whatever your budget, we bet our articles will give you an idea of where to stay during your visit.<br />\r\n<br />\r\nIt’s obvious you don’t want to be in <strong>Barcelona</strong> without plans…</p>\r\n\r\n<h2>Events in Barcelona</h2>\r\n\r\n<ul>\r\n\t<li>\r\n\t<p><strong>Sant Jordi:</strong> Sant Jordi (Saint George’s) Day is celebrated on April 23. He is the patron saint of Catalonia and Aragon. Celebrated since the 15th century, Sant Jordi Day is also Valentine’s Day in Catalonia and it’s customary to give a rose and a book as gifts. This day is celebrated with various cultural activities, with the most popular being a book signing by some of Spain’s most famous writers. It’s a perfect day to experience in Barcelona, especially if you like literature and you visit with your partner. ;)</p>\r\n\t</li>\r\n\t<li>\r\n\t<p><strong><a href=\"https://parclick.com/parking/car-park-close-to-the-mobile-world-congress-barcelona\" target=\"_blank\">Mobile World Congress</a>:</strong> If you’re a technology lover, you must know about the Mobile World Congress that takes place every year in Barcelona. MWC brings together the most important figures in the technology and mobile communications field and is where you can get up to date with the sector’s latest trends.</p>\r\n\t</li>\r\n\t<li>\r\n\t<p><strong><a href=\"https://parclick.com/parking/car-parks-near-sonar-2018-festival-in-barcelona?lt=41.3742&amp;ln=2.1508&amp;r=2&amp;z=14\" target=\"_blank\">Sónar</a>:</strong>&nbsp;Sónar festival is an institution in electronic and experimental music. Founded in 1994, it’s still held every summer with more and more attendees and internationally renowned artists. The festival takes over literally all of Barcelona’s streets since there are many cultural activities during the day. At night, the festival starts at Fira Barcelona in Montjuic, where you can enjoy the best music and atmosphere for all ages.&nbsp;</p>\r\n\t</li>\r\n\t<li>\r\n\t<p><strong>Automobile Exhibition:</strong> More than 100 years old, this event still happens every year at Fira Barcelona in Montjuic and is an opportunity for car lovers to see the latest trends in the automotive world.</p>\r\n\t</li>\r\n\t<li>\r\n\t<p><strong><a href=\"https://parclick.com/parking/car-parks-near-primavera-sound-2018-festival-in-barcelona\" target=\"_blank\">Primavera Sound</a>:</strong>&nbsp;Along with Sónar, Primavera Sound is one of the biggest music festivals in Barcelona. It’s been around since 2001 and has since become one of the top festivals in all of Spain.&nbsp;</p>\r\n\t</li>\r\n</ul>\r\n\r\n<h2>Take a trip from Barcelona</h2>\r\n\r\n<p>Being one of the biggest cities in Spain, from <strong>Barcelona</strong> you can travel to numerous other national and international destinations. Whether you’re from Barcelona, living there, or just visiting, you have to read the next two points about transit.</p>\r\n\r\n<h3>Taking the train from Barcelona</h3>\r\n\r\n<p>First of all, we have to highlight the <strong>Sants Station</strong>, Barcelona’s main train station. Inaugurated in 1979, it’s the second most important train station in Spain, with almost 30 million travelers annually. One major benefit of this station, aside from being able to travel to major cities like Madrid, Seville, Valencia, Alicante, Murcia, Cartagena, and Zaragoza, is that you can also travel to France. The international line Renfe SNCF can take you to <strong>Toulouse </strong>and<strong> Lyon</strong>, two of the most important French cities. And of course we can’t talk to you about all of this without offering you <a href=\"https://parclick.com/parking/where-to-park-near-estacion-de-sants-in-barcelona\" target=\"_blank\"><strong>car parks close to the Sants Station</strong></a>. Take a look at the prices and make sure to <strong>book your parking space</strong> in advance so you don’t have to rush or miss your train.</p>\r\n\r\n<h3>Flying out of Barcelona</h3>\r\n\r\n<p>Next, we have <strong>Josep Tarradellas Barcelona-El Prat Airport</strong>, which is located 15 km from the center of Barcelona. It’s the <strong>most important airport</strong> in Catalonia and the second in Spain in regard to traffic: some 45 million passengers annually. It’s very well connected to the city center thanks to the metro and the various bus lines, but the truth is we recommend you leave your car in an <a href=\"https://parclick.com/parking/car-parks-at-barcelona-el-prat-airport-bcn\" target=\"_blank\"><strong>affordable car park close to the Barcelona airport</strong></a>&nbsp;if you’re taking a trip. You can consult our offers in the link. That way, you won’t have to come back and take a bus that will still leave you far from home. That’s right, we’ve thought of everything. ;)<br />\r\n<br />\r\nNow you know everything you need to get around Barcelona like a local. Want to put it to the test? Start with <strong>Parclick</strong>!</p>\r\n</div>",
+            "time_zone": "Europe/Madrid",
+            "_links": {
+                "self": {
+                    "href": "https://pre.api.parclick.com/v1/city/6"
+                }
+            }
+        },
+        "fieldsRequested": [],
+        "features": []
+    }
 }
 </pre>
 </p>
@@ -2946,18 +1158,18 @@ Authorization: Bearer {JWT_TOKEN}
 <p>
 <pre>
 {
- "code": 400,
- "message": "Validation Failed",
- "errors": {
- "children": {
- "locale": {},
- "group": {
- "errors": [
- "Invalid value invalid_group for group, group must be one of: bestpass, booking, box, card, company, coupon, detail, export, favourite, list, multiparking, parking, search, subscription, user"
- ]
- }
- }
- }
+  "code": 400,
+  "message": "Validation Failed",
+  "errors": {
+    "children": {
+      "locale": {},
+      "group": {
+        "errors": [
+          "Invalid value invalid_group for group, group must be one of: bestpass, booking, box, card, company, coupon, detail, export, favourite, list, multiparking, parking, search, subscription, user"
+        ]
+      }
+    }
+  }
 }
 </pre>
 </p>
@@ -2994,61 +1206,61 @@ Authorization: Bearer {JWT_TOKEN}
 <p>
 <pre>
 [
- {
- "id": 54332,
- "category": "ONEPASS",
- "name": "ONEPASS 2 hours",
- "parking": {
- "id": 1988,
- "covered": false,
- "flexible_entry": true,
- "guarded": true,
- "is_cancellable": true,
- "address": "Calle de Fray Luis de León, 11",
- "city": "Madrid",
- "name": "Fray Luis de León - Atocha",
- "_links": {
- "self": {
- "href": "https://loc.api.parclick.com/v1/parking/1988"
- }
- },
- "_embedded": {
- "city": {
- "id": 37,
- "_links": {
- "self": {
- "href": "https://loc.api.parclick.com/v1/city/37"
- }
- }
- }
- }
- },
- "vehicle_type": {
- "id": 1,
- "type": "CAR"
- },
- "warning_message": "For the QR reader to work properly, you must have the latest version of the app installed.",
- "administration_fee": 0,
- "paypal_fee": 1.21,
- "price": 3,
- "type": "pass",
- "internal_name": "ONEPASS 2h (3.00€)",
- "token": "2dd05be64d5f3bf031eff042565e788b84d81fa543bcac6ad3d4ac814a952241",
- "duration": 2,
- "multiparking": false,
- "multipass": false,
- "frequency": "HOURLY",
- "_links": {
- "self": [
- {
- "href": "https://loc.api.parclick.com/v1/product/54332"
- },
- {
- "href": "https://loc.api.parclick.com/v1/pass/54332"
- }
- ]
- }
- }
+    {
+        "id": 26507,
+        "category": "MULTIPASS",
+        "name": "MULTIPASS 2 hours",
+        "parking": {
+            "id": 750,
+            "covered": false,
+            "flexible_entry": false,
+            "guarded": true,
+            "is_cancellable": true,
+            "address": "26, rue de Chalon",
+            "city": "Paris",
+            "name": "Méditerranée Gare de Lyon STANDARD",
+            "_links": {
+                "self": {
+                    "href": "https://pre.api.parclick.com/v1/parking/750"
+                }
+            },
+            "_embedded": {
+                "city": {
+                    "id": 112,
+                    "_links": {
+                        "self": {
+                            "href": "https://pre.api.parclick.com/v1/city/112"
+                        }
+                    }
+                }
+            }
+        },
+        "vehicle_type": {
+            "id": 1,
+            "type": "CAR"
+        },
+        "warning_message": "The reception is located at level: -2",
+        "administration_fee": 0,
+        "paypal_fee": 1.2,
+        "price": 9.6,
+        "type": "pass",
+        "internal_name": "MULTIPASS 2h (9.60€)",
+        "token": "0605a36c80fb9aabb51be8861a74ba8fbe32e7026f005467ea26f47aba3597eb",
+        "duration": 2,
+        "multiparking": false,
+        "multipass": true,
+        "frequency": "HOURLY",
+        "_links": {
+            "self": [
+                {
+                    "href": "https://pre.api.parclick.com/v1/product/26507"
+                },
+                {
+                    "href": "https://pre.api.parclick.com/v1/pass/26507"
+                }
+            ]
+        }
+    }
 ]
 </pre>
 </p>
@@ -3074,49 +1286,31 @@ Authorization: Bearer {JWT_TOKEN}
 <p>
 <pre>
 {
- { 
- "code":400,
- "message":"Validation Failed",
- "errors":{ 
- "errors":[ 
- "This form should not contain extra fields."
- ],
- "children":{ 
- "locale":{ 
- },
- "group":{ 
- },
- "page":{ 
- },
- "limit":{ 
- },
- "sort":{ 
- },
- "direction":{ 
- },
- "from":{ 
- },
- "to":{ 
- },
- "latitude":{ 
- },
- "longitude":{ 
- },
- "radius":{ 
- },
- "vehicleType":{ 
- },
- "status":{ 
- },
- "parking":{ 
- },
- "type":{ 
- },
- "frequency":{ 
- }
- }
- }
- }
+  "code": 400,
+  "message": "Validation Failed",
+  "errors": {
+    "errors": [
+      "This form should not contain extra fields."
+    ],
+    "children": {
+      "locale": {},
+      "group": {},
+      "page": {},
+      "limit": {},
+      "sort": {},
+      "direction": {},
+      "from": {},
+      "to": {},
+      "latitude": {},
+      "longitude": {},
+      "radius": {},
+      "vehicleType": {},
+      "status": {},
+      "parking": {},
+      "type": {},
+      "frequency": {}
+    }
+  }
 }
 </pre>
 </p>
@@ -3146,67 +1340,67 @@ This method returns the vehicle type available. The vehicle id is required to ma
 <p>
 <pre>
 {
- "page": 1,
- "limit": 10,
- "pages": 1,
- "items": [
- {
- "id": 1,
- "type": "CAR",
- "max_height": 190,
- "max_length": 500
- },
- {
- "id": 2,
- "type": "VAN",
- "max_height": 220,
- "max_length": 650
- },
- {
- "id": 3,
- "type": "CARAVAN",
- "max_height": 360,
- "max_length": 1000
- },
- {
- "id": 4,
- "type": "BUS",
- "max_height": 500,
- "max_length": 1200
- },
- {
- "id": 5,
- "type": "TRUCK",
- "max_height": 360,
- "max_length": 700
- },
- {
- "id": 6,
- "type": "MOTORBIKE",
- "max_length": 220
- },
- {
- "id": 7,
- "type": "TRUCK_S",
- "max_height": 270,
- "max_length": 600
- }
- ],
- "total": 7,
- "params": {
- "group": "list"
- },
- "_links": {
- "self": {
- "href": "/v1/vehicle-type?page=1&limit=10"
- },
- "first": {
- "href": "/v1/vehicle-type?page=1&limit=10"
- },
- "last": {
- "href": "/v1/vehicle-type?page=1&limit=10"
- }
- }
+  "page": 1,
+  "limit": 10,
+  "pages": 1,
+  "items": [
+    {
+      "id": 1,
+      "type": "CAR",
+      "max_height": 190,
+      "max_length": 500
+    },
+    {
+      "id": 2,
+      "type": "VAN",
+      "max_height": 220,
+      "max_length": 650
+    },
+    {
+      "id": 3,
+      "type": "CARAVAN",
+      "max_height": 360,
+      "max_length": 1000
+    },
+    {
+      "id": 4,
+      "type": "BUS",
+      "max_height": 500,
+      "max_length": 1200
+    },
+    {
+      "id": 5,
+      "type": "TRUCK",
+      "max_height": 360,
+      "max_length": 700
+    },
+    {
+      "id": 6,
+      "type": "MOTORBIKE",
+      "max_length": 220
+    },
+    {
+      "id": 7,
+      "type": "TRUCK_S",
+      "max_height": 270,
+      "max_length": 600
+    }
+  ],
+  "total": 7,
+  "params": {
+    "group": "list"
+  },
+  "_links": {
+    "self": {
+      "href": "/v1/vehicle-type?page=1&limit=10"
+    },
+    "first": {
+      "href": "/v1/vehicle-type?page=1&limit=10"
+    },
+    "last": {
+      "href": "/v1/vehicle-type?page=1&limit=10"
+    }
+  }
 }
 </pre>
 </p>
@@ -3220,28 +1414,28 @@ This method returns the vehicle type available. The vehicle id is required to ma
 <p>
 <pre>
 {
- "code": 400,
- "message": "Validation Failed",
- "errors": {
- "children": {
- "locale": {},
- "group": {
- "errors": [
- "Invalid value incorrect_group for group, group must be one of: bestpass, booking, box, card, company, coupon, detail, export, favourite, list, multiparking, parking, search, subscription, user"
- ]
- },
- "page": {},
- "limit": {},
- "sort": {},
- "direction": {},
- "from": {},
- "to": {},
- "latitude": {},
- "longitude": {},
- "radius": {},
- "vehicleType": {}
- }
- }
+  "code": 400,
+  "message": "Validation Failed",
+  "errors": {
+    "children": {
+      "locale": {},
+      "group": {
+        "errors": [
+          "Invalid value incorrect_group for group, group must be one of: bestpass, booking, box, card, company, coupon, detail, export, favourite, list, multiparking, parking, search, subscription, user"
+        ]
+      },
+      "page": {},
+      "limit": {},
+      "sort": {},
+      "direction": {},
+      "from": {},
+      "to": {},
+      "latitude": {},
+      "longitude": {},
+      "radius": {},
+      "vehicleType": {}
+    }
+  }
 }
 </pre>
 </p>
@@ -3876,11 +2070,11 @@ Authorization: Bearer {JWT_TOKEN}
         "voucher": {
             "voucher_code": "L8K2WYJ",
             "voucher_id": 935489,
-            "voucher_description": {
-                "0": "During the purchasing process, select the date you plan to arrive. After making the online payment you will receive a voucher via email with your reservation code.\r",
-                "2": "On the date of your reservation, enter the parking lot as usual, take a ticket at the entrance and park in any empty spot. Once you\u0027re out of the car, approach the control booth with the Parclick voucher and the ticket you took. The staff there will check your reservation using the reservation code, and will give you a card that will allow you to exit the car park. Follow this process every time you leave and reenter within the validity period of your parking pass.\r",
-                "4": "If there are no personnel in the control booth, do not worry: Use the intercom located at the ATM or at the exit barrier to contact our Remote Service Centre, and follow the same process as described above."
-            }
+            "voucher_description": [
+                "ARRIVAL: Take a ticket. Park in any free space.\r",
+                "DEPARTURE:  Go to the office with your reservation and the ticket. If there is no-one there, ring the intercom. Use the ticket the staff gave you. \r",
+                "IF YOUR BOOKING ALLOWS UNLIMITED ENTRANCE AND EXIT: Follow the same process, indicated before, to enter and exit."
+            ]
         },
         "booking": {
             "booking_id": 1055164,
