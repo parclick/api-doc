@@ -45,7 +45,7 @@ Parclick has two environments: [**development**](https://pre.api.parclick.com) (
 This tutorial help to unsderstand the available endpoints and the flow to create, delete and list bookings. 
 
 #### Internationalization, limit and group
-As a general rule, the application manage the **locale** parameter to return the response in the selected language. The available languages are: Spanish, English, French, Italian, Portuguese, German, Dutch, Russian and Catalan.
+As a general rule, the application manage the **locale** parameter to return the response in the selected language. The available languages are: spanish, english, french, italian, portuguese, german, dutch, russian and catalan.
 
 | Language | Locale |
 | ------------- | ------ |
