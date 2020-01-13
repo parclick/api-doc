@@ -1,6 +1,6 @@
 ![alt text](https://static.parclick.com/assets/img/logotipo-parclick.svg)
 
-<p style="color:#999999;text-align:right;">Document version 1.5.3</p>
+<p style="color:#999999;text-align:right;">Document version 1.5.4</p>
 
 # <span style="color:#FF6600;">Parclick - API Reference</span>
 #### <span style="color:#999;">TECHNICAL DOCUMENTATION</span>
@@ -400,7 +400,195 @@ Authorization: Bearer {JWT_TOKEN}
 <details><summary style="color:#FF6600;">Show response 200 Ok group export-joinup</summary>
 <p>
 <pre>
-
+{
+    "page": "1",
+    "limit": "2",
+    "pages": 764,
+    "items": [
+        {
+            "id": 4,
+            "covered": true,
+            "description": "Car park located in the district of Sant Gervasi-Galvany, near to Avenida Diagonal and a 10-minute walk from Barcelona Clinical and Provincial Hospital.\r\n\r\n<p>IMPORTANT: Remember when you book to give us the number of the mobile phone which you'll be using while visiting Barcelona. </p>\r\n<p>TELEPHONIC access to car park. REMOTE customer service. </p>",
+            "flexible_entry": true,
+            "latitude": 41.395107706311,
+            "longitude": 2.1466153666872,
+            "medias": [
+                {
+                    "id": 9396,
+                    "url": "https://static.parclick.com/parking/2017/11/cca/e73/a1/ccae73a1-ae1d-563c-b275-14577efbdf1a.jpeg"
+                },
+                {
+                    "id": 9397,
+                    "url": "https://static.parclick.com/parking/2017/11/5ee/981/54/5ee98154-09fc-57ca-b3f0-d05ba085bba9.jpeg"
+                },
+                {
+                    "id": 9398,
+                    "url": "https://static.parclick.com/parking/2017/11/9ab/225/2e/9ab2252e-2977-52e3-8541-bb52d14a1eb3.jpeg"
+                },
+                {
+                    "id": 9399,
+                    "url": "https://static.parclick.com/parking/2017/11/77a/31f/88/77a31f88-89b8-5303-93d6-f18c48542057.jpeg"
+                }
+            ],
+            "address": "Carrer de Santaló, 12",
+            "city": "Barcelona",
+            "country": "España",
+            "province": "Barcelona",
+            "zip": "8021",
+            "provider": {
+                "id": 2,
+                "name": "NYN"
+            },
+            "handicapped_access": true,
+            "security": true,
+            "open_24h": true,
+            "giving_keys": false,
+            "exclude_checking": true,
+            "name": "NN Santaló",
+            "access_phone": "00 34 647 07 97 31",
+            "max_height": 180,
+            "schedule": [],
+            "access": [
+                {
+                    "id": 938,
+                    "type": "vehicle",
+                    "address": "Carrer de Santaló 12",
+                    "latitude": 41.395107706311,
+                    "longitude": 2.1466153666872
+                }
+            ],
+            "voucher_needed": false,
+            "multiparking": false,
+            "cancellation_type": 2,
+            "_links": {
+                "self": {
+                    "href": "https://pre.api.parclick.com/v1/parking/4"
+                }
+            },
+            "_embedded": {
+                "city": {
+                    "id": 6,
+                    "name": "Barcelona",
+                    "country": {
+                        "id": 199,
+                        "iso": "ES",
+                        "nicename": "Spain",
+                        "_links": {
+                            "self": {
+                                "href": "https://pre.api.parclick.com/v1/country/199"
+                            }
+                        }
+                    },
+                    "vat_tax": 21,
+                    "time_zone": "Europe/Madrid",
+                    "_links": {
+                        "self": {
+                            "href": "https://pre.api.parclick.com/v1/city/6"
+                        }
+                    }
+                },
+                "fieldsRequested": []
+            }
+        },
+        {
+            "id": 5,
+            "covered": true,
+            "description": "Car park close to the Hospital Clínic and the Teatre Villarroel. The metro stations Hospital Clínic (line 5) and Urgell (line 1) are both roughly a 10-minute walk away. Easy access to the Gran Vía de las Cortes Catalanas and Avenida Diagonal.",
+            "flexible_entry": true,
+            "latitude": 41.386092962311,
+            "longitude": 2.1536075582364,
+            "medias": [
+                {
+                    "id": 9420,
+                    "url": "https://static.parclick.com/parking/2017/11/4da/76d/b3/4da76db3-f676-5850-843b-c1c1b02c36b6.jpeg"
+                },
+                {
+                    "id": 9421,
+                    "url": "https://static.parclick.com/parking/2017/11/8ad/b6c/ce/8adb6cce-f5de-54b3-b995-6900d2ab2db1.jpeg"
+                },
+                {
+                    "id": 9422,
+                    "url": "https://static.parclick.com/parking/2017/11/e86/ad9/60/e86ad960-f131-5ed4-8260-d123b8b88731.jpeg"
+                },
+                {
+                    "id": 9423,
+                    "url": "https://static.parclick.com/parking/2017/11/fa4/067/b8/fa4067b8-9ca3-5d87-81e0-d3d3a10133bc.jpeg"
+                }
+            ],
+            "address": "Comte d'Urgell, 154",
+            "city": "Barcelona",
+            "country": "España",
+            "province": "Barcelona",
+            "zip": "8036",
+            "provider": {
+                "id": 2,
+                "name": "NYN"
+            },
+            "handicapped_access": true,
+            "security": true,
+            "open_24h": true,
+            "giving_keys": false,
+            "exclude_checking": false,
+            "name": "NN Urgell 2",
+            "max_height": 195,
+            "schedule": [],
+            "access": [
+                {
+                    "id": 343,
+                    "type": "vehicle",
+                    "address": "Carrer del Comte d'Urgell 152",
+                    "latitude": 41.386092962311,
+                    "longitude": 2.1536075582364
+                }
+            ],
+            "voucher_needed": false,
+            "multiparking": false,
+            "cancellation_type": 2,
+            "_links": {
+                "self": {
+                    "href": "https://pre.api.parclick.com/v1/parking/5"
+                }
+            },
+            "_embedded": {
+                "city": {
+                    "id": 6,
+                    "name": "Barcelona",
+                    "country": {
+                        "id": 199,
+                        "iso": "ES",
+                        "nicename": "Spain",
+                        "_links": {
+                            "self": {
+                                "href": "https://pre.api.parclick.com/v1/country/199"
+                            }
+                        }
+                    },
+                    "vat_tax": 21,
+                    "time_zone": "Europe/Madrid",
+                    "_links": {
+                        "self": {
+                            "href": "https://pre.api.parclick.com/v1/city/6"
+                        }
+                    }
+                },
+                "fieldsRequested": []
+            }
+        }
+    ],
+    "total": 1528,
+    "params": {
+        "locale": "en_GB",
+        "group": "export-joinup",
+        "latitude": "40.4167754",
+        "longitude": "-3.7037901999999576",
+        "radius": "4",
+        "from": "2020-02-22 20:00",
+        "to": "2020-02-22 22:00",
+        "vehicleType": "1",
+        "page": "1",
+        "limit": "2"
+    }
+}
 </pre>
 </p>
 </details>
@@ -639,39 +827,39 @@ Authorization: Bearer {JWT_TOKEN}
 <p>
 <pre>
 {
- "code": 400,
- "message": "Validation Failed",
- "errors": {
- "children": {
- "locale": {},
- "group": {},
- "page": {},
- "limit": {},
- "sort": {},
- "direction": {},
- "from": {
- "errors": [
- "Date 2017-12-31 20:00 must be greater than now."
- ]
- },
- "to": {
- "errors": [
- "Date 2017-12-31 20:00 must be greater than now."
- ]
- },
- "latitude": {},
- "longitude": {},
- "radius": {},
- "vehicleType": {},
- "airport": {},
- "city": {},
- "country": {},
- "freemium": {},
- "provider": {},
- "subscriptionType": {},
- "name": {}
- }
- }
+  "code": 400,
+  "message": "Validation Failed",
+  "errors": {
+    "children": {
+      "locale": {},
+      "group": {},
+      "page": {},
+      "limit": {},
+      "sort": {},
+      "direction": {},
+      "from": {
+        "errors": [
+          "Date 2017-12-31 20:00 must be greater than now."
+        ]
+      },
+      "to": {
+        "errors": [
+          "Date 2017-12-31 20:00 must be greater than now."
+        ]
+      },
+      "latitude": {},
+      "longitude": {},
+      "radius": {},
+      "vehicleType": {},
+      "airport": {},
+      "city": {},
+      "country": {},
+      "freemium": {},
+      "provider": {},
+      "subscriptionType": {},
+      "name": {}
+    }
+  }
 }
 </pre>
 </p>
@@ -1134,7 +1322,7 @@ Authorization: Bearer {JWT_TOKEN}
             "latitude": 41.3851,
             "longitude": 2.1734,
             "vat_tax": 21,
-            "content": "<p>A cosmopolitan city with parties, good vibes, great weather… With beaches, mountains, parks, and incredible monuments… There aren’t many cities that have all that in one place, especially one with a population of 2 million. That has to be why <strong>Barcelona</strong> has become one of the <strong>world’s major destinations</strong>! Want to know all about the <strong>Capital of Catalonia</strong>? Read on!</p>\r\n\r\n<div>\r\n<h2>Driving in Barcelona</h2>\r\n\r\n<p><strong>Driving in Barcelona</strong> can be complicated, considering it’s the second-largest city in Spain. Nearly <strong>2 million people</strong> live in the city, so don’t be surprised if the streets aren’t exactly deserted when it comes to parking…</p>\r\n\r\n<p>The most important things that you have to be aware of when driving in Barcelona are the <strong>pollution laws</strong>. Like we mentioned in the previous paragraph, Barcelona is an extremely populous city, and that means high levels of pollution during certain times of the year. The biggest measure the Capital of Catalonia has taken against pollution is to restrict the most polluting vehicles from driving in the city, citing the&nbsp;Traffic Administration’s standards as an example. To find out if your vehicle could be affected by these restrictions, make sure to check <a href=\"http://www.dgt.es/es/seguridad-vial/distintivo-ambiental/\" target=\"_blank\">your car’s environmental label</a> (webpage in Spanish).&nbsp;</p>\r\n\r\n<p>Another thing to consider carefully is what time of year you want to visit Barcelona. In summer, the massive influx of tourists won’t only make it hard to get around Barcelona’s streets, but also to find a parking space.</p>\r\n\r\n<p>But enough bad news! If you’ve read this far, you’re ready to read about all the entertainment the city has to offer, and, the most important thing when it comes to getting around: <strong>parking in Barcelona</strong>. It’s going to seem so easy once you’ve read this post! Ready to become an expert on the Capital of Catalonia? Let’s go!</p>\r\n\r\n<h2>Parking in Barcelona</h2>\r\n\r\n<p>The majority of the streets in Barcelona have parking spaces divided into either “Área Blava” or “Área Verda”.</p>\r\n\r\n<ul>\r\n\t<li>\r\n\t<p><strong>Área Blava (Blue Zone):</strong> You can park your car, having pre-paid, <strong>up to 4 hours</strong>. If you want to extend the time, you will have to move your car to another place. These parking spaces are designed more for shopping districts, with the idea that you park, spend a while there, and then leave the space available for the next person. The Blue Zone is divided into four categories (A, B, C, and D) and each one has a different fare.</p>\r\n\t</li>\r\n\t<li>\r\n\t<p><strong>Área Verda (Green Zone):</strong> These zones are designed for residents, who can park in the zone that corresponds to their home by paying around 5 euros a month with a special card. For everyone else, the price to park in these zones is more expensive than in the Blue Zone and is limited to a <strong>maximum of 2 hours</strong>. The intention is to leave these spaces available for the residents that pay for them.</p>\r\n\t</li>\r\n</ul>\r\n\r\n<p>If you don’t follow the rules about the maximum times, your car could be towed and you would have to pay a fine. The same situation applies if you park your car in either of the zones without paying.</p>\r\n\r\n<p>And if you’re <strong>visiting Barcelona</strong> in the comfort of your own car, we can imagine that you’re not going to want to be feeding the parking meters your whole trip, or having to move your car every time you hit the maximum time limit. Without a doubt, the best option for those of you that don’t want to cancel your road trip is to book an <strong>affordable parking space in Barcelona</strong>. You think <strong>parking in the center of Barcelona</strong> costs an arm and a leg? Check out our directory of car parks in Barcelona, further up on this page, and take a good look at the prices. Leaving your car in a safe and secure place has never been so easy (or cheap!). ;)</p>\r\n\r\n<p>What if you just want to go run a quick errand? You could spend more time looking for a car park in the city center than doing what you actually needed to do. But we have solutions for that too: Now you can pay the <strong>parking meters in Barcelona</strong> with the <a href=\"https://parclick.app/\" target=\"_blank\"><strong>Parclick app</strong></a>! &nbsp;&nbsp;<br />\r\nFast, easy, and practical. Download Parclick’s app and select the street parking option. Enter your license plate number, your payment method, and park without worrying. The era of having to go all the way to the parking meter with a pocket full of change is over. In less than a minute, and without even getting out of your car, you can avoid a parking ticket.</p>\r\n\r\n<h2>Renting in a monthly car park in Barcelona</h2>\r\n\r\n<p>In addition to being able to <strong>book a parking space</strong> for hours or days, in Parclick we also give you the opportunity to <strong>rent a long-term parking space in a car park in Barcelona</strong>, so that month to month you’ll always have a spot, guaranteed. We have <strong>monthly passes</strong> with 24-hour access, which let you use the <strong>car park</strong> any time, any day of the week. Or if you just need to park your car, motorbike, or van for a few hours a day on a regular basis, we can offer you <strong>daily passes</strong> for the workday or <strong>nightly passes</strong> so that you can always park your car close to home at nighttime.</p>\r\n\r\n<p>Check out our offers on <a href=\"https://parclick.com/parking-barcelona?lt=41.3851&amp;ln=2.1734&amp;df=2019-09-28%2010:00&amp;dt=2019-09-28%2012:00&amp;ft=1&amp;group=subscription&amp;ts=2&amp;q=Barcelona&amp;limit=200\" target=\"_blank\"><strong>monthly passes to park in Barcelona</strong></a> and, if you don’t find what you’re looking for, get in contact with us and we’ll find you the best option in the area you want to park in.</p>\r\n\r\n<h2>Getting around Barcelona</h2>\r\n\r\n<ul>\r\n\t<li>\r\n\t<p><strong>Metro</strong></p>\r\n\t</li>\r\n</ul>\r\n\r\n<p>The metro system in Barcelona has <strong>11 lines</strong> that connect 165 stations all over the city. It is without a doubt one of the most efficient ways to get from one part of the city to another, without wasting time stuck in traffic. If you’re going to visit places like <strong>Park Güell</strong> or the <strong>bunkers</strong> (highly recommended for an unparalleled panoramic view of the city), the best way to avoid walking up the hill to get there is taking the metro. A one-way ticket is about <strong>2€</strong> (careful with going to the airport though, that’ll cost you approximately <strong>4.50€</strong>).</p>\r\n\r\n<p>If you’re thinking of getting around the city by metro, the best would be to get a 1-day card (about <strong>8€</strong>) that you’ll be able to use as many times as you want. There are also cards for more than one person in case you’re not travelling alone. You can find more information on the <a href=\"https://www.tmb.cat/en/barcelona-fares-metro-bus/single-and-integrated/choose-ticket\" target=\"_blank\">Barcelona Metro webpage</a>.</p>\r\n\r\n<ul>\r\n\t<li>\r\n\t<p><strong>Bus</strong></p>\r\n\t</li>\r\n</ul>\r\n\r\n<p>The bus system in Barcelona has more than <strong>200 lines</strong>. It’s a good option if you don’t like the hustle and bustle of the metro and are one of those people that love looking at the scenery pass by the window. The only thing you need to have in mind is if there’s traffic and you’re in a hurry, maybe it’d be better to use another type of transportation… The price of a one-way ticket for the buses in Barcelona is around <strong>2€</strong>, the same as the metro, but you have a lot more options in terms of passes that have packages for multiple trips or even special passes for tourists.</p>\r\n\r\n<p>Another benefit of the bus is that, from the center of the city, you can travel to other nearby places, like Hospitalet, Terrassa, or Sant Adrià del Besòs if you want to see even more than Barcelona.</p>\r\n\r\n<h2>What to do in Barcelona</h2>\r\n\r\n<p>Barcelona is definitely one of the Spanish cities with the most charm. As such, some major places to visit quickly come to mind, like <strong><a href=\"https://parclick.com/parking/car-parks-near-la-sagrada-familia-barcelona\" target=\"_blank\">La Sagrada Familia</a>,</strong>&nbsp;the beaches (especially <strong><a href=\"https://parclick.com/parking/car-parks-close-to-la-barceloneta\" target=\"_blank\">La Barceloneta</a>),&nbsp;</strong>and <a href=\"https://parclick.com/parking/car-parks-near-camp-nou\" target=\"_blank\"><strong>Camp Nou</strong></a>,<br />\r\nFC Barcelona’s stadium. But Barcelona is so much more. It’s art, it’s culture, it’s enormous yet cozy, it’s different, and it’s one of the most multicultural cities in Europe. Keep reading to discover everything you can do here. ;)</p>\r\n\r\n<h3>Barcelona neighborhoods</h3>\r\n\r\n<p>Even though a short visit is never enough, if you need a quick overview of the Capital of Catalonia, take a stroll down <a href=\"https://parclick.com/parking/book-car-parks-near-las-ramblas\" target=\"_blank\"><strong>Las Ramblas</strong></a>, it’s definitely the best way to get know a bit of the essence of Barcelona. It has a modernist soul, where, in addition to La Sagrada Familia, you can see the important influence of some daring architects in buildings like <strong>Casa Fuster</strong>, <a href=\"https://parclick.com/parking/car-parks-near-the-casa-batllo-barcelona\" target=\"_blank\"><strong>Casa Batlló</strong></a>, or <a href=\"https://parclick.com/parking/car-parks-near-to-la-pedrera\" target=\"_blank\"><strong>La Pedrera</strong></a>. And of course it’s in fine form at <a href=\"https://parclick.com/parking/car-parks-close-to-the-park-guell\" target=\"_blank\"><strong>Parc Güell</strong></a>, where you can enjoy a nice nature walk. But Barcelona isn’t just specific places, it’s a sum of its parts and all of its neighborhoods are super “walkable”, perfect for strolling and exploring their peculiar design.</p>\r\n\r\n<h3>Theatres and entertainment in Barcelona</h3>\r\n\r\n<p>If you want to experience true art, you have to see a play at either <a href=\"https://parclick.com/parking/parking-near-poliorama-theatre\" target=\"_blank\"><strong>Poliorama Theatre</strong></a>, the <a href=\"https://parclick.com/parking/car-parks-near-the-teatro-nacional-de-cataluna\" target=\"_blank\"><strong>National Theatre of Catalonia</strong></a>,&nbsp;or the <a href=\"https://parclick.com/parking/car-parks-near-the-gran-teatro-del-liceo\" target=\"_blank\"><strong>Grand Lyceum Theatre</strong></a>. They will surely offer shows to remember. But if you’re more into enjoying the Barcelona night life (something we perfectly understand), you have to know where to go on a night out. You can enjoy the major <a href=\"https://parclick.com/parking/car-parks-close-to-razzmatazz-in-barcelona\" target=\"_blank\"><strong>night club Razzmatazz</strong></a> or get to know how each <a href=\"https://parclick.com/parking/barcelona/districts-barcelona\" target=\"_blank\"><strong>Barcelona neighborhood</strong></a>&nbsp;parties. Check out the <a href=\"https://parclick.com/parking/book-parking-in-the-heart-of-barcelona\" target=\"_blank\"><strong>city center</strong></a>, <a href=\"https://parclick.com/parking/car-parks-in-eixample\" target=\"_blank\"><strong>Eixample</strong></a>, <a href=\"https://parclick.com/parking/book-parking-in-les-corts\" target=\"_blank\"><strong>Ies Corts</strong></a>, or&nbsp;<a href=\"https://parclick.com/parking/car-parks-in-ciutat-vella-barcelona\" target=\"_blank\"><strong>Ciutat Vella</strong></a> for different vibes or go to a concert at the famous <strong>Palau Sant Jordi</strong>.</p>\r\n\r\n<h3>Hotels in Barcelona</h3>\r\n\r\n<p>Still don’t have a <strong>place to stay in Barcelona</strong> during your trip? Had fights with your partner or friends about not knowing where to stay? <em>Keep calm</em>. We recommend you take a look at the <strong><a href=\"https://parclick.com/parking/barcelona/hotels-barcelona\" target=\"_blank\">hotels in Barcelona</a>&nbsp;</strong>we’ve written about on this same website. You can see the location, what they offer, and the car parks close by, so you can kill two birds with one stone. What more could you ask for? To start, we suggest looking at the <strong>W Hotel</strong>, one of the most emblematic hotels the Capital of Catalonia has to offer. Whatever your budget, we bet our articles will give you an idea of where to stay during your visit.<br />\r\n<br />\r\nIt’s obvious you don’t want to be in <strong>Barcelona</strong> without plans…</p>\r\n\r\n<h2>Events in Barcelona</h2>\r\n\r\n<ul>\r\n\t<li>\r\n\t<p><strong>Sant Jordi:</strong> Sant Jordi (Saint George’s) Day is celebrated on April 23. He is the patron saint of Catalonia and Aragon. Celebrated since the 15th century, Sant Jordi Day is also Valentine’s Day in Catalonia and it’s customary to give a rose and a book as gifts. This day is celebrated with various cultural activities, with the most popular being a book signing by some of Spain’s most famous writers. It’s a perfect day to experience in Barcelona, especially if you like literature and you visit with your partner. ;)</p>\r\n\t</li>\r\n\t<li>\r\n\t<p><strong><a href=\"https://parclick.com/parking/car-park-close-to-the-mobile-world-congress-barcelona\" target=\"_blank\">Mobile World Congress</a>:</strong> If you’re a technology lover, you must know about the Mobile World Congress that takes place every year in Barcelona. MWC brings together the most important figures in the technology and mobile communications field and is where you can get up to date with the sector’s latest trends.</p>\r\n\t</li>\r\n\t<li>\r\n\t<p><strong><a href=\"https://parclick.com/parking/car-parks-near-sonar-2018-festival-in-barcelona?lt=41.3742&amp;ln=2.1508&amp;r=2&amp;z=14\" target=\"_blank\">Sónar</a>:</strong>&nbsp;Sónar festival is an institution in electronic and experimental music. Founded in 1994, it’s still held every summer with more and more attendees and internationally renowned artists. The festival takes over literally all of Barcelona’s streets since there are many cultural activities during the day. At night, the festival starts at Fira Barcelona in Montjuic, where you can enjoy the best music and atmosphere for all ages.&nbsp;</p>\r\n\t</li>\r\n\t<li>\r\n\t<p><strong>Automobile Exhibition:</strong> More than 100 years old, this event still happens every year at Fira Barcelona in Montjuic and is an opportunity for car lovers to see the latest trends in the automotive world.</p>\r\n\t</li>\r\n\t<li>\r\n\t<p><strong><a href=\"https://parclick.com/parking/car-parks-near-primavera-sound-2018-festival-in-barcelona\" target=\"_blank\">Primavera Sound</a>:</strong>&nbsp;Along with Sónar, Primavera Sound is one of the biggest music festivals in Barcelona. It’s been around since 2001 and has since become one of the top festivals in all of Spain.&nbsp;</p>\r\n\t</li>\r\n</ul>\r\n\r\n<h2>Take a trip from Barcelona</h2>\r\n\r\n<p>Being one of the biggest cities in Spain, from <strong>Barcelona</strong> you can travel to numerous other national and international destinations. Whether you’re from Barcelona, living there, or just visiting, you have to read the next two points about transit.</p>\r\n\r\n<h3>Taking the train from Barcelona</h3>\r\n\r\n<p>First of all, we have to highlight the <strong>Sants Station</strong>, Barcelona’s main train station. Inaugurated in 1979, it’s the second most important train station in Spain, with almost 30 million travelers annually. One major benefit of this station, aside from being able to travel to major cities like Madrid, Seville, Valencia, Alicante, Murcia, Cartagena, and Zaragoza, is that you can also travel to France. The international line Renfe SNCF can take you to <strong>Toulouse </strong>and<strong> Lyon</strong>, two of the most important French cities. And of course we can’t talk to you about all of this without offering you <a href=\"https://parclick.com/parking/where-to-park-near-estacion-de-sants-in-barcelona\" target=\"_blank\"><strong>car parks close to the Sants Station</strong></a>. Take a look at the prices and make sure to <strong>book your parking space</strong> in advance so you don’t have to rush or miss your train.</p>\r\n\r\n<h3>Flying out of Barcelona</h3>\r\n\r\n<p>Next, we have <strong>Josep Tarradellas Barcelona-El Prat Airport</strong>, which is located 15 km from the center of Barcelona. It’s the <strong>most important airport</strong> in Catalonia and the second in Spain in regard to traffic: some 45 million passengers annually. It’s very well connected to the city center thanks to the metro and the various bus lines, but the truth is we recommend you leave your car in an <a href=\"https://parclick.com/parking/car-parks-at-barcelona-el-prat-airport-bcn\" target=\"_blank\"><strong>affordable car park close to the Barcelona airport</strong></a>&nbsp;if you’re taking a trip. You can consult our offers in the link. That way, you won’t have to come back and take a bus that will still leave you far from home. That’s right, we’ve thought of everything. ;)<br />\r\n<br />\r\nNow you know everything you need to get around Barcelona like a local. Want to put it to the test? Start with <strong>Parclick</strong>!</p>\r\n</div>",
+            "content": "<p>A cosmopolitan city with parties, good vibes, great weather… With beaches, mountains, parks, and incredible monuments… There aren’t many cities that have all that in one place, especially one with a population of 2 million.",
             "time_zone": "Europe/Madrid",
             "_links": {
                 "self": {
@@ -2409,4 +2597,4 @@ This code is used in Copark car parks and uses the following syntax to generate 
 
 <br>
 
-<p style="font-size:11px;color:#999999;text-align:center;">2019 Copyright Parclick S.L. All rights reserved.</p>
+<p style="font-size:11px;color:#999999;text-align:center;">2020 Copyright Parclick S.L. All rights reserved.</p>
