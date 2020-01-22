@@ -1,6 +1,6 @@
 ![alt text](https://static.parclick.com/assets/img/logotipo-parclick.svg)
 
-<p style="color:#999999;text-align:right;">Document version 1.5.4</p>
+<p style="color:#999999;text-align:right;">Document version 1.5.5</p>
 
 # <span style="color:#FF6600;">Parclick - API Reference</span>
 #### <span style="color:#999;">TECHNICAL DOCUMENTATION</span>
@@ -37,7 +37,12 @@ Parclick gives a <a href="#1">REST API</a> [^1](#1) with some endpoints that req
 | Key | Value |
 | ----------------- | ------------------------------------------ |
 | Authorization | Bearer eyJhbGciOiJSUzI1NiJ9.eyJyb2xlcyI... |
-| X-thirdparty-auth | kjhawdjh3gJiiHkqjhw787hawdk09HjhaKkdhawdad |
+
+Also is mandatory to include a custom header parameter **X-thirdparty-auth** to monitor the API traffic.
+
+| Key | Value |
+| ----------------- | ------------------------------------------ |
+| X-thirdparty-auth | request the hash to Parclick  |
 
 #### Environments
 Parclick has two environments: [**development**](https://pre.api.parclick.com) (https://pre.api.parclick.com) and [**production**](https://api.parclick.com) (https://api.parclick.com).
@@ -593,102 +598,590 @@ Authorization: Bearer {JWT_TOKEN}
 </p>
 </details>
 
+### _Response:_
+**200 Ok grooup search**
+
+<details><sumary style="color:#FF6600;">Show response 200 Ok group search</sumary>
+<p>
+<pre>
+{
+    "items": [
+        {
+            "id": 260,
+            "covered": true,
+            "flexible_entry": false,
+            "guarded": true,
+            "latitude": 40.414339688923,
+            "image_list": "//static.parclick.com/parking/2017/07/d85/780/c4/d85780c4-bfb4-500f-ab89-1f47338e72ef.jpeg",
+            "longitude": -3.7034317950878,
+            "image": {
+                "id": 543,
+                "extension": "jpg"
+            },
+            "is_cancellable": true,
+            "extra_info": [],
+            "address": "Plaza Jacinto Benavente, S/N",
+            "city": "Madrid",
+            "country": "España",
+            "province": "Madrid",
+            "zip": "28012",
+            "provider": {
+                "id": 19,
+                "name": "EMT"
+            },
+            "handicapped_access": true,
+            "security": true,
+            "open_24h": true,
+            "giving_keys": false,
+            "exclude_checking": false,
+            "name": "EMT Jacinto Benavente",
+            "max_height": 180,
+            "passes": [
+                {
+                    "id": 45439,
+                    "name": "ONEPASS 7 hours",
+                    "vehicle_type": {
+                        "id": 1,
+                        "type": "CAR",
+                        "max_height": 190,
+                        "max_length": 500
+                    },
+                    "warning_message": "Before exiting please get to the control cabin with your reservation locator to get an exit ticket from the clerk on duty",
+                    "price": 18.5,
+                    "type": "pass",
+                    "internal_name": "ONEPASS 7h (18.50€)",
+                    "duration": 7,
+                    "multiparking": false,
+                    "multipass": false,
+                    "frequency": "HOURLY",
+                    "_links": {
+                        "self": [
+                            {
+                                "href": "https://Ariel.api.parclick.com/v1/product/45439"
+                            },
+                            {
+                                "href": "https://Ariel.api.parclick.com/v1/pass/45439"
+                            }
+                        ]
+                    }
+                }
+            ],
+            "subscriptions": [],
+            "access": [
+                {
+                    "id": 65,
+                    "type": "pedestrian",
+                    "latitude": 40.414435847261,
+                    "longitude": -3.7036133642791
+                },
+                {
+                    "id": 768,
+                    "type": "vehicle",
+                    "latitude": 40.414339688923,
+                    "longitude": -3.7034317950878
+                }
+            ],
+            "slug": "mm_jacinto_benavente",
+            "multiparking": false,
+            "reviews_summary": {
+                "reviews": {
+                    "162": {
+                        "review": [],
+                        "average": 4.333333333333333
+                    },
+                    "1497": {
+                        "review": [],
+                        "average": 2.6666666666666665
+                    },
+                    "2002": {
+                        "review": [],
+                        "average": 3
+                    },
+                    "3597": {
+                        "review": [],
+                        "average": 4.666666666666667
+                    },
+                    "3516": {
+                        "review": [],
+                        "average": 3.6666666666666665
+                    },
+                    "4005": {
+                        "review": [],
+                        "average": 3.3333333333333335
+                    },
+                    "5106": {
+                        "review": [],
+                        "average": 4.666666666666667
+                    },
+                    "5375": {
+                        "review": [],
+                        "average": 4.666666666666667
+                    },
+                    "5583": {
+                        "review": [],
+                        "average": 3.3333333333333335
+                    },
+                    "5462": {
+                        "review": [],
+                        "average": 4
+                    },
+                    "6393": {
+                        "review": [],
+                        "average": 4
+                    },
+                    "6247": {
+                        "review": [],
+                        "opinion": "Pensaba que al reservar el parking con la aplicación me iban a reservar una plaza. Pero no fue así, me explicaron que si no hubiera habido plazas hubiera tenido que esperar. Menos mal que quedaban plazas libres.",
+                        "average": 5
+                    },
+                    "6162": {
+                        "review": [],
+                        "average": 4.666666666666667
+                    },
+                    "6691": {
+                        "review": [],
+                        "average": 4
+                    },
+                    "7370": {
+                        "review": [],
+                        "average": 3.6666666666666665
+                    },
+                    "7534": {
+                        "review": [],
+                        "average": 4
+                    },
+                    "8037": {
+                        "review": [],
+                        "opinion": "more complicate for the staff to take care Parclick booking",
+                        "average": 3.6666666666666665
+                    },
+                    "8150": {
+                        "review": [],
+                        "opinion": "Deficiencias en la salida",
+                        "average": 3.3333333333333335
+                    },
+                    "8926": {
+                        "review": [],
+                        "average": 4.333333333333333
+                    },
+                    "9102": {
+                        "review": [],
+                        "opinion": "El procedimiento con el ticket es muy mejorable... tuve que ir a ventanilla al entrar y al salir. Tuvo que escribir a mano los datos en una hoja y llamar por teléfono para dar mi localizadot!!",
+                        "average": 4
+                    },
+                    "9013": {
+                        "review": [],
+                        "average": 4.333333333333333
+                    },
+                    "9320": {
+                        "review": [],
+                        "average": 4.333333333333333
+                    },
+                    "9625": {
+                        "review": [],
+                        "average": 5
+                    },
+                    "9471": {
+                        "review": [],
+                        "average": 3.6666666666666665
+                    },
+                    "9574": {
+                        "review": [],
+                        "average": 3.6666666666666665
+                    },
+                    "9532": {
+                        "review": [],
+                        "average": 3.6666666666666665
+                    },
+                    "9866": {
+                        "review": [],
+                        "average": 4.666666666666667
+                    },
+                    "9867": {
+                        "review": [],
+                        "average": 4.666666666666667
+                    },
+                    "9877": {
+                        "review": [],
+                        "average": 3.6666666666666665
+                    },
+                    "11737": {
+                        "review": [],
+                        "average": 5
+                    },
+                    "11694": {
+                        "review": [],
+                        "average": 3.3333333333333335
+                    },
+                    "11911": {
+                        "review": [],
+                        "average": 5
+                    },
+                    "11689": {
+                        "review": [],
+                        "opinion": ".",
+                        "average": 5
+                    },
+                    "12110": {
+                        "review": [],
+                        "average": 4
+                    },
+                    "12153": {
+                        "review": [],
+                        "average": 3.6666666666666665
+                    },
+                    "12881": {
+                        "review": [],
+                        "average": 4
+                    },
+                    "12781": {
+                        "review": [],
+                        "opinion": "Great location.",
+                        "average": 3.6666666666666665
+                    },
+                    "12852": {
+                        "review": [],
+                        "average": 5
+                    },
+                    "12811": {
+                        "review": [],
+                        "opinion": "Excellent",
+                        "average": 5
+                    },
+                    "13535": {
+                        "review": [],
+                        "average": 3.6666666666666665
+                    },
+                    "13739": {
+                        "review": [],
+                        "average": 4.333333333333333
+                    },
+                    "13942": {
+                        "review": [],
+                        "average": 4.333333333333333
+                    },
+                    "14135": {
+                        "review": [],
+                        "average": 4
+                    },
+                    "14217": {
+                        "review": [],
+                        "opinion": "Ha cumplido mis expectativas. Bien.",
+                        "average": 4
+                    },
+                    "14750": {
+                        "review": [],
+                        "average": 3.6666666666666665
+                    },
+                    "17019": {
+                        "review": [],
+                        "average": 4.333333333333333
+                    },
+                    "18150": {
+                        "review": [],
+                        "average": 4.333333333333333
+                    },
+                    "18152": {
+                        "review": [],
+                        "average": 4
+                    },
+                    "18129": {
+                        "review": [],
+                        "opinion": "Ni sabían que salidas tiene el parking",
+                        "average": 2.3333333333333335
+                    },
+                    "18478": {
+                        "review": [],
+                        "average": 5
+                    },
+                    "18439": {
+                        "review": [],
+                        "average": 4.333333333333333
+                    },
+                    "18828": {
+                        "review": [],
+                        "average": 4
+                    },
+                    "19006": {
+                        "review": [],
+                        "average": 3.6666666666666665
+                    },
+                    "19913": {
+                        "review": [],
+                        "average": 3.6666666666666665
+                    },
+                    "19872": {
+                        "review": [],
+                        "opinion": "If you follow the instructions and take your ticket along with your reservation (on your phone or app), you’re good as gold and can enter and exit as much as you like during your rental period.",
+                        "average": 5
+                    },
+                    "20957": {
+                        "review": [],
+                        "average": 4
+                    }
+                },
+                "questions": {
+                    "4": {
+                        "score": 229,
+                        "number": 56,
+                        "average": 4.089285714285714
+                    },
+                    "5": {
+                        "score": 222,
+                        "number": 56,
+                        "average": 3.9642857142857144
+                    },
+                    "6": {
+                        "score": 233,
+                        "number": 55,
+                        "average": 4.236363636363636
+                    }
+                },
+                "totalScore": 4.089285714285714
+            },
+            "_links": {
+                "self": {
+                    "href": "https://Ariel.api.parclick.com/v1/parking/260"
+                }
+            },
+            "_embedded": {
+                "city": {
+                    "id": 37,
+                    "name": "Madrid",
+                    "slug": "madrid",
+                    "_links": {
+                        "self": {
+                            "href": "https://Ariel.api.parclick.com/v1/city/37"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id": 1013,
+            "covered": true,
+            "flexible_entry": true,
+            "guarded": true,
+            "latitude": 40.4156181,
+            "longitude": -3.7070229999999,
+            "is_cancellable": true,
+            "extra_info": [],
+            "address": "Plaza Mayor, Madrid, España",
+            "city": "Madrid",
+            "country": "España",
+            "province": "Madrid",
+            "zip": "28012",
+            "provider": {
+                "id": 272,
+                "name": "Proyecto CROSS HERMES"
+            },
+            "handicapped_access": false,
+            "security": false,
+            "open_24h": true,
+            "giving_keys": false,
+            "exclude_checking": false,
+            "name": "Plaza Mayor",
+            "passes": [],
+            "subscriptions": [],
+            "access": [
+                {
+                    "id": 1860,
+                    "type": "vehicle",
+                    "latitude": 40.4156181,
+                    "longitude": -3.7070229999999
+                }
+            ],
+            "slug": "plaza-mayor",
+            "multiparking": false,
+            "_links": {
+                "self": {
+                    "href": "https://Ariel.api.parclick.com/v1/parking/1013"
+                }
+            },
+            "_embedded": {
+                "city": {
+                    "id": 37,
+                    "name": "Madrid",
+                    "slug": "madrid",
+                    "_links": {
+                        "self": {
+                            "href": "https://Ariel.api.parclick.com/v1/city/37"
+                        }
+                    }
+                }
+            }
+        }
+    ],
+    "total": 2,
+    "params": {
+        "locale": "en_GB",
+        "latitude": "40.4167754",
+        "group": "search",
+        "longitude": "-3.7037901999999576",
+        "radius": "4",
+        "from": "2020-01-29 10:00",
+        "to": "2020-01-29 14:00",
+        "vehicleType": "1",
+        "page": "1",
+        "limit": "2"
+    }
+}
+</pre>
+</p>
+</details>
 
 ### _Response:_
 
-**200 Ok**
+**200 Ok group export**
 
-<details><summary style="color:#FF6600;">Show response 200 Ok</summary>
+<details><summary style="color:#FF6600;">Show response 200 Ok group export</summary>
 <p>
 <pre>
 {
     "page": "1",
     "limit": "2",
-    "pages": 776,
+    "pages": 765,
     "items": [
         {
             "id": 4,
             "covered": true,
             "description": "Car park located in the district of Sant Gervasi-Galvany, near to Avenida Diagonal and a 10-minute walk from Barcelona Clinical and Provincial Hospital.\r\n\r\n<p>IMPORTANT: Remember when you book to give us the number of the mobile phone which you'll be using while visiting Barcelona. </p>\r\n<p>TELEPHONIC access to car park. REMOTE customer service. </p>",
             "flexible_entry": true,
+            "guarded": true,
             "latitude": 41.395107706311,
+            "image_list": "//static.parclick.com/parking/2017/11/cca/e73/a1/ccae73a1-ae1d-563c-b275-14577efbdf1a.jpeg",
             "longitude": 2.1466153666872,
-            "medias": [
-                {
-                    "id": 9396,
-                    "url": "https://static.parclick.com/parking/2017/11/cca/e73/a1/ccae73a1-ae1d-563c-b275-14577efbdf1a.jpeg"
-                },
-                {
-                    "id": 9397,
-                    "url": "https://static.parclick.com/parking/2017/11/5ee/981/54/5ee98154-09fc-57ca-b3f0-d05ba085bba9.jpeg"
-                },
-                {
-                    "id": 9398,
-                    "url": "https://static.parclick.com/parking/2017/11/9ab/225/2e/9ab2252e-2977-52e3-8541-bb52d14a1eb3.jpeg"
-                },
-                {
-                    "id": 9399,
-                    "url": "https://static.parclick.com/parking/2017/11/77a/31f/88/77a31f88-89b8-5303-93d6-f18c48542057.jpeg"
-                }
-            ],
+            "image": {
+                "id": 591
+            },
+            "is_cancellable": true,
+            "extra_info": [],
             "address": "Carrer de Santaló, 12",
-            "city": "Barcelona",
             "country": "España",
             "province": "Barcelona",
             "zip": "8021",
-            "provider": {
-                "id": 2,
-                "name": "NYN"
-            },
             "handicapped_access": true,
             "security": true,
             "open_24h": true,
             "giving_keys": false,
             "exclude_checking": true,
+            "license_info": false,
+            "vehicle_info": false,
+            "flight": false,
+            "return_flight_location": false,
+            "train": false,
             "name": "NN Santaló",
             "access_phone": "00 34 647 07 97 31",
+            "external": [],
             "max_height": 180,
-            "schedule": [],
-            "access": [
+            "passes": [
                 {
-                    "id": 938,
-                    "type": "vehicle",
-                    "address": "Carrer de Santaló 12",
-                    "latitude": 41.395107706311,
-                    "longitude": 2.1466153666872
+                    "id": 520,
+                    "type": "pass",
+                    "internal_name": "MULTIPASS 1d (20.00€)",
+                    "duration": 24,
+                    "multiparking": false,
+                    "multipass": true,
+                    "frequency": "HOURLY",
+                    "_links": {
+                        "self": [
+                            {
+                                "href": "https://Ariel.api.parclick.com/v1/product/520"
+                            },
+                            {
+                                "href": "https://Ariel.api.parclick.com/v1/pass/520"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "id": 521,
+                    "type": "pass",
+                    "internal_name": "MULTIPASS 3d (40.00€)",
+                    "duration": 72,
+                    "multiparking": false,
+                    "multipass": true,
+                    "frequency": "HOURLY",
+                    "_links": {
+                        "self": [
+                            {
+                                "href": "https://Ariel.api.parclick.com/v1/product/521"
+                            },
+                            {
+                                "href": "https://Ariel.api.parclick.com/v1/pass/521"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "id": 44140,
+                    "type": "pass",
+                    "internal_name": "ONEPASS 10h (12.00€)",
+                    "duration": 10,
+                    "multiparking": false,
+                    "multipass": false,
+                    "frequency": "HOURLY",
+                    "_links": {
+                        "self": [
+                            {
+                                "href": "https://Ariel.api.parclick.com/v1/product/44140"
+                            },
+                            {
+                                "href": "https://Ariel.api.parclick.com/v1/pass/44140"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "id": 76460,
+                    "type": "pass",
+                    "internal_name": "MULTIPASS 90d (525.00€)",
+                    "duration": 2160,
+                    "multiparking": false,
+                    "multipass": true,
+                    "frequency": "HOURLY",
+                    "_links": {
+                        "self": [
+                            {
+                                "href": "https://Ariel.api.parclick.com/v1/product/76460"
+                            },
+                            {
+                                "href": "https://Ariel.api.parclick.com/v1/pass/76460"
+                            }
+                        ]
+                    }
                 }
             ],
+            "access": [
+                {
+                    "id": 938
+                }
+            ],
+            "slug": "nn_santalo",
             "voucher_needed": false,
+            "freemium": false,
             "multiparking": false,
+            "instructions": "",
             "cancellation_type": 2,
             "_links": {
                 "self": {
-                    "href": "https://pre.api.parclick.com/v1/parking/4"
+                    "href": "https://Ariel.api.parclick.com/v1/parking/4"
                 }
             },
             "_embedded": {
                 "city": {
                     "id": 6,
                     "name": "Barcelona",
-                    "country": {
-                        "id": 199,
-                        "iso": "ES",
-                        "nicename": "Spain",
-                        "_links": {
-                            "self": {
-                                "href": "https://pre.api.parclick.com/v1/country/199"
-                            }
-                        }
-                    },
-                    "vat_tax": 21,
+                    "slug": "barcelona",
+                    "latitude": 41.3851,
+                    "longitude": 2.1734,
                     "time_zone": "Europe/Madrid",
                     "_links": {
                         "self": {
-                            "href": "https://pre.api.parclick.com/v1/city/6"
+                            "href": "https://Ariel.api.parclick.com/v1/city/6"
                         }
                     }
-                },
-                "fieldsRequested": []
+                }
             }
         },
         {
@@ -696,114 +1189,114 @@ Authorization: Bearer {JWT_TOKEN}
             "covered": true,
             "description": "Car park close to the Hospital Clínic and the Teatre Villarroel. The metro stations Hospital Clínic (line 5) and Urgell (line 1) are both roughly a 10-minute walk away. Easy access to the Gran Vía de las Cortes Catalanas and Avenida Diagonal.",
             "flexible_entry": true,
-            "latitude": 41.386092962311,
-            "longitude": 2.1536075582364,
-            "medias": [
-                {
-                    "id": 9420,
-                    "url": "https://static.parclick.com/parking/2017/11/4da/76d/b3/4da76db3-f676-5850-843b-c1c1b02c36b6.jpeg"
-                },
-                {
-                    "id": 9421,
-                    "url": "https://static.parclick.com/parking/2017/11/8ad/b6c/ce/8adb6cce-f5de-54b3-b995-6900d2ab2db1.jpeg"
-                },
-                {
-                    "id": 9422,
-                    "url": "https://static.parclick.com/parking/2017/11/e86/ad9/60/e86ad960-f131-5ed4-8260-d123b8b88731.jpeg"
-                },
-                {
-                    "id": 9423,
-                    "url": "https://static.parclick.com/parking/2017/11/fa4/067/b8/fa4067b8-9ca3-5d87-81e0-d3d3a10133bc.jpeg"
-                }
-            ],
+            "guarded": true,
+            "latitude": 41.3860929623107,
+            "image_list": "//static.parclick.com/parking/2017/11/4da/76d/b3/4da76db3-f676-5850-843b-c1c1b02c36b6.jpeg",
+            "longitude": 2.1536075582364447,
+            "image": {
+                "id": 1309
+            },
+            "is_cancellable": true,
+            "extra_info": [],
             "address": "Comte d'Urgell, 154",
-            "city": "Barcelona",
             "country": "España",
             "province": "Barcelona",
             "zip": "8036",
-            "provider": {
-                "id": 2,
-                "name": "NYN"
-            },
             "handicapped_access": true,
             "security": true,
             "open_24h": true,
             "giving_keys": false,
             "exclude_checking": false,
+            "license_info": false,
+            "vehicle_info": false,
+            "flight": false,
+            "return_flight_location": false,
+            "train": false,
             "name": "NN Urgell 2",
+            "external": [],
             "max_height": 195,
-            "schedule": [
+            "passes": [
                 {
-                    "id": 9708,
-                    "type": {
-                        "id": 2,
-                        "name": "PARKING"
-                    },
-                    "week_day": {
-                        "key": "MONDAY",
-                        "order": 1
-                    },
-                    "intervals": [
-                        {
-                            "id": 13618,
-                            "hour_from": "1970-01-01T04:00:00+0000",
-                            "hour_to": "1970-01-01T21:00:00+0000"
-                        }
-                    ]
+                    "id": 512,
+                    "type": "pass",
+                    "internal_name": "MULTIPASS 1d (18.00€)",
+                    "duration": 24,
+                    "multiparking": false,
+                    "multipass": true,
+                    "frequency": "HOURLY",
+                    "_links": {
+                        "self": [
+                            {
+                                "href": "https://Ariel.api.parclick.com/v1/product/512"
+                            },
+                            {
+                                "href": "https://Ariel.api.parclick.com/v1/pass/512"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "id": 513,
+                    "type": "pass",
+                    "internal_name": "MULTIPASS 3d (40.00€)",
+                    "duration": 72,
+                    "multiparking": false,
+                    "multipass": true,
+                    "frequency": "HOURLY",
+                    "_links": {
+                        "self": [
+                            {
+                                "href": "https://Ariel.api.parclick.com/v1/product/513"
+                            },
+                            {
+                                "href": "https://Ariel.api.parclick.com/v1/pass/513"
+                            }
+                        ]
+                    }
                 }
             ],
             "access": [
                 {
-                    "id": 343,
-                    "type": "vehicle",
-                    "address": "Carrer del Comte d'Urgell 152",
-                    "latitude": 41.386092962311,
-                    "longitude": 2.1536075582364
+                    "id": 343
                 }
             ],
+            "slug": "nn_urgell_2",
             "voucher_needed": false,
+            "freemium": false,
             "multiparking": false,
+            "instructions": "",
             "cancellation_type": 2,
             "_links": {
                 "self": {
-                    "href": "https://pre.api.parclick.com/v1/parking/5"
+                    "href": "https://Ariel.api.parclick.com/v1/parking/5"
                 }
             },
             "_embedded": {
                 "city": {
                     "id": 6,
                     "name": "Barcelona",
-                    "country": {
-                        "id": 199,
-                        "iso": "ES",
-                        "nicename": "Spain",
-                        "_links": {
-                            "self": {
-                                "href": "https://pre.api.parclick.com/v1/country/199"
-                            }
-                        }
-                    },
-                    "vat_tax": 21,
+                    "slug": "barcelona",
+                    "latitude": 41.3851,
+                    "longitude": 2.1734,
                     "time_zone": "Europe/Madrid",
                     "_links": {
                         "self": {
-                            "href": "https://pre.api.parclick.com/v1/city/6"
+                            "href": "https://Ariel.api.parclick.com/v1/city/6"
                         }
                     }
-                },
-                "fieldsRequested": []
+                }
             }
         }
     ],
-    "total": 1552,
+    "total": 1529,
     "params": {
         "locale": "en_GB",
-        "group": "export-joinup",
         "latitude": "40.4167754",
+        "group": "export",
         "longitude": "-3.7037901999999576",
         "radius": "4",
-        "from": "2020-02-22 20:00",
-        "to": "2020-02-22 22:00",
+        "from": "2020-01-29 10:00",
+        "to": "2020-01-29 14:00",
         "vehicleType": "1",
         "page": "1",
         "limit": "2"
@@ -1654,6 +2147,7 @@ Authorization: Bearer {JWT_TOKEN}
 | lastName | string | true | user last name | null |
 | from | string Y-m-d H:i | true | booking start date | null |
 | to | string Y-m-d H:i | true | booking end date | null |
+| group | string | true | **detail** | null |
 | brand | string | false | vehicle brand | null |
 | model | string | false | vehicle model | null |
 | licence_plate | string | false | vehicle licence plate | null |
@@ -2160,6 +2654,7 @@ Authorization: Bearer {JWT_TOKEN}
 | voucher_id | integer | true | null | voucher id |
 | locale | string | false | es_ES | language in which the information will be returned |
 | notify | bool | false | false | send voucher by email |
+| group | string | true | false | **detail** |
 
 
 ### _Response:_
@@ -2242,22 +2737,22 @@ Authorization: Bearer {JWT_TOKEN}
         "user": {
             "user_first_name": "John",
             "user_last_name": "Doe",
-            "user_phone": "9879867876"
+            "user_phone": " "
         },
         "product": {
-            "product": "ONEPASS 7 hours",
-            "product_instructions": "During the purchasing process, select the date you plan to arrive. After making the online payment you will receive a voucher via email with your reservation code.\r\n\r\nOn the date of your reservation, enter the parking lot as usual, take a ticket at the entrance and park in any empty spot. Once you\u0027re out of the car, approach the control booth with the Parclick voucher and the ticket you took. The staff there will check your reservation using the reservation code, and will give you a card that will allow you to exit the car park. Follow this process every time you leave and reenter within the validity period of your parking pass.\r\n\r\nIf there are no personnel in the control booth, do not worry: Use the intercom located at the ATM or at the exit barrier to contact our Remote Service Centre, and follow the same process as described above.",
-            "product_category": "ONEPASS",
-            "product_warning": "Before exiting please get to the control cabin with your reservation locator to get an exit ticket from the clerk on duty",
-            "product_net_price": 15.29,
-            "product_vat_price": 3.21,
-            "product_vat_percent": "21%",
-            "product_gross_price": 18.5,
-            "product_total_time": 7
+            "product": "MULTIPASS 2 hours",
+            "product_instructions": "ARRIVAL: Take a ticket. Park in any free space.\r\nDEPARTURE:  Go to the office with your reservation and the ticket. If there is no-one there, ring the intercom. Use the ticket the staff gave you. \r\nIF YOUR BOOKING ALLOWS UNLIMITED ENTRANCE AND EXIT: Follow the same process, indicated before, to enter and exit.",
+            "product_category": "MULTIPASS",
+            "product_warning": "The reception is located at level: -2",
+            "product_net_price": 8,
+            "product_vat_price": 1.6,
+            "product_vat_percent": "20%",
+            "product_gross_price": 9.6,
+            "product_total_time": 2
         },
         "voucher": {
-            "voucher_code": "L8K2WYJ",
-            "voucher_id": 935489,
+            "voucher_code": "LJN9NJN",
+            "voucher_id": 1109915,
             "voucher_description": [
                 "ARRIVAL: Take a ticket. Park in any free space.\r",
                 "DEPARTURE:  Go to the office with your reservation and the ticket. If there is no-one there, ring the intercom. Use the ticket the staff gave you. \r",
@@ -2265,67 +2760,58 @@ Authorization: Bearer {JWT_TOKEN}
             ]
         },
         "booking": {
-            "booking_id": 1055164,
+            "booking_id": 1229946,
             "booking_state": "CANCELED",
             "booking_is_cancellable": true,
             "booking_cancellation_type": 2,
-            "booking_from": "2019-12-30 10:00:00",
-            "booking_to": "2019-12-30 12:00:00",
-            "total_net_price": 17.51,
-            "total_vat": 3.68,
-            "total": 21.19,
+            "booking_from": "2020-06-01 10:00:00",
+            "booking_to": "2020-06-01 12:00:00",
+            "total_net_price": 8,
+            "total_vat": 1.6,
+            "total": 9.6,
             "vehicle_type": "CAR",
-            "booking_created_at": "2019-12-12 15:11:38"
+            "booking_created_at": "2020-01-22 10:58:27"
         },
         "parking": {
-            "parking_id": 260,
-            "parking_name": "EMT Jacinto Benavente",
-            "parking_phone": "",
-            "parking_address": "Plaza Jacinto Benavente, S\/N",
-            "parking_zip": "28012",
-            "parking_city": "Madrid",
-            "parking_province": "Madrid",
-            "parking_country": "SPAIN",
-            "parking_maximum_height": "1.8 m.",
-            "parking_description": "\u003Cstrong\u003EThis car park is located in the area of CENTRAL MADRID.\u003C\/strong\u003E\u2028\r\nPlease note that \u003Cstrong\u003Eyou will only be able to enter Madrid Central WITHOUT A FINE if you are going to a car park\u003C\/strong\u003E (for vehicles with the label B or C). Don\u0027t take the risk of not having a space available when you arrive and end up with a fine because the car park was full... As of now, book your place in this car park to make sure you can park as soon as you arrive!\r\n\r\nIncredibly well-located car park right in the centre of Madrid, a 5-minute walk from the Puerta del Sol and Plaza Mayor, in the main tourist area which is full of shops, bars and theatres. The car park is ideal if you wish to leave your car here are walk to the Gran V\u00eda and the Royal Palace.",
+            "parking_id": 750,
+            "parking_name": "Méditerranée Gare de Lyon STANDARD",
+            "parking_phone": "+33 (0)1 43 07 48 58",
+            "parking_address": "26, rue de Chalon",
+            "parking_zip": "75012",
+            "parking_city": "Paris",
+            "parking_province": "Paris",
+            "parking_country": "FRANCE",
+            "parking_maximum_height": "1.9 m.",
+            "parking_description": "Car park located in Paris close to the Lyon station. The Méditerranée Gare de Lyon STANDARD car park is open and monitored 24 hours a day. From the car park, you can also get directly to the Lyon station platforms thanks to the elevator. Also, the Méditerranée Gare de Lyon STANDARD car park allows easy access to lines A and D of the RER, as well as metro lines 1 and 14, which cross Paris from east to west through many connections. The Méditerranée Gare de Lyon STANDARD car park is very practical for people who have planned on travelling several days.",
             "parking_instructions": {
                 "begin": "",
                 "return": "",
                 "info": ""
             },
-            "parking_latitude": 40.414339688923,
-            "parking_longitude": -3.7034317950878,
-            "parking_category": 1,
-            "spot_name": 285,
+            "parking_latitude": 48.845094038492,
+            "parking_longitude": 2.3754463213324,
+            "parking_category": 3,
+            "spot_name": 1608,
             "is_box": false
         },
-        "fee": [
-            {
-                "id": 757530,
-                "net_price": 2.22,
-                "vat": 0.47,
-                "total": 2.69,
-                "discriminator": "administration_fee"
-            }
-        ],
-        "third_party_discriminator": "TEST_IT",
+        "fee": [],
+        "third_party_discriminator": "JOINUP",
         "currency": "EUR",
-        "has_voucher_notification": true,
-        "has_receipt_notification": false
+        "has_voucher_notification": false,
+        "has_receipt_notification": false,
+        "url_faqs": "https://parclick.com/faqs",
+        "email_contact": "parclick-info@parclick.com"
     },
     "email": {
-        "from": "john.doe@parclick.com",
-        "from_name": "Parclick by IT",
-        "to": "r.castillo@madridmovilidad.es",
-        "to_name": "EMT Jacinto Benavente",
-        "subject": "Parclick by IT Book L8K2WYJ | Car park EMT Jacinto Benavente, ONEPASS"
+        "from": "donotreply@joinup.es",
+        "from_name": "Parclick by JOINUP",
+        "to_name": "john.doe@parclick.com",
+        "subject": "Parclick by JOINUP Book LJN9NJN | Car park Méditerranée Gare de Lyon STANDARD, MULTIPASS"
     },
     "locale": "en_GB",
     "application_name": "Parclick",
     "host": "parclick.com",
-    "logo_image": "https:\/\/s3-eu-west-1.amazonaws.com\/static.parclick.com\/assets\/img\/Logo-Parclick.png",
-    "url_faqs": "https:\/\/parclick.com\/faqs",
-    "email_contact": "parclick-info@parclick.com"
+    "logo_image": "https://s3-eu-west-1.amazonaws.com/static.parclick.com/assets/img/Logo-Parclick.png"
 }
 </pre>
 </p>
