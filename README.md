@@ -227,7 +227,7 @@ Authorization: Bearer {JWT_TOKEN}
 | radius | integer | false | search radius | null |
 | vehicleType | integer | false | type of vehicle you wish to park [1 car, 2 van, 3 caravan, 4 bus, 5 truck, 6 motorbike, 7 small truck]| null |
 
-### _Response__
+### _Response:_
 
 **200 Ok group search-joinup**
 
@@ -398,7 +398,7 @@ Authorization: Bearer {JWT_TOKEN}
 </details>
 
 
-### _Response__
+### _Response:_
 
 **200 Ok group export-joinup**
 
