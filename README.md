@@ -16,7 +16,7 @@
 5. [Get parking](#get_parking)
 6. [Bestpass](#bestpass)
 7. [Vehicle type](#vehicle_type)
-8. [reate reservationC](#create_reservation)
+8. [Create reservation](#create_reservation)
 9. [Cancel reservation](#cancel_reservation)
 10. [Modify reservation](#modify_reservation)
 11. [List reservations](#list_reservation)
