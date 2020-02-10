@@ -16,7 +16,7 @@
 5. [Get parking](#get_parking)
 6. [Bestpass](#bestpass)
 7. [Vehicle type](#vehicle_type)
-8. [Create reservation](#create_reservation)
+8. [reate reservationC](#create_reservation)
 9. [Cancel reservation](#cancel_reservation)
 10. [Modify reservation](#modify_reservation)
 11. [List reservations](#list_reservation)
@@ -1922,6 +1922,8 @@ Authorization: Bearer {JWT_TOKEN}
 | from | string Y-m-d H:i | true | booking start date | null |
 | to | string Y-m-d H:i | true | booking end date | null |
 | group | string | true | **detail** | null |
+| phone | string | true | user phone | null |
+| prefix | string | true | contry prefix i.e. +34 | null |
 | brand | string | false | vehicle brand | null |
 | model | string | false | vehicle model | null |
 | licence_plate | string | false | vehicle licence plate | null |
