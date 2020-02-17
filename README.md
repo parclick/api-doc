@@ -1923,7 +1923,7 @@ Authorization: Bearer {JWT_TOKEN}
 | to | string Y-m-d H:i | true | booking end date | null |
 | group | string | true | **detail** | null |
 | phone | string | true | user phone | null |
-| prefix | string | true | country prefix i.e. +34 | null |
+| prefix | string | true | country prefix i.e. 34 | null |
 | brand | string | false | vehicle brand | null |
 | model | string | false | vehicle model | null |
 | licence_plate | string | false | vehicle licence plate | null |
