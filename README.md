@@ -196,6 +196,139 @@ Depending on the group used, it is necessary to include certain parameters.<br>
 Group export: locale, page, limit - Has pagination<br>
 Group search: locale, latitude, longitude, radius, from, to, vehicleType, limit (with a maximum of 200 results) - Does not have pagination<br>
 To import all car parks for caching, the group must be set to **export** without parameters except the page and limit for pagination.<br>
+<strong>Parking schedule:</strong> There is a schedule object in the response that defines the car park timetable for the car park the staff or both. This object can arrive empty and is only for information purposes, as the bestpass endpoint checks for each booking between other things that the car park is open.
+<p>
+<pre>
+"schedule": [
+                {
+                    "id": 1006,
+                    "type": {
+                        "id": 2,
+                        "name": "PARKING"
+                    },
+                    "week_day": {
+                        "key": "THURSDAY",
+                        "order": 4
+                    },
+                    "intervals": [
+                        {
+                            "id": 1033,
+                            "hour_from": "1970-01-01T07:00:00+0000",
+                            "hour_to": "1970-01-01T23:59:00+0000"
+                        }
+                    ]
+                },
+                {
+                    "id": 1007,
+                    "type": {
+                        "id": 2,
+                        "name": "PARKING"
+                    },
+                    "week_day": {
+                        "key": "FRIDAY",
+                        "order": 5
+                    },
+                    "intervals": [
+                        {
+                            "id": 1034,
+                            "hour_from": "1970-01-01T07:00:00+0000",
+                            "hour_to": "1970-01-01T23:59:00+0000"
+                        }
+                    ]
+                },
+                {
+                    "id": 1008,
+                    "type": {
+                        "id": 2,
+                        "name": "PARKING"
+                    },
+                    "week_day": {
+                        "key": "SATURDAY",
+                        "order": 6
+                    },
+                    "intervals": [
+                        {
+                            "id": 3685,
+                            "hour_from": "1970-01-01T07:00:00+0000",
+                            "hour_to": "1970-01-01T23:59:00+0000"
+                        }
+                    ]
+                },
+                {
+                    "id": 1009,
+                    "type": {
+                        "id": 2,
+                        "name": "PARKING"
+                    },
+                    "week_day": {
+                        "key": "SUNDAY",
+                        "order": 7
+                    },
+                    "intervals": [
+                        {
+                            "id": 1036,
+                            "hour_from": "1970-01-01T07:00:00+0000",
+                            "hour_to": "1970-01-01T23:59:00+0000"
+                        }
+                    ]
+                },
+                {
+                    "id": 1010,
+                    "type": {
+                        "id": 2,
+                        "name": "PARKING"
+                    },
+                    "week_day": {
+                        "key": "MONDAY",
+                        "order": 1
+                    },
+                    "intervals": [
+                        {
+                            "id": 1037,
+                            "hour_from": "1970-01-01T07:00:00+0000",
+                            "hour_to": "1970-01-01T23:59:00+0000"
+                        }
+                    ]
+                },
+                {
+                    "id": 1011,
+                    "type": {
+                        "id": 2,
+                        "name": "PARKING"
+                    },
+                    "week_day": {
+                        "key": "TUESDAY",
+                        "order": 2
+                    },
+                    "intervals": [
+                        {
+                            "id": 1038,
+                            "hour_from": "1970-01-01T07:00:00+0000",
+                            "hour_to": "1970-01-01T23:59:00+0000"
+                        }
+                    ]
+                },
+                {
+                    "id": 1012,
+                    "type": {
+                        "id": 2,
+                        "name": "PARKING"
+                    },
+                    "week_day": {
+                        "key": "WEDNESDAY",
+                        "order": 3
+                    },
+                    "intervals": [
+                        {
+                            "id": 1039,
+                            "hour_from": "1970-01-01T07:00:00+0000",
+                            "hour_to": "1970-01-01T23:59:00+0000"
+                        }
+                    ]
+                }
+            ]
+</pre>
+</p>
 The car park features are the following fields with their meaning:
 
 | Field | Description | Type |
