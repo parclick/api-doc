@@ -2645,82 +2645,89 @@ Authorization: Bearer {JWT_TOKEN}
 {
     "data": {
         "user": {
-            "user_first_name": "John",
-            "user_last_name": "Doe",
-            "user_phone": " "
-        },
-        "product": {
-            "product": "MULTIPASS 2 hours",
-            "product_instructions": "ARRIVAL: Take a ticket. Park in any free space.\r\nDEPARTURE:  Go to the office with your reservation and the ticket. If there is no-one there, ring the intercom. Use the ticket the staff gave you. \r\nIF YOUR BOOKING ALLOWS UNLIMITED ENTRANCE AND EXIT: Follow the same process, indicated before, to enter and exit.",
-            "product_category": "MULTIPASS",
-            "product_warning": "The reception is located at level: -2",
-            "product_net_price": 8,
-            "product_vat_price": 1.6,
-            "product_vat_percent": "20%",
-            "product_gross_price": 9.6,
-            "product_total_time": 2
-        },
-        "voucher": {
-            "voucher_code": "LJN9NJN",
-            "voucher_id": 1109915,
-            "voucher_description": [
-                "ARRIVAL: Take a ticket. Park in any free space.\r",
-                "DEPARTURE:  Go to the office with your reservation and the ticket. If there is no-one there, ring the intercom. Use the ticket the staff gave you. \r",
-                "IF YOUR BOOKING ALLOWS UNLIMITED ENTRANCE AND EXIT: Follow the same process, indicated before, to enter and exit."
-            ]
+            "user_first_name": "Perpe",
+            "user_last_name": "Perez",
+            "user_phone": "34 666339900"
         },
         "booking": {
-            "booking_id": 1229946,
-            "booking_state": "CANCELED",
+            "booking_id": 1280840,
+            "booking_state": "CONFIRMED",
             "booking_is_cancellable": true,
             "booking_cancellation_type": 2,
             "booking_from": "2020-06-01 10:00:00",
-            "booking_to": "2020-06-01 12:00:00",
-            "total_net_price": 8,
-            "total_vat": 1.6,
-            "total": 9.6,
+            "booking_to": "2020-06-01 11:00:00",
+            "total_net_price": 1.69,
+            "total_vat": 0.35,
+            "total": 2.04,
             "vehicle_type": "CAR",
-            "booking_created_at": "2020-01-22 10:58:27"
+            "booking_created_at": "2020-06-01 07:57:54",
+            "extra_fields": []
         },
         "parking": {
-            "parking_id": 750,
-            "parking_name": "Méditerranée Gare de Lyon STANDARD",
-            "parking_phone": "+33 (0)1 43 07 48 58",
-            "parking_address": "26, rue de Chalon",
-            "parking_zip": "75012",
-            "parking_city": "Paris",
-            "parking_province": "Paris",
-            "parking_country": "FRANCE",
-            "parking_maximum_height": "1.9 m.",
-            "parking_description": "Car park located in Paris close to the Lyon station. The Méditerranée Gare de Lyon STANDARD car park is open and monitored 24 hours a day. From the car park, you can also get directly to the Lyon station platforms thanks to the elevator. Also, the Méditerranée Gare de Lyon STANDARD car park allows easy access to lines A and D of the RER, as well as metro lines 1 and 14, which cross Paris from east to west through many connections. The Méditerranée Gare de Lyon STANDARD car park is very practical for people who have planned on travelling several days.",
-            "parking_instructions": {
-                "begin": "",
-                "return": "",
-                "info": ""
+            "parking_id": 2622,
+            "parking_name": "Hospital Quirón San José",
+            "parking_phone": "+34 91 415 85 69",
+            "parking_address": "Calle Mataelpino, 5",
+            "parking_zip": "28002",
+            "parking_city": "Madrid",
+            "parking_province": "Madrid",
+            "parking_country": "SPAIN",
+            "parking_maximum_height": "2.1 m.",
+            "parking_description": "Si necesitas aparcar en el Hospital Quirón San José de Madrid, sin duda este parking en Madrid será tu mejor opción. Reservar tu plaza en el parking Hospital Quirón San José te facilitará llegar a tiempo a esa cita a primera hora de la mañana sin tener que madrugar demasiado. Sí, este es el santo que hará ese milagro, y el de ofrecerte un abono mensual a un buen precio también. Si eres un trabajador del hospital o de alguna empresa cercana este abono será tu mayor tesoro.\r\n\r\nAdemás, si necesitas ir a cualquier zona de Madrid en transporte público no hay problema. En este parking vigilado podrás aparcar a tan solo 3 min a pie del intercambiador de Avenida de América, que conecta múltiples líneas de autobús y metro.\r\n\r\nEste parking al lado del Hotel Abba y el Hotel Puerta de América es un aparcamiento 24h, por lo que podrás moverte por la ciudad sin necesidad de pensar en la hora. Aunque cuidado, los hoteles pueden no tener el mismo horario, no queremos que tengas que dormir en el parking Hospital Quirón San José (más que nada porque no tienes desayuno incluido, lo mejor de un hotel sin duda).\r\n\r\nAsí que, ya sabes, ¡reserva en este parking low-cost en el barrio de Prosperidad! No será una buena opción para dormir, pero para dejar tu vehículo a buen recaudo no está nada mal ;)",
+            "parking_instructions": [],
+            "parking_latitude": 40.439955887755,
+            "parking_longitude": -3.6745087236644,
+            "parking_category": 1,
+            "parking_shuttle_schedule": [],
+            "is_box": false,
+            "slug": "/estacionamento-madrid/hospital-quiron-san-jose",
+            "extra_info": {
+                "currency": "euro",
+                "code": "EUR",
+                "minor_unit": 2,
+                "symbol": "€"
             },
-            "parking_latitude": 48.845094038492,
-            "parking_longitude": 2.3754463213324,
-            "parking_category": 3,
-            "spot_name": 1608,
-            "is_box": false
+            "country_codeISO3166-1": "ES"
+        },
+        "product": {
+            "product": "MULTIPASS",
+            "product_instructions": "PARA ABRIR A BARREIRA: guarde o ticket. Estacione em qualquer lugar livre. Dirija-se ao balcão do parque com a sua reserva Parclick e o ticket.\r\nPARA SAIR: Dirija-se ao balcão do parque com a sua reserva Parclick.\r\n\r\nSE O SEU PASSE PERMITE ENTRADAS E SAIDAS ILIMITADAS: Siga as mesmas instruções indicadas anteriormente para entrar e sair.",
+            "product_category": "MULTIPASS",
+            "product_warning": "",
+            "product_net_price": 1.69,
+            "product_vat_price": 0.35,
+            "product_vat_percent": "21%",
+            "product_gross_price": 2.04,
+            "product_total_time": 1
+        },
+        "voucher": {
+            "voucher_code": "LG513XN",
+            "voucher_id": 1160780,
+            "voucher_description": [
+                "PARA ABRIR A BARREIRA: guarde o ticket. Estacione em qualquer lugar livre. Dirija-se ao balcão do parque com a sua reserva Parclick e o ticket.\r",
+                "PARA SAIR: Dirija-se ao balcão do parque com a sua reserva Parclick.\r",
+                "SE O SEU PASSE PERMITE ENTRADAS E SAIDAS ILIMITADAS: Siga as mesmas instruções indicadas anteriormente para entrar e sair."
+            ]
         },
         "fee": [],
         "third_party_discriminator": "JOINUP",
         "currency": "EUR",
         "has_voucher_notification": false,
         "has_receipt_notification": false,
-        "url_faqs": "https://parclick.com/faqs",
+        "url_faqs": "https://supportparclick.zendesk.com/hc/es",
         "email_contact": "parclick-info@parclick.com"
     },
     "email": {
-        "from": "donotreply@joinup.es",
-        "from_name": "Parclick by JOINUP",
-        "to_name": "john.doe@parclick.com",
-        "subject": "Parclick by JOINUP Book LJN9NJN | Car park Méditerranée Gare de Lyon STANDARD, MULTIPASS"
+        "from": "noreply@parclick.com",
+        "from_name": "Parclick",
+        "to": "parking@parclick.com",
+        "to_name": "PARCLICK",
+        "cco": "archive@parclick.com",
+        "subject": "[Joinup-Parclick] Reserva LG513XN | Parque de estacionamento Hospital Quirón San José, MULTIPASS"
     },
-    "locale": "en_GB",
+    "locale": "pt_PT",
     "application_name": "Parclick",
-    "host": "parclick.com",
+    "host": "parclick.pt",
     "logo_image": "https://s3-eu-west-1.amazonaws.com/static.parclick.com/assets/img/Logo-Parclick.png"
 }
 </pre>
