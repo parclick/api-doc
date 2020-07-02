@@ -2638,6 +2638,12 @@ Authorization: Bearer {JWT_TOKEN}
 | to_name | string | email to name |
 | cco | string | email carbon copy |
 | subject | string | email subject | 
+| currency | string | currency name ISO 4217 | 
+| code | string | email currency code ISO 4217 | 
+| minor_unit | int |  relationship between a major currency unit and its corresponding minor currency unit ISO 4217 | 
+| symbol | string | currency symbol | 
+| country_codeISO3166-1 | string | country code, two digits ISO 3166-1 |
+
 
 <details><summary style="color:#FF6600;">Show response 200 Ok</summary>
 <p>
