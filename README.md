@@ -1795,29 +1795,30 @@ Authorization: Bearer {JWT_TOKEN}
 <pre>
 [
     {
-        "id": 26507,
-        "category": "MULTIPASS",
-        "name": "MULTIPASS 2 hours",
+        "id": 49166,
+        "category": "ONEPASS",
+        "name": "ONEPASS 4 hours",
         "parking": {
-            "id": 750,
-            "covered": false,
-            "flexible_entry": false,
+            "id": 852,
+            "covered": true,
+            "flexible_entry": true,
             "guarded": true,
             "is_cancellable": true,
-            "address": "26, rue de Chalon",
-            "city": "Paris",
-            "name": "Méditerranée Gare de Lyon STANDARD",
+            "countryCodeISO3166-1": "ES",
+            "address": "Calle Relatores, 11",
+            "city": "Madrid",
+            "name": "Garaje Centro",
             "_links": {
                 "self": {
-                    "href": "https://pre.api.parclick.com/v1/parking/750"
+                    "href": "https://pre.api.parclick.com/v1/parking/852"
                 }
             },
             "_embedded": {
                 "city": {
-                    "id": 112,
+                    "id": 37,
                     "_links": {
                         "self": {
-                            "href": "https://pre.api.parclick.com/v1/city/112"
+                            "href": "https://pre.api.parclick.com/v1/city/37"
                         }
                     }
                 }
@@ -1827,26 +1828,27 @@ Authorization: Bearer {JWT_TOKEN}
             "id": 1,
             "type": "CAR"
         },
-        "warning_message": "The reception is located at level: -2",
-        "administration_fee": 0,
-        "paypal_fee": 1.2,
-        "price": 9.6,
+        "warning_message": "To avoid fines, we recommend accessing the car park from the Atocha / Conde Romanones streets, also Calle Segovia or Toledo / Colegiata.<br/><br/><br/><br/>At this car park, you must leave your car keys with the staff.",
+        "administration_fee": 1.79,
+        "paypal_fee": 1.21,
+        "price": 12.3,
         "type": "pass",
-        "internal_name": "MULTIPASS 2h (9.60€)",
-        "token": "0605a36c80fb9aabb51be8861a74ba8fbe32e7026f005467ea26f47aba3597eb",
-        "duration": 2,
+        "internal_name": "ONEPASS 4h (12.30€)",
+        "token": "2f40e7630c5db41ffc8255bdf236bfdd4c0e2ef1bfb1dfed304c3c1d7c12a95b",
+        "extra_info": {
+            "currency": "euro",
+            "code": "EUR",
+            "minor_unit": 2,
+            "symbol": "€"
+        },
+        "duration": 4,
         "multiparking": false,
-        "multipass": true,
+        "multipass": false,
         "frequency": "HOURLY",
         "_links": {
-            "self": [
-                {
-                    "href": "https://pre.api.parclick.com/v1/product/26507"
-                },
-                {
-                    "href": "https://pre.api.parclick.com/v1/pass/26507"
-                }
-            ]
+            "self": {
+                "href": "https://pre.api.parclick.com/v1/pass/49166"
+            }
         }
     }
 ]
