@@ -21,6 +21,7 @@
 10. [Modify reservation](#modify_reservation)
 11. [List reservations](#list_reservation)
 12. [Get voucher details](#voucher_details)
+13. [Download voucher](#download_voucher)
 13. [Worflows](#workflows)
     * [Workflow to create a booking reservation](#workflow_reservation)
     * [Workflow to cancel a booking](#workflow_cancel)
@@ -2737,6 +2738,65 @@ Authorization: Bearer {JWT_TOKEN}
     "application_name": "Parclick",
     "host": "parclick.pt",
     "logo_image": "https://s3-eu-west-1.amazonaws.com/static.parclick.com/assets/img/Logo-Parclick.png"
+}
+</pre>
+</p>
+</details>
+
+<br>
+
+**401 Unauthorized**
+
+| Parameters | Type | Description |
+| --------------- |:---------------:| -----------------------------|
+| code | integer | http response code value |
+| message | string | error description |
+
+<details><summary style="color:#FF6600;">Show response 401 Unauthorized</summary>
+<p>
+<pre>
+{
+ "code": 401,
+ "message": "Bad credentials"
+}
+</pre>
+</p>
+</details>
+
+<br>
+
+## <a name="download_voucher"></a><span style="color:#FF6600;">Download voucher</span>
+
+### <span style="color:#0f6ab4;">`GET`</span> `/v1/booking/{booking_id}/download`
+
+This endpoint returns a link to download a voucher in PDF format. The **booking_id** is obtained in the _new reservation_ endpoint response.
+
+
+### _Header:_
+Authorization: Bearer {JWT_TOKEN}
+
+### _Request:_
+
+| Parameters | Type | Required | Default | Description |
+| --------------- |:--------------------| ---------| ---------| -------------------------------------------------- |
+| booking_id | int | true | none | the booking reservation ID |
+| locale | string | true | en_GB | language in which the information will be returned |
+
+
+### _Response:_
+
+**200 Ok**
+
+| Parameters | Type | Description |
+| ------------------------- | ---------------- | -------------------------------------------- |
+| file | string | This endpoint returns a link to download a voucher in PDF format. The link is valid for 30 days. After this date this endpoint must be called to regenerate the PDF document again.|
+
+
+<details><summary style="color:#FF6600;">Show response 200 Ok</summary>
+<p>
+<pre>
+{
+    "file": "https://s3.eu-west-1.amazonaws.com/documents.parclick.com/pre/2020/12/booking/VRKWM9M/es_ES/Parclick-receipt-VRKWM9M.pdf?response-content-disposition=attachment%3B%20filename%3D%22Parclick-receipt-VRKWM9M.pdf%22&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIASQIX4YYHWIBHDHH3%2F20201223%2Feu-west-1%2Fs3%2Faws4_request&X-Amz-Date=20201223T171442Z&X-Amz-SignedHeaders=host&X-Amz-Expires=518400&X-Amz-Signature=850f8bdd3fba283993277173eb9988d8068cb3ffaabff5782e37428f04810905"
 }
 </pre>
 </p>
