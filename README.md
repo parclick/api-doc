@@ -742,21 +742,54 @@ Authorization: Bearer {JWT_TOKEN}
     "items": [
         {
             "id": 260,
+            "reviews_summary": {
+                "totalScore": 4.069444444444445,
+                "totalReviews": 72
+            },
+            "inMadridCentral": true,
             "covered": true,
             "flexible_entry": false,
             "guarded": true,
             "latitude": 40.414339688923,
-            "image_list": "//static.parclick.com/parking/2017/07/d85/780/c4/d85780c4-bfb4-500f-ab89-1f47338e72ef.jpeg",
+            "image_list": "\/\/static.parclick.com\/parking\/2020\/01\/0c7\/58b\/28\/0c758b28-d18c-5e39-8a1c-7257a6884efe.jpeg",
             "longitude": -3.7034317950878,
-            "image": {
-                "id": 543,
-                "extension": "jpg"
-            },
             "is_cancellable": true,
-            "extra_info": [],
-            "address": "Plaza Jacinto Benavente, S/N",
+            "extra_info": {
+                "currency": "euro",
+                "code": "EUR",
+                "minor_unit": 2,
+                "symbol": "\u20ac"
+            },
+            "parkingCategoryName": "City Center ZTL",
+            "passes": [
+                {
+                    "id": 45439,
+                    "name": "ONEPASS 7 heures",
+                    "vehicle_type": {
+                        "id": 1,
+                        "type": "CAR",
+                        "max_height": 190,
+                        "max_length": 500
+                    },
+                    "warning_message": "",
+                    "price": 18.5,
+                    "price_with_administration_fee": 21.19,
+                    "type": "pass",
+                    "internal_name": "ONEPASS 7h (18.50\u20ac)",
+                    "duration": 7,
+                    "multiparking": false,
+                    "multipass": false,
+                    "frequency": "HOURLY",
+                    "_links": {
+                        "self": {
+                            "href": "https:\/\/loc.api.parclick.com\/v1\/pass\/45439"
+                        }
+                    }
+                }
+            ],
+            "address": "Plaza Jacinto Benavente, S\/N",
             "city": "Madrid",
-            "country": "España",
+            "country": "Espa\u00f1a",
             "province": "Madrid",
             "zip": "28012",
             "provider": {
@@ -766,90 +799,38 @@ Authorization: Bearer {JWT_TOKEN}
             "handicapped_access": true,
             "security": true,
             "open_24h": true,
+            "washing": false,
             "giving_keys": false,
-            "exclude_checking": false,
             "name": "EMT Jacinto Benavente",
             "max_height": 180,
-            "passes": [
-                {
-                    "id": 45439,
-                    "name": "ONEPASS 7 hours",
-                    "vehicle_type": {
-                        "id": 1,
-                        "type": "CAR",
-                        "max_height": 190,
-                        "max_length": 500
-                    },
-                    "warning_message": "Before exiting please get to the control cabin with your reservation locator to get an exit ticket from the clerk on duty",
-                    "price": 18.5,
-                    "type": "pass",
-                    "internal_name": "ONEPASS 7h (18.50€)",
-                    "duration": 7,
-                    "multiparking": false,
-                    "multipass": false,
-                    "frequency": "HOURLY",
-                    "_links": {
-                        "self": [
-                            {
-                                "href": "https://Ariel.api.parclick.com/v1/product/45439"
-                            },
-                            {
-                                "href": "https://Ariel.api.parclick.com/v1/pass/45439"
-                            }
-                        ]
-                    }
-                }
-            ],
+            "vat_tax": 21,
             "subscriptions": [],
             "access": [
                 {
                     "id": 65,
                     "type": "pedestrian",
-                    "latitude": 40.414435847261,
-                    "longitude": -3.7036133642791
+                    "latitude": 40.41431740147913,
+                    "longitude": -3.7031734820006634
                 },
                 {
                     "id": 768,
                     "type": "vehicle",
                     "latitude": 40.414339688923,
                     "longitude": -3.7034317950878
+                },
+                {
+                    "id": 3378,
+                    "type": "pedestrian",
+                    "latitude": 40.4145215942,
+                    "longitude": -3.7033531556872
                 }
             ],
             "slug": "mm_jacinto_benavente",
             "multiparking": false,
-            "reviews_summary": {
-                "reviews": {
-                    "162": {
-                        "review": [],
-                        "average": 4.333333333333333
-                    },
-                    "1497": {
-                        "review": [],
-                        "average": 2.6666666666666665
-                    }
-                },
-                "questions": {
-                    "4": {
-                        "score": 229,
-                        "number": 56,
-                        "average": 4.089285714285714
-                    },
-                    "5": {
-                        "score": 222,
-                        "number": 56,
-                        "average": 3.9642857142857144
-                    },
-                    "6": {
-                        "score": 233,
-                        "number": 55,
-                        "average": 4.236363636363636
-                    }
-                },
-                "totalScore": 4.089285714285714
-            },
+            "passes_by_websocket": false,
             "_links": {
                 "self": {
-                    "href": "https://Ariel.api.parclick.com/v1/parking/260"
+                    "href": "https:\/\/loc.api.parclick.com\/v1\/parking\/260"
                 }
             },
             "_embedded": {
@@ -859,51 +840,91 @@ Authorization: Bearer {JWT_TOKEN}
                     "slug": "madrid",
                     "_links": {
                         "self": {
-                            "href": "https://Ariel.api.parclick.com/v1/city/37"
+                            "href": "https:\/\/loc.api.parclick.com\/v1\/city\/37"
                         }
                     }
                 }
             }
         },
         {
-            "id": 1013,
+            "id": 1952,
+            "reviews_summary": {
+                "totalScore": 3.371794871794872,
+                "totalReviews": 39
+            },
+            "inMadridCentral": true,
             "covered": true,
             "flexible_entry": true,
             "guarded": true,
-            "latitude": 40.4156181,
-            "longitude": -3.7070229999999,
+            "latitude": 40.418888333632,
+            "image_list": "\/\/static.parclick.com\/parking\/2020\/01\/aa4\/4d8\/60\/aa44d860-837b-5d5c-a23e-a9d78c5d3fc8.jpeg",
+            "longitude": -3.7010293058413,
             "is_cancellable": true,
-            "extra_info": [],
-            "address": "Plaza Mayor, Madrid, España",
+            "extra_info": {
+                "currency": "euro",
+                "code": "EUR",
+                "minor_unit": 2,
+                "symbol": "\u20ac"
+            },
+            "parkingCategoryName": "City Center ZTL",
+            "passes": [
+                {
+                    "id": 51580,
+                    "name": "ONEPASS 2 heures",
+                    "vehicle_type": {
+                        "id": 1,
+                        "type": "CAR",
+                        "max_height": 190,
+                        "max_length": 500
+                    },
+                    "warning_message": "COMMENT ARRIVER : depuis Cibeles, remontez la rue Alcal\u00e1, tournez \u00e0 droite sur la rue Virgen de los Peligros, puis prenez la premi\u00e8re rue \u00e0 gauche (rue Aduana) jusqu\u0027\u00e0 la rue Montera. Tournez \u00e0 droite sur la rue Montera (elle est pi\u00e9tonne mais vous pouvez y circuler), puis tournez de nouveau \u00e0 droite sur la rue Jardines, o\u00f9 se trouve le parking.\r\n\r\nSi vous utilisez le GPS, nous vous conseillons de le mettre en mode \u0022v\u00e9lo\u0022 pour obtenir les indications pr\u00e9cises.\r\n\r\nVeuillez noter que vous devrez laisser les cl\u00e9s de votre v\u00e9hicule dans le parking.",
+                    "price": 5.8,
+                    "price_with_administration_fee": 5.8,
+                    "type": "pass",
+                    "internal_name": "ONEPASS 2h (5.80\u20ac)",
+                    "duration": 2,
+                    "multiparking": false,
+                    "multipass": false,
+                    "frequency": "HOURLY",
+                    "_links": {
+                        "self": {
+                            "href": "https:\/\/loc.api.parclick.com\/v1\/pass\/51580"
+                        }
+                    }
+                }
+            ],
+            "address": "Calle Jardines, 16",
             "city": "Madrid",
-            "country": "España",
+            "country": "Espa\u00f1a",
             "province": "Madrid",
-            "zip": "28012",
+            "zip": "28013",
             "provider": {
-                "id": 272,
-                "name": "Proyecto CROSS HERMES"
+                "id": 422,
+                "name": "MOVEL CASTRO"
             },
             "handicapped_access": false,
-            "security": false,
+            "security": true,
             "open_24h": true,
-            "giving_keys": false,
-            "exclude_checking": false,
-            "name": "Plaza Mayor",
-            "passes": [],
+            "washing": true,
+            "giving_keys": true,
+            "name": "Jardines 16 - Centro Madrid",
+            "max_height": 295,
+            "vat_tax": 21,
             "subscriptions": [],
             "access": [
                 {
-                    "id": 1860,
+                    "id": 2444,
                     "type": "vehicle",
-                    "latitude": 40.4156181,
-                    "longitude": -3.7070229999999
+                    "latitude": 40.418888333632,
+                    "longitude": -3.7010293058413
                 }
             ],
-            "slug": "plaza-mayor",
+            "slug": "jardines-16-centro-madrid",
             "multiparking": false,
+            "passes_by_websocket": false,
             "_links": {
                 "self": {
-                    "href": "https://Ariel.api.parclick.com/v1/parking/1013"
+                    "href": "https:\/\/loc.api.parclick.com\/v1\/parking\/1952"
                 }
             },
             "_embedded": {
@@ -913,7 +934,7 @@ Authorization: Bearer {JWT_TOKEN}
                     "slug": "madrid",
                     "_links": {
                         "self": {
-                            "href": "https://Ariel.api.parclick.com/v1/city/37"
+                            "href": "https:\/\/loc.api.parclick.com\/v1\/city\/37"
                         }
                     }
                 }
@@ -922,16 +943,17 @@ Authorization: Bearer {JWT_TOKEN}
     ],
     "total": 2,
     "params": {
-        "locale": "en_GB",
-        "latitude": "40.4167754",
+        "locale": "fr_FR",
+        "latitude": "40.41677",
         "group": "search",
-        "longitude": "-3.7037901999999576",
-        "radius": "4",
-        "from": "2020-01-29 10:00",
-        "to": "2020-01-29 14:00",
+        "longitude": "-3.7037902",
+        "radius": "200",
+        "from": "2021-01-29 10:00",
+        "to": "2021-01-29 12:00",
         "vehicleType": "1",
         "page": "1",
-        "limit": "2"
+        "limit": "2",
+        "freemium": false
     }
 }
 </pre>
@@ -1418,322 +1440,332 @@ Authorization: Bearer {JWT_TOKEN}
 <p>
 <pre>
 {
-    "id": 983,
-    "covered": true,
-    "description": "Car park in the center of Barcelona, in the Carrer de l'Hospital, just 500 meters from the famous Paseo de Las Ramblas and the Liceo Theater, known for its opera in Barcelona. Parking in El Nou Raval car park lets you visit this restaurant and leisure area with its numerous shops, restaurants, bars and street art. At the same distance from El Nou Raval car park, you’ll find the Rubió i Lluch Gardens, the Monastery of Sant Pau del Camp, and a little farther, you can visit the art district of Barcelona: the Museum of Contemporary Art (MACBA), the Center of Contemporary Culture of Barcelona (CCCB) and the Filmoteca de Catalunya. Parking in the heart of Barcelona is no longer a problem, for the Catalonia Square is located just 10 minutes walking from El Nou Raval car park, where you can enjoy the Francesc Macià Monument. Likewise, in just 10 minutes, you can visit one of the most famous Barcelona sites, the Güell Palace, or the Main Theater. El Nou Raval car park is also very close to the Rambla del Raval, the La Boquería market, the Sant Antoni market and the Basilica of Santa María del Pi. Also, El Nou Raval car park is located less than 15 minutes walking from the Plaça de Sant Jaume, where you’ll find the Barcelona City Hall, Palau de la Generalitat de Catalunya, Basilica of Sants Màrtirs Just i Pastor and the Roman Wall; likewise, right next door, you can visit the History Museum of Barcelona (MUHBA), the Mirador del Rei Martí, the Frederic Marès Museum and the Catalan Museum. El Nou Raval car park is ideal if you need to park in the Eixample Sant Antoni or the historic center of Barcelona, especially in the El Raval or the Gothic Quarter, as well as the University Plaza, where you’ll find the University of Barcelona’s Faculty of Mathematics, among others. El Nou Raval car park gives you the chance to leave your car in good hands anytime, thanks to their 24/7 schedule and video surveillance system. You can also get around Barcelona on public transit using line L2 from the Sant Antoni station, just 5 minutes from the car park, or L3 from the Liceu station.",
-    "flexible_entry": false,
-    "guarded": true,
-    "latitude": 41.37944030469,
-    "image_list": "//static.parclick.com/parking/2017/07/85a/485/c4/85a485c4-d29d-5c3c-b9c3-ffc41de8b75f.jpeg",
-    "longitude": 2.1672597228639,
-    "medias": [
-        {
-            "id": 7571,
-            "url": "https://static.parclick.com/parking/2017/07/85a/485/c4/85a485c4-d29d-5c3c-b9c3-ffc41de8b75f.jpeg"
-        },
-        {
-            "id": 7572,
-            "url": "https://static.parclick.com/parking/2017/07/62d/e02/10/62de0210-b385-5084-88b5-0ddf50d03781.jpeg"
-        },
-        {
-            "id": 7573,
-            "url": "https://static.parclick.com/parking/2017/07/6be/1b2/e5/6be1b2e5-f4f1-55da-8ecc-d299fa1c1f47.jpeg"
-        },
-        {
-            "id": 7574,
-            "url": "https://static.parclick.com/parking/2017/07/a8b/790/89/a8b79089-358b-59cc-8442-39f02ba424be.jpeg"
-        }
-    ],
-    "extra_info": [],
-    "address": "Carrer de l'Hospital, 141",
-    "city": "Barcelona",
-    "country": "España",
-    "province": "Barcelona",
-    "zip": "8001",
-    "provider": {
-        "id": 254,
-        "name": "EL NOU RAVAL"
-    },
-    "feature_electric_cars": true,
-    "handicapped_access": true,
-    "security": true,
-    "open_24h": true,
-    "giving_keys": false,
-    "exclude_checking": false,
-    "license_info": false,
-    "vehicle_info": false,
-    "flight": false,
-    "return_flight_location": false,
-    "train": false,
-    "stuff_required_at_check_in": false,
-    "name": "El Nou Raval",
-    "external": [],
-    "max_height": 190,
-    "passes": [
-        {
-            "id": 25205,
-            "category": "MULTIPASS",
-            "instructions": "During the purchasing process, select the date you plan to arrive. After making the online payment you will receive a voucher via email with you reservation code.\r\n\r\nOn the date of your reservation, enter the parking lot as usual, take a ticket at the entrance and park in any empty spot.\r\n\r\nOnce you're out of the car, approach the control booth with the Parclick voucher and the ticket you took. Our staff there will check your reservation using the reservation code, and will give you a card that will allow you multiple ins and outs.",
-            "name": "MULTIPASS 1 day",
-            "vehicle_type": {
-                "id": 1,
-                "type": "CAR"
-            },
-            "warning_message": "You must bring the printed receipt.",
-            "administration_fee": 2.9,
-            "paypal_fee": 1.21,
-            "price": 20,
-            "status": "ACTIVE",
-            "type": "pass",
-            "internal_name": "MULTIPASS 1d (20.00€)",
-            "token": "",
-            "duration": 24,
-            "multiparking": false,
-            "multipass": true,
-            "frequency": "HOURLY",
-            "_links": {
-                "self": [
-                    {
-                        "href": "https://pre.api.parclick.com/v1/product/25205"
-                    },
-                    {
-                        "href": "https://pre.api.parclick.com/v1/pass/25205"
-                    }
-                ]
+   "id":3180,
+   "inMadridCentral":false,
+   "covered":true,
+   "description":"Vous avez un vol au d\u00e9part de l\u2019a\u00e9roport de Toulouse Blagnac et vous \u00eates \u00e0 la recherche d\u2019un parking pour y laisser votre v\u00e9hicule ? D\u2019un parking avec des prix raisonnables ? D\u2019un parking \u00e0 5 minutes de l\u2019a\u00e9roport ? Ce n\u2019est plus la peine de chercher ! Nous avons ce qu\u2019il vous faut ! Le parking Boxx\u0027in A\u00e9roport Toulouse - self parking est un parking s\u00e9curis\u00e9, ouvert tous les jours de 5h00 \u00e0 23h30. Alors ne perdez plus de temps et r\u00e9servez d\u00e8s maintenant votre place de stationnement dans le parking Boxx\u0027in A\u00e9roport Toulouse - self parking pour vous garer en toute simplicit\u00e9 avant de prendre votre avion gr\u00e2ce \u00e0 Parkingsdeparis ! :)\r\n\r\nDepuis le parking Boxx\u0027in A\u00e9roport Toulouse - self parking, une navette est mise \u00e0 votre disposition pour vous rendre au terminal de l\u0027a\u00e9roport de Toulouse-Blagnac. Celle-ci ne prendra que 3 minutes pour vous amener \u00e0 destination.\r\nLe parking Boxx\u0027in A\u00e9roport Toulouse - self parking vous offre \u00e9galement d\u2019autres services. Votre voiture pourra \u00eatre lav\u00e9e et le plein pourra \u00eatre fait pour vous !\r\n\r\nVotre vol part t\u00f4t dans la matin\u00e9e ? Choisissez d\u2019arriver la veille, laissez votre v\u00e9hicule dans le parking Boxx\u0027in A\u00e9roport Toulouse - self parking, et passez la nuit dans l\u2019un des h\u00f4tels suivants : l\u2019h\u00f4tel Kyriad Toulouse A\u00e9roport (4 rue Raymond Grimaud), le Best Western H\u00f4tel, l\u2019ibis Styles Toulouse-Blagnac A\u00e9roport (45 rue de Bordebasse), l\u2019h\u00f4tel Premi\u00e8re Classe Toulouse Ouest (2 rue Ren\u00e9 Rey) ou bien l\u2019Holiday Inn Toulouse Airport (Place de la r\u00e9volution).\r\n\r\nUne fois votre v\u00e9hicule gar\u00e9 dans le parking Boxx\u0027in A\u00e9roport Toulouse - self parking, vous souhaitez d\u00e9jeuner avant de rejoindre l\u2019a\u00e9roport ? Aucun probl\u00e8me, le quartier du parking Boxx\u0027in A\u00e9roport Toulouse - self parking regorge de restaurant en tout genre. Vous pourrez par exemple vous rendre \u00e0 La Tosca (16 rue Raymond Grimaud), \u00e0 L\u0027Esprit du Sud-Ouest (84 rue de Bordebasse), au restaurant vietnamien Kumquat (18 rue Raymond Grimaud), au restaurant Sushi tokoro Blagnac (3 rue Raymond Grimaud) ou encore au restaurant l\u0027entr\u0027acte (10 place de la R\u00e9volution Fran\u00e7aise).\r\n\r\nUne envie de faire du shopping de derni\u00e8re minute ? Le centre commercial Blagnac se trouve \u00e0 moins de 10 minutes de marche du parking Boxx\u0027in A\u00e9roport Toulouse - self parking. Vous y trouverez des magasins tels que Kiabi, Decathlon Toulouse Blagnac, H\u0026M, Bershka, Bocage Blagnac, Desigual, Brice, Jules et bien d\u2019autres encore \u2026 Et oui, le parking Boxx\u0027in A\u00e9roport Toulouse - self parking vous sera aussi tr\u00e8s pratique pour faire quelques achats !\r\n\r\nNe vous prenez plus jamais la t\u00eate pour garer votre voiture pr\u00e8s de l\u0027a\u00e9roport de Toulouse Blagnac gr\u00e2ce au parking Boxx\u0027in A\u00e9roport Toulouse - self parking ! R\u00e9servez votre place de stationnement \u00e0 l\u2019avance et en ligne dans le parking Boxx\u0027in A\u00e9roport Toulouse - self parking avec Parkingsdeparis ! Bon voyage ! :)",
+   "flexible_entry":false,
+   "guarded":true,
+   "latitude":43.63178114954,
+   "image_list":"\/\/static.parclick.com\/parking\/2020\/08\/61c\/a56\/75\/61ca5675-bdca-539c-a97d-4f3083497c4b.jpeg",
+   "longitude":1.3795863202377,
+   "medias":[
+      {
+         "id":14789,
+         "url":"https:\/\/static.parclick.com\/parking\/2020\/08\/0f2\/fa1\/1e\/0f2fa11e-af31-5f34-8621-c736520e82a5.jpeg"
+      },
+      {
+         "id":14790,
+         "url":"https:\/\/static.parclick.com\/parking\/2020\/08\/c10\/421\/97\/c1042197-5ad6-5812-bac3-2bf0ad390ca3.jpeg"
+      },
+      {
+         "id":14791,
+         "url":"https:\/\/static.parclick.com\/parking\/2020\/08\/bba\/25d\/77\/bba25d77-b0ae-58cf-9b96-13a21fa12c28.jpeg"
+      }
+   ],
+   "extra_info":{
+      "currency":"euro",
+      "code":"EUR",
+      "minor_unit":2,
+      "symbol":"\u20ac"
+   },
+   "parkingCategoryName":"Airport Official",
+   "passes":[
+      {
+         "id":115401,
+         "category":"ONEPASS",
+         "instructions":"",
+         "name":"ONEPASS 1 journ\u00e9e",
+         "vehicle_type":{
+            "id":2,
+            "type":"VAN"
+         },
+         "warning_message":"",
+         "administration_fee":0,
+         "paypal_fee":1.2,
+         "price":14.9,
+         "status":"ACTIVE",
+         "type":"pass",
+         "internal_name":"ONEPASS 1d (14.90\u20ac)",
+         "token":"",
+         "days_of_week":"",
+         "duration":24,
+         "minutes_before_sell":1400,
+         "multiparking":false,
+         "multipass":false,
+         "frequency":"HOURLY",
+         "_links":{
+            "self":{
+               "href":"https:\/\/loc.api.parclick.com\/v1\/pass\/115401"
             }
-        },
-        {
-            "id": 25206,
-            "category": "MULTIPASS",
-            "instructions": "During the purchasing process, select the date you plan to arrive. After making the online payment you will receive a voucher via email with you reservation code.\r\n\r\nOn the date of your reservation, enter the parking lot as usual, take a ticket at the entrance and park in any empty spot.\r\n\r\nOnce you're out of the car, approach the control booth with the Parclick voucher and the ticket you took. Our staff there will check your reservation using the reservation code, and will give you a card that will allow you multiple ins and outs.",
-            "name": "MULTIPASS 2 days",
-            "vehicle_type": {
-                "id": 1,
-                "type": "CAR"
-            },
-            "warning_message": "You must bring the printed receipt.",
-            "administration_fee": 3.48,
-            "paypal_fee": 1.12,
-            "price": 37,
-            "status": "ACTIVE",
-            "type": "pass",
-            "internal_name": "MULTIPASS 2d (37.00€)",
-            "token": "",
-            "duration": 48,
-            "multiparking": false,
-            "multipass": true,
-            "frequency": "HOURLY",
-            "_links": {
-                "self": [
-                    {
-                        "href": "https://pre.api.parclick.com/v1/product/25206"
-                    },
-                    {
-                        "href": "https://pre.api.parclick.com/v1/pass/25206"
-                    }
-                ]
+         }
+      },
+      {
+         "id":115631,
+         "category":"ONEPASS",
+         "instructions":"\u003Cp\u003EPendant le processus d\u0027achat, veuillez indiquer le jour o\u00f9 vous comptez arriver. Apr\u00e8s le paiement, vous recevrez par email un bon d\u0027\u00e9change contenant votre code de r\u00e9servation. Le parking vous enverra un SMS afin de vous confirmer votre s\u00e9jour. Le jour choisi, rendez-vous tout simplement au parking. Une fois gar\u00e9, rendez-vous au guichet avec votre bon d\u0027\u00e9change Parclick et votre ticket. Notre personnel v\u00e9rifiera votre r\u00e9servation \u00e0 l\u0027aide du code de r\u00e9servation. De l\u00e0, nous vous conduirons \u00e0 l\u0027a\u00e9roport de Toulouse-Blagnac dans notre v\u00e9hicule.\u003C\/p\u003E",
+         "name":"ONEPASS 60 jours",
+         "vehicle_type":{
+            "id":1,
+            "type":"CAR"
+         },
+         "warning_message":"Merci de noter que vous devrez laisser les cl\u00e9s de votre voiture dans le parking.",
+         "administration_fee":0,
+         "paypal_fee":11.4,
+         "price":380,
+         "status":"ACTIVE",
+         "type":"pass",
+         "internal_name":"ONEPASS 60d (380.00\u20ac)",
+         "token":"",
+         "days_of_week":"",
+         "duration":1440,
+         "minutes_before_sell":1400,
+         "multiparking":false,
+         "multipass":false,
+         "frequency":"HOURLY",
+         "_links":{
+            "self":{
+               "href":"https:\/\/loc.api.parclick.com\/v1\/pass\/115631"
             }
-        },
-        {
-            "id": 25207,
-            "category": "MULTIPASS",
-            "instructions": "During the purchasing process, select the date you plan to arrive. After making the online payment you will receive a voucher via email with you reservation code.\r\n\r\nOn the date of your reservation, enter the parking lot as usual, take a ticket at the entrance and park in any empty spot.\r\n\r\nOnce you're out of the car, approach the control booth with the Parclick voucher and the ticket you took. Our staff there will check your reservation using the reservation code, and will give you a card that will allow you multiple ins and outs.",
-            "name": "MULTIPASS 3 days",
-            "vehicle_type": {
-                "id": 1,
-                "type": "CAR"
-            },
-            "warning_message": "You must bring the printed receipt.",
-            "administration_fee": 3.48,
-            "paypal_fee": 1.48,
-            "price": 49,
-            "status": "ACTIVE",
-            "type": "pass",
-            "internal_name": "MULTIPASS 3d (49.00€)",
-            "token": "",
-            "duration": 72,
-            "multiparking": false,
-            "multipass": true,
-            "frequency": "HOURLY",
-            "_links": {
-                "self": [
-                    {
-                        "href": "https://pre.api.parclick.com/v1/product/25207"
-                    },
-                    {
-                        "href": "https://pre.api.parclick.com/v1/pass/25207"
-                    }
-                ]
+         }
+      },
+      {
+         "id":115632,
+         "category":"ONEPASS",
+         "instructions":"\u003Cp\u003EPendant le processus d\u0027achat, veuillez indiquer le jour o\u00f9 vous comptez arriver. Apr\u00e8s le paiement, vous recevrez par email un bon d\u0027\u00e9change contenant votre code de r\u00e9servation. Le parking vous enverra un SMS afin de vous confirmer votre s\u00e9jour. Le jour choisi, rendez-vous tout simplement au parking. Une fois gar\u00e9, rendez-vous au guichet avec votre bon d\u0027\u00e9change Parclick et votre ticket. Notre personnel v\u00e9rifiera votre r\u00e9servation \u00e0 l\u0027aide du code de r\u00e9servation. De l\u00e0, nous vous conduirons \u00e0 l\u0027a\u00e9roport de Toulouse-Blagnac dans notre v\u00e9hicule.\u003C\/p\u003E",
+         "name":"ONEPASS 90 jours",
+         "vehicle_type":{
+            "id":1,
+            "type":"CAR"
+         },
+         "warning_message":"Merci de noter que vous devrez laisser les cl\u00e9s de votre voiture dans le parking.",
+         "administration_fee":0,
+         "paypal_fee":17.1,
+         "price":570,
+         "status":"ACTIVE",
+         "type":"pass",
+         "internal_name":"ONEPASS 90d (570.00\u20ac)",
+         "token":"",
+         "days_of_week":"",
+         "duration":2160,
+         "minutes_before_sell":1400,
+         "multiparking":false,
+         "multipass":false,
+         "frequency":"HOURLY",
+         "_links":{
+            "self":{
+               "href":"https:\/\/loc.api.parclick.com\/v1\/pass\/115632"
             }
-        }
-    ],
-    "subscriptions": [],
-    "schedule": [],
-    "access": [
-        {
-            "id": 924,
-            "type": "vehicle",
-            "address": "Carrer de la Cera 1",
-            "latitude": 41.37944030469,
-            "longitude": 2.1672597228639
-        }
-    ],
-    "slug": "el_nou_raval",
-    "voucher_needed": false,
-    "freemium": false,
-    "minutes_before_sell": 0,
-    "multiparking": false,
-    "instructions": "",
-    "cancellation_type": 2,
-    "reviews_summary": {
-        "reviews": {
-            "1110": {
-                "review": [],
-                "opinion": "Positiv, dass es eine Toilette gab.",
-                "average": 4
-            },
-            "1200": {
-                "review": [],
-                "average": 3
-            },
-            "1651": {
-                "review": [],
-                "average": 4
-            },
-            "2840": {
-                "review": [],
-                "average": 3.3333333333333335
-            },
-            "2943": {
-                "review": [],
-                "average": 4.333333333333333
-            },
-            "3472": {
-                "review": [],
-                "opinion": "Il faudrait mentionner que ce parking est accessible au petite voiture",
-                "average": 2
-            },
-            "4600": {
-                "review": [],
-                "average": 4
-            },
-            "5004": {
-                "review": [],
-                "average": 3.6666666666666665
-            },
-            "6559": {
-                "review": [],
-                "average": 4
-            },
-            "6514": {
-                "review": [],
-                "opinion": "Bien placé mais place un peu étroite.",
-                "average": 4
-            },
-            "6412": {
-                "review": [],
-                "average": 4.333333333333333
-            },
-            "7357": {
-                "review": [],
-                "opinion": "el portero muy amable,los aparcamientos un poco justos por coches familiares, parquing bien situado para ir al centro.",
-                "average": 3.6666666666666665
-            },
-            "8043": {
-                "review": [],
-                "average": 4
-            },
-            "9901": {
-                "review": [],
-                "opinion": "Propre, facile d'accès. Par contre petites places, et sortie piétons ( dans le parjing)mal indiquée.",
-                "average": 3.3333333333333335
-            },
-            "12311": {
-                "review": [],
-                "average": 3.6666666666666665
-            },
-            "12313": {
-                "review": [],
-                "average": 4
-            },
-            "14537": {
-                "review": [],
-                "opinion": "Taille des places un peu petite. Attention aux grosses voitures. Personnel disponible +++",
-                "average": 4.333333333333333
-            },
-            "14867": {
-                "review": [],
-                "average": 4
-            },
-            "15152": {
-                "review": [],
-                "average": 5
-            },
-            "17790": {
-                "review": [],
-                "average": 4.333333333333333
-            },
-            "18194": {
-                "review": [],
-                "average": 5
-            },
-            "18814": {
-                "review": [],
-                "average": 4.333333333333333
-            },
-            "19450": {
-                "review": [],
-                "average": 5
-            },
-            "19864": {
-                "review": [],
-                "average": 3.3333333333333335
+         }
+      }
+   ],
+   "address":"Rue Dieudonn\u00e9 Costes, 6",
+   "city":"Blagnac",
+   "country":"France",
+   "province":"Haute-Garonne",
+   "zip":"31700",
+   "provider":{
+      "id":224,
+      "name":"BOXX\u2019IN"
+   },
+   "feature_electric_cars":true,
+   "handicapped_access":true,
+   "security":true,
+   "open_24h":true,
+   "giving_keys":true,
+   "exclude_checking":false,
+   "license_info":true,
+   "vehicle_info":true,
+   "flight":false,
+   "return_flight_location":false,
+   "train":false,
+   "stuff_required_at_check_in":false,
+   "name":"Boxx\u0027in A\u00e9roport Toulouse - self parking",
+   "external":[
+      
+   ],
+   "max_height":190,
+   "vat_tax":20,
+   "subscriptions":[
+      
+   ],
+   "schedule":[
+      {
+         "id":11138,
+         "type":{
+            "id":1,
+            "name":"PERSONAL"
+         },
+         "week_day":{
+            "key":"MONDAY",
+            "order":1
+         },
+         "intervals":[
+            {
+               "id":16303,
+               "hour_from":"1970-01-01T05:00:00+0000",
+               "hour_to":"1970-01-01T23:30:00+0000"
             }
-        },
-        "questions": {
-            "4": {
-                "score": 93,
-                "number": 24,
-                "average": 3.875
-            },
-            "5": {
-                "score": 89,
-                "number": 24,
-                "average": 3.7083333333333335
-            },
-            "6": {
-                "score": 100,
-                "number": 23,
-                "average": 4.3478260869565215
+         ]
+      },
+      {
+         "id":11140,
+         "type":{
+            "id":1,
+            "name":"PERSONAL"
+         },
+         "week_day":{
+            "key":"TUESDAY",
+            "order":2
+         },
+         "intervals":[
+            {
+               "id":16304,
+               "hour_from":"1970-01-01T05:00:00+0000",
+               "hour_to":"1970-01-01T23:30:00+0000"
             }
-        },
-        "totalScore": 3.944444444444444
-    },
-    "_links": {
-        "self": {
-            "href": "https://pre.api.parclick.com/v1/parking/983"
-        }
-    },
-    "_embedded": {
-        "city": {
-            "id": 6,
-            "name": "Barcelona",
-            "slug": "barcelona",
-            "extra_info": [],
-            "latitude": 41.3851,
-            "longitude": 2.1734,
-            "vat_tax": 21,
-            "content": "<p>A cosmopolitan city with parties, good vibes, great weather… With beaches, mountains, parks, and incredible monuments… There aren’t many cities that have all that in one place, especially one with a population of 2 million.",
-            "time_zone": "Europe/Madrid",
-            "_links": {
-                "self": {
-                    "href": "https://pre.api.parclick.com/v1/city/6"
-                }
+         ]
+      },
+      {
+         "id":11141,
+         "type":{
+            "id":1,
+            "name":"PERSONAL"
+         },
+         "week_day":{
+            "key":"WEDNESDAY",
+            "order":3
+         },
+         "intervals":[
+            {
+               "id":16305,
+               "hour_from":"1970-01-01T05:00:00+0000",
+               "hour_to":"1970-01-01T23:30:00+0000"
             }
-        },
-        "fieldsRequested": [],
-        "features": []
-    }
+         ]
+      },
+      {
+         "id":11142,
+         "type":{
+            "id":1,
+            "name":"PERSONAL"
+         },
+         "week_day":{
+            "key":"THURSDAY",
+            "order":4
+         },
+         "intervals":[
+            {
+               "id":16306,
+               "hour_from":"1970-01-01T05:00:00+0000",
+               "hour_to":"1970-01-01T23:30:00+0000"
+            }
+         ]
+      },
+      {
+         "id":11143,
+         "type":{
+            "id":1,
+            "name":"PERSONAL"
+         },
+         "week_day":{
+            "key":"FRIDAY",
+            "order":5
+         },
+         "intervals":[
+            {
+               "id":16307,
+               "hour_from":"1970-01-01T05:00:00+0000",
+               "hour_to":"1970-01-01T23:30:00+0000"
+            }
+         ]
+      },
+      {
+         "id":11144,
+         "type":{
+            "id":1,
+            "name":"PERSONAL"
+         },
+         "week_day":{
+            "key":"SATURDAY",
+            "order":6
+         },
+         "intervals":[
+            {
+               "id":16308,
+               "hour_from":"1970-01-01T05:00:00+0000",
+               "hour_to":"1970-01-01T23:30:00+0000"
+            }
+         ]
+      },
+      {
+         "id":11145,
+         "type":{
+            "id":1,
+            "name":"PERSONAL"
+         },
+         "week_day":{
+            "key":"SUNDAY",
+            "order":7
+         },
+         "intervals":[
+            {
+               "id":16309,
+               "hour_from":"1970-01-01T05:00:00+0000",
+               "hour_to":"1970-01-01T23:30:00+0000"
+            }
+         ]
+      }
+   ],
+   "access":[
+      {
+         "id":3975,
+         "type":"vehicle",
+         "address":"Rue Dieudonn\u00e9 Costes 6",
+         "latitude":43.63178114954,
+         "longitude":1.3795863202377
+      }
+   ],
+   "slug":"boxxin-aeroport-toulouse-self-parking-1",
+   "voucher_needed":false,
+   "freemium":false,
+   "minutes_before_sell":0,
+   "multiparking":false,
+   "instructions":"",
+   "cancellation_type":1,
+   "_links":{
+      "self":{
+         "href":"https:\/\/loc.api.parclick.com\/v1\/parking\/3180"
+      }
+   },
+   "_embedded":{
+      "city":{
+         "id":145,
+         "name":"Toulouse",
+         "slug":"toulouse",
+         "extra_info":[
+            
+         ],
+         "country_name":"FRANCE",
+         "city_name":"Toulouse",
+         "latitude":43.6,
+         "longitude":1.4505,
+         "vat_tax":20,
+         "content":"\u003Cp\u003EParclick, c\u0027est une nouvelle fa\u00e7on de stationner au meilleur prix. Dans \u003Cstrong\u003Echacune des %cityNumber% villes de Parclick\u003C\/strong\u003E, vous pourrez r\u00e9server une place de stationnement avant d\u0027entreprendre votre voyage, dans le parking qui r\u00e9pondra le mieux \u00e0 vos besoins ; et ce, pr\u00e8s du centre-ville mais aussi des principaux points d\u0027int\u00e9r\u00eat de la ville, ou encore \u00e0 proximit\u00e9 des gares et a\u00e9roports. Vous n\u0027aurez plus \u00e0 vous soucier pour l\u0027endroit o\u00f9 laisser votre voiture au cours de vos voyages : Parclick a la solution ! De cette fa\u00e7on, vous profiterez de votre visite en toute s\u00e9r\u00e9nit\u00e9 !\u003C\/p\u003E\r\n\r\n\u003Cp\u003E\u0026nbsp;\u003C\/p\u003E\r\n\r\n\u003Cp\u003ESi vous avez planifi\u00e9 votre \u003Cstrong\u003Evoyage \u00e0 %city%\u003C\/strong\u003E et que vous vous demandez o\u00f9 vous pourrez bien laisser votre voiture \u00e0 votre arriv\u00e9e, Parclick peut vous aider ! Trouvez un parking proche de votre destination et au meilleur prix, avec tous les services dont vous aurez besoin. Vous pourrez visiter %city% sans tracas, en sachant votre v\u00e9hicule entre de bonnes mains. Indiquez l\u0027adresse de votre h\u00f4tel ou autre point de chute \u00e0 %city% o\u00f9 vous souhaitez vous garer, et Parclick vous montrera toutes les options disponibles.\u003C\/p\u003E\r\n\r\n\u003Cp\u003E\u0026nbsp;\u003C\/p\u003E\r\n\r\n\u003Cp\u003EChez Parclick, nous disposons de \u003Cstrong\u003E%parkingNumber% parkings \u00e0 %city%\u003C\/strong\u003E, que vous pourrez r\u00e9server pour vos s\u00e9jours de courte ou longue dur\u00e9e, au meilleur prix. Comparez nos offres et choisissez le parking qui s\u0027adapte le mieux \u00e0 vos besoins. N\u0027h\u00e9sitez plus, r\u00e9servez votre place de stationnement avec Parclick et profitez de \u003Cstrong\u003Evotre s\u00e9jour \u00e0 %city%\u003C\/strong\u003E avec votre voiture, sans contretemps.\u003C\/p\u003E\r\n\r\n\u003Cp\u003E\u0026nbsp;\u003C\/p\u003E",
+         "time_zone":"Europe\/Madrid",
+         "_links":{
+            "self":{
+               "href":"https:\/\/loc.api.parclick.com\/v1\/city\/145"
+            }
+         }
+      },
+      "fieldsRequested":[
+         
+      ],
+      "features":[
+         
+      ]
+   }
 }
 </pre>
 </p>
@@ -2096,8 +2128,15 @@ Authorization: Bearer {JWT_TOKEN}
             "vat": 0.47,
             "total": 2.6931404958677687,
             "discriminator": "administration_fee"
-        }
+        }   
     ]
+    "currency": 
+        {
+            "currency": "euro",
+            "code": "EUR",
+            "minor_unit": 2,
+            "symbol": "\u20ac"
+        } 
 }
 </pre>
 </p>
