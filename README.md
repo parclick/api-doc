@@ -1440,332 +1440,322 @@ Authorization: Bearer {JWT_TOKEN}
 <p>
 <pre>
 {
-   "id":3180,
-   "inMadridCentral":false,
-   "covered":true,
-   "description":"Vous avez un vol au d\u00e9part de l\u2019a\u00e9roport de Toulouse Blagnac et vous \u00eates \u00e0 la recherche d\u2019un parking pour y laisser votre v\u00e9hicule ? D\u2019un parking avec des prix raisonnables ? D\u2019un parking \u00e0 5 minutes de l\u2019a\u00e9roport ? Ce n\u2019est plus la peine de chercher ! Nous avons ce qu\u2019il vous faut ! Le parking Boxx\u0027in A\u00e9roport Toulouse - self parking est un parking s\u00e9curis\u00e9, ouvert tous les jours de 5h00 \u00e0 23h30. Alors ne perdez plus de temps et r\u00e9servez d\u00e8s maintenant votre place de stationnement dans le parking Boxx\u0027in A\u00e9roport Toulouse - self parking pour vous garer en toute simplicit\u00e9 avant de prendre votre avion gr\u00e2ce \u00e0 Parkingsdeparis ! :)\r\n\r\nDepuis le parking Boxx\u0027in A\u00e9roport Toulouse - self parking, une navette est mise \u00e0 votre disposition pour vous rendre au terminal de l\u0027a\u00e9roport de Toulouse-Blagnac. Celle-ci ne prendra que 3 minutes pour vous amener \u00e0 destination.\r\nLe parking Boxx\u0027in A\u00e9roport Toulouse - self parking vous offre \u00e9galement d\u2019autres services. Votre voiture pourra \u00eatre lav\u00e9e et le plein pourra \u00eatre fait pour vous !\r\n\r\nVotre vol part t\u00f4t dans la matin\u00e9e ? Choisissez d\u2019arriver la veille, laissez votre v\u00e9hicule dans le parking Boxx\u0027in A\u00e9roport Toulouse - self parking, et passez la nuit dans l\u2019un des h\u00f4tels suivants : l\u2019h\u00f4tel Kyriad Toulouse A\u00e9roport (4 rue Raymond Grimaud), le Best Western H\u00f4tel, l\u2019ibis Styles Toulouse-Blagnac A\u00e9roport (45 rue de Bordebasse), l\u2019h\u00f4tel Premi\u00e8re Classe Toulouse Ouest (2 rue Ren\u00e9 Rey) ou bien l\u2019Holiday Inn Toulouse Airport (Place de la r\u00e9volution).\r\n\r\nUne fois votre v\u00e9hicule gar\u00e9 dans le parking Boxx\u0027in A\u00e9roport Toulouse - self parking, vous souhaitez d\u00e9jeuner avant de rejoindre l\u2019a\u00e9roport ? Aucun probl\u00e8me, le quartier du parking Boxx\u0027in A\u00e9roport Toulouse - self parking regorge de restaurant en tout genre. Vous pourrez par exemple vous rendre \u00e0 La Tosca (16 rue Raymond Grimaud), \u00e0 L\u0027Esprit du Sud-Ouest (84 rue de Bordebasse), au restaurant vietnamien Kumquat (18 rue Raymond Grimaud), au restaurant Sushi tokoro Blagnac (3 rue Raymond Grimaud) ou encore au restaurant l\u0027entr\u0027acte (10 place de la R\u00e9volution Fran\u00e7aise).\r\n\r\nUne envie de faire du shopping de derni\u00e8re minute ? Le centre commercial Blagnac se trouve \u00e0 moins de 10 minutes de marche du parking Boxx\u0027in A\u00e9roport Toulouse - self parking. Vous y trouverez des magasins tels que Kiabi, Decathlon Toulouse Blagnac, H\u0026M, Bershka, Bocage Blagnac, Desigual, Brice, Jules et bien d\u2019autres encore \u2026 Et oui, le parking Boxx\u0027in A\u00e9roport Toulouse - self parking vous sera aussi tr\u00e8s pratique pour faire quelques achats !\r\n\r\nNe vous prenez plus jamais la t\u00eate pour garer votre voiture pr\u00e8s de l\u0027a\u00e9roport de Toulouse Blagnac gr\u00e2ce au parking Boxx\u0027in A\u00e9roport Toulouse - self parking ! R\u00e9servez votre place de stationnement \u00e0 l\u2019avance et en ligne dans le parking Boxx\u0027in A\u00e9roport Toulouse - self parking avec Parkingsdeparis ! Bon voyage ! :)",
-   "flexible_entry":false,
-   "guarded":true,
-   "latitude":43.63178114954,
-   "image_list":"\/\/static.parclick.com\/parking\/2020\/08\/61c\/a56\/75\/61ca5675-bdca-539c-a97d-4f3083497c4b.jpeg",
-   "longitude":1.3795863202377,
-   "medias":[
-      {
-         "id":14789,
-         "url":"https:\/\/static.parclick.com\/parking\/2020\/08\/0f2\/fa1\/1e\/0f2fa11e-af31-5f34-8621-c736520e82a5.jpeg"
-      },
-      {
-         "id":14790,
-         "url":"https:\/\/static.parclick.com\/parking\/2020\/08\/c10\/421\/97\/c1042197-5ad6-5812-bac3-2bf0ad390ca3.jpeg"
-      },
-      {
-         "id":14791,
-         "url":"https:\/\/static.parclick.com\/parking\/2020\/08\/bba\/25d\/77\/bba25d77-b0ae-58cf-9b96-13a21fa12c28.jpeg"
-      }
-   ],
-   "extra_info":{
-      "currency":"euro",
-      "code":"EUR",
-      "minor_unit":2,
-      "symbol":"\u20ac"
-   },
-   "parkingCategoryName":"Airport Official",
-   "passes":[
-      {
-         "id":115401,
-         "category":"ONEPASS",
-         "instructions":"",
-         "name":"ONEPASS 1 journ\u00e9e",
-         "vehicle_type":{
-            "id":2,
-            "type":"VAN"
-         },
-         "warning_message":"",
-         "administration_fee":0,
-         "paypal_fee":1.2,
-         "price":14.9,
-         "status":"ACTIVE",
-         "type":"pass",
-         "internal_name":"ONEPASS 1d (14.90\u20ac)",
-         "token":"",
-         "days_of_week":"",
-         "duration":24,
-         "minutes_before_sell":1400,
-         "multiparking":false,
-         "multipass":false,
-         "frequency":"HOURLY",
-         "_links":{
-            "self":{
-               "href":"https:\/\/loc.api.parclick.com\/v1\/pass\/115401"
+    "id": 3180,
+    "inMadridCentral": false,
+    "covered": true,
+    "description": "Vous avez un vol au d\u00e9part de l\u2019a\u00e9roport de Toulouse Blagnac et vous \u00eates \u00e0 la recherche d\u2019un parking pour y laisser votre v\u00e9hicule ? D\u2019un parking avec des prix raisonnables ? D\u2019un parking \u00e0 5 minutes de l\u2019a\u00e9roport ? Ce n\u2019est plus la peine de chercher ! Nous avons ce qu\u2019il vous faut ! Le parking Boxx\u0027in A\u00e9roport Toulouse - self parking est un parking s\u00e9curis\u00e9, ouvert tous les jours de 5h00 \u00e0 23h30. Alors ne perdez plus de temps et r\u00e9servez d\u00e8s maintenant votre place de stationnement dans le parking Boxx\u0027in A\u00e9roport Toulouse - self parking pour vous garer en toute simplicit\u00e9 avant de prendre votre avion gr\u00e2ce \u00e0 Parkingsdeparis ! :)\r\n\r\nDepuis le parking Boxx\u0027in A\u00e9roport Toulouse - self parking, une navette est mise \u00e0 votre disposition pour vous rendre au terminal de l\u0027a\u00e9roport de Toulouse-Blagnac. Celle-ci ne prendra que 3 minutes pour vous amener \u00e0 destination.\r\nLe parking Boxx\u0027in A\u00e9roport Toulouse - self parking vous offre \u00e9galement d\u2019autres services. Votre voiture pourra \u00eatre lav\u00e9e et le plein pourra \u00eatre fait pour vous !\r\n\r\nVotre vol part t\u00f4t dans la matin\u00e9e ? Choisissez d\u2019arriver la veille, laissez votre v\u00e9hicule dans le parking Boxx\u0027in A\u00e9roport Toulouse - self parking, et passez la nuit dans l\u2019un des h\u00f4tels suivants : l\u2019h\u00f4tel Kyriad Toulouse A\u00e9roport (4 rue Raymond Grimaud), le Best Western H\u00f4tel, l\u2019ibis Styles Toulouse-Blagnac A\u00e9roport (45 rue de Bordebasse), l\u2019h\u00f4tel Premi\u00e8re Classe Toulouse Ouest (2 rue Ren\u00e9 Rey) ou bien l\u2019Holiday Inn Toulouse Airport (Place de la r\u00e9volution).\r\n\r\nUne fois votre v\u00e9hicule gar\u00e9 dans le parking Boxx\u0027in A\u00e9roport Toulouse - self parking, vous souhaitez d\u00e9jeuner avant de rejoindre l\u2019a\u00e9roport ? Aucun probl\u00e8me, le quartier du parking Boxx\u0027in A\u00e9roport Toulouse - self parking regorge de restaurant en tout genre. Vous pourrez par exemple vous rendre \u00e0 La Tosca (16 rue Raymond Grimaud), \u00e0 L\u0027Esprit du Sud-Ouest (84 rue de Bordebasse), au restaurant vietnamien Kumquat (18 rue Raymond Grimaud), au restaurant Sushi tokoro Blagnac (3 rue Raymond Grimaud) ou encore au restaurant l\u0027entr\u0027acte (10 place de la R\u00e9volution Fran\u00e7aise).\r\n\r\nUne envie de faire du shopping de derni\u00e8re minute ? Le centre commercial Blagnac se trouve \u00e0 moins de 10 minutes de marche du parking Boxx\u0027in A\u00e9roport Toulouse - self parking. Vous y trouverez des magasins tels que Kiabi, Decathlon Toulouse Blagnac, H\u0026M, Bershka, Bocage Blagnac, Desigual, Brice, Jules et bien d\u2019autres encore \u2026 Et oui, le parking Boxx\u0027in A\u00e9roport Toulouse - self parking vous sera aussi tr\u00e8s pratique pour faire quelques achats !\r\n\r\nNe vous prenez plus jamais la t\u00eate pour garer votre voiture pr\u00e8s de l\u0027a\u00e9roport de Toulouse Blagnac gr\u00e2ce au parking Boxx\u0027in A\u00e9roport Toulouse - self parking ! R\u00e9servez votre place de stationnement \u00e0 l\u2019avance et en ligne dans le parking Boxx\u0027in A\u00e9roport Toulouse - self parking avec Parkingsdeparis ! Bon voyage ! :)",
+    "flexible_entry": false,
+    "guarded": true,
+    "latitude": 43.63178114954,
+    "image_list": "\/\/static.parclick.com\/parking\/2020\/08\/61c\/a56\/75\/61ca5675-bdca-539c-a97d-4f3083497c4b.jpeg",
+    "longitude": 1.3795863202377,
+    "medias": [
+        {
+            "id": 14789,
+            "url": "https:\/\/static.parclick.com\/parking\/2020\/08\/0f2\/fa1\/1e\/0f2fa11e-af31-5f34-8621-c736520e82a5.jpeg"
+        },
+        {
+            "id": 14790,
+            "url": "https:\/\/static.parclick.com\/parking\/2020\/08\/c10\/421\/97\/c1042197-5ad6-5812-bac3-2bf0ad390ca3.jpeg"
+        },
+        {
+            "id": 14791,
+            "url": "https:\/\/static.parclick.com\/parking\/2020\/08\/bba\/25d\/77\/bba25d77-b0ae-58cf-9b96-13a21fa12c28.jpeg"
+        }
+    ],
+    "extra_info": {
+        "currency": "euro",
+        "code": "EUR",
+        "minor_unit": 2,
+        "symbol": "\u20ac"
+    },
+    "parkingCategoryName": "Airport Official",
+    "passes": [
+        {
+            "id": 115401,
+            "category": "ONEPASS",
+            "instructions": "",
+            "name": "ONEPASS 1 journ\u00e9e",
+            "vehicle_type": {
+                "id": 2,
+                "type": "VAN"
+            },
+            "warning_message": "",
+            "administration_fee": 0,
+            "paypal_fee": 1.2,
+            "price": 14.9,
+            "status": "ACTIVE",
+            "type": "pass",
+            "internal_name": "ONEPASS 1d (14.90\u20ac)",
+            "token": "",
+            "days_of_week": "",
+            "duration": 24,
+            "minutes_before_sell": 1400,
+            "multiparking": false,
+            "multipass": false,
+            "frequency": "HOURLY",
+            "_links": {
+                "self": {
+                    "href": "https:\/\/loc.api.parclick.com\/v1\/pass\/115401"
+                }
             }
-         }
-      },
-      {
-         "id":115631,
-         "category":"ONEPASS",
-         "instructions":"\u003Cp\u003EPendant le processus d\u0027achat, veuillez indiquer le jour o\u00f9 vous comptez arriver. Apr\u00e8s le paiement, vous recevrez par email un bon d\u0027\u00e9change contenant votre code de r\u00e9servation. Le parking vous enverra un SMS afin de vous confirmer votre s\u00e9jour. Le jour choisi, rendez-vous tout simplement au parking. Une fois gar\u00e9, rendez-vous au guichet avec votre bon d\u0027\u00e9change Parclick et votre ticket. Notre personnel v\u00e9rifiera votre r\u00e9servation \u00e0 l\u0027aide du code de r\u00e9servation. De l\u00e0, nous vous conduirons \u00e0 l\u0027a\u00e9roport de Toulouse-Blagnac dans notre v\u00e9hicule.\u003C\/p\u003E",
-         "name":"ONEPASS 60 jours",
-         "vehicle_type":{
-            "id":1,
-            "type":"CAR"
-         },
-         "warning_message":"Merci de noter que vous devrez laisser les cl\u00e9s de votre voiture dans le parking.",
-         "administration_fee":0,
-         "paypal_fee":11.4,
-         "price":380,
-         "status":"ACTIVE",
-         "type":"pass",
-         "internal_name":"ONEPASS 60d (380.00\u20ac)",
-         "token":"",
-         "days_of_week":"",
-         "duration":1440,
-         "minutes_before_sell":1400,
-         "multiparking":false,
-         "multipass":false,
-         "frequency":"HOURLY",
-         "_links":{
-            "self":{
-               "href":"https:\/\/loc.api.parclick.com\/v1\/pass\/115631"
+        },
+        {
+            "id": 115631,
+            "category": "ONEPASS",
+            "instructions": "\u003Cp\u003EPendant le processus d\u0027achat, veuillez indiquer le jour o\u00f9 vous comptez arriver. Apr\u00e8s le paiement, vous recevrez par email un bon d\u0027\u00e9change contenant votre code de r\u00e9servation. Le parking vous enverra un SMS afin de vous confirmer votre s\u00e9jour. Le jour choisi, rendez-vous tout simplement au parking. Une fois gar\u00e9, rendez-vous au guichet avec votre bon d\u0027\u00e9change Parclick et votre ticket. Notre personnel v\u00e9rifiera votre r\u00e9servation \u00e0 l\u0027aide du code de r\u00e9servation. De l\u00e0, nous vous conduirons \u00e0 l\u0027a\u00e9roport de Toulouse-Blagnac dans notre v\u00e9hicule.\u003C\/p\u003E",
+            "name": "ONEPASS 60 jours",
+            "vehicle_type": {
+                "id": 1,
+                "type": "CAR"
+            },
+            "warning_message": "Merci de noter que vous devrez laisser les cl\u00e9s de votre voiture dans le parking.",
+            "administration_fee": 0,
+            "paypal_fee": 11.4,
+            "price": 380,
+            "status": "ACTIVE",
+            "type": "pass",
+            "internal_name": "ONEPASS 60d (380.00\u20ac)",
+            "token": "",
+            "days_of_week": "",
+            "duration": 1440,
+            "minutes_before_sell": 1400,
+            "multiparking": false,
+            "multipass": false,
+            "frequency": "HOURLY",
+            "_links": {
+                "self": {
+                    "href": "https:\/\/loc.api.parclick.com\/v1\/pass\/115631"
+                }
             }
-         }
-      },
-      {
-         "id":115632,
-         "category":"ONEPASS",
-         "instructions":"\u003Cp\u003EPendant le processus d\u0027achat, veuillez indiquer le jour o\u00f9 vous comptez arriver. Apr\u00e8s le paiement, vous recevrez par email un bon d\u0027\u00e9change contenant votre code de r\u00e9servation. Le parking vous enverra un SMS afin de vous confirmer votre s\u00e9jour. Le jour choisi, rendez-vous tout simplement au parking. Une fois gar\u00e9, rendez-vous au guichet avec votre bon d\u0027\u00e9change Parclick et votre ticket. Notre personnel v\u00e9rifiera votre r\u00e9servation \u00e0 l\u0027aide du code de r\u00e9servation. De l\u00e0, nous vous conduirons \u00e0 l\u0027a\u00e9roport de Toulouse-Blagnac dans notre v\u00e9hicule.\u003C\/p\u003E",
-         "name":"ONEPASS 90 jours",
-         "vehicle_type":{
-            "id":1,
-            "type":"CAR"
-         },
-         "warning_message":"Merci de noter que vous devrez laisser les cl\u00e9s de votre voiture dans le parking.",
-         "administration_fee":0,
-         "paypal_fee":17.1,
-         "price":570,
-         "status":"ACTIVE",
-         "type":"pass",
-         "internal_name":"ONEPASS 90d (570.00\u20ac)",
-         "token":"",
-         "days_of_week":"",
-         "duration":2160,
-         "minutes_before_sell":1400,
-         "multiparking":false,
-         "multipass":false,
-         "frequency":"HOURLY",
-         "_links":{
-            "self":{
-               "href":"https:\/\/loc.api.parclick.com\/v1\/pass\/115632"
+        },
+        {
+            "id": 115632,
+            "category": "ONEPASS",
+            "instructions": "\u003Cp\u003EPendant le processus d\u0027achat, veuillez indiquer le jour o\u00f9 vous comptez arriver. Apr\u00e8s le paiement, vous recevrez par email un bon d\u0027\u00e9change contenant votre code de r\u00e9servation. Le parking vous enverra un SMS afin de vous confirmer votre s\u00e9jour. Le jour choisi, rendez-vous tout simplement au parking. Une fois gar\u00e9, rendez-vous au guichet avec votre bon d\u0027\u00e9change Parclick et votre ticket. Notre personnel v\u00e9rifiera votre r\u00e9servation \u00e0 l\u0027aide du code de r\u00e9servation. De l\u00e0, nous vous conduirons \u00e0 l\u0027a\u00e9roport de Toulouse-Blagnac dans notre v\u00e9hicule.\u003C\/p\u003E",
+            "name": "ONEPASS 90 jours",
+            "vehicle_type": {
+                "id": 1,
+                "type": "CAR"
+            },
+            "warning_message": "Merci de noter que vous devrez laisser les cl\u00e9s de votre voiture dans le parking.",
+            "administration_fee": 0,
+            "paypal_fee": 17.1,
+            "price": 570,
+            "status": "ACTIVE",
+            "type": "pass",
+            "internal_name": "ONEPASS 90d (570.00\u20ac)",
+            "token": "",
+            "days_of_week": "",
+            "duration": 2160,
+            "minutes_before_sell": 1400,
+            "multiparking": false,
+            "multipass": false,
+            "frequency": "HOURLY",
+            "_links": {
+                "self": {
+                    "href": "https:\/\/loc.api.parclick.com\/v1\/pass\/115632"
+                }
             }
-         }
-      }
-   ],
-   "address":"Rue Dieudonn\u00e9 Costes, 6",
-   "city":"Blagnac",
-   "country":"France",
-   "province":"Haute-Garonne",
-   "zip":"31700",
-   "provider":{
-      "id":224,
-      "name":"BOXX\u2019IN"
-   },
-   "feature_electric_cars":true,
-   "handicapped_access":true,
-   "security":true,
-   "open_24h":true,
-   "giving_keys":true,
-   "exclude_checking":false,
-   "license_info":true,
-   "vehicle_info":true,
-   "flight":false,
-   "return_flight_location":false,
-   "train":false,
-   "stuff_required_at_check_in":false,
-   "name":"Boxx\u0027in A\u00e9roport Toulouse - self parking",
-   "external":[
-      
-   ],
-   "max_height":190,
-   "vat_tax":20,
-   "subscriptions":[
-      
-   ],
-   "schedule":[
-      {
-         "id":11138,
-         "type":{
-            "id":1,
-            "name":"PERSONAL"
-         },
-         "week_day":{
-            "key":"MONDAY",
-            "order":1
-         },
-         "intervals":[
-            {
-               "id":16303,
-               "hour_from":"1970-01-01T05:00:00+0000",
-               "hour_to":"1970-01-01T23:30:00+0000"
+        }
+    ],
+    "address": "Rue Dieudonn\u00e9 Costes, 6",
+    "city": "Blagnac",
+    "country": "France",
+    "province": "Haute-Garonne",
+    "zip": "31700",
+    "provider": {
+        "id": 224,
+        "name": "BOXX\u2019IN"
+    },
+    "feature_electric_cars": true,
+    "handicapped_access": true,
+    "security": true,
+    "open_24h": true,
+    "giving_keys": true,
+    "exclude_checking": false,
+    "license_info": true,
+    "vehicle_info": true,
+    "flight": false,
+    "return_flight_location": false,
+    "train": false,
+    "stuff_required_at_check_in": false,
+    "name": "Boxx\u0027in A\u00e9roport Toulouse - self parking",
+    "external": [],
+    "max_height": 190,
+    "vat_tax": 20,
+    "subscriptions": [],
+    "schedule": [
+        {
+            "id": 11138,
+            "type": {
+                "id": 1,
+                "name": "PERSONAL"
+            },
+            "week_day": {
+                "key": "MONDAY",
+                "order": 1
+            },
+            "intervals": [
+                {
+                    "id": 16303,
+                    "hour_from": "1970-01-01T05:00:00+0000",
+                    "hour_to": "1970-01-01T23:30:00+0000"
+                }
+            ]
+        },
+        {
+            "id": 11140,
+            "type": {
+                "id": 1,
+                "name": "PERSONAL"
+            },
+            "week_day": {
+                "key": "TUESDAY",
+                "order": 2
+            },
+            "intervals": [
+                {
+                    "id": 16304,
+                    "hour_from": "1970-01-01T05:00:00+0000",
+                    "hour_to": "1970-01-01T23:30:00+0000"
+                }
+            ]
+        },
+        {
+            "id": 11141,
+            "type": {
+                "id": 1,
+                "name": "PERSONAL"
+            },
+            "week_day": {
+                "key": "WEDNESDAY",
+                "order": 3
+            },
+            "intervals": [
+                {
+                    "id": 16305,
+                    "hour_from": "1970-01-01T05:00:00+0000",
+                    "hour_to": "1970-01-01T23:30:00+0000"
+                }
+            ]
+        },
+        {
+            "id": 11142,
+            "type": {
+                "id": 1,
+                "name": "PERSONAL"
+            },
+            "week_day": {
+                "key": "THURSDAY",
+                "order": 4
+            },
+            "intervals": [
+                {
+                    "id": 16306,
+                    "hour_from": "1970-01-01T05:00:00+0000",
+                    "hour_to": "1970-01-01T23:30:00+0000"
+                }
+            ]
+        },
+        {
+            "id": 11143,
+            "type": {
+                "id": 1,
+                "name": "PERSONAL"
+            },
+            "week_day": {
+                "key": "FRIDAY",
+                "order": 5
+            },
+            "intervals": [
+                {
+                    "id": 16307,
+                    "hour_from": "1970-01-01T05:00:00+0000",
+                    "hour_to": "1970-01-01T23:30:00+0000"
+                }
+            ]
+        },
+        {
+            "id": 11144,
+            "type": {
+                "id": 1,
+                "name": "PERSONAL"
+            },
+            "week_day": {
+                "key": "SATURDAY",
+                "order": 6
+            },
+            "intervals": [
+                {
+                    "id": 16308,
+                    "hour_from": "1970-01-01T05:00:00+0000",
+                    "hour_to": "1970-01-01T23:30:00+0000"
+                }
+            ]
+        },
+        {
+            "id": 11145,
+            "type": {
+                "id": 1,
+                "name": "PERSONAL"
+            },
+            "week_day": {
+                "key": "SUNDAY",
+                "order": 7
+            },
+            "intervals": [
+                {
+                    "id": 16309,
+                    "hour_from": "1970-01-01T05:00:00+0000",
+                    "hour_to": "1970-01-01T23:30:00+0000"
+                }
+            ]
+        }
+    ],
+    "access": [
+        {
+            "id": 3975,
+            "type": "vehicle",
+            "address": "Rue Dieudonn\u00e9 Costes 6",
+            "latitude": 43.63178114954,
+            "longitude": 1.3795863202377
+        }
+    ],
+    "slug": "boxxin-aeroport-toulouse-self-parking-1",
+    "voucher_needed": false,
+    "freemium": false,
+    "minutes_before_sell": 0,
+    "multiparking": false,
+    "instructions": "",
+    "cancellation_type": 1,
+    "_links": {
+        "self": {
+            "href": "https:\/\/loc.api.parclick.com\/v1\/parking\/3180"
+        }
+    },
+    "_embedded": {
+        "city": {
+            "id": 145,
+            "name": "Toulouse",
+            "slug": "toulouse",
+            "extra_info": [],
+            "country_name": "FRANCE",
+            "city_name": "Toulouse",
+            "latitude": 43.6,
+            "longitude": 1.4505,
+            "vat_tax": 20,
+            "content": "\u003Cp\u003EParclick, c\u0027est une nouvelle fa\u00e7on de stationner au meilleur prix. Dans \u003Cstrong\u003Echacune des %cityNumber% villes de Parclick\u003C\/strong\u003E, vous pourrez r\u00e9server une place de stationnement avant d\u0027entreprendre votre voyage, dans le parking qui r\u00e9pondra le mieux \u00e0 vos besoins ; et ce, pr\u00e8s du centre-ville mais aussi des principaux points d\u0027int\u00e9r\u00eat de la ville, ou encore \u00e0 proximit\u00e9 des gares et a\u00e9roports. Vous n\u0027aurez plus \u00e0 vous soucier pour l\u0027endroit o\u00f9 laisser votre voiture au cours de vos voyages : Parclick a la solution ! De cette fa\u00e7on, vous profiterez de votre visite en toute s\u00e9r\u00e9nit\u00e9 !\u003C\/p\u003E\r\n\r\n\u003Cp\u003E\u0026nbsp;\u003C\/p\u003E\r\n\r\n\u003Cp\u003ESi vous avez planifi\u00e9 votre \u003Cstrong\u003Evoyage \u00e0 %city%\u003C\/strong\u003E et que vous vous demandez o\u00f9 vous pourrez bien laisser votre voiture \u00e0 votre arriv\u00e9e, Parclick peut vous aider ! Trouvez un parking proche de votre destination et au meilleur prix, avec tous les services dont vous aurez besoin. Vous pourrez visiter %city% sans tracas, en sachant votre v\u00e9hicule entre de bonnes mains. Indiquez l\u0027adresse de votre h\u00f4tel ou autre point de chute \u00e0 %city% o\u00f9 vous souhaitez vous garer, et Parclick vous montrera toutes les options disponibles.\u003C\/p\u003E\r\n\r\n\u003Cp\u003E\u0026nbsp;\u003C\/p\u003E\r\n\r\n\u003Cp\u003EChez Parclick, nous disposons de \u003Cstrong\u003E%parkingNumber% parkings \u00e0 %city%\u003C\/strong\u003E, que vous pourrez r\u00e9server pour vos s\u00e9jours de courte ou longue dur\u00e9e, au meilleur prix. Comparez nos offres et choisissez le parking qui s\u0027adapte le mieux \u00e0 vos besoins. N\u0027h\u00e9sitez plus, r\u00e9servez votre place de stationnement avec Parclick et profitez de \u003Cstrong\u003Evotre s\u00e9jour \u00e0 %city%\u003C\/strong\u003E avec votre voiture, sans contretemps.\u003C\/p\u003E\r\n\r\n\u003Cp\u003E\u0026nbsp;\u003C\/p\u003E",
+            "time_zone": "Europe\/Madrid",
+            "_links": {
+                "self": {
+                    "href": "https:\/\/loc.api.parclick.com\/v1\/city\/145"
+                }
             }
-         ]
-      },
-      {
-         "id":11140,
-         "type":{
-            "id":1,
-            "name":"PERSONAL"
-         },
-         "week_day":{
-            "key":"TUESDAY",
-            "order":2
-         },
-         "intervals":[
-            {
-               "id":16304,
-               "hour_from":"1970-01-01T05:00:00+0000",
-               "hour_to":"1970-01-01T23:30:00+0000"
-            }
-         ]
-      },
-      {
-         "id":11141,
-         "type":{
-            "id":1,
-            "name":"PERSONAL"
-         },
-         "week_day":{
-            "key":"WEDNESDAY",
-            "order":3
-         },
-         "intervals":[
-            {
-               "id":16305,
-               "hour_from":"1970-01-01T05:00:00+0000",
-               "hour_to":"1970-01-01T23:30:00+0000"
-            }
-         ]
-      },
-      {
-         "id":11142,
-         "type":{
-            "id":1,
-            "name":"PERSONAL"
-         },
-         "week_day":{
-            "key":"THURSDAY",
-            "order":4
-         },
-         "intervals":[
-            {
-               "id":16306,
-               "hour_from":"1970-01-01T05:00:00+0000",
-               "hour_to":"1970-01-01T23:30:00+0000"
-            }
-         ]
-      },
-      {
-         "id":11143,
-         "type":{
-            "id":1,
-            "name":"PERSONAL"
-         },
-         "week_day":{
-            "key":"FRIDAY",
-            "order":5
-         },
-         "intervals":[
-            {
-               "id":16307,
-               "hour_from":"1970-01-01T05:00:00+0000",
-               "hour_to":"1970-01-01T23:30:00+0000"
-            }
-         ]
-      },
-      {
-         "id":11144,
-         "type":{
-            "id":1,
-            "name":"PERSONAL"
-         },
-         "week_day":{
-            "key":"SATURDAY",
-            "order":6
-         },
-         "intervals":[
-            {
-               "id":16308,
-               "hour_from":"1970-01-01T05:00:00+0000",
-               "hour_to":"1970-01-01T23:30:00+0000"
-            }
-         ]
-      },
-      {
-         "id":11145,
-         "type":{
-            "id":1,
-            "name":"PERSONAL"
-         },
-         "week_day":{
-            "key":"SUNDAY",
-            "order":7
-         },
-         "intervals":[
-            {
-               "id":16309,
-               "hour_from":"1970-01-01T05:00:00+0000",
-               "hour_to":"1970-01-01T23:30:00+0000"
-            }
-         ]
-      }
-   ],
-   "access":[
-      {
-         "id":3975,
-         "type":"vehicle",
-         "address":"Rue Dieudonn\u00e9 Costes 6",
-         "latitude":43.63178114954,
-         "longitude":1.3795863202377
-      }
-   ],
-   "slug":"boxxin-aeroport-toulouse-self-parking-1",
-   "voucher_needed":false,
-   "freemium":false,
-   "minutes_before_sell":0,
-   "multiparking":false,
-   "instructions":"",
-   "cancellation_type":1,
-   "_links":{
-      "self":{
-         "href":"https:\/\/loc.api.parclick.com\/v1\/parking\/3180"
-      }
-   },
-   "_embedded":{
-      "city":{
-         "id":145,
-         "name":"Toulouse",
-         "slug":"toulouse",
-         "extra_info":[
-            
-         ],
-         "country_name":"FRANCE",
-         "city_name":"Toulouse",
-         "latitude":43.6,
-         "longitude":1.4505,
-         "vat_tax":20,
-         "content":"\u003Cp\u003EParclick, c\u0027est une nouvelle fa\u00e7on de stationner au meilleur prix. Dans \u003Cstrong\u003Echacune des %cityNumber% villes de Parclick\u003C\/strong\u003E, vous pourrez r\u00e9server une place de stationnement avant d\u0027entreprendre votre voyage, dans le parking qui r\u00e9pondra le mieux \u00e0 vos besoins ; et ce, pr\u00e8s du centre-ville mais aussi des principaux points d\u0027int\u00e9r\u00eat de la ville, ou encore \u00e0 proximit\u00e9 des gares et a\u00e9roports. Vous n\u0027aurez plus \u00e0 vous soucier pour l\u0027endroit o\u00f9 laisser votre voiture au cours de vos voyages : Parclick a la solution ! De cette fa\u00e7on, vous profiterez de votre visite en toute s\u00e9r\u00e9nit\u00e9 !\u003C\/p\u003E\r\n\r\n\u003Cp\u003E\u0026nbsp;\u003C\/p\u003E\r\n\r\n\u003Cp\u003ESi vous avez planifi\u00e9 votre \u003Cstrong\u003Evoyage \u00e0 %city%\u003C\/strong\u003E et que vous vous demandez o\u00f9 vous pourrez bien laisser votre voiture \u00e0 votre arriv\u00e9e, Parclick peut vous aider ! Trouvez un parking proche de votre destination et au meilleur prix, avec tous les services dont vous aurez besoin. Vous pourrez visiter %city% sans tracas, en sachant votre v\u00e9hicule entre de bonnes mains. Indiquez l\u0027adresse de votre h\u00f4tel ou autre point de chute \u00e0 %city% o\u00f9 vous souhaitez vous garer, et Parclick vous montrera toutes les options disponibles.\u003C\/p\u003E\r\n\r\n\u003Cp\u003E\u0026nbsp;\u003C\/p\u003E\r\n\r\n\u003Cp\u003EChez Parclick, nous disposons de \u003Cstrong\u003E%parkingNumber% parkings \u00e0 %city%\u003C\/strong\u003E, que vous pourrez r\u00e9server pour vos s\u00e9jours de courte ou longue dur\u00e9e, au meilleur prix. Comparez nos offres et choisissez le parking qui s\u0027adapte le mieux \u00e0 vos besoins. N\u0027h\u00e9sitez plus, r\u00e9servez votre place de stationnement avec Parclick et profitez de \u003Cstrong\u003Evotre s\u00e9jour \u00e0 %city%\u003C\/strong\u003E avec votre voiture, sans contretemps.\u003C\/p\u003E\r\n\r\n\u003Cp\u003E\u0026nbsp;\u003C\/p\u003E",
-         "time_zone":"Europe\/Madrid",
-         "_links":{
-            "self":{
-               "href":"https:\/\/loc.api.parclick.com\/v1\/city\/145"
-            }
-         }
-      },
-      "fieldsRequested":[
-         
-      ],
-      "features":[
-         
-      ]
-   }
+        },
+        "fieldsRequested": [],
+        "features": []
+    }
 }
 </pre>
 </p>
