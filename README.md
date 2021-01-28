@@ -1816,65 +1816,63 @@ Authorization: Bearer {JWT_TOKEN}
 <details><summary style="color:#FF6600;">Show response 200 Ok</summary>
 <p>
 <pre>
-[
-    {
-        "id": 49166,
-        "category": "ONEPASS",
-        "name": "ONEPASS 4 hours",
-        "parking": {
-            "id": 852,
-            "covered": true,
-            "flexible_entry": true,
-            "guarded": true,
-            "is_cancellable": true,
-            "countryCodeISO3166-1": "ES",
-            "address": "Calle Relatores, 11",
-            "city": "Madrid",
-            "name": "Garaje Centro",
-            "_links": {
-                "self": {
-                    "href": "https://pre.api.parclick.com/v1/parking/852"
-                }
-            },
-            "_embedded": {
-                "city": {
-                    "id": 37,
-                    "_links": {
-                        "self": {
-                            "href": "https://pre.api.parclick.com/v1/city/37"
-                        }
-                    }
-                }
-            }
-        },
-        "vehicle_type": {
-            "id": 1,
-            "type": "CAR"
-        },
-        "warning_message": "To avoid fines, we recommend accessing the car park from the Atocha / Conde Romanones streets, also Calle Segovia or Toledo / Colegiata.<br/><br/><br/><br/>At this car park, you must leave your car keys with the staff.",
-        "administration_fee": 1.79,
-        "paypal_fee": 1.21,
-        "price": 12.3,
-        "type": "pass",
-        "internal_name": "ONEPASS 4h (12.30€)",
-        "token": "2f40e7630c5db41ffc8255bdf236bfdd4c0e2ef1bfb1dfed304c3c1d7c12a95b",
-        "extra_info": {
-            "currency": "euro",
-            "code": "EUR",
-            "minor_unit": 2,
-            "symbol": "€"
-        },
-        "duration": 4,
-        "multiparking": false,
-        "multipass": false,
-        "frequency": "HOURLY",
-        "_links": {
-            "self": {
-                "href": "https://pre.api.parclick.com/v1/pass/49166"
-            }
-        }
-    }
-]
+ {
+     "id": 49166,
+     "category": "ONEPASS",
+     "name": "ONEPASS 4 hours",
+     "parking": {
+         "id": 852,
+         "covered": true,
+         "flexible_entry": true,
+         "guarded": true,
+         "is_cancellable": true,
+         "countryCodeISO3166-1": "ES",
+         "address": "Calle Relatores, 11",
+         "city": "Madrid",
+         "name": "Garaje Centro",
+         "_links": {
+             "self": {
+                 "href": "https://pre.api.parclick.com/v1/parking/852"
+             }
+         },
+         "_embedded": {
+             "city": {
+                 "id": 37,
+                 "_links": {
+                     "self": {
+                         "href": "https://pre.api.parclick.com/v1/city/37"
+                     }
+                 }
+             }
+         }
+     },
+     "vehicle_type": {
+         "id": 1,
+         "type": "CAR"
+     },
+     "warning_message": "To avoid fines, we recommend accessing the car park from the Atocha / Conde Romanones streets, also Calle Segovia or Toledo / Colegiata.<br/><br/><br/><br/>At this car park, you must leave your car keys with the staff.",
+     "administration_fee": 1.79,
+     "paypal_fee": 1.21,
+     "price": 12.3,
+     "type": "pass",
+     "internal_name": "ONEPASS 4h (12.30€)",
+     "token": "2f40e7630c5db41ffc8255bdf236bfdd4c0e2ef1bfb1dfed304c3c1d7c12a95b",
+     "extra_info": {
+         "currency": "euro",
+         "code": "EUR",
+         "minor_unit": 2,
+         "symbol": "€"
+     },
+     "duration": 4,
+     "multiparking": false,
+     "multipass": false,
+     "frequency": "HOURLY",
+     "_links": {
+         "self": {
+             "href": "https://pre.api.parclick.com/v1/pass/49166"
+         }
+     }
+ }
 </pre>
 </p>
 </details>
