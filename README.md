@@ -1884,7 +1884,7 @@ Authorization: Bearer {JWT_TOKEN}
 <details><summary style="color:#FF6600;">Show response 200 No results</summary>
 <p>
 <pre>
-[]
+
 </pre>
 </p>
 </details>
