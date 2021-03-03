@@ -2095,8 +2095,8 @@ Authorization: Bearer {JWT_TOKEN}
 
 | Parameters | Type | Description |
 | --------------- |:------------------- |-------------------------------------------- |
-| booking_id | integer | booking order id |
-| voucher_id | integer | new booking identifier (required to cancel) |
+| booking_id | integer | new booking identifier (required to cancel) |
+| voucher_id | integer | new voucher identifier (required to get voucher information) |
 | voucher_code | string | new booking voucher |
 
 <details><summary style="color:#FF6600;">Show response 200 Ok</summary>
@@ -2177,7 +2177,7 @@ Authorization: Bearer {JWT_TOKEN}
 
 | Parameters | Type | Required | Default | Description |
 | --------------- | --------------------| -------- | ---------| ----------------- |
-| booking_id | integer | true | null | voucher id |
+| booking_id | integer | true | null | booking id |
 | locale | string | false | en_GB | language in which the notification will be returned (email)|
 
 
