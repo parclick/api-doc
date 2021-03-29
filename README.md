@@ -1891,43 +1891,19 @@ Authorization: Bearer {JWT_TOKEN}
 
 <br>
 
-**401 Bad request - when parameters are missing or incorrect**
+**400 Bad request - Bestpass not available**
 
 <details><summary style="color:#FF6600;">Show response 401 Bad request</summary>
 <p>
 <pre>
+
 {
-  "code": 400,
-  "message": "Validation Failed",
-  "errors": {
-    "errors": [
-      "This form should not contain extra fields."
-    ],
-    "children": {
-      "locale": {},
-      "group": {},
-      "page": {},
-      "limit": {},
-      "sort": {},
-      "direction": {},
-      "from": {},
-      "to": {},
-      "latitude": {},
-      "longitude": {},
-      "radius": {},
-      "vehicleType": {},
-      "status": {},
-      "parking": {},
-      "type": {},
-      "frequency": {}
-    }
-  }
+    "code": 400,
+    "message": "Oops! The car park is closed on the time and date of your entry"
 }
 </pre>
 </p>
 </details>
-
-<br>
 
 ## <a name="vehicle_type"></a><span style="color:#FF6600;">Vehicle type</span>
 
@@ -2145,6 +2121,44 @@ Authorization: Bearer {JWT_TOKEN}
 {
  "code": 401,
  "message": "Bad credentials"
+}
+</pre>
+</p>
+</details>
+
+<br>
+
+**400 Bad request - when parameters are missing or incorrect**
+
+<details><summary style="color:#FF6600;">Show response 401 Bad request</summary>
+<p>
+<pre>
+{
+  "code": 400,
+  "message": "Validation Failed",
+  "errors": {
+    "errors": [
+      "This form should not contain extra fields."
+    ],
+    "children": {
+      "locale": {},
+      "group": {},
+      "page": {},
+      "limit": {},
+      "sort": {},
+      "direction": {},
+      "from": {},
+      "to": {},
+      "latitude": {},
+      "longitude": {},
+      "radius": {},
+      "vehicleType": {},
+      "status": {},
+      "parking": {},
+      "type": {},
+      "frequency": {}
+    }
+  }
 }
 </pre>
 </p>
