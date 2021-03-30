@@ -1918,7 +1918,7 @@ The dates are not valid|
 This pass is only valid from between %DATE_FROM% at %HOUR_FROM% and %DATE_TO% at %HOUR_TO%|
 Great choice! But in this car park you have to book more in advance|
 This car park is not available for requested dates |
-| --------------- |
+
 
 ## <a name="vehicle_type"></a><span style="color:#FF6600;">Vehicle type</span>
 
