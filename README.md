@@ -1905,6 +1905,21 @@ Authorization: Bearer {JWT_TOKEN}
 </p>
 </details>
 
+| Error messages translatables|
+| --------------- |
+| Oops! The car park is closed on the time and date of your entry|
+Oops! The car park is closed on the time and date of your exit|
+Bad luck! For this date and time, this car park doesn't allow entry.|
+Bad luck! For this date and time, this car park doesn't allow exit.|
+Good choice! But here you need to book %MINIMUM_TIME_CHECKIN_REQUIRED% in advance.|
+Oops! The car park doesn't have staff at the hour and date of your entrance.|
+Whoops! Just on these dates we don't have available spaces in this car park.|
+The dates are not valid|
+This pass is only valid from between %DATE_FROM% at %HOUR_FROM% and %DATE_TO% at %HOUR_TO%|
+Great choice! But in this car park you have to book more in advance|
+This car park is not available for requested dates |
+| --------------- |
+
 ## <a name="vehicle_type"></a><span style="color:#FF6600;">Vehicle type</span>
 
 ### <span style="color:#0f6ab4;">`GET`</span> `/v1/vehicle-type`
