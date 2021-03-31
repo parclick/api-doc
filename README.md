@@ -2143,7 +2143,7 @@ Authorization: Bearer {JWT_TOKEN}
 
 <br>
 
-**400 Bad request - when parameters are missing or incorrect**
+**400 Bad request - when parameters are incorrect**
 
 <details><summary style="color:#FF6600;">Show response 400 Bad request</summary>
 <p>
@@ -2174,6 +2174,56 @@ Authorization: Bearer {JWT_TOKEN}
       "frequency": {}
     }
   }
+}
+</pre>
+</p>
+</details>
+
+<br>
+
+**400 Bad request - when parameters are missing**
+
+<details><summary style="color:#FF6600;">Show response 400 Bad request</summary>
+<p>
+<pre>
+{
+    "code": 400,
+    "message": "Validation Failed",
+    "errors": {
+        "children": {
+            "firstName": {},
+            "lastName": {},
+            "prefix": {},
+            "phone": {},
+            "email": {},
+            "product": {},
+            "token": {},
+            "group": {},
+            "from": {},
+            "to": {},
+            "locale": {},
+            "brand": {
+                "errors": [
+                    "This value should not be blank."
+                ]
+            },
+            "model": {
+                "errors": [
+                    "This value should not be blank."
+                ]
+            },
+            "license_plate": {
+                "errors": [
+                    "This value should not be blank."
+                ]
+            },
+            "passenger_phone_number": {
+                "errors": [
+                    "This value should not be blank."
+                ]
+            }
+        }
+    }
 }
 </pre>
 </p>
