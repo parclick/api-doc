@@ -1765,7 +1765,7 @@ Authorization: Bearer {JWT_TOKEN}
 
 **401 Bad request - when parameters are missing or incorrect**
 
-<details><summary style="color:#FF6600;">Show response 401 Bad request</summary>
+<details><summary style="color:#FF6600;">Show response 400 Bad request</summary>
 <p>
 <pre>
 {
@@ -1893,7 +1893,7 @@ Authorization: Bearer {JWT_TOKEN}
 
 **400 Bad request - Bestpass not available**
 
-<details><summary style="color:#FF6600;">Show response 401 Bad request</summary>
+<details><summary style="color:#FF6600;">Show response 400 Bad request</summary>
 <p>
 <pre>
 
@@ -2012,7 +2012,7 @@ This method returns the vehicle type available. The vehicle id is required to ma
 
 **401 Bad request - when parameters are missing or incorrect**
 
-<details><summary style="color:#FF6600;">Show response 401 Bad request</summary>
+<details><summary style="color:#FF6600;">Show response 400 Bad request</summary>
 <p>
 <pre>
 {
@@ -2145,7 +2145,7 @@ Authorization: Bearer {JWT_TOKEN}
 
 **400 Bad request - when parameters are missing or incorrect**
 
-<details><summary style="color:#FF6600;">Show response 401 Bad request</summary>
+<details><summary style="color:#FF6600;">Show response 400 Bad request</summary>
 <p>
 <pre>
 {
@@ -2244,7 +2244,7 @@ Authorization: Bearer {JWT_TOKEN}
 </details>
 
 <br>
-
+Show response 401 Bad request
 **401 Unauthorized**
 
 | Parameters | Type | Description |
