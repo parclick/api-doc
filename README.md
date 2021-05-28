@@ -3165,7 +3165,16 @@ This code is used in Firenze Parcheggi car parks and uses the following syntax t
 
 This code is used in Copark car parks and uses the following syntax to generate it. This provider require the external code to identify and gain access.
 ![alt text](https://static.parclick.com/docs/voucher_niza.png)
+<br>
 
+#### <span style="color:#FF6600;">`license_plate_1`</span>
+
+This code is used in EMT, Equinsa and other providers and simply show the license plate provided to the car park
+<br>
+
+#### <span style="color:#FF6600;">`license_plate_2`</span>
+
+This code is used in Indigo and show the license plate provided to the car park plus the pedestrian access code
 <br>
 
 <p style="font-size:11px;"> <a name="1"></a>[^1]: The REST architectural style describes six constraints: uniform interface, stateless, cacheable, client-server, layered system, code on demand (optional). [REST API Tutorial](https://www.restapitutorial.com/) - [REST API: What is it, and what are its advantages in project development?](https://bbvaopen4u.com/en/actualidad/rest-api-what-it-and-what-are-its-advantages-project-development)</p>
