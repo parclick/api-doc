@@ -3130,13 +3130,13 @@ This QR code is used in SAEMES and others car parks and uses the following synta
 ![alt text](https://static.parclick.com/docs/voucher_saemes.png)
 
 <br>
-
+<hr>
 #### <span style="color:#FF6600;">`barcode_1`</span>
 
 This barcode (type code39) is used in Parkia car parks and uses the following syntax to generate it.
 ![alt text](https://static.parclick.com/docs/voucher_parkia.png)
 <br>
-
+<hr>
 #### <span style="color:#FF6600;">`qrcode_2`</span>
 
 This QR code is used in San Marcos car parks and uses the following syntax to generate it.
