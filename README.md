@@ -3137,41 +3137,48 @@ This barcode (type code39) is used in Parkia car parks and uses the following sy
 ![alt text](https://static.parclick.com/docs/voucher_parkia.png)
 <br>
 <hr>
+
 #### <span style="color:#FF6600;">`qrcode_2`</span>
 
 This QR code is used in San Marcos car parks and uses the following syntax to generate it.
 ![alt text](https://static.parclick.com/docs/voucher_sanmarcos.png)
 <br>
 <hr>
+
 #### <span style="color:#FF6600;">`barcode_2`</span>
 
 This barcode (type code128) is used in Marco Polo car parks and uses the following syntax to generate it.
 ![alt text](https://static.parclick.com/docs/voucher_marcopolo.png)
 <br>
 <hr>
+
 #### <span style="color:#FF6600;">`code_1`</span>
 
 This code is used in AENA car parks and uses the following syntax to generate it. This provider require the licence plate to identify and gain access.
 ![alt text](https://static.parclick.com/docs/voucher_aena.png)
 <br>
 <hr>
+
 #### <span style="color:#FF6600;">`code_2`</span>
 
 This code is used in Firenze Parcheggi car parks and uses the following syntax to generate it. This provider require the booking ID to identify and gain access.
 ![alt text](https://static.parclick.com/docs/voucher_firenze.png)
 <br>
 <hr>
+
 #### <span style="color:#FF6600;">`code_3`</span>
 
 This code is used in Copark car parks and uses the following syntax to generate it. This provider require the external code to identify and gain access.
 ![alt text](https://static.parclick.com/docs/voucher_niza.png)
 <br>
 <hr>
+
 #### <span style="color:#FF6600;">`license_plate_1`</span>
 
 This code is used in EMT, Equinsa and other providers and simply show the license plate provided to the car park
 <br>
 <hr>
+
 #### <span style="color:#FF6600;">`license_plate_2`</span>
 
 This code is used in Indigo and show the license plate provided to the car park plus the pedestrian access code
