@@ -1322,6 +1322,7 @@ The fieldsRequested node gives the additional fields required for a specific car
 | name_hotel | Hotel name | string |
 | color_vehicle | Vehicle color | string |
 | departure_terminal | Departure terminal | string |
+| cancellation_type | Cancellation policy | integer |
 
 
 ### _Header:_
